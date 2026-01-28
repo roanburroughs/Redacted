@@ -222,6 +222,7 @@
     {"name":"sPlayerRiposte_HB","order":2,"path":"sprites/sPlayerRiposte_HB/sPlayerRiposte_HB.yy",},
     {"name":"sPlayerRiposte","order":1,"path":"sprites/sPlayerRiposte/sPlayerRiposte.yy",},
     {"name":"sPlayerRise","order":28,"path":"sprites/sPlayerRise/sPlayerRise.yy",},
+    {"name":"Sprite117","order":72,"path":"sprites/Sprite117/Sprite117.yy",},
     {"name":"Sprite27","order":21,"path":"sprites/Sprite27/Sprite27.yy",},
     {"name":"Sprite28","order":22,"path":"sprites/Sprite28/Sprite28.yy",},
     {"name":"Sprite74","order":53,"path":"sprites/Sprite74/Sprite74.yy",},
