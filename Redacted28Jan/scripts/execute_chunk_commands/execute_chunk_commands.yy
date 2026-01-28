@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"execute_chunk_commands",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"execute_chunk_commands",
+  "parent":{
+    "name":"Text",
+    "path":"folders/TextBoxStuff/Text.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

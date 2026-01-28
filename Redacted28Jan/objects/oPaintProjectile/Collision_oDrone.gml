@@ -1,0 +1,4 @@
+with(other)
+{
+	ProcessPaintAttack(0, 1, 1, 9, 0.01, 0, sPaint, sPaint);
+}

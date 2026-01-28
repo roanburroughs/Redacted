@@ -1,0 +1,7 @@
+[character slot1 = sAmara]
+[speaker Amara slot1]
+DIALOGUE 1 
+[break]
+[character slot2 = sAmara]
+[speaker Amara slot2]
+DIALOGUE 2

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"ProcessPaintAttack",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ProcessPaintAttack",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

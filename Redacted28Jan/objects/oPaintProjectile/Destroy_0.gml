@@ -1,0 +1,1 @@
+if(!audio_is_playing(Splash_1))audio_play_sound(Splash_1,3,false)

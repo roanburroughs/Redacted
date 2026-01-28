@@ -1,0 +1,51 @@
+Sprites intergrated:
+Idle
+Run
+Rise
+Fall
+Melee (Light/heavy?)
+Spray (spray can replaces oSpray1)
+
+Enemy Sprite / alt for target dummy
+
+Wall sprite (Tileset?)
+Background Walls (Tileset?)
+Background
+
+PaintedFloor (1-3 variations)
+
+-
+-
+-
+-
+-
+
+
+
+Player
+-Smooth at the end of dash
+-Melee
+	-Combo
+	-Spawn Hitbox (make the hitbox visable for now)
+-Spray
+	-Angle Lag
+	-Blur
+	-Random colours
+	-Rotating Spray can object
+
+Enemy
+-Something to hit -invincable enemy alt 
+-Something to Kill -vulnerable enemy alt
+-Something to Paint - alt sprite of a painted enemy
+-Solidify the paint-stun-melee-kill loop
+
+
+Paint
+-Paintable environment (oPaintedFloor)
+-Varied sprites for oPaintedFloor (choose sprite1,sprite2,sprite3)
+-Melee releases a paint projectile?
+-Random Paint colour for now, we can change when we do alt colours, it just  looks cool
+-
+
+CAMERA
+-Have a camera

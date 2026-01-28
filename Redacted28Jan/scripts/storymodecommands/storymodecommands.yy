@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"storymodecommands",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"storymodecommands",
+  "parent":{
+    "name":"Text",
+    "path":"folders/TextBoxStuff/Text.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
