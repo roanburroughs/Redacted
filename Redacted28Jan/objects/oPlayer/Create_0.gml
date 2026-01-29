@@ -2,6 +2,8 @@ randomize() //this insures that random events are random, remove this, spray pai
 //reload the game and spray again and you will see that without this "random" events wont be random
 //any object can have this in it , but since player is always there i gave it to player
 
+LoadGame()
+SaveGame()
 if(!instance_exists(oPlayerHealth)) instance_create_layer(64,64,"player",oPlayerHealth)
 iframes=30
 hurt=false
