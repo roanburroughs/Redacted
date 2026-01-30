@@ -4,6 +4,9 @@ paintUp = keyboard_check(vk_up);
 paintDown = keyboard_check(vk_down);
 
 paintcolour = choose(c_aqua, c_green, c_red, c_orange, c_purple, c_yellow);
+
+
+
 hsp = 0;
 vsp = 0;
 grav = .475;
@@ -15,3 +18,6 @@ time_source = time_source_create(time_source_game, 30, time_source_units_frames,
 	{
 		drop = true;
 	}, []);
+
+paintcolourfromglobal()
+ 

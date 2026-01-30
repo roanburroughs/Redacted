@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"LoadGame",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"LoadGame",
+  "parent":{
+    "name":"Redacted28Jan",
+    "path":"Redacted28Jan.yyp",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
