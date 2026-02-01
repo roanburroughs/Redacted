@@ -156,7 +156,7 @@
     {"name":"s_TimedFloor2","order":38,"path":"sprites/s_TimedFloor2/s_TimedFloor2.yy",},
     {"name":"s_TimedFloor3","order":39,"path":"sprites/s_TimedFloor3/s_TimedFloor3.yy",},
     {"name":"s_TimedFloorBreak","order":40,"path":"sprites/s_TimedFloorBreak/s_TimedFloorBreak.yy",},
-    {"name":"sAmara","order":71,"path":"sprites/sAmara/sAmara.yy",},
+    {"name":"sAmara_Neutral","order":71,"path":"sprites/sAmara_Neutral/sAmara_Neutral.yy",},
     {"name":"sBackdrop1","order":24,"path":"sprites/sBackdrop1/sBackdrop1.yy",},
     {"name":"sBackdrop2","order":26,"path":"sprites/sBackdrop2/sBackdrop2.yy",},
     {"name":"sBackdrop3","order":25,"path":"sprites/sBackdrop3/sBackdrop3.yy",},

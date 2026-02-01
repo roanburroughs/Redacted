@@ -2,9 +2,9 @@
   "$GMSprite":"v2",
   "%Name":"snametagamara",
   "bboxMode":0,
-  "bbox_bottom":223,
+  "bbox_bottom":191,
   "bbox_left":0,
-  "bbox_right":465,
+  "bbox_right":399,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":224,
+  "height":192,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"c316e0b2-7fdc-4d60-a627-74260cf8735f","blendMode":0,"displayName":"default","isLocked":false,"name":"c316e0b2-7fdc-4d60-a627-74260cf8735f","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":466,
+  "width":400,
 }

@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sAmara",
-    "path":"sprites/sAmara/sAmara.yy",
+    "name":"sAmara_Neutral",
+    "path":"sprites/sAmara_Neutral/sAmara_Neutral.yy",
   },
   "spriteMaskId":null,
   "visible":true,
