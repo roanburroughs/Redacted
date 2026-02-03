@@ -1,6 +1,6 @@
 // Inherit the parent event
 event_inherited();
-visiondistance=300
+visiondistance=900
 state = ENEMYSTATE.IDLE;
 
 createExecuteArea = instance_create_layer(x, y, "Enemies", oExecuteArea);
@@ -13,11 +13,12 @@ sprIdle = sEnemyTempIdle;
 sprDie = sEnemyTemp;
 sprHurt = sEnemyTemp;
 sprParried = sEnemyTempParried;
-sprStagger = sEnemyTempStagger;
 */
+
 //Enemy Scripts
 
 enemyScript[ENEMYSTATE.IDLE] = AggroCameraIdle
+enemyScript[ENEMYSTATE.STAGGER] = EnemyStagger;
 /*
 enemyScript[ENEMYSTATE.WANDER] = EnemyWander;
 enemyScript[ENEMYSTATE.CHASE] = EnemyChase;
