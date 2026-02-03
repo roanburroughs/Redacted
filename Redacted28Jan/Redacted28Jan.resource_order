@@ -32,6 +32,7 @@
     {"name":"Timelines","order":6,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"oAggroCamera","order":7,"path":"objects/oAggroCamera/oAggroCamera.yy",},
     {"name":"oBackground","order":17,"path":"objects/oBackground/oBackground.yy",},
     {"name":"Object24","order":14,"path":"objects/Object24/Object24.yy",},
     {"name":"oBuilding1","order":23,"path":"objects/oBuilding1/oBuilding1.yy",},
@@ -86,6 +87,7 @@
     {"name":"Test","order":5,"path":"rooms/Test/Test.yy",},
     {"name":"testdialogue","order":9,"path":"rooms/testdialogue/testdialogue.yy",},
     {"name":"TestRoom","order":6,"path":"rooms/TestRoom/TestRoom.yy",},
+    {"name":"AggroCameraIdle","order":14,"path":"scripts/AggroCameraIdle/AggroCameraIdle.yy",},
     {"name":"angle_lerp","order":9,"path":"scripts/angle_lerp/angle_lerp.yy",},
     {"name":"DroneDie","order":1,"path":"scripts/DroneDie/DroneDie.yy",},
     {"name":"EnemyChase","order":1,"path":"scripts/EnemyChase/EnemyChase.yy",},
@@ -169,6 +171,7 @@
     {"name":"sBuilding1_1","order":57,"path":"sprites/sBuilding1_1/sBuilding1_1.yy",},
     {"name":"sBuilding1_2","order":60,"path":"sprites/sBuilding1_2/sBuilding1_2.yy",},
     {"name":"sBuilding1","order":49,"path":"sprites/sBuilding1/sBuilding1.yy",},
+    {"name":"sCamera","order":73,"path":"sprites/sCamera/sCamera.yy",},
     {"name":"sEnemy_Hit","order":10,"path":"sprites/sEnemy_Hit/sEnemy_Hit.yy",},
     {"name":"sEnemy_Painted","order":11,"path":"sprites/sEnemy_Painted/sEnemy_Painted.yy",},
     {"name":"sEnemy22","order":9,"path":"sprites/sEnemy22/sEnemy22.yy",},
