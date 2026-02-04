@@ -32,6 +32,7 @@
     {"name":"Timelines","order":6,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"FnMarker","order":1,"path":"fonts/FnMarker/FnMarker.yy",},
     {"name":"oAggroCamera","order":7,"path":"objects/oAggroCamera/oAggroCamera.yy",},
     {"name":"oBackground","order":17,"path":"objects/oBackground/oBackground.yy",},
     {"name":"Object24","order":14,"path":"objects/Object24/Object24.yy",},
@@ -59,6 +60,7 @@
     {"name":"oPaintedFloor","order":8,"path":"objects/oPaintedFloor/oPaintedFloor.yy",},
     {"name":"oPaintProjectile","order":9,"path":"objects/oPaintProjectile/oPaintProjectile.yy",},
     {"name":"oPause","order":21,"path":"objects/oPause/oPause.yy",},
+    {"name":"oPause2","order":19,"path":"objects/oPause2/oPause2.yy",},
     {"name":"oPlatform","order":4,"path":"objects/oPlatform/oPlatform.yy",},
     {"name":"oPlayerHealth","order":20,"path":"objects/oPlayerHealth/oPlayerHealth.yy",},
     {"name":"oRecharge","order":11,"path":"objects/oRecharge/oRecharge.yy",},

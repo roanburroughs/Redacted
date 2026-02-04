@@ -58,6 +58,7 @@
   "name":"Redacted28Jan",
   "resources":[
     {"id":{"name":"FnDialogue","path":"fonts/FnDialogue/FnDialogue.yy",},},
+    {"id":{"name":"FnMarker","path":"fonts/FnMarker/FnMarker.yy",},},
     {"id":{"name":"To do for ProtoType","path":"notes/To do for ProtoType/To do for ProtoType.yy",},},
     {"id":{"name":"droneExplode","path":"objects/droneExplode/droneExplode.yy",},},
     {"id":{"name":"oAggroCamera","path":"objects/oAggroCamera/oAggroCamera.yy",},},
@@ -88,6 +89,7 @@
     {"id":{"name":"oPaintedFloor","path":"objects/oPaintedFloor/oPaintedFloor.yy",},},
     {"id":{"name":"oPaintProjectile","path":"objects/oPaintProjectile/oPaintProjectile.yy",},},
     {"id":{"name":"oPause","path":"objects/oPause/oPause.yy",},},
+    {"id":{"name":"oPause2","path":"objects/oPause2/oPause2.yy",},},
     {"id":{"name":"oPlatform","path":"objects/oPlatform/oPlatform.yy",},},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},
     {"id":{"name":"oPlayerHealth","path":"objects/oPlayerHealth/oPlayerHealth.yy",},},
