@@ -32,6 +32,11 @@ function LAttack2(){
 		state = LAttack3;
 	}
 	
+	if (keyPressed_heavyAttack && image_index > 2)
+	{
+		state = HAttack2;
+	}
+	
 	
 	if (image_index = 5)
 	{

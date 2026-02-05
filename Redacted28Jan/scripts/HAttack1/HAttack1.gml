@@ -1,6 +1,8 @@
 function HAttack1(){
 	moveDir = keyRight - keyLeft;
 	
+	var _attackTypeTemp = 0;
+	
 if(face>0){
 	image_xscale = abs(image_xscale)
 	}
