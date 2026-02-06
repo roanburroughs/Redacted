@@ -59,7 +59,11 @@ function AggroCameraIdle(draw=false){
 								
 								with (oEnemyTemp)
 								{
-								//	if(state =  ENEMYSTATE.WANDER )state = ENEMYSTATE.CHASE // this aint doing anything
+								 	if(state =  ENEMYSTATE.WANDER )
+									{state = ENEMYSTATE.CHASE // this aint doing anything
+										target = oPlayer;
+									}
+										
 								}
 
 							}
