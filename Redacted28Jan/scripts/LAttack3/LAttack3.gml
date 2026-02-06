@@ -37,6 +37,11 @@ if(image_index>2 && image_index<4)
 	{
 		state = LAttack4;
 	}
+	
+	if (keyPressed_heavyAttack && image_index > 3)
+	{
+		state = HAttack3;
+	}
 
 	
 	if (image_index = 6)

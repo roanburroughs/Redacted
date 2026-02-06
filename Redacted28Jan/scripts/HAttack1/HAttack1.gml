@@ -25,7 +25,17 @@ if(face>0){
 	}
 
 	//attack type, damage, stun damage, hspknock, vspknock, hspairtime, vspairtime, sprite, mask
-	ProcessAttack(_attackTypeTemp, 2, 1, 16, 12, 0.01, -0.33, sPlayerAttackH1, sPlayerAttackH1_HB);
+	ProcessAttack(_attackTypeTemp, 3, 3, 8, 9, 0, 0, sPlayerAttackH1, sPlayerAttackH1_HB);
+	
+	if(keyPressed_lightAttack && image_index > 3)
+	{
+		state = LAttack2;
+	}
+	
+	if(keyPressed_heavyAttack && image_index > 3)
+	{
+		state = HAttack2;
+	}
 	
 	if (image_index = 5)
 	{

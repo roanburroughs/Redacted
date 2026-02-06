@@ -35,9 +35,26 @@ function HAttack2(){
 		hsp = 1*face;
 	}
 		
+	if(image_index == 6)
+	{
+		ds_list_clear(hitByAttack);
+	}
 	
+	//attack type, damage, stun damage, hspknock, vspknock, hspairtime, vspairtime, juggletime, sprite, mask
+	ProcessMultiAttack(0, 1, 1, 6, 6, 0.01, -0.1, 1, sPlayerAttackH2, sPlayerAttackH2_HB2);
 	//attack type, damage, stun damage, hspknock, vspknock, hspairtime, vspairtime, sprite, mask
-	ProcessAttack(_attackTypeTemp, 6, 6, 8, 16, 0, -0.5, sPlayerAttackH2, sPlayerAttackH2_HB);
+	//ProcessAttack(_attackTypeTemp, 6, 6, 8, 16, 0, -0.5, sPlayerAttackH2, sPlayerAttackH2_HB);
+	ProcessAttack(_attackTypeTemp, 6, 6, 4, 18, 0, -0.5, sPlayerAttackH2, sPlayerAttackH2_HB);
+	
+	if(keyPressed_lightAttack && image_index > 12)
+	{
+		state = LAttack3;
+	}
+	
+	if(keyPressed_heavyAttack && image_index > 12)
+	{
+		state = HAttack3;
+	}
 	
 	if (image_index = 16)
 	{
