@@ -3,10 +3,47 @@
 function AggroCameraIdle(draw=false){
 		 //
 		 show_debug_message(fps)
-		if(aim="bottomright")
+		 
+		 
+		 var angle1=0
+		 var angle2=0
+		if(aim="bottomleft")
 		{
-	
-	
+			angle1 =175
+			angle2 =275
+		}
+ 		if(aim="straightleft")
+		{
+			angle1 =130
+			angle2 =230
+		}
+ 		if(aim="topleft")
+		{
+			angle1 =85
+			angle2 =185
+		}
+		 		if(aim="down")
+		{
+			angle1 =220
+			angle2 =320
+		}
+		
+ 		if(aim="bottomright")
+		{
+			angle1 =265
+			angle2 =365
+		}
+ 
+ if(aim="straightright")
+		{
+			angle1 =310
+			angle2 =410
+		}
+		if(aim = "topright") 
+		{
+		angle1=350
+		angle2=460
+		}
  
 		
 				if (draw) {
@@ -18,7 +55,7 @@ function AggroCameraIdle(draw=false){
 	
 							 }
 					//function VisionCone
-				for(var i=180;i<=270;i++)
+				for(var i=angle1;i<=angle2;i++)
 						{
 							var currentdistance = 0
 							 while( currentdistance<visiondistance)
@@ -55,16 +92,7 @@ function AggroCameraIdle(draw=false){
 							{
 								//show_message("aggro") //I mean it works
 								
-								//SET TO AGGRO STATE
-								
-								with (oEnemyTemp)
-								{
-								 	if(state =  ENEMYSTATE.WANDER )
-									{state = ENEMYSTATE.CHASE // this aint doing anything
-										target = oPlayer;
-									}
-										
-								}
+							AggroEnemy()
 
 							}
 	
@@ -76,7 +104,7 @@ function AggroCameraIdle(draw=false){
 				    draw_set_alpha(1)
 				}
 	
-		}
+		
 
  
 }

@@ -53,7 +53,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.3.217",
+    "IDEVersion":"2024.14.2.213",
   },
   "name":"Redacted28Jan",
   "resources":[
@@ -122,6 +122,7 @@
     {"id":{"name":"testdialogue","path":"rooms/testdialogue/testdialogue.yy",},},
     {"id":{"name":"TestRoom","path":"rooms/TestRoom/TestRoom.yy",},},
     {"id":{"name":"AggroCameraIdle","path":"scripts/AggroCameraIdle/AggroCameraIdle.yy",},},
+    {"id":{"name":"AggroEnemy","path":"scripts/AggroEnemy/AggroEnemy.yy",},},
     {"id":{"name":"angle_lerp","path":"scripts/angle_lerp/angle_lerp.yy",},},
     {"id":{"name":"DroneDie","path":"scripts/DroneDie/DroneDie.yy",},},
     {"id":{"name":"DroneWander","path":"scripts/DroneWander/DroneWander.yy",},},

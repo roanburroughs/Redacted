@@ -90,6 +90,7 @@
     {"name":"testdialogue","order":9,"path":"rooms/testdialogue/testdialogue.yy",},
     {"name":"TestRoom","order":6,"path":"rooms/TestRoom/TestRoom.yy",},
     {"name":"AggroCameraIdle","order":14,"path":"scripts/AggroCameraIdle/AggroCameraIdle.yy",},
+    {"name":"AggroEnemy","order":37,"path":"scripts/AggroEnemy/AggroEnemy.yy",},
     {"name":"angle_lerp","order":9,"path":"scripts/angle_lerp/angle_lerp.yy",},
     {"name":"DroneDie","order":1,"path":"scripts/DroneDie/DroneDie.yy",},
     {"name":"EnemyChase","order":1,"path":"scripts/EnemyChase/EnemyChase.yy",},
