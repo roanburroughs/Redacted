@@ -1,3 +1,10 @@
+function controlsSetup(){
+	bufferTime = 3;
+	
+	jumpKeyBuffered = 0;
+	jumpKeyBufferTimer = 0;
+}
+
 function getControls(){
 	
 	//Directional inputs
@@ -14,5 +21,6 @@ function getControls(){
 	keyPressed_Poise = keyboard_check( ord( "Z" ) )
 	keySpray = keyboard_check(ord("P"));
 	
-	key_jump_held = keyboard_check(vk_space) || keyboard_check(vk_up) || keyboard_check(ord("W")) or gamepad_button_check_pressed(0, gp_face1);
+	key_jump_held = keyboard_check(vk_space) + gamepad_button_check_pressed(0, gp_face1);
+	//key_jump_held = keyboard_check(vk_space) || keyboard_check(vk_up) || keyboard_check(ord("W")) or gamepad_button_check_pressed(0, gp_face1);
 }

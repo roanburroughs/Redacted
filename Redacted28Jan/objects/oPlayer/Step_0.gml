@@ -32,73 +32,253 @@ exit
 
 	invulnerable = max(invulnerable-1, 0);
           
-		if (place_meeting(x + hsp, y, oWall))
+		/*      
+	if (place_meeting(x + hsp, y, oWall))
+	{
+		while (abs(hsp) > 0.1)
 		{
-			while (abs(hsp) > 0.1)
+			hsp *= 0.5;
+			if (!place_meeting(x + hsp, y, oWall))
 			{
-				hsp *= 0.5;
-				if (!place_meeting(x + hsp, y, oWall))
+				x += hsp;
+			}
+		}
+		hsp = 0;
+	}
+	x += hsp;
+	*/
+	
+	var _subPixelX = .5;
+		if place_meeting(x + hsp, y, oWall)
+		{
+			//First check if there is a slope to go up
+			if !place_meeting( x + hsp, y - abs(hsp)-1, oWall )
+			{
+				while place_meeting( x + hsp, y, oWall ) { y -= _subPixelX; };
+			}
+			//Next check for ceiling slopes, otherwise, do a regular collision
+			else
+			{
+				//Ceiling slopes
+				if !place_meeting( x + hsp, y + abs(hsp)+1, oWall )
 				{
-					x += hsp;
+					while place_meeting( x + hsp, y, oWall ) { y += _subPixelX; };
+				}
+				//Normal Collision
+				else
+				{
+					//Scoot up to wall precisely
+					var _pixelCheck = _subPixelX * sign(hsp);
+					while !place_meeting(x + _pixelCheck, y, oWall)
+					{
+						x += _pixelCheck;
+					}
+	
+					//Set hsp to zero to "collide"
+					hsp = 0;
 				}
 			}
-			hsp = 0;
 		}
+		
 		x += hsp;
 	
-		var inst = instance_nearest(oPlayer.x + oPlayer.hsp, oPlayer.y, oPaintedFloor) //interact with only this painted floor
+	var inst = instance_nearest(oPlayer.x + oPlayer.hsp, oPlayer.y, oPaintedFloor) //interact with only this painted floor
 
 
-		//Y Collision & Movement
+	//Y Collision & Movement
 	
-		//Moving vertically
+	//Moving vertically
 
-	 if(keyDown) vsp += grv * 5;
+ if(keyDown) vsp += grv * 5;
 
-	//else    if (inst != noone and inst.image_angle != 0 and inst.image_angle != 180 and inst.image_blend!=c_white)
-	   // {
-	//		vsp+=grv*0.5
-	//	}
+else    if (inst != noone and inst.image_angle != 0 and inst.image_angle != 180 and inst.image_blend!=c_white)
+    {
+		vsp+=grv*0.5
+	}
 
-		else if(key_jump_held and vsp<0 and candoublejump) vsp+=grv*0.7
-	    else vsp += grv*2;
+	//else if(key_jump_held and vsp<0 and candoublejump) vsp+=grv*0.7
+    //else vsp += grv*2;
 	
-	 
-		if (place_meeting(x, y + vsp, oWall))
+	 /*
+	if (place_meeting(x, y + vsp, oWall))
+	{
+		if (vsp > 0) 
 		{
-			if (vsp > 0) 
-			{
-				canJump = 10;
-			//	canDash = true;
-			}
-			while (abs(vsp) > 0.1)
-			{
-				vsp *= 0.5;
-				if (!place_meeting(x, y + vsp, oWall))
-				{
-					y += vsp;
-				}
-			}
-			vsp = 0;
+			canJump = 10;
+		//	canDash = true;
 		}
-
-		    if (vsp > 0 and place_meeting(x, y + vsp, oPlatform) and !keyDown) {
-				if (vsp > 0) 
+		while (abs(vsp) > 0.1)
+		{
+			vsp *= 0.5;
+			if (!place_meeting(x, y + vsp, oWall))
 			{
-				canJump = 10;
-			//	canDash = true;
+				y += vsp;
 			}
+		}
+		vsp = 0;
+	}
+
+	    if (vsp > 0 and place_meeting(x, y + vsp, oPlatform) and !keyDown) {
+			if (vsp > 0) 
+		{
+			canJump = 10;
+		//	canDash = true;
+		}
 		
      
-	        if (!place_meeting(x, y, oPlatform)) {
-	         while (!place_meeting(x, y + sign(vsp), oPlatform)) {//Insures you can cleanly touch the wall, remove to see what I mean
+        if (!place_meeting(x, y, oPlatform)) {
+         while (!place_meeting(x, y + sign(vsp), oPlatform)) {//Insures you can cleanly touch the wall, remove to see what I mean
            
-				   y += sign(vsp);
-	            }
-	            vsp = 0;
+			   y += sign(vsp);
+            }
+            vsp = 0;
 		 
-	        }
-	    }
+        }
+    }*/
 	
+	//Y Movement
+		//Gravity
+		if coyoteHangTimer > 0
+		{
+			//Count the timer down
+			coyoteHangTimer--;
+		}
+		else
+		{
+			//Apply gravity to the player
+			vsp += grv;
+			//We're no longer on the ground
+			setOnGround(false);
+		}
 	
-		y += vsp;
+		//Reset/Prepare jumping variables
+		if onGround
+		{
+			jumpCount = 0;
+			coyoteJumpTimer = coyoteJumpFrames;
+		}
+		else
+		{
+			//If the player is in the air, make sure they can't do an extra jump
+			coyoteJumpTimer--;
+			if jumpCount = 0 && coyoteJumpTimer <= 0 { jumpCount = 1; };
+		}
+		
+			//Jump key buffering
+		if key_jump_held
+		{
+			jumpKeyBufferTimer = bufferTime;
+		}
+		if jumpKeyBufferTimer > 0
+		{
+			jumpKeyBuffered = 1;
+			jumpKeyBufferTimer--;
+		}
+		else
+		{
+			jumpKeyBuffered = 0;
+		}
+	
+		//Initiate the jump
+		if jumpKeyBuffered && jumpCount < jumpMax
+		{
+			//Reset the buffer
+			jumpKeyBuffered = false;
+			jumpKeyBufferTimer = 0;
+			//Increase the number of performed jumps
+			jumpCount++;
+			//Set the jump hold timer
+			//jumpHoldTimer = jumpHoldFrames[jumpCount-1];
+			jumpHoldTimer = jumpHoldFrames;
+			//Tell ourself we're no longer on the ground
+			setOnGround(false);
+		}
+	
+		//Cut off the jump by releasing the jump button
+		if !key_jump_held
+		{
+			jumpHoldTimer = 0;
+		}
+		//Jump based on the timer/holding the button
+		if jumpHoldTimer > 0
+		{
+			//Constantly set the vsp to be jumping speed
+			//vsp = jspd[jumpCount-1];
+			vsp = jspd;
+			//Count down the timer
+			jumpHoldTimer--;
+		}
+	
+		//Y Collision & Movement
+			//Cap falling speed
+			if vsp > termVel { vsp = termVel; };
+	
+			//Y Collision
+			var _subPixelY = .5;
+		
+			//Upwards Y Collision (with ceiling slopes)
+			if vsp < 0 && place_meeting( x, y + vsp, oWall )
+			{
+				//Jump into sloped ceilings
+				var _slopeSlide = false;
+			
+				//Slide Up Left Slope
+				if moveDir == 0 && !place_meeting( x - abs(vsp)-1, y + vsp, oWall )
+				{
+					while place_meeting( x, y + vsp, oWall ) { x -= 1; };
+					_slopeSlide = true;
+				}
+			
+				//Slide Up Right Slope
+				if moveDir == 0 && !place_meeting( x + abs(vsp)+1, y+ vsp, oWall )
+				{
+					while place_meeting( x, y + vsp, oWall ) { x += 1; };
+					_slopeSlide = true;
+				}
+			
+				//Normal Y Collision
+				if !_slopeSlide
+				{
+					//Scoot up to the wall precisely
+					var _pixelCheck = _subPixelY * sign(vsp);
+					while !place_meeting( x, y + _pixelCheck, oWall)
+					{
+						y += _pixelCheck;
+					}
+			
+					//Bonk code
+					if vsp < 0
+					{
+						jumpHoldTimer = 0;
+					}
+			
+					//Set vsp to 0 to collide
+					vsp = 0;
+				}
+			}
+		
+			//Downwards Y Collision
+			if vsp >= 0
+			{
+				canJump = 10;
+				canDash = true;
+				if place_meeting( x, y + vsp, oWall )
+				{
+					//Scoot up to the wall precisely
+					var _pixelCheck = _subPixelY * sign(vsp);
+					while !place_meeting( x, y + _pixelCheck, oWall )
+					{
+						y += _pixelCheck;
+					}
+					//Set vsp to 0 to collide
+					vsp = 0;
+				}
+			
+				//Set if I'm on the ground
+				if place_meeting( x, y+1, oWall )
+				{
+					setOnGround(true);
+				}
+			}
+	
+	y += vsp;

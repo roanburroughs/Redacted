@@ -17,12 +17,18 @@ function setOnGround(_val = true)
 	if _val == true
 	{
 		onGround = true;
+		coyoteHangTimer = coyoteHangFrames;
 	}
 	else
 	{
 		onGround = false;
+		coyoteHangTimer = 0;
 	}
-}dead=false
+}
+
+controlsSetup();
+
+dead=false
 framecounter=0
 
 //Movement directions
@@ -50,6 +56,26 @@ canDash = true// false; //resets on touching ground
 dashDistance = 296;
 dashTime = 12;
 dashcooldown=20 // time between dashes
+
+termVel = 8;
+jumpMax = 1;
+jumpCount = 0;
+jumpHoldTimer = 0;
+//Jump values for each successive jump
+//jumpHoldFrames[0] = 9;
+//jspd[0] = -7.15;
+jumpHoldFrames = 12;
+jspd = -7;
+//jumpHoldFrames[1] = 10;
+//jspd[1] = -2.85;
+//Coyote Time
+//Hang Time
+coyoteHangFrames = 2;
+coyoteHangTimer = 0;
+//Jump buffer time
+coyoteJumpFrames = 4;
+coyoteJumpTimer = 0;
+
 //Sprites
 maskSpr = sPlayerIdle;
 idleSpr = sPlayerIdle;
