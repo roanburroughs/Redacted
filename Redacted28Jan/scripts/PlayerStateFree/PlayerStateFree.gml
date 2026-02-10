@@ -110,13 +110,36 @@ else	if(vsp>0)
 		stateAttack = JAttack;
 		}
 	}
-	
+	//
 	if(keyPressed_heavyAttack && executeReady)
 	{
 		state = PlayerStateAttack;
 		stateAttack = Execute;
 		executing = true;
 	}
+ 
+	//Ranged
+	if(keyPressed_heavyAttack )
+	{
+		state = PlayerStateRangedAttack;
+		
+		
+		 if(vsp>1 or vsp<-1)
+		{
+			stateAttack=AirRangedAttack
+		}
+		else if(hsp>1 or hsp<-1)
+		{
+			stateAttack=MovingRangedAttack
+		}
+		else
+		{
+			//show_message("RANGED")
+			stateAttack=RangedAttack
+		}
+	 
+	}
+	
 	
 	if (keyPressed_Poise)
 	{	
