@@ -35,7 +35,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"sCamera_bottomleft",
+    "path":"sprites/sCamera_bottomleft/sCamera_bottomleft.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
