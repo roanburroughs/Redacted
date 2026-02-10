@@ -100,12 +100,17 @@ function AggroCameraIdle(draw=false){
 
 							}
 	 
-							else if(collision_line(x,y,x+lengthdir_x(currentdistance,i),y+lengthdir_y(currentdistance,i),oPlayer,false,false))
+							else if(instance_exists(oPlayer) and oPlayer.framecounter %10=0 and active=true)
 							{
-								//show_message("aggro") //I mean it works
+									if(collision_line(x,y,x+lengthdir_x(currentdistance,i),y+lengthdir_y(currentdistance,i),oPlayer,false,false))
+									{
+										show_message("aggro") //I mean it works
 								
-							AggroEnemy()
+									AggroEnemy()
+									oAggroCamera.active=false
+									alarm[10]=100
 
+									}
 							}
 	
 						}
