@@ -68,13 +68,13 @@ else //Move towards new destination
 
 	
 	//Check for aggro
-	/*if (++aggroCheck >= aggroCheckDuration)
+	if (++aggroCheck >= aggroCheckDuration)
 	{
 		aggroCheck = 0;
 		if (instance_exists(oPlayer)) && (point_distance(x, y, oPlayer.x, oPlayer.y) <= enemyAggroRadius)
 		{
-			state = ENEMYSTATE.CHASE;
+			state = ENEMYSTATE.DRONE_CHASE;
 			target = oPlayer;
 		}
-	}*/
+	}
 }

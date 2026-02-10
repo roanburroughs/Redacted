@@ -96,10 +96,10 @@ else    if (inst != noone and inst.image_angle != 0 and inst.image_angle != 180 
 		vsp+=grv*0.5
 	}
 
-	//else if(key_jump_held and vsp<0 and candoublejump) vsp+=grv*0.7
-    //else vsp += grv*2;
+	else if(key_jump_held and vsp<0 and candoublejump) vsp+=grv*0.7
+    else vsp += grv*2;
 	
-	 /*
+	 
 	if (place_meeting(x, y + vsp, oWall))
 	{
 		if (vsp > 0) 
@@ -134,151 +134,8 @@ else    if (inst != noone and inst.image_angle != 0 and inst.image_angle != 180 
             vsp = 0;
 		 
         }
-    }*/
-	
-	//Y Movement
-		//Gravity
-		if coyoteHangTimer > 0
-		{
-			//Count the timer down
-			coyoteHangTimer--;
-		}
-		else
-		{
-			//Apply gravity to the player
-			vsp += grv;
-			//We're no longer on the ground
-			setOnGround(false);
-		}
-	
-		//Reset/Prepare jumping variables
-		if onGround
-		{
-			jumpCount = 0;
-			coyoteJumpTimer = coyoteJumpFrames;
-		}
-		else
-		{
-			//If the player is in the air, make sure they can't do an extra jump
-			coyoteJumpTimer--;
-			if jumpCount = 0 && coyoteJumpTimer <= 0 { jumpCount = 1; };
-		}
-		
-			//Jump key buffering
-		if key_jump_held
-		{
-			jumpKeyBufferTimer = bufferTime;
-		}
-		if jumpKeyBufferTimer > 0
-		{
-			jumpKeyBuffered = 1;
-			jumpKeyBufferTimer--;
-		}
-		else
-		{
-			jumpKeyBuffered = 0;
-		}
-	
-		//Initiate the jump
-		if jumpKeyBuffered && jumpCount < jumpMax
-		{
-			//Reset the buffer
-			jumpKeyBuffered = false;
-			jumpKeyBufferTimer = 0;
-			//Increase the number of performed jumps
-			jumpCount++;
-			//Set the jump hold timer
-			//jumpHoldTimer = jumpHoldFrames[jumpCount-1];
-			jumpHoldTimer = jumpHoldFrames;
-			//Tell ourself we're no longer on the ground
-			setOnGround(false);
-		}
-	
-		//Cut off the jump by releasing the jump button
-		if !key_jump_held
-		{
-			jumpHoldTimer = 0;
-		}
-		//Jump based on the timer/holding the button
-		if jumpHoldTimer > 0
-		{
-			//Constantly set the vsp to be jumping speed
-			//vsp = jspd[jumpCount-1];
-			vsp = jspd;
-			//Count down the timer
-			jumpHoldTimer--;
-		}
-	
-		//Y Collision & Movement
-			//Cap falling speed
-			if vsp > termVel { vsp = termVel; };
-	
-			//Y Collision
-			var _subPixelY = .5;
-		
-			//Upwards Y Collision (with ceiling slopes)
-			if vsp < 0 && place_meeting( x, y + vsp, oWall )
-			{
-				//Jump into sloped ceilings
-				var _slopeSlide = false;
+    }
+
 			
-				//Slide Up Left Slope
-				if moveDir == 0 && !place_meeting( x - abs(vsp)-1, y + vsp, oWall )
-				{
-					while place_meeting( x, y + vsp, oWall ) { x -= 1; };
-					_slopeSlide = true;
-				}
-			
-				//Slide Up Right Slope
-				if moveDir == 0 && !place_meeting( x + abs(vsp)+1, y+ vsp, oWall )
-				{
-					while place_meeting( x, y + vsp, oWall ) { x += 1; };
-					_slopeSlide = true;
-				}
-			
-				//Normal Y Collision
-				if !_slopeSlide
-				{
-					//Scoot up to the wall precisely
-					var _pixelCheck = _subPixelY * sign(vsp);
-					while !place_meeting( x, y + _pixelCheck, oWall)
-					{
-						y += _pixelCheck;
-					}
-			
-					//Bonk code
-					if vsp < 0
-					{
-						jumpHoldTimer = 0;
-					}
-			
-					//Set vsp to 0 to collide
-					vsp = 0;
-				}
-			}
-		
-			//Downwards Y Collision
-			if vsp >= 0
-			{
-				canJump = 10;
-				canDash = true;
-				if place_meeting( x, y + vsp, oWall )
-				{
-					//Scoot up to the wall precisely
-					var _pixelCheck = _subPixelY * sign(vsp);
-					while !place_meeting( x, y + _pixelCheck, oWall )
-					{
-						y += _pixelCheck;
-					}
-					//Set vsp to 0 to collide
-					vsp = 0;
-				}
-			
-				//Set if I'm on the ground
-				if place_meeting( x, y+1, oWall )
-				{
-					setOnGround(true);
-				}
-			}
 	
 	y += vsp;

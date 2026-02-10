@@ -123,6 +123,7 @@
     {"id":{"name":"TestRoom","path":"rooms/TestRoom/TestRoom.yy",},},
     {"id":{"name":"AggroCameraIdle","path":"scripts/AggroCameraIdle/AggroCameraIdle.yy",},},
     {"id":{"name":"angle_lerp","path":"scripts/angle_lerp/angle_lerp.yy",},},
+    {"id":{"name":"DroneChase","path":"scripts/DroneChase/DroneChase.yy",},},
     {"id":{"name":"DroneDie","path":"scripts/DroneDie/DroneDie.yy",},},
     {"id":{"name":"DroneWander","path":"scripts/DroneWander/DroneWander.yy",},},
     {"id":{"name":"EnemyAttack","path":"scripts/EnemyAttack/EnemyAttack.yy",},},

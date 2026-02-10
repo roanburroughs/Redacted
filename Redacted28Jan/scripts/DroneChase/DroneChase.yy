@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"DroneChase",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"DroneChase",
+  "parent":{
+    "name":"DroneScripts",
+    "path":"folders/Scripts/EnemyScripts/DroneScripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
