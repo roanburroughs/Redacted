@@ -2,14 +2,63 @@
 
 function AggroCameraIdle(draw=false){
 		 //
-		 show_debug_message(fps)
-		if(aim="bottomright")
+		 
+		 
+	//	 aim=choose("bottomleft","straightleft","topleft","down","bottomright","straightright","topright")
+	//	 show_debug_message(fps)
+		 
+		 var anglesprite = sCamera_down
+		 var angle1=0
+		 var angle2=0
+		if(aim="bottomleft")
 		{
-	
-	
+			angle1 =175
+			angle2 =275
+			anglesprite = sCamera_bottomleft
+		}
+ 		if(aim="straightleft")
+		{
+			angle1 =130
+			angle2 =230
+			anglesprite = sCamera_straightleft
+		}
+ 		if(aim="topleft")
+		{
+			angle1 =85
+			angle2 =185
+			anglesprite = sCamera_topleft
+		}
+		 		if(aim="down")
+		{
+			angle1 =220
+			angle2 =320
+			anglesprite = sCamera_down
+		}
+		
+ 		if(aim="bottomright")
+		{
+			angle1 =265
+			angle2 =365
+			anglesprite = sCamera_bottomleft
+		}
+ 
+ if(aim="straightright")
+		{
+			angle1 =310
+			angle2 =410
+			anglesprite = sCamera_straightright
+		}
+		if(aim = "topright") 
+		{
+		angle1=350
+		angle2=460
+		anglesprite = sCamera_topright
+		}
  
 		
 				if (draw) {
+					
+					sprite_index=anglesprite
 					    draw_set_colour(c_red)
 					    draw_set_alpha(0.5)
     
@@ -18,7 +67,7 @@ function AggroCameraIdle(draw=false){
 	
 							 }
 					//function VisionCone
-				for(var i=180;i<=270;i++)
+				for(var i=angle1;i<=angle2;i++)
 						{
 							var currentdistance = 0
 							 while( currentdistance<visiondistance)
@@ -51,21 +100,17 @@ function AggroCameraIdle(draw=false){
 
 							}
 	 
-							else if(collision_line(x,y,x+lengthdir_x(currentdistance,i),y+lengthdir_y(currentdistance,i),oPlayer,false,false))
+							else if(instance_exists(oPlayer) and oPlayer.framecounter %10=0 and active=true)
 							{
-								//show_message("aggro") //I mean it works
+									if(collision_line(x,y,x+lengthdir_x(currentdistance,i),y+lengthdir_y(currentdistance,i),oPlayer,false,false))
+									{
+										show_message("aggro") //I mean it works
 								
-								//SET TO AGGRO STATE
-								
-								with (oEnemyTemp)
-								{
-								 	if(state =  ENEMYSTATE.WANDER )
-									{state = ENEMYSTATE.CHASE // this aint doing anything
-										target = oPlayer;
-									}
-										
-								}
+									AggroEnemy()
+									oAggroCamera.active=false
+									alarm[10]=100
 
+									}
 							}
 	
 						}
@@ -76,7 +121,7 @@ function AggroCameraIdle(draw=false){
 				    draw_set_alpha(1)
 				}
 	
-		}
+		
 
  
 }
