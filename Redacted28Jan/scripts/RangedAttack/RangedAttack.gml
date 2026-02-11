@@ -1,10 +1,22 @@
 function RangedAttack(){
-
+sprite_index = rangedSpr
 //show_message("RANGED")
-	with instance_create_depth(x,y-50,depth-1,oPaintProjectile)
+if(framecounter%3=0)
+{
+	
+		with instance_create_depth(x,y-50,depth-1,oPaintProjectile)
+		{
+			hsp=4*other.face	
+			vsp=-18
+		}
+	
+ 
+
+
+}
+	if (image_index >4)
 	{
-		hsp=5*other.face	
-		vsp=-20
+		sprite_index = idleSpr;
+		state = PlayerStateFree;
 	}
-	state = PlayerStateFree; //end
 }

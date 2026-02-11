@@ -89,6 +89,10 @@ doublejumpSpr=sPlayerDoubleJump;
 poiseSpr = sPlayerPoise;
 parrySpr = sPlayerParry;
 
+rangedSpr= sRangedTemp
+rangedmovingSpr =sRangedMovingTemp
+rangedairSpr= sRangedAirTemp
+
 
 //Initial state
 state = PlayerStateFree;

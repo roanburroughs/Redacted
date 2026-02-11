@@ -104,7 +104,7 @@ function AggroCameraIdle(draw=false){
 							{
 									if(collision_line(x,y,x+lengthdir_x(currentdistance,i),y+lengthdir_y(currentdistance,i),oPlayer,false,false))
 									{
-										show_message("aggro") //I mean it works
+									//	show_message("aggro") //I mean it works
 								
 									AggroEnemy()
 									oAggroCamera.active=false

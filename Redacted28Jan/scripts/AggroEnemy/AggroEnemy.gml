@@ -11,6 +11,16 @@ function AggroEnemy(){
 									}
 										
 								}
+								
+								
+									with (oDrone)
+								{
+								 	if(state =  ENEMYSTATE.DRONE_WANDER )
+									{state = ENEMYSTATE.DRONE_CHASE // this aint doing anything
+										target = oPlayer;
+									}
+										
+								}
 
 
 }
