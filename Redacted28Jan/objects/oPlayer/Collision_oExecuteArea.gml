@@ -11,5 +11,4 @@ if other.executable = true
 else
 {
 	executeReady = false;
-	executeTarget = 0;
 }

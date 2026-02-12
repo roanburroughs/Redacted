@@ -119,7 +119,7 @@ else	if(vsp>0)
 	}
  
 	//Ranged
-	if(keyPressed_heavyAttack )
+	if(keyPressed_heavyAttack && !executeReady)
 	{
 		state = PlayerStateRangedAttack;
 		

@@ -186,6 +186,7 @@
     {"id":{"name":"RangedAttack","path":"scripts/RangedAttack/RangedAttack.yy",},},
     {"id":{"name":"Riposte","path":"scripts/Riposte/Riposte.yy",},},
     {"id":{"name":"SaveGame","path":"scripts/SaveGame/SaveGame.yy",},},
+    {"id":{"name":"ScreenShake","path":"scripts/ScreenShake/ScreenShake.yy",},},
     {"id":{"name":"StateScript","path":"scripts/StateScript/StateScript.yy",},},
     {"id":{"name":"storymodecommands","path":"scripts/storymodecommands/storymodecommands.yy",},},
     {"id":{"name":"WolfAttack","path":"scripts/WolfAttack/WolfAttack.yy",},},
@@ -341,8 +342,8 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"TestRoom","path":"rooms/TestRoom/TestRoom.yy",},},
-    {"roomId":{"name":"TestRoomCamera","path":"rooms/TestRoomCamera/TestRoomCamera.yy",},},
     {"roomId":{"name":"EnemyTestRoom","path":"rooms/EnemyTestRoom/EnemyTestRoom.yy",},},
+    {"roomId":{"name":"TestRoomCamera","path":"rooms/TestRoomCamera/TestRoomCamera.yy",},},
     {"roomId":{"name":"EnemyTestRoom2","path":"rooms/EnemyTestRoom2/EnemyTestRoom2.yy",},},
     {"roomId":{"name":"testdialogue","path":"rooms/testdialogue/testdialogue.yy",},},
     {"roomId":{"name":"Platforming","path":"rooms/Platforming/Platforming.yy",},},

@@ -10,6 +10,8 @@
     {"name":"inst_48DC240E","path":"rooms/EnemyTestRoom/EnemyTestRoom.yy",},
     {"name":"inst_7A58613E","path":"rooms/EnemyTestRoom/EnemyTestRoom.yy",},
     {"name":"inst_A7F00F6","path":"rooms/EnemyTestRoom/EnemyTestRoom.yy",},
+    {"name":"inst_4C7D1BA4","path":"rooms/EnemyTestRoom/EnemyTestRoom.yy",},
+    {"name":"inst_7945594B","path":"rooms/EnemyTestRoom/EnemyTestRoom.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -29,6 +31,10 @@
         {"$GMRInstance":"v4","%Name":"inst_1C07F7A3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1C07F7A3","objectId":{"name":"oEnemyTemp","path":"objects/oEnemyTemp/oEnemyTemp.yy",},"properties":[
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"pEnemy","path":"objects/pEnemy/pEnemy.yy",},"propertyId":{"name":"enemyPaintMax","path":"objects/pEnemy/pEnemy.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"100",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":768.0,"y":512.0,},
+        {"$GMRInstance":"v4","%Name":"inst_4C7D1BA4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4C7D1BA4","objectId":{"name":"oAggroCamera","path":"objects/oAggroCamera/oAggroCamera.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oAggroCamera","path":"objects/oAggroCamera/oAggroCamera.yy",},"propertyId":{"name":"aim","path":"objects/oAggroCamera/oAggroCamera.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"down",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":576.0,"y":256.0,},
+        {"$GMRInstance":"v4","%Name":"inst_7945594B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7945594B","objectId":{"name":"oDrone","path":"objects/oDrone/oDrone.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":992.0,"y":384.0,},
       ],"layers":[],"name":"Enemies","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"Assets_1","assets":[],"depth":600,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Assets_1","properties":[],"resourceType":"GMRAssetLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Walls","depth":700,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
