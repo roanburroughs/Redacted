@@ -26,6 +26,18 @@ function setOnGround(_val = true)
 	}
 }
 
+function setAtWall(_val = true)
+{
+	if _val == true
+	{
+		atWall = true;
+	}
+	else
+	{
+		atWall = false;
+	}
+}
+
 controlsSetup();
 
 dead=false
@@ -33,8 +45,9 @@ framecounter=0
 
 //Movement directions
 face = 1;
-grv = 0.275;
+grv = 0.475;
 onGround = true;
+atWall = false;
 moveDir = 0;
 moveSpd = 5;
 hsp = 0;
@@ -49,7 +62,8 @@ weight = 0;
 vspJump = -8;
 vspDoubleJump=-1
 canJump = 0; //are we touching the ground
-candoublejump=true//made false when you dublejump,made true when vsp=0
+//candoublejump=true//made false when you dublejump,made true when vsp=0
+candoublejump = false
 doublejumpmultiplier=1
  doublejumping=false
 canDash = true// false; //resets on touching ground
@@ -58,7 +72,7 @@ dashTime = 12;
 dashcooldown=20 // time between dashes
 
 termVel = 8;
-jumpMax = 1;
+jumpMax = 2;
 jumpCount = 0;
 jumpHoldTimer = 0;
 //Jump values for each successive jump
@@ -108,4 +122,3 @@ invulnerable = 0;
 flash = 0;
 flashShader = shWhiteFlash;
 uFlash = shader_get_uniform(flashShader, "flash");
-

@@ -342,11 +342,11 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"TestRoom","path":"rooms/TestRoom/TestRoom.yy",},},
+    {"roomId":{"name":"Platforming","path":"rooms/Platforming/Platforming.yy",},},
     {"roomId":{"name":"EnemyTestRoom","path":"rooms/EnemyTestRoom/EnemyTestRoom.yy",},},
     {"roomId":{"name":"TestRoomCamera","path":"rooms/TestRoomCamera/TestRoomCamera.yy",},},
     {"roomId":{"name":"EnemyTestRoom2","path":"rooms/EnemyTestRoom2/EnemyTestRoom2.yy",},},
     {"roomId":{"name":"testdialogue","path":"rooms/testdialogue/testdialogue.yy",},},
-    {"roomId":{"name":"Platforming","path":"rooms/Platforming/Platforming.yy",},},
     {"roomId":{"name":"Test","path":"rooms/Test/Test.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"roomId":{"name":"PLAT","path":"rooms/PLAT/PLAT.yy",},},

@@ -36,4 +36,3 @@ with(createExecuteArea)
 		executable = false;
 	}
 }
-//show_debug_message(onGround);

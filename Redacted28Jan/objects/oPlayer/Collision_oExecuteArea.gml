@@ -1,6 +1,3 @@
-
-show_debug_message(executeTarget);
-
 if other.executable = true
 {
 	executeReady = true;
