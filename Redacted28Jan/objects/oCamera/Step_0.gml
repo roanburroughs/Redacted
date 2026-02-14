@@ -24,5 +24,9 @@ _camY = clamp ( _camY, 0, room_height - _camHeight )-200;
 finalCamX += (_camX - finalCamX) * camTrailSpd;
 finalCamY += (_camY - finalCamY) * camTrailSpd;
 
+_camX += random_range(-shake_remain, shake_remain)
+_camY += random_range(-shake_remain, shake_remain);
+shake_remain = max(0, shake_remain-((1/shake_length)*shake_magnitude));
+
 //Set camera coordinates
 camera_set_view_pos(view_camera[0], _camX, _camY);

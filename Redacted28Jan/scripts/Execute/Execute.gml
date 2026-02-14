@@ -5,7 +5,8 @@ function Execute(){
 	//var _toEnemyX = lengthdir_x(x, executeTarget.x);
 	//var _toEnemyY = lengthdir_y(y, executeTarget.y);
 	
-	var _distFrom = ((executeTarget.x) - (x))
+	var _distFromX = ((executeTarget.x) - (x))
+	var _distFromY = ((executeTarget.y) - (y))
 	
 	if(image_index < 2)
 	{
@@ -26,7 +27,8 @@ function Execute(){
 	if(image_index > 5 && image_index < 7)
 	{
 		//hsp = (lerp(_distFrom, 0, 0.9)+30)*face;
-		hsp = lerp(_distFrom, 0, 0);
+		hsp = lerp(_distFromX, 0, 0);
+		vsp = lerp(_distFromY, 0, 0);
 	}
 	
 	

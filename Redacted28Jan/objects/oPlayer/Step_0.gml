@@ -21,7 +21,6 @@ if(instance_exists(oTextBoxController))
 exit
 	
 }	
- 
 	//Inputs
 	getControls();
 	//show_debug_message(fps)
@@ -77,7 +76,12 @@ exit
 					//Set hsp to zero to "collide"
 					hsp = 0;
 				}
+				setAtWall(true);
 			}
+		}
+		else
+		{
+			setAtWall(false);
 		}
 		
 		x += hsp;
@@ -96,10 +100,36 @@ else    if (inst != noone and inst.image_angle != 0 and inst.image_angle != 180 
 		vsp+=grv*0.5
 	}
 
-	else if(key_jump_held and vsp<0 and candoublejump) vsp+=grv*0.7
-    else vsp += grv*2;
+	//else if(key_jump_held and vsp<0 and candoublejump) vsp+=grv*0.7
+    //else vsp += grv*2;
 	
-	 
+	if coyoteHangTimer > 0
+		{
+			//Count the timer down
+			coyoteHangTimer--;
+		}
+		else
+		{
+			//Apply gravity to the player
+			vsp += grv;
+			//We're no longer on the ground
+			setOnGround(false);
+		}
+		
+	//Reset/Prepare jumping variables
+	if onGround
+	{
+		jumpCount = 0;
+		coyoteJumpTimer = coyoteJumpFrames;
+	}
+	else
+	{
+		//If the player is in the air, make sure they can't do an extra jump
+		coyoteJumpTimer--;
+		if jumpCount = 0 && coyoteJumpTimer <= 0 { jumpCount = 1; };
+	}
+	
+	/* 
 	if (place_meeting(x, y + vsp, oWall))
 	{
 		if (vsp > 0) 
@@ -116,12 +146,36 @@ else    if (inst != noone and inst.image_angle != 0 and inst.image_angle != 180 
 			}
 		}
 		vsp = 0;
-	}
+	}*/
+	
+	//Downwards Y Collision
+			if vsp >= 0
+			{
+				var _subPixelY = .5;
+				if place_meeting( x, y + vsp, oWall )
+				{
+					//Scoot up to the wall precisely
+					var _pixelCheck = _subPixelY * sign(vsp);
+					while !place_meeting( x, y + _pixelCheck, oWall )
+					{
+						y += _pixelCheck;
+					}
+					//Set vsp to 0 to collide
+					vsp = 0;
+				}
+			
+				//Set if I'm on the ground
+				if place_meeting( x, y+1, oWall )
+				{
+					setOnGround(true);
+				}
+			}
 
 	    if (vsp > 0 and place_meeting(x, y + vsp, oPlatform) and !keyDown) {
 			if (vsp > 0) 
 		{
-			canJump = 10;
+			//canJump = 10;
+			setOnGround(true);
 		//	canDash = true;
 		}
 		

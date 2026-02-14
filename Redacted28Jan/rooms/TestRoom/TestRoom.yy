@@ -101,7 +101,6 @@
     {"name":"inst_78092DA9","path":"rooms/TestRoom/TestRoom.yy",},
     {"name":"inst_318709D4","path":"rooms/TestRoom/TestRoom.yy",},
     {"name":"inst_1C61846D","path":"rooms/TestRoom/TestRoom.yy",},
-    {"name":"inst_4CFA765D","path":"rooms/TestRoom/TestRoom.yy",},
     {"name":"inst_62F20DC5","path":"rooms/TestRoom/TestRoom.yy",},
     {"name":"inst_1DF1F3B","path":"rooms/TestRoom/TestRoom.yy",},
     {"name":"inst_22B95432","path":"rooms/TestRoom/TestRoom.yy",},
@@ -164,6 +163,7 @@
     {"name":"inst_47E1A73B","path":"rooms/TestRoom/TestRoom.yy",},
     {"name":"inst_342342C0","path":"rooms/TestRoom/TestRoom.yy",},
     {"name":"inst_488F47B5","path":"rooms/TestRoom/TestRoom.yy",},
+    {"name":"inst_4CFA765D","path":"rooms/TestRoom/TestRoom.yy",},
   ],
   "isDnd":false,
   "layers":[

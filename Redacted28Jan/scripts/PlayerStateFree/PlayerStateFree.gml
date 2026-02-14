@@ -21,7 +21,6 @@ if (inst != noone)
         if (vsp > 0)
         {
             canJump = 10;
-       
             // canDash = true;
         }
 		if(keyJump)
@@ -30,14 +29,60 @@ if (inst != noone)
 		}
     }
 }
-
 	//Can we jump?
-	if (canJump-- > 0) && (keyJump)
+	/*if (canJump-- > 0) && (keyJump)
 	{
 		vsp = vspJump;
 		canJump = 0;
+	}*/
+	
+	//Jump key buffering
+	if keyJump
+	{
+		jumpKeyBufferTimer = bufferTime;
 	}
+	if jumpKeyBufferTimer > 0
+	{
+		jumpKeyBuffered = 1;
+		jumpKeyBufferTimer--;
+	}
+	else
+	{
+		jumpKeyBuffered = 0;
+	}
+	
+		//Initiate the jump
+	if jumpKeyBuffered && jumpCount < jumpMax
+	{
+		//Reset the buffer
+		jumpKeyBuffered = false;
+		jumpKeyBufferTimer = 0;
+		//Increase the number of performed jumps
+		jumpCount++;
+		//Set the jump hold timer
+		//jumpHoldTimer = jumpHoldFrames[jumpCount-1];
+		jumpHoldTimer = jumpHoldFrames;
+		//Tell ourself we're no longer on the ground
+		setOnGround(false);
+	}
+	
+		//Cut off the jump by releasing the jump button
+	if !key_jump_held
+	{
+		jumpHoldTimer = 0;
+	}
+	//Jump based on the timer/holding the button
+	if jumpHoldTimer > 0
+	{
+		//Constantly set the vsp to be jumping speed
+		//vsp = jspd[jumpCount-1];
+		vsp = vspJump;
+		//Count down the timer
+		jumpHoldTimer--;
+	}
+	
 
+/*
 else if(vsp!=0 and keyJump and candoublejump and !doublejumping)
 {
 alarm[1]=30
@@ -47,7 +92,17 @@ doublejumping=true
  {
 	 PlayerDoubleJump()
  
- }
+ }*/
+
+if(jumpCount==2) && (keyJump) && (candoublejump) && (!doublejumping)
+{
+	alarm[1] = 30
+	doublejumping = true
+}
+if(doublejumping)
+{
+	PlayerDoubleJump()
+}
 
 
 
@@ -119,7 +174,7 @@ else	if(vsp>0)
 	}
  
 	//Ranged
-	if(keyPressed_heavyAttack )
+	if(keyPressed_heavyAttack && !executeReady)
 	{
 		state = PlayerStateRangedAttack;
 		
