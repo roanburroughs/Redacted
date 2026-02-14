@@ -31,10 +31,15 @@ function setAtWall(_val = true)
 	if _val == true
 	{
 		atWall = true;
+		if((jumpHoldTimer <= 0) && (vsp > -6))
+		{
+			//vsp = 4;
+		}
 	}
 	else
 	{
 		atWall = false;
+		//jumpMax = 2;
 	}
 }
 
@@ -46,12 +51,16 @@ framecounter=0
 //Movement directions
 face = 1;
 grv = 0.475;
+grvWall = 0.275;
 onGround = true;
 atWall = false;
 moveDir = 0;
 moveSpd = 5;
 hsp = 0;
+hsp_wallJump = 20;
 vsp = 0;
+vspJump = -8;
+vspDoubleJump=-1;
 
 hspKnock = 0;
 vspKnock = 0;
@@ -59,19 +68,21 @@ hspAirtime = 0;
 vspAirtime = 0;
 weight = 0;
 
-vspJump = -8;
-vspDoubleJump=-1
+onwall = 0;
+locked = 0;
+
 canJump = 0; //are we touching the ground
 //candoublejump=true//made false when you dublejump,made true when vsp=0
 candoublejump = false
 doublejumpmultiplier=1
- doublejumping=false
+doublejumping=false
 canDash = true// false; //resets on touching ground
 dashDistance = 296;
 dashTime = 12;
 dashcooldown=20 // time between dashes
 
 termVel = 8;
+termVel_wall = 3;
 jumpMax = 2;
 jumpCount = 0;
 jumpHoldTimer = 0;

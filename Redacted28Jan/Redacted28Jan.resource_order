@@ -152,6 +152,7 @@
     {"name":"SaveGame","order":17,"path":"scripts/SaveGame/SaveGame.yy",},
     {"name":"ScreenShake","order":39,"path":"scripts/ScreenShake/ScreenShake.yy",},
     {"name":"storymodecommands","order":3,"path":"scripts/storymodecommands/storymodecommands.yy",},
+    {"name":"WallJump","order":40,"path":"scripts/WallJump/WallJump.yy",},
     {"name":"WolfAttack","order":9,"path":"scripts/WolfAttack/WolfAttack.yy",},
     {"name":"_854821_A_Little_Tired","order":10,"path":"sounds/_854821_A_Little_Tired/_854821_A_Little_Tired.yy",},
     {"name":"Being_Hit_2","order":8,"path":"sounds/Being_Hit_2/Being_Hit_2.yy",},

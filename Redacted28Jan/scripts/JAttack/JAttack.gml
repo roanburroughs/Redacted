@@ -2,6 +2,8 @@ function JAttack(){
 	
 	image_speed = 1;
 	
+	var _attackTypeTemp = 0;
+	
 if(face>0){
 	image_xscale = abs(image_xscale)
 	}
@@ -19,7 +21,7 @@ if(face>0){
 	vsp = -1;
 	}
 	
-	ProcessAttack(2, 2, 12, 0.01, -0.33, sPlayerAttackJ1, sPlayerAttackJ1_HB);
+	ProcessAttack(_attackTypeTemp, 2, 2, 2, 12, 0.01, -0.33, sPlayerAttackJ1, sPlayerAttackJ1_HB);
 	
 	if (keyPressed_lightAttack && image_index > 2)
 	{

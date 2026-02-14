@@ -23,13 +23,12 @@ exit
 }	
 	//Inputs
 	getControls();
-	//show_debug_message(fps)
-	//show_debug_message(executeReady);
 	framecounter++
 	image_speed=1 //putting this here since things like rise and fall set it to 0
 	script_execute(state);
 
 	invulnerable = max(invulnerable-1, 0);
+	show_debug_message(locked);
           
 		/*      
 	if (place_meeting(x + hsp, y, oWall))
@@ -87,8 +86,7 @@ exit
 		x += hsp;
 	
 	var inst = instance_nearest(oPlayer.x + oPlayer.hsp, oPlayer.y, oPaintedFloor) //interact with only this painted floor
-
-
+	
 	//Y Collision & Movement
 	
 	//Moving vertically
@@ -148,6 +146,30 @@ else    if (inst != noone and inst.image_angle != 0 and inst.image_angle != 180 
 		vsp = 0;
 	}*/
 	
+	//Cap falling speed
+	if vsp > termVel { vsp = termVel; };
+	
+	//Upwards Y Collision (with ceiling slopes)
+	if vsp < 0 && place_meeting( x, y + vsp, oWall )
+	{
+		//Scoot up to the wall precisely
+		var _subPixelY = .5
+		var _pixelCheck = _subPixelY * sign(vsp);
+		while !place_meeting( x, y + _pixelCheck, oWall)
+		{
+			y += _pixelCheck;
+		}
+		
+		//Bonk code
+		if vsp < 0
+		{
+			jumpHoldTimer = 0;
+		}
+	
+		//Set vsp to 0 to collide
+		vsp = 0;
+	}
+	
 	//Downwards Y Collision
 			if vsp >= 0
 			{
@@ -163,6 +185,25 @@ else    if (inst != noone and inst.image_angle != 0 and inst.image_angle != 180 
 					//Set vsp to 0 to collide
 					vsp = 0;
 				}
+				
+				if place_meeting( x, y + vsp, oPlatform) && !keyDown
+				{
+					
+					var _pixelCheck = _subPixelY * sign(vsp);
+					while !place_meeting(x, y + _pixelCheck, oPlatform)
+					{
+						y += _pixelCheck;
+					}
+					if (!place_meeting(x, y, oPlatform)) 
+					{
+						while (!place_meeting(x, y + sign(vsp), oPlatform)) //Insures you can cleanly touch the wall, remove to see what I mean
+						{
+							y += sign(vsp);
+						}
+					vsp = 0;
+					setOnGround(true);
+					}
+				}
 			
 				//Set if I'm on the ground
 				if place_meeting( x, y+1, oWall )
@@ -170,7 +211,8 @@ else    if (inst != noone and inst.image_angle != 0 and inst.image_angle != 180 
 					setOnGround(true);
 				}
 			}
-
+			
+/*
 	    if (vsp > 0 and place_meeting(x, y + vsp, oPlatform) and !keyDown) {
 			if (vsp > 0) 
 		{
@@ -189,7 +231,7 @@ else    if (inst != noone and inst.image_angle != 0 and inst.image_angle != 180 
 		 
         }
     }
-
+*/
 			
 	
 	y += vsp;

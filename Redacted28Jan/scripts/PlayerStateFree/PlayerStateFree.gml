@@ -9,8 +9,13 @@ function PlayerStateFree(){
 		
 		//Get hsp
 		hsp = moveDir * moveSpd;
-
-
+		
+		if(keyJump) && (!onGround) && (onwall!=0)
+		{
+			WallJump();
+			hsp = -onwall * hsp_wallJump;
+		}
+		
 	
 var inst = instance_nearest(x + hsp, y, oPaintedFloor) //interact with only this painted floor
 
@@ -30,11 +35,12 @@ if (inst != noone)
     }
 }
 	//Can we jump?
-	/*if (canJump-- > 0) && (keyJump)
+	/*if (onGround) && (keyJump)
 	{
 		vsp = vspJump;
 		canJump = 0;
 	}*/
+	onwall = place_meeting(x+1, y, oWall) - place_meeting(x-1, y, oWall);
 	
 	//Jump key buffering
 	if keyJump
@@ -58,7 +64,10 @@ if (inst != noone)
 		jumpKeyBuffered = false;
 		jumpKeyBufferTimer = 0;
 		//Increase the number of performed jumps
+		if(!atWall)
+		{
 		jumpCount++;
+		}
 		//Set the jump hold timer
 		//jumpHoldTimer = jumpHoldFrames[jumpCount-1];
 		jumpHoldTimer = jumpHoldFrames;
@@ -93,6 +102,7 @@ doublejumping=true
 	 PlayerDoubleJump()
  
  }*/
+ 
 
 if(jumpCount==2) && (keyJump) && (candoublejump) && (!doublejumping)
 {
@@ -103,6 +113,8 @@ if(doublejumping)
 {
 	PlayerDoubleJump()
 }
+
+
 
 
 
