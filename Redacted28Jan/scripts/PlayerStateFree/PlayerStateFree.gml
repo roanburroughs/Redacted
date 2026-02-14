@@ -2,18 +2,32 @@ function PlayerStateFree(){
 
 //X Movement
 		//Direction
-		moveDir = keyRight - keyLeft;
-	
+		if(!wallJumping)
+		{
+			moveDir = keyRight - keyLeft;
+		}
+		else
+		{
+			moveDir = 0;
+		}
+		show_debug_message(doublejumping);
 		//Get my face
 		if moveDir != 0 { face = moveDir; };
 		
 		//Get hsp
-		hsp = moveDir * moveSpd;
-		
-		if(keyJump) && (!onGround) && (onwall!=0)
+		if(!wallJumping)
 		{
-			WallJump();
-			hsp = -onwall * hsp_wallJump;
+		hsp = moveDir * moveSpd;
+		}
+		
+		//Walljump
+		if(keyJump) && (!onGround) && (atWall)
+		{
+			face = -face;
+			wallJumping = true;
+			wallJumpLock = 0;
+			hsp = lerp((-onwall * hsp_wallJump), 0, 0);
+			vsp = vspJump;
 		}
 		
 	
@@ -43,6 +57,7 @@ if (inst != noone)
 	onwall = place_meeting(x+1, y, oWall) - place_meeting(x-1, y, oWall);
 	
 	//Jump key buffering
+	
 	if keyJump
 	{
 		jumpKeyBufferTimer = bufferTime;
@@ -118,7 +133,8 @@ if(doublejumping)
 
 
 
-if(vsp=0) candoublejump=true
+//if(vsp=0) candoublejump=true
+if(onGround) candoublejump=true
 
 	
 	//Can we dash?

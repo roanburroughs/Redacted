@@ -17,6 +17,7 @@ function setOnGround(_val = true)
 	if _val == true
 	{
 		onGround = true;
+		wallJumping = false;
 		coyoteHangTimer = coyoteHangFrames;
 	}
 	else
@@ -35,11 +36,22 @@ function setAtWall(_val = true)
 		{
 			//vsp = 4;
 		}
+		wallJumpForgive = 5;
 	}
 	else
 	{
-		atWall = false;
+		//atWall = false;
 		//jumpMax = 2;
+		while (wallJumpForgive > 0)
+		{
+			wallJumpForgive--;
+			break;
+		}
+		if(wallJumpForgive <= 0)
+		{
+			atWall = false;
+		}
+		
 	}
 }
 
@@ -54,10 +66,11 @@ grv = 0.475;
 grvWall = 0.275;
 onGround = true;
 atWall = false;
+wallJumpForgive = 0;
 moveDir = 0;
 moveSpd = 5;
 hsp = 0;
-hsp_wallJump = 20;
+hsp_wallJump = 7;
 vsp = 0;
 vspJump = -8;
 vspDoubleJump=-1;
@@ -69,7 +82,8 @@ vspAirtime = 0;
 weight = 0;
 
 onwall = 0;
-locked = 0;
+wallJumping = false;
+wallJumpLock = 0;
 
 canJump = 0; //are we touching the ground
 //candoublejump=true//made false when you dublejump,made true when vsp=0

@@ -190,7 +190,6 @@
     {"id":{"name":"ScreenShake","path":"scripts/ScreenShake/ScreenShake.yy",},},
     {"id":{"name":"StateScript","path":"scripts/StateScript/StateScript.yy",},},
     {"id":{"name":"storymodecommands","path":"scripts/storymodecommands/storymodecommands.yy",},},
-    {"id":{"name":"WallJump","path":"scripts/WallJump/WallJump.yy",},},
     {"id":{"name":"WolfAttack","path":"scripts/WolfAttack/WolfAttack.yy",},},
     {"id":{"name":"shWhiteFlash","path":"shaders/shWhiteFlash/shWhiteFlash.yy",},},
     {"id":{"name":"_854821_A_Little_Tired","path":"sounds/_854821_A_Little_Tired/_854821_A_Little_Tired.yy",},},
@@ -346,8 +345,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"EnemyTestRoom2","path":"rooms/EnemyTestRoom2/EnemyTestRoom2.yy",},},
     {"roomId":{"name":"TestRoom","path":"rooms/TestRoom/TestRoom.yy",},},
+    {"roomId":{"name":"EnemyTestRoom2","path":"rooms/EnemyTestRoom2/EnemyTestRoom2.yy",},},
     {"roomId":{"name":"Platforming","path":"rooms/Platforming/Platforming.yy",},},
     {"roomId":{"name":"EnemyTestRoom","path":"rooms/EnemyTestRoom/EnemyTestRoom.yy",},},
     {"roomId":{"name":"TestRoomCamera","path":"rooms/TestRoomCamera/TestRoomCamera.yy",},},

@@ -28,7 +28,6 @@ exit
 	script_execute(state);
 
 	invulnerable = max(invulnerable-1, 0);
-	show_debug_message(locked);
           
 		/*      
 	if (place_meeting(x + hsp, y, oWall))
@@ -211,6 +210,17 @@ else    if (inst != noone and inst.image_angle != 0 and inst.image_angle != 180 
 					setOnGround(true);
 				}
 			}
+			
+			
+		//Wall jump reset
+		if(wallJumping)
+		{
+			wallJumpLock += 0.1;
+			if(wallJumpLock >= 1)
+			{
+				wallJumping = false;
+			}
+		}
 			
 /*
 	    if (vsp > 0 and place_meeting(x, y + vsp, oPlatform) and !keyDown) {
