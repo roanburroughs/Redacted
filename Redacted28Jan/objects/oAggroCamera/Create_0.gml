@@ -1,6 +1,6 @@
  // Inherit the parent event
 event_inherited();
-visiondistance=900
+//visiondistance=900
 state = ENEMYSTATE.IDLE;
 active=true
 createExecuteArea = instance_create_layer(x, y, "Enemies", oExecuteArea);

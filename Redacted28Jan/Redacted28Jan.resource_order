@@ -85,6 +85,8 @@
     {"name":"DarkRoom","order":1,"path":"rooms/DarkRoom/DarkRoom.yy",},
     {"name":"EnemyTestRoom","order":7,"path":"rooms/EnemyTestRoom/EnemyTestRoom.yy",},
     {"name":"EnemyTestRoom2","order":8,"path":"rooms/EnemyTestRoom2/EnemyTestRoom2.yy",},
+    {"name":"LevelTemplate","order":11,"path":"rooms/LevelTemplate/LevelTemplate.yy",},
+    {"name":"LevelTest1","order":12,"path":"rooms/LevelTest1/LevelTest1.yy",},
     {"name":"PLAT","order":4,"path":"rooms/PLAT/PLAT.yy",},
     {"name":"Platfo","order":2,"path":"rooms/Platfo/Platfo.yy",},
     {"name":"Platforming","order":3,"path":"rooms/Platforming/Platforming.yy",},

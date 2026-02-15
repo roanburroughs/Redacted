@@ -31,7 +31,7 @@ function EnemyCollision(){
 			}
 			
 			//Set vsp to 0 to collide
-			//vsp = 0;
+			vsp = 0;
 			
 	if vsp >= 0
 		{

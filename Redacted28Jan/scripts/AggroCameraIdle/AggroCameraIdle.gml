@@ -37,9 +37,9 @@ function AggroCameraIdle(draw=false){
 		
  		if(aim="bottomright")
 		{
-			angle1 =265
-			angle2 =365
-			anglesprite = sCamera_bottomleft
+			angle1 =255
+			angle2 =355
+			anglesprite = sCamera_bottomright
 		}
  
  if(aim="straightright")
@@ -67,7 +67,7 @@ function AggroCameraIdle(draw=false){
 	
 							 }
 					//function VisionCone
-				for(var i=angle1;i<=angle2;i++)
+				for(var i=angle1;i<=angle2;i+=precision)
 						{
 							var currentdistance = 0
 							 while( currentdistance<visiondistance)
@@ -82,7 +82,7 @@ function AggroCameraIdle(draw=false){
 								break	//end the while loop
 								}
 
-								currentdistance += 4
+								currentdistance += 5
 							}
 
 

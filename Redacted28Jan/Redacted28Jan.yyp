@@ -116,6 +116,8 @@
     {"id":{"name":"DarkRoom","path":"rooms/DarkRoom/DarkRoom.yy",},},
     {"id":{"name":"EnemyTestRoom","path":"rooms/EnemyTestRoom/EnemyTestRoom.yy",},},
     {"id":{"name":"EnemyTestRoom2","path":"rooms/EnemyTestRoom2/EnemyTestRoom2.yy",},},
+    {"id":{"name":"LevelTemplate","path":"rooms/LevelTemplate/LevelTemplate.yy",},},
+    {"id":{"name":"LevelTest1","path":"rooms/LevelTest1/LevelTest1.yy",},},
     {"id":{"name":"PLAT","path":"rooms/PLAT/PLAT.yy",},},
     {"id":{"name":"Platfo","path":"rooms/Platfo/Platfo.yy",},},
     {"id":{"name":"Platforming","path":"rooms/Platforming/Platforming.yy",},},
@@ -345,7 +347,9 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"LevelTest1","path":"rooms/LevelTest1/LevelTest1.yy",},},
     {"roomId":{"name":"TestRoom","path":"rooms/TestRoom/TestRoom.yy",},},
+    {"roomId":{"name":"LevelTemplate","path":"rooms/LevelTemplate/LevelTemplate.yy",},},
     {"roomId":{"name":"EnemyTestRoom2","path":"rooms/EnemyTestRoom2/EnemyTestRoom2.yy",},},
     {"roomId":{"name":"Platforming","path":"rooms/Platforming/Platforming.yy",},},
     {"roomId":{"name":"EnemyTestRoom","path":"rooms/EnemyTestRoom/EnemyTestRoom.yy",},},

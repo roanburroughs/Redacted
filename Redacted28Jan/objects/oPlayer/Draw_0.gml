@@ -1,3 +1,4 @@
+
 if(hurt)image_blend=c_red //temp
 else image_blend=c_white
 if(dead)
