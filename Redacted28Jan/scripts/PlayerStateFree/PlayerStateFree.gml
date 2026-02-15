@@ -23,7 +23,7 @@ function PlayerStateFree(){
 		//Walljump
 		if(keyJump) && (!onGround) && (atWall)
 		{
-			face = -face;
+			face = -face; //Turns player away from the wall
 			wallJumping = true;
 			wallJumpLock = 0;
 			hsp = lerp((-onwall * hsp_wallJump), 0, 0);

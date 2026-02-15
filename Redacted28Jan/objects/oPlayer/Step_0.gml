@@ -216,7 +216,7 @@ else    if (inst != noone and inst.image_angle != 0 and inst.image_angle != 180 
 		if(wallJumping)
 		{
 			wallJumpLock += 0.1;
-			if(wallJumpLock >= 1)
+			if(wallJumpLock >= 1) || (!key_jump_held)
 			{
 				wallJumping = false;
 			}

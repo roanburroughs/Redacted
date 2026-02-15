@@ -65,12 +65,11 @@ face = 1;
 grv = 0.475;
 grvWall = 0.275;
 onGround = true;
-atWall = false;
-wallJumpForgive = 0;
+
 moveDir = 0;
 moveSpd = 5;
 hsp = 0;
-hsp_wallJump = 7;
+
 vsp = 0;
 vspJump = -8;
 vspDoubleJump=-1;
@@ -81,9 +80,13 @@ hspAirtime = 0;
 vspAirtime = 0;
 weight = 0;
 
-onwall = 0;
-wallJumping = false;
-wallJumpLock = 0;
+//Wall Jump Variables
+atWall = false; //Are we colliding with a wall
+onwall = 0; //From which side are we touching the wall (Left = -1, Right = 1)
+wallJumping = false; //Are we wall jumping
+wallJumpLock = 0; //How long are we locked into wall jumping
+wallJumpForgive = 0; //How long are we allowed to move away from the wall while still being able to wall jump
+hsp_wallJump = 7; //Horizontal distance for wall jump
 
 canJump = 0; //are we touching the ground
 //candoublejump=true//made false when you dublejump,made true when vsp=0
