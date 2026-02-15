@@ -28,10 +28,10 @@ function EnemyCollision(){
 				{
 					y += _pixelCheck;
 				}
+				vsp = 0;
 			}
 			
 			//Set vsp to 0 to collide
-			vsp = 0;
 			
 	if vsp >= 0
 		{
