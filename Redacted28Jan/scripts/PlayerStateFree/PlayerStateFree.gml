@@ -9,17 +9,17 @@ function PlayerStateFree(){
 			
 			
 	//Accel and Decel	use lerps so 0 does nothing, 1 is instant max speed 
-   var deceleration=0.25 //how fast do we stop
-   var acceleration =1//0.025 //how fast do we speed up
-   var maxwalkspeed=8
+   var deceleration=0.1 //how fast do we stop
+   var acceleration =0.1//0.025 //how fast do we speed up
+   var maxwalkspeed=10
     var move = keyRight - keyLeft;
 	
-   if(key_right)
+   if(keyRight)
    {
 	 hsp=lerp(hsp,maxwalkspeed,acceleration)
    }
    
-   if(key_left)
+   if(keyLeft)
    {
 	hsp=lerp(hsp,-maxwalkspeed,acceleration)
    }
@@ -31,8 +31,9 @@ function PlayerStateFree(){
    
    
    
+if(   hsp>0 ) moveDir= 1
    
-   
+if(   hsp<0 ) moveDir= -1
    
 			
 			
@@ -57,7 +58,7 @@ function PlayerStateFree(){
 		//Get hsp
 		if(!wallJumping)
 		{
-		hsp = moveDir * moveSpd;
+	//	hsp = moveDir * moveSpd;
 		}
 		
 		//Walljump

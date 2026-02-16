@@ -45,6 +45,8 @@ exit
 	}
 	x += hsp;
 	*/
+	var collider = oWall or oEnemyTemp
+	
 	
 	var _subPixelX = .5;
 		if place_meeting(x + hsp, y, oWall)
