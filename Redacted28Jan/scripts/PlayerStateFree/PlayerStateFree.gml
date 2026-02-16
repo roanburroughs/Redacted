@@ -4,7 +4,48 @@ function PlayerStateFree(){
 		//Direction
 		if(!wallJumping)
 		{
-			moveDir = keyRight - keyLeft;
+			//moveDir = keyRight - keyLeft;
+			
+			
+			
+	//Accel and Decel	use lerps so 0 does nothing, 1 is instant max speed 
+   var deceleration=0.25 //how fast do we stop
+   var acceleration =1//0.025 //how fast do we speed up
+   var maxwalkspeed=8
+    var move = keyRight - keyLeft;
+	
+   if(key_right)
+   {
+	 hsp=lerp(hsp,maxwalkspeed,acceleration)
+   }
+   
+   if(key_left)
+   {
+	hsp=lerp(hsp,-maxwalkspeed,acceleration)
+   }
+   if(	(!keyLeft and !keyRight) or (keyRight and keyLeft)	)
+   {
+	hsp= lerp(hsp,0,deceleration)   
+	if(hsp<1 and hsp>-1) hsp=0
+   }
+   
+   
+   
+   
+   
+   
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
 		}
 		else
 		{
