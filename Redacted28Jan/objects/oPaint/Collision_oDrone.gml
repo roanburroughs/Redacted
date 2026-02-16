@@ -1,1 +1,1 @@
-ProcessPaintAttack(0, 1, 5, 1, 9, 0.01, 0, sPaint, sPaint);
+ProcessPaintAttack(0, 1, 5, 2, 1, 9, 0.01, 0, sPaint, sPaint);

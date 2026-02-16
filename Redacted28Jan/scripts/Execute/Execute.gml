@@ -32,10 +32,10 @@ function Execute(){
 	}
 	
 	
-	//attack type, damage, stun damage, hspknock, vspknock, hspairtime, vspairtime, sprite, mask
-	ProcessAttack(_attackTypeTemp, 100, 1, 2, 12, 0.01, 0, sPlayerExecute, sPlayerExecute_HB);
+	//attack type, damage, stun damage, hitstun, hspknock, vspknock, hspairtime, vspairtime, sprite, mask
+	ProcessAttack(_attackTypeTemp, 100, 1, 2, 2, 12, 0.01, 0, sPlayerExecute, sPlayerExecute_HB);
 
-	if(image_index = 11)
+	if(image_index >= 11)
 	{
 		instance_destroy(executeTarget);
 		executeReady = false;

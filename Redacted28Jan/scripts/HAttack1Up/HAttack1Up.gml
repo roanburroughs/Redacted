@@ -18,7 +18,7 @@ if(face>0){
 	
 	if(image_index>1)
 	{
-	hsp = 5*face;
+	hsp = (5*image_speed)*face;
 	}
 	else
 	{
@@ -36,10 +36,10 @@ if(face>0){
 	}
 
 
-	//attack type, damage, stun damage, hspknock, vspknock, hspairtime, vspairtime, sprite, mask
-	ProcessAttack(_attackTypeTemp, 2, 1, 12, 24, 0.67, -0.33, sPlayerAttackH1Up, sPlayerAttackH1Up_HB);
-	
-	if (image_index = 7)
+	//attack type, damage, stun damage, hitstun, hspknock, vspknock, hspairtime, vspairtime, sprite, mask
+	ProcessAttack(_attackTypeTemp, 2, 1, 6, 12, 24, 0.67, -0.33, sPlayerAttackH1Up, sPlayerAttackH1Up_HB);
+	show_debug_message(image_index)
+	if (image_index >= 7)
 	{
 		//sprite_index = idleSpr;
 		state = PlayerStateFree;

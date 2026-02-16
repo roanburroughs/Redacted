@@ -130,6 +130,7 @@ doublejumpSpr=sPlayerDoubleJump;
 
 poiseSpr = sPlayerPoise;
 parrySpr = sPlayerParry;
+deflectSpr = sPlayerDeflect;
 
 rangedSpr= sRangedTemp
 rangedmovingSpr =sRangedMovingTemp
@@ -148,6 +149,7 @@ riposteReady = false;
 executeReady = false;
 executing = false;
 executeTarget = 0;
+parried = false;
 
 hp = 100;
 invulnerable = 0;

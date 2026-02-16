@@ -22,7 +22,7 @@ function HAttack2(){
 	
 	if(image_index > 4 && image_index < 14)
 	{
-		hsp = 4*face;
+		hsp = (4*image_speed)*face;
 	}
 	
 	if(image_index > 14 && image_index < 16)
@@ -32,7 +32,7 @@ function HAttack2(){
 	
 	if(image_index > 16)
 	{
-		hsp = 1*face;
+		hsp = (1*image_speed)*face;
 	}
 		
 	if(image_index == 6)
@@ -40,11 +40,12 @@ function HAttack2(){
 		ds_list_clear(hitByAttack);
 	}
 	
-	//attack type, damage, stun damage, hspknock, vspknock, hspairtime, vspairtime, juggletime, sprite, mask
-	ProcessMultiAttack(0, 1, 1, 6, 6, 0.01, -0.1, 1, sPlayerAttackH2, sPlayerAttackH2_HB2);
-	//attack type, damage, stun damage, hspknock, vspknock, hspairtime, vspairtime, sprite, mask
-	//ProcessAttack(_attackTypeTemp, 6, 6, 8, 16, 0, -0.5, sPlayerAttackH2, sPlayerAttackH2_HB);
-	ProcessAttack(_attackTypeTemp, 6, 6, 4, 18, 0, -0.5, sPlayerAttackH2, sPlayerAttackH2_HB);
+	//attack type, damage, stun damage, hitstun, hspknock, vspknock, hspairtime, vspairtime, juggletime, sprite, mask
+	ProcessMultiAttack(0, 1, 1, 2, 6, 6, 0.01, -0.1, 1, sPlayerAttackH2, sPlayerAttackH2_HB2);
+	
+	//attack type, damage, stun damage, hitstun, hspknock, vspknock, hspairtime, vspairtime, sprite, mask
+	//ProcessAttack(_attackTypeTemp, 6, 6, 5, 8, 16, 0, -0.5, sPlayerAttackH2, sPlayerAttackH2_HB);
+	ProcessAttack(_attackTypeTemp, 6, 6, 5, 4, 18, 0, -0.5, sPlayerAttackH2, sPlayerAttackH2_HB);
 	
 	if(keyPressed_lightAttack && image_index > 12)
 	{
@@ -56,7 +57,7 @@ function HAttack2(){
 		state = HAttack3;
 	}
 	
-	if (image_index = 16)
+	if (image_index >= 16)
 	{
 		sprite_index = idleSpr;
 		state = PlayerStateFree;

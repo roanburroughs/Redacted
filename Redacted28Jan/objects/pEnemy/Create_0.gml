@@ -37,17 +37,20 @@ stateTarget = state;
 statePrevious = state;
 stateWait = 0;
 stateWaitDuration = 0;
-staggerTimer = 0;
-staggerDuration = 60;
 
 weight = 0;
+hitstun = 0;
 
 onGround = true;
 
 //Combat Variables
 hitByEnemyAttack = ds_list_create();
 parried = false;
+parryTimer = 0;
+parryDuration = 60;
 staggered = false;
+staggerTimer = 0;
+staggerDuration = 180;
 
 //Enemy Functions
 enemyScript[ENEMYSTATE.IDLE] = -1;

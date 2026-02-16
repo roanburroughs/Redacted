@@ -24,7 +24,7 @@ if sprite_index != sEnemyDroneBoom
 				{
 					if (object_is_ancestor(object_index, pEnemy))
 					{
-						HitEnemy(hitID, 1, 0, 20, 15, 15,
+						HitEnemy(hitID, 1, 20, 10, 13, 15, 15,
 								0.01, -0.66, other.id);
 					}
 					if(entityHitScript != -1)

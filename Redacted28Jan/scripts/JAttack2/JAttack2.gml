@@ -1,5 +1,6 @@
 function JAttack2(){
 	
+	var _attackTypeTemp = 1;
 	image_speed = 1;
 	
 if(face>0){
@@ -33,8 +34,8 @@ if(face>0){
 	{
 		vsp = 0;
 	}*/
-	
-	ProcessAttack(2, 2, 12, 0.01, -0.33, sPlayerAttackJ2, sPlayerAttackJ2_HB);
+	//attack type, damage, stun damage, hitstun, hspknock, vspknock, hspairtime, vspairtime, sprite, mask
+	ProcessAttack(_attackTypeTemp, 2, 2, 4, 2, 12, 0.01, -0.33, sPlayerAttackJ2, sPlayerAttackJ2_HB);
 	
 	if (keyPressed_lightAttack && image_index > 2)
 	{
@@ -55,7 +56,7 @@ if(face>0){
 	
 	if (image_index = 5)
 	{
-		sprite_index = jumpSpr;
+		sprite_index = sPlayerFall;
 		state = PlayerStateFree;
 	}
 	

@@ -8,11 +8,11 @@ function EnemyWait(){
 	{
 		sprite_index = sprIdle;
 	}
-	
+	/*
 	if(oPlayer.executing)
 	{
 		stateWaitDuration = 999;
-	}
+	}*/
 
 	if (++stateWait >= stateWaitDuration)
 	{
@@ -20,10 +20,6 @@ function EnemyWait(){
 		{
 			target = oPlayer;
 		}
-		//if(staggered)
-		//{
-			enemyPaint = 0;
-		//}
 		stateWait = 0;
 		state = stateTarget;
 	}

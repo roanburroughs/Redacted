@@ -24,7 +24,8 @@ exit
 	//Inputs
 	getControls();
 	framecounter++
-	image_speed=1 //putting this here since things like rise and fall set it to 0
+	//image_speed=1 //putting this here since things like rise and fall set it to 0
+	//commenting out for now while working with the parry, doesn't seem to break anything (yet)
 	script_execute(state);
 
 	invulnerable = max(invulnerable-1, 0);

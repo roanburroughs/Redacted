@@ -24,13 +24,22 @@ if(object_index = oDrone)
 
 	if((weight > 2) && (onGround) && (!staggered))
 	{
+		hsp = 0;
 		if(target != oPlayer)
 		{
 			target = oPlayer;
 		}
-		if (statePrevious != ENEMYSTATE.ATTACK) state = statePrevious;
-		else state = ENEMYSTATE.CHASE;
-		weight = 0;
+		if(weight > hitstun)
+		{
+			if (statePrevious != ENEMYSTATE.ATTACK) state = statePrevious;
+			else state = ENEMYSTATE.CHASE;
+			weight = 0;
+			hitstun = 0;
+		}
+		else
+		{
+			sprite_index = sprIdle;
+		}
 	}
 	
 	if( (object_index = oDrone) && (onGround) && (enemyPaint >= enemyPaintMax))
@@ -38,16 +47,31 @@ if(object_index = oDrone)
 		state = ENEMYSTATE.DRONE_DIE;
 	}
 	
-	if( (object_index = oEnemyTemp) && (onGround) && (staggered) )
+	if( (object_index = oEnemyTemp) && (weight>2) && (onGround) && (staggered) )
 	{
-		//var _execute = instance_create_layer(x, y, "Instances", oExecuteArea);
-		//hsp = 0;
-		//vsp = 0;
-		//enemySpeed = 2.75;
-		stateTarget = ENEMYSTATE.CHASE;
-		stateWaitDuration = 120;
-		state = ENEMYSTATE.WAIT;
-		//state = ENEMYSTATE.STAGGER;
+		hsp = 0;
+		
+		if(staggerTimer >= staggerDuration)
+		{
+			
+			if (statePrevious != ENEMYSTATE.ATTACK) state = statePrevious;
+			else state = ENEMYSTATE.CHASE;
+			weight = 0;
+			hitstun = 0;
+			staggerTimer = 0;
+			enemyPaint = 0;
+			staggered = false;
+		}
+		else
+		{
+			sprite_index = sprStagger;
+			staggerTimer++;
+		}
+		
+		if(target != oPlayer)
+		{
+			target = oPlayer;
+		}
 		
 	}
 	

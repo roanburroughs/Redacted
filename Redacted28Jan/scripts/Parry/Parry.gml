@@ -11,7 +11,7 @@ function Parry(){
 	
 	if(riposteReady)
 	{
-		state = Riposte;
+		state = Deflect;
 	}
 	/*if(riposteReady && keyPressed_heavyAttack) create an object that spawns in front of an enemy when riposteready = true
 	{											heavy attack inside object to riposte, object despawns after enough time

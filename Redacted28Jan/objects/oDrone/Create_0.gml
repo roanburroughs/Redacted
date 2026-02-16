@@ -11,6 +11,7 @@ searching = false;
 frames = 0;
 
 //EnemySprites
+sprIdle = sEnemyDrone;
 sprMove = sEnemyDrone;
 sprHurt = sEnemyDroneHurt;
 

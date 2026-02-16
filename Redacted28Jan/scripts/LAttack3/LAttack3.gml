@@ -23,15 +23,15 @@ function LAttack3(){
 	
 if(image_index>2 && image_index<4)
 	{
-	hsp= 4*face;
+	hsp= (4*image_speed)*face;
 	}
 	else
 	{
 		hsp=0;
 	}
 	
-	//attack type, damage, stun damage, hspknock, vspknock, hspairtime, vspairtime, sprite, mask
-	ProcessAttack(_attackTypeTemp, 2, 1, 2, 12, 0.01, 0, sPlayerAttackL3, sPlayerAttackL3_HB);
+	//attack type, damage, stun damage, hitstun, hspknock, vspknock, hspairtime, vspairtime, sprite, mask
+	ProcessAttack(_attackTypeTemp, 2, 1, 3, 2, 12, 0.01, 0, sPlayerAttackL3, sPlayerAttackL3_HB);
 	
 	if (keyPressed_lightAttack && image_index > 3)
 	{

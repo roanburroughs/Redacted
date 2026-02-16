@@ -1,4 +1,4 @@
-function HitEnemy(_enemy, _attackType, _playerDamage, _stunDamage, _playerKnockbackX, _playerKnockbackY,
+function HitEnemy(_enemy, _attackType, _playerDamage, _stunDamage, _hitstun, _playerKnockbackX, _playerKnockbackY,
 				_airtimeH, _airtimeV, _source){
 	with (_enemy)
 	{
@@ -6,11 +6,12 @@ function HitEnemy(_enemy, _attackType, _playerDamage, _stunDamage, _playerKnockb
 		{
 			enemyHP -= _playerDamage;
 			enemyPaint += _stunDamage;
+			hitstun = _hitstun;
 			flash = 1;
 			weight = 0;
 			hspAirtime = 0;
 			vspAirtime = 0;
-			staggerDuration = 0;
+			parryDuration = 0;
 			
 			if(staggered)
 			{

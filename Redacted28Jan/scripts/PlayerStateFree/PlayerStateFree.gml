@@ -10,7 +10,6 @@ function PlayerStateFree(){
 		{
 			moveDir = 0;
 		}
-		show_debug_message(doublejumping);
 		//Get my face
 		if moveDir != 0 { face = moveDir; };
 		

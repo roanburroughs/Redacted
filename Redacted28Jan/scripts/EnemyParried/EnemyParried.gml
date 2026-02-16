@@ -9,9 +9,9 @@ function EnemyParried(){
 		image_speed = 0;
 	}
 	
-	if (++staggerTimer >= staggerDuration)
+	if (++parryTimer >= parryDuration)
 	{
-	staggerTimer = 0;
+	parryTimer = 0;
 	state = stateTarget;
 	sprite_index = sprMove;
 	}
