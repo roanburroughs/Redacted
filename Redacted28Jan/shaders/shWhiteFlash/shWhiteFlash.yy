@@ -4,7 +4,7 @@
   "name":"shWhiteFlash",
   "parent":{
     "name":"Shaders",
-    "path":"folders/Shaders.yy",
+    "path":"folders/Sprites/Enemy Sprites/sTempRangedEnemy/Shaders.yy",
   },
   "resourceType":"GMShader",
   "resourceVersion":"2.0",

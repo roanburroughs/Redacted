@@ -6,7 +6,6 @@ function Parry(){
 		state = PlayerStateFree;
 	}, []);
 	
-	
 	sprite_index = parrySpr;
 	
 	if(riposteReady)
@@ -22,6 +21,7 @@ function Parry(){
 	{
 		//sprite_index = idleSpr;
 		//state = PlayerStateFree;
+		parrying = false;
 		time_source_start(_parryTime);
 	}
 }

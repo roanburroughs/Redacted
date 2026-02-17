@@ -6,7 +6,23 @@ function EnemyWait(){
 	}
 	else
 	{
-		sprite_index = sprIdle;
+		if(object_index = oEnemyTemp)
+		{
+			sprite_index = sprIdle;
+		}
+		
+		if(object_index = oRangedEnemyTemp)
+		{
+			sprite_index = sprShoot;
+			image_index = 0;
+			with(oRangedEnemyTemp)
+			{
+				if(fireCount >=3)
+				{
+					fireCount=0;
+				}
+			}
+		}
 	}
 	/*
 	if(oPlayer.executing)

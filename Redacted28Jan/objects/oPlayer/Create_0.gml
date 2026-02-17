@@ -69,6 +69,7 @@ onGround = true;
 moveDir = 0;
 moveSpd = 5;
 hsp = 0;
+maxSpeed = 10;
 
 vsp = 0;
 vspJump = -8;

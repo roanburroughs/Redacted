@@ -16,12 +16,14 @@ function PlayerStateFree(){
 	
    if(keyRight)
    {
-	 hsp=lerp(hsp,maxwalkspeed,acceleration)
+	 //hsp=lerp(hsp,maxwalkspeed,acceleration)
+	 hsp=lerp(hsp,maxSpeed,acceleration)
    }
    
    if(keyLeft)
    {
-	hsp=lerp(hsp,-maxwalkspeed,acceleration)
+	//hsp=lerp(hsp,-maxwalkspeed,acceleration)
+	hsp=lerp(hsp,-maxSpeed,acceleration)
    }
    if(	(!keyLeft and !keyRight) or (keyRight and keyLeft)	)
    {
@@ -70,6 +72,8 @@ if(   hsp<0 ) moveDir= -1
 			hsp = lerp((-onwall * hsp_wallJump), 0, 0);
 			vsp = vspJump;
 		}
+		
+		
 		
 	
 var inst = instance_nearest(x + hsp, y, oPaintedFloor) //interact with only this painted floor
@@ -234,6 +238,12 @@ else	if(vsp>0)
 		stateAttack = JAttack;
 		}
 	}
+	
+	if (keyPressed_heavyAttack && keyDown && !onGround)
+	{
+		state = PlayerStateAttack;
+		stateAttack = HeavyDownAir;
+	}
 	//
 	if(keyPressed_heavyAttack && executeReady)
 	{
@@ -245,21 +255,21 @@ else	if(vsp>0)
 	//Ranged
 	if(keyPressed_heavyAttack && !executeReady)
 	{
-		state = PlayerStateRangedAttack;
+		//state = PlayerStateRangedAttack;
 		
 		
 		 if(vsp>1 or vsp<-1)
 		{
-			stateAttack=AirRangedAttack
+			//stateAttack=AirRangedAttack
 		}
 		else if(hsp>1 or hsp<-1)
 		{
-			stateAttack=MovingRangedAttack
+			//stateAttack=MovingRangedAttack
 		}
 		else
 		{
 			//show_message("RANGED")
-			stateAttack=RangedAttack
+			//stateAttack=RangedAttack
 		}
 	 
 	}

@@ -12,7 +12,7 @@
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"pEnemy","path":"objects/pEnemy/pEnemy.yy",},"propertyId":{"name":"enemyWanderDistance","path":"objects/pEnemy/pEnemy.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"64",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"pEnemy","path":"objects/pEnemy/pEnemy.yy",},"propertyId":{"name":"enemyAggroRadius","path":"objects/pEnemy/pEnemy.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"228",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"pEnemy","path":"objects/pEnemy/pEnemy.yy",},"propertyId":{"name":"enemyHP","path":"objects/pEnemy/pEnemy.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"50",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"pEnemy","path":"objects/pEnemy/pEnemy.yy",},"propertyId":{"name":"enemyHP","path":"objects/pEnemy/pEnemy.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"20",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"pEnemy","path":"objects/pEnemy/pEnemy.yy",},"propertyId":{"name":"enemyAttackRadius","path":"objects/pEnemy/pEnemy.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"156",},
   ],
   "parent":{

@@ -3,14 +3,32 @@ function HitPlayer(_player, _enemyID, _damage, _knockbackX, _knockbackY, _airtim
 	with(_player)
 	{
 		var _distFrom = ((_enemyID.x) - (x));
+		if(_enemyID.object_index = oRangedEnemyTempProjectile)
+		{
+			_distFrom = -_distFrom;
+		}
 		if(flash > 0)
 		{
 			riposteReady = true;
-			_enemyID.hsp = 50*sign(_distFrom);
-			_enemyID.parryDuration = 60;
-			_enemyID.stateTarget = ENEMYSTATE.CHASE;
-			_enemyID.state = ENEMYSTATE.PARRIED;
+			if(_enemyID.object_index = oEnemyTemp)
+			{
+				_enemyID.hsp = 50*sign(_distFrom);
+				_enemyID.parryDuration = 60;
+				_enemyID.stateTarget = ENEMYSTATE.CHASE;
+				_enemyID.state = ENEMYSTATE.PARRIED;
+			}
+			if(_enemyID.object_index = oRangedEnemyTempProjectile)
+			{
+				//instance_destroy(_enemyID);
+				with(_enemyID)
+				{
+					reflected = true;
+					hsp = -hsp*2;
+				}
+			}
 		}
+		
+		
 		else if(state != PlayerStateDead)
 		{
 			hp -= _damage;
@@ -34,6 +52,14 @@ function HitPlayer(_player, _enemyID, _damage, _knockbackX, _knockbackY, _airtim
 				vspKnock = lengthdir_y(_knockbackY, _knockbackY);
 				hspAirtime = _airtimeH;
 				vspAirtime = _airtimeV;
+			}
+			
+			if(_enemyID.object_index = oRangedEnemyTempProjectile)
+			{
+				with(_enemyID)
+				{
+					instance_destroy();
+				}
 			}
 		}
 	}

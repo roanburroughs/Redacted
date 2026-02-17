@@ -38,6 +38,9 @@ function ProcessEnemyAttack(_enemyID, _damage, _knockbackX, _knockbackY, _airtim
 		}
 	}
 ds_list_destroy(hitByEnemyAttackNow);
+if(object_index = oEnemyTemp)
+{
 mask_index = sEnemyTemp;
+}
 	
 }

@@ -8,7 +8,6 @@ if(dead)
 //room_restart()//we should have an actual thing happen when you die, but for now just having the a statement for it is fine, so its jus room restart rn
 exit	
 }
-
 if(instance_exists(oTextBoxController))
 {
 //Things like gravity
@@ -115,7 +114,7 @@ else    if (inst != noone and inst.image_angle != 0 and inst.image_angle != 180 
 			//We're no longer on the ground
 			setOnGround(false);
 		}
-		
+		show_debug_message(image_index)
 	//Reset/Prepare jumping variables
 	if onGround
 	{
@@ -149,7 +148,7 @@ else    if (inst != noone and inst.image_angle != 0 and inst.image_angle != 180 
 	}*/
 	
 	//Cap falling speed
-	if vsp > termVel { vsp = termVel; };
+	//if vsp > termVel && state = PlayerStateFree { vsp = termVel; };
 	
 	//Upwards Y Collision (with ceiling slopes)
 	if vsp < 0 && place_meeting( x, y + vsp, oWall )

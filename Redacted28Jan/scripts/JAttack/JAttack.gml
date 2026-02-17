@@ -25,7 +25,7 @@ if(face>0){
 	
 	if (keyPressed_lightAttack && image_index > 2)
 	{
-		if(vsp<0)
+		if(!onGround)
 		{
 			state = JAttack2;
 		}

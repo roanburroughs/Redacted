@@ -38,6 +38,9 @@ function ProcessAttack(_attackType, _damage, _stunDamage, _hitstun, _knockbackX,
 		}
 	}
 ds_list_destroy(hitByAttackNow);
-mask_index = idleSpr;
+if(object_index = oPlayer)
+{
+	mask_index = idleSpr;
+}
 
 }

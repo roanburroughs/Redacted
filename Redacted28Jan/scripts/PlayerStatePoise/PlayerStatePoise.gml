@@ -17,6 +17,7 @@ function PlayerStatePoise(){
 	if((keyPressed_lightAttack) && (!keyRight) && (!keyLeft) && (!keyUp))
 	{
 		flash = 1;
+		parrying = true;
 		state = PlayerStateAttack;
 		stateAttack = Parry;
 	}
