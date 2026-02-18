@@ -156,6 +156,7 @@ executeReady = false;
 executing = false;
 executeTarget = 0;
 parried = false;
+speedBoostTimer = 0;
 
 hp = 100;
 invulnerable = 0;

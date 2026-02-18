@@ -8,6 +8,7 @@ function Deflect(){
 		flash = 0;
 		riposteReady = false;
 		parried = true;
+		speedBoostTimer = 300;
 		state = PlayerStateFree;
 	}
 

@@ -36,7 +36,8 @@ if(object_index = oDrone)
 		if(weight > hitstun)
 		{
 			if (statePrevious != ENEMYSTATE.ATTACK) state = statePrevious;
-			else state = ENEMYSTATE.CHASE;
+			else if (object_index = oEnemyTemp ) state = ENEMYSTATE.CHASE;
+			else if (object_index = oRangedEnemyTemp) state = ENEMYSTATE.IDLE;
 			weight = 0;
 			hitstun = 0;
 		}
