@@ -1,5 +1,6 @@
 	// Inherit the parent event
 event_inherited();
+paintedcolour=c_white
 
 function onFloorCheck(_val = true)
 {

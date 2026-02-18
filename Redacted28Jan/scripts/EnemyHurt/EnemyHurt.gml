@@ -1,11 +1,16 @@
 function EnemyHurt(){
 
+	if(paintedcolour=c_white){ paintcolourfromglobal()
+	paintedcolour=paintcolour	
+	}
+
 if(object_index = oEnemyTemp)
 {
 	sprite_index = sprMove;
 }
 if(object_index = oDrone || object_index = oRangedEnemyTemp)
 {
+
 	sprite_index = sprHurt;
 }
 EnemyCollision();

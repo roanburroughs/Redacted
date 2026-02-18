@@ -2,7 +2,24 @@ function AggroEnemy(){
 
 
 	//SET TO AGGRO STATE
+								with(oRangedEnemyTemp)
+								{
+									
 								
+									if (state=ENEMYSTATE.IDLE 
+										and
+										y>oPlayer.y-100
+										and
+										y<oPlayer.y+100
+										
+										
+										) 
+										{
+											state= ENEMYSTATE.ATTACK
+											target = oPlayer
+										}
+											
+								}
 								with (oEnemyTemp)
 								{
 								 	if(state =  ENEMYSTATE.WANDER )

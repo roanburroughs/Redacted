@@ -8,3 +8,6 @@ draw_sprite_ext( sprite_index,
 				 image_alpha);
 
 
+
+	image_blend = paintedcolour;
+
