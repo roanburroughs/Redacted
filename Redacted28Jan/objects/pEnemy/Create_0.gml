@@ -61,7 +61,7 @@ enemyScript[ENEMYSTATE.ATTACK] = -1;
 enemyScript[ENEMYSTATE.HURT] = -1;
 enemyScript[ENEMYSTATE.DIE] = -1;
 enemyScript[ENEMYSTATE.PARRIED] = EnemyParried;
-enemyScript[ENEMYSTATE.STAGGER] = EnemyStagger;
+//enemyScript[ENEMYSTATE.STAGGER] = EnemyStagger;
 enemyScript[ENEMYSTATE.WAIT] = EnemyWait;
 
 //enemyScript[ENEMYSTATE.DRONE_WANDER] = -1;

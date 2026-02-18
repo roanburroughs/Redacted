@@ -18,7 +18,7 @@ sprParried = sEnemyTempParried;
 //Enemy Scripts
 
 enemyScript[ENEMYSTATE.IDLE] = AggroCameraIdle
-enemyScript[ENEMYSTATE.STAGGER] = EnemyStagger;
+//enemyScript[ENEMYSTATE.STAGGER] = EnemyStagger;
 
 enemyScript[ENEMYSTATE.DIE] = EnemyDie;
 /*

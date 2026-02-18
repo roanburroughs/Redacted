@@ -1,3 +1,4 @@
+
 function PlayerStateIdle(){
 	if xspd == 0 && yspd == 0
 	{

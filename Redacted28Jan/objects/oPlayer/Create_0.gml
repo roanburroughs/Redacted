@@ -160,6 +160,7 @@ speedBoostTimer = 0;
 
 hp = 100;
 invulnerable = 0;
+maxinvulnerableframes =40
 flash = 0;
 flashShader = shWhiteFlash;
 uFlash = shader_get_uniform(flashShader, "flash");

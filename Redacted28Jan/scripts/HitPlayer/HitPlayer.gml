@@ -33,7 +33,7 @@ function HitPlayer(_player, _enemyID, _damage, _knockbackX, _knockbackY, _airtim
 		{
 			hp -= _damage;
 			weight = 0;
-			invulnerable = 40;
+			invulnerable = maxinvulnerableframes;
 			
 			if(hp <= 0)
 			{
