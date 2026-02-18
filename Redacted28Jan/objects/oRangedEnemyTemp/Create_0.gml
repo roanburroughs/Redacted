@@ -4,6 +4,7 @@ state = ENEMYSTATE.IDLE;
 
 inRange = false;
 fireCount = 0;
+chungus = false;
 
 //Enemy Sprites
 sprIdle = sTempRangedEnemyIdle;

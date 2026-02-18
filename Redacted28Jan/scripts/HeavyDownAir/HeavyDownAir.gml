@@ -8,7 +8,7 @@ function HeavyDownAir(){
 	}
 
 	//grav = 0.275
-	var _attackTypeTemp = 1;
+	var _attackTypeTemp = 2;
 	var _slowdown = 0;
 	
 	if(image_index < 8)

@@ -92,7 +92,7 @@ exit
 	
 	//Moving vertically
 
- if(keyDown) vsp += grv * 5;
+ if(keyDown) && (state=PlayerStateFree) vsp += grv * 5;
 
 else    if (inst != noone and inst.image_angle != 0 and inst.image_angle != 180 and inst.image_blend!=c_white)
     {
@@ -114,7 +114,7 @@ else    if (inst != noone and inst.image_angle != 0 and inst.image_angle != 180 
 			//We're no longer on the ground
 			setOnGround(false);
 		}
-		show_debug_message(image_index)
+		
 	//Reset/Prepare jumping variables
 	if onGround
 	{

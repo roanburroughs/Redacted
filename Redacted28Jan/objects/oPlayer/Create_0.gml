@@ -18,6 +18,7 @@ function setOnGround(_val = true)
 	{
 		onGround = true;
 		wallJumping = false;
+		freeReady = true;
 		coyoteHangTimer = coyoteHangFrames;
 	}
 	else
@@ -65,6 +66,8 @@ face = 1;
 grv = 0.475;
 grvWall = 0.275;
 onGround = true;
+acceleration = 0.1;
+deceleration = 0.1;
 
 moveDir = 0;
 moveSpd = 5;
@@ -87,7 +90,7 @@ onwall = 0; //From which side are we touching the wall (Left = -1, Right = 1)
 wallJumping = false; //Are we wall jumping
 wallJumpLock = 0; //How long are we locked into wall jumping
 wallJumpForgive = 0; //How long are we allowed to move away from the wall while still being able to wall jump
-hsp_wallJump = 7; //Horizontal distance for wall jump
+hsp_wallJump = 12; //Horizontal distance for wall jump
 
 canJump = 0; //are we touching the ground
 //candoublejump=true//made false when you dublejump,made true when vsp=0
@@ -95,8 +98,8 @@ candoublejump = false
 doublejumpmultiplier=1
 doublejumping=false
 canDash = true// false; //resets on touching ground
-dashDistance = 296;
-dashTime = 12;
+dashDistance = 351;
+dashTime = 24;
 dashcooldown=20 // time between dashes
 
 termVel = 8;
@@ -118,6 +121,8 @@ coyoteHangTimer = 0;
 //Jump buffer time
 coyoteJumpFrames = 4;
 coyoteJumpTimer = 0;
+
+freeReady = true;
 
 //Sprites
 maskSpr = sPlayerIdle;

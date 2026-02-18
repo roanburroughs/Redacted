@@ -15,6 +15,7 @@ function EnemyIdle(){
 			else
 			{
 				inRange = false;
+				chungus = false;
 			}
 		}
 		

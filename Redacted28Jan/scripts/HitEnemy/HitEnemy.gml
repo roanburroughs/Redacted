@@ -27,12 +27,13 @@ function HitEnemy(_enemy, _attackType, _playerDamage, _stunDamage, _hitstun, _pl
 			if(_attackType = 1)
 			{
 				//instance_create_layer(x, y-50, "Effects", oHeavyBlow);
-				ScreenShake(6, 30);
+				ScreenShake(4, 30);
 			}
 			
 			if(_attackType = 2)
 			{
-				instance_create_layer(x, y-50, "Effects", oDeathBlow);
+				//instance_create_layer(x, y-50, "Effects", oDeathBlow);
+				ScreenShake(6, 30);
 			}
 		
 			//Hurt or dead?

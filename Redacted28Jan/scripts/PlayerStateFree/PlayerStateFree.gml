@@ -4,17 +4,18 @@ function PlayerStateFree(){
 		//Direction
 		if(!wallJumping)
 		{
-			//moveDir = keyRight - keyLeft;
+			moveDir = keyRight - keyLeft;
 			
 			
-			
+		
 	//Accel and Decel	use lerps so 0 does nothing, 1 is instant max speed 
-   var deceleration=0.1 //how fast do we stop
-   var acceleration =0.1//0.025 //how fast do we speed up
-   var maxwalkspeed=10
-    var move = keyRight - keyLeft;
+   var _deceleration=0.1 //how fast do we stop
+   var _acceleration =0.1//0.025 //how fast do we speed up
+   var _maxwalkspeed=10
+    //var move = keyRight - keyLeft;
 	
-   if(keyRight)
+	hsp = lerp(hsp,(maxSpeed*moveDir),acceleration);
+  /* if(keyRight)
    {
 	 //hsp=lerp(hsp,maxwalkspeed,acceleration)
 	 hsp=lerp(hsp,maxSpeed,acceleration)
@@ -29,17 +30,22 @@ function PlayerStateFree(){
    {
 	hsp= lerp(hsp,0,deceleration)   
 	if(hsp<1 and hsp>-1) hsp=0
+   }*/
+   if(moveDir = 0)
+   {
+	   hsp= lerp(hsp,0,deceleration)   
+	if(hsp<1 and hsp>-1) hsp=0
    }
    
    
-   
+   /*
 if(   hsp>0 ) moveDir= 1
    
 if(   hsp<0 ) moveDir= -1
    
 			
 			
-			
+	*/		
 			
 			
 			
@@ -191,8 +197,14 @@ if(onGround) candoublejump=true
 		//dashDirection = moveDir;
 		dashSp = dashDistance/dashTime;
 		dashEnergy = dashDistance;
+		if(!onGround)
+		{
+			freeReady = false;
+		}
 		state = PlayerStateDash;
 	}
+	
+	
 
 //collision was here
 	
@@ -247,9 +259,9 @@ else	if(vsp>0)
 	//
 	if(keyPressed_heavyAttack && executeReady)
 	{
-		state = PlayerStateAttack;
-		stateAttack = Execute;
-		executing = true;
+		//state = PlayerStateAttack;
+		//stateAttack = Execute;
+		//executing = true;
 	}
  
 	//Ranged
