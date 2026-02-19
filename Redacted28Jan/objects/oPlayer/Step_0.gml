@@ -170,7 +170,6 @@ else    if (inst != noone and inst.image_angle != 0 and inst.image_angle != 180 
 		//Set vsp to 0 to collide
 		vsp = 0;
 	}
-	show_debug_message(wallJumpLock)
 	//Downwards Y Collision
 			if vsp >= 0
 			{
@@ -287,11 +286,19 @@ else    if (inst != noone and inst.image_angle != 0 and inst.image_angle != 180 
 				{
 					setOnGround(true);
 				}
-				
+				show_debug_message(maxSpeed)
 				if place_meeting( x, y+1, oConveyor)
 				{
 					var _chungus = instance_place(x, y+1, oConveyor)
-					hsp = hsp + 1.3*-sign(_chungus.image_xscale);
+					if(moveDir == sign(_chungus.image_xscale))
+					{
+						maxSpeed = 5;
+					}
+					else
+					{
+						maxSpeed = 10;
+					}
+					x += _chungus.conveyorspeed*-sign(_chungus.image_xscale);
 				}
 			}
 			

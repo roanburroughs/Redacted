@@ -38,14 +38,10 @@ function ProcessEnemyAttack(_enemyID, _damage, _knockbackX, _knockbackY, _airtim
 		}
 	}
 ds_list_destroy(hitByEnemyAttackNow);
-if(object_index = oEnemyTemp)
+if(object_is_ancestor(object_index, pEnemy))
 {
-mask_index = sEnemyTemp;
+mask_index = sprIdle;
 }
 
-if(object_index = oEnemy)
-{
-	mask_index = sDogIdle;
-}
-	
+
 }
