@@ -9,7 +9,6 @@ if(object_index = oEnemyTemp)
 	sprite_index = sprMove;
 }
 
-EnemyCollision();
 //At destination or given up
 if ((x == xTo) && (y == yTo)) || (timePassed > enemyWanderDistance / enemySpeed)
 {

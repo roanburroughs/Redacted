@@ -23,6 +23,10 @@ function EnemyWait(){
 				}
 			}
 		}
+		if(object_index = oEnemy)
+		{
+			sprite_index = sprIdle;
+		}
 	}
 	/*
 	if(oPlayer.executing)

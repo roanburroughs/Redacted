@@ -170,7 +170,7 @@ else    if (inst != noone and inst.image_angle != 0 and inst.image_angle != 180 
 		//Set vsp to 0 to collide
 		vsp = 0;
 	}
-	
+	show_debug_message(wallJumpLock)
 	//Downwards Y Collision
 			if vsp >= 0
 			{
@@ -205,11 +205,29 @@ else    if (inst != noone and inst.image_angle != 0 and inst.image_angle != 180 
 					setOnGround(true);
 					}
 				}
+				
+				if place_meeting( x, y + vsp, oConveyor )
+				{
+					var _pixelCheck = _subPixelY * sign(vsp);
+					while !place_meeting( x, y + _pixelCheck, oConveyor )
+					{
+						//y+= _pixelCheck;
+					}
+					vsp = 0;
+					setOnGround(true);
+					
+				}
 			
 				//Set if I'm on the ground
 				if place_meeting( x, y+1, oWall )
 				{
 					setOnGround(true);
+				}
+				
+				if place_meeting( x, y+1, oConveyor)
+				{
+					var _chungus = instance_place(x, y+1, oConveyor)
+					hsp = hsp + 1.3*-sign(_chungus.image_xscale);
 				}
 			}
 			

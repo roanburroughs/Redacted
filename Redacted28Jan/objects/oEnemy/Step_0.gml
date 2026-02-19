@@ -12,5 +12,5 @@ exit;
 
 if (vulnerable == true)
 {
-sprite_index=dog_painted
+sprite_index=sDogStagger;
 }

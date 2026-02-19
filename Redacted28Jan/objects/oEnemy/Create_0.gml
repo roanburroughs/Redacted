@@ -6,11 +6,12 @@ vulnerable = false;
 paintedcolour=c_red///placeholder
 
 //Enemy Sprites
-sprMove = dog_moving
-sprTelegraph = dog_leap_ready;
-sprAttack = dog_attack;
+sprMove = sDogIdle
+sprAttack = sDogAttack;
+sprIdle = sDogIdle;
 //sprDie = sEnemy;
-//sprHurt = sEnemy;
+sprHurt = sDogHurt;
+sprStagger = sDogStagger
 
 //Enemy Scripts
 enemyScript[ENEMYSTATE.WANDER] = EnemyWander;

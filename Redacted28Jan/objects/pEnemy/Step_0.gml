@@ -1,4 +1,5 @@
 event_inherited()
+EnemyCollision();
 //Execute State Machine
 /*if (!global.gamePaused)
 {*/

@@ -69,6 +69,7 @@ if(   hsp<0 ) moveDir= -1
 	//	hsp = moveDir * moveSpd;
 		}
 		
+		
 		//Walljump
 		if(keyJump) && (!onGround) && (atWall)
 		{

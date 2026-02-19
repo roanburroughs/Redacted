@@ -16,7 +16,6 @@ function onFloorCheck(_val = true)
 
 //Intrinsic variables
 state = ENEMYSTATE.IDLE;
-stateEnemyAttack = WolfAttack;
 hsp = 0;
 vsp = 0;
 grav = .275;

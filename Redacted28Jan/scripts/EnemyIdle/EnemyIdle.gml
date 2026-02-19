@@ -1,5 +1,4 @@
 function EnemyIdle(){
-	EnemyCollision();
 	hsp = 0;
 	
 	if (++aggroCheck >= aggroCheckDuration)

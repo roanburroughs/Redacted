@@ -1,5 +1,4 @@
 function EnemyParried(){
-	EnemyCollision();
 	
 	sprite_index = sprParried;
 	hsp = 0;

@@ -14,16 +14,17 @@ if(framecounter %3=0)
 		}
 }
 	vsp += grv;
-	var _freeReady = true;
-	show_debug_message(_freeReady)
 	//X Movement
 	hsp = face * dashSp;
+	var _oneDirection = false;
 	
 	//vsp = -0.01;
 	//Get face
-	if moveDir != 0
+	// moveDir = keyRight - keyLeft;
+	
+	if (moveDir != 0)
 	{
-		face = moveDir;
+		//face = moveDir;
 	}
 	
 	/* uncomment to soar like knuckles the unchuckles
@@ -36,6 +37,7 @@ if(framecounter %3=0)
 	{
 		jumpKeyBufferTimer = bufferTime;
 		freeReady = false;
+		_oneDirection = true;
 	}
 	if jumpKeyBufferTimer > 0
 	{
@@ -88,17 +90,17 @@ if(framecounter %3=0)
 		state = PlayerStateAttack;
 		stateAttack = HeavyDownAir;
 	}
-	
-	if(keyJump) && (!onGround) && (atWall)
+		
+		if(keyJump) && (!onGround) && (atWall)
 		{
-			canDash = false;
 			alarm[0] = dashcooldown;
-			face = -face; //Turns player away from the wall
+			face = -face;
 			wallJumping = true;
 			wallJumpLock = 0;
 			hsp = lerp((-onwall * hsp_wallJump), 0, 0);
-			vsp = vspJump;
-			state = PlayerStateFree;
+			vsp = vspJump*2;
+			canDash = false;
+			alarm[0] = dashcooldown;
 		}
 	
 	

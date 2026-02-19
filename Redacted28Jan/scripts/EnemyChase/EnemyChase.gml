@@ -2,8 +2,6 @@ function EnemyChase(){
 sprite_index = sprMove;
 //audio_play_sound(DogAlert,10,false,1)
 
-EnemyCollision();
-
 if (instance_exists(target))
 {
 	xTo = target.x;
@@ -32,9 +30,16 @@ if (instance_exists(target))
  //commented out because there's no current enemy attack animation
 if (instance_exists(target)) && (point_distance(x, y, target.x, target.y) <= enemyAttackRadius)
 {
+	if(object_index = oEnemyTemp)
+	{
+		stateEnemyAttack = WolfAttack;
+	}
+	if(object_index = oEnemy)
+	{
+		stateEnemyAttack = DogAttack;
+	}
 	state = ENEMYSTATE.ATTACK;
-	stateEnemyAttack = WolfAttack;
-	//sprite_index = sprAttack;
+	sprite_index = sprAttack;
 	image_index = 0;
 	image_speed = 1.0;
 	//target 8px past the player

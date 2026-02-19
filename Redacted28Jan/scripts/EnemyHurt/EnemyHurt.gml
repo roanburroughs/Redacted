@@ -13,7 +13,6 @@ if(object_index = oDrone || object_index = oRangedEnemyTemp)
 
 	sprite_index = sprHurt;
 }
-EnemyCollision();
 if(object_index = oDrone)
 {
 	grav = .275;
@@ -42,6 +41,7 @@ if(object_index = oDrone)
 		{
 			if (statePrevious != ENEMYSTATE.ATTACK) state = statePrevious;
 			else if (object_index = oEnemyTemp ) state = ENEMYSTATE.CHASE;
+			else if (object_index = oEnemy) state = ENEMYSTATE.CHASE;
 			else if (object_index = oRangedEnemyTemp) state = ENEMYSTATE.IDLE;
 			weight = 0;
 			hitstun = 0;
@@ -58,6 +58,34 @@ if(object_index = oDrone)
 	}
 	
 	if( (object_index = oEnemyTemp) && (weight>2) && (onGround) && (staggered) )
+	{
+		hsp = 0;
+		
+		if(staggerTimer >= staggerDuration)
+		{
+			
+			if (statePrevious != ENEMYSTATE.ATTACK) state = statePrevious;
+			else state = ENEMYSTATE.CHASE;
+			weight = 0;
+			hitstun = 0;
+			staggerTimer = 0;
+			enemyPaint = 0;
+			staggered = false;
+		}
+		else
+		{
+			sprite_index = sprStagger;
+			staggerTimer++;
+		}
+		
+		if(target != oPlayer)
+		{
+			target = oPlayer;
+		}
+		
+	}
+	
+	if( (object_index = oEnemy) && (weight>2) && (onGround) && (staggered) )
 	{
 		hsp = 0;
 		
