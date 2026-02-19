@@ -19,7 +19,7 @@ if(face>0){
 		hsp = 0;
 	}
 	//attack type, damage, stun damage, hitstun, hspknock, vspknock, hspairtime, vspairtime, sprite, mask
-	ProcessAttack(_attackTypeTemp, 2, 1, 3, 2, 12, 0.01, 0, sPlayerAttackL1, sPlayerAttackL1_HB);
+	ProcessAttack(_attackTypeTemp, 2, 1, 6, 2, 12, 0.01, 0, sPlayerAttackL1, sPlayerAttackL1_HB);
 	
 	if (keyPressed_lightAttack && image_index > 1)
 	{

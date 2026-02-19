@@ -6,7 +6,7 @@ function EnemyWait(){
 	}
 	else
 	{
-		if(object_index = oEnemyTemp)
+		if(object_index != oRangedEnemyTemp)
 		{
 			sprite_index = sprIdle;
 		}
@@ -22,10 +22,6 @@ function EnemyWait(){
 					fireCount=0;
 				}
 			}
-		}
-		if(object_index = oEnemy)
-		{
-			sprite_index = sprIdle;
 		}
 	}
 	/*

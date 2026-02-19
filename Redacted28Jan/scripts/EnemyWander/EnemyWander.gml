@@ -1,10 +1,5 @@
 function EnemyWander(){
-if(object_index = oEnemy)
-{
-	sprite_index = sprMove;
-}
-
-if(object_index = oEnemyTemp)
+if(object_index = oEnemy) || (object_index = oEnemyTemp) || (object_index = oShieldEnemyTemp)
 {
 	sprite_index = sprMove;
 }
@@ -63,7 +58,7 @@ else //Move towards new destination
 	}
 }
 
-if(hsp = 0 && object_index = oEnemyTemp)
+if(hsp = 0 && ((object_index = oEnemyTemp) || (object_index = oEnemy) || (object_index = oShieldEnemyTemp)))
 	{
 		sprite_index = sprIdle;
 	}

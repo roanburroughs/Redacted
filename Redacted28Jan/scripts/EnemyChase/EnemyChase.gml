@@ -23,7 +23,6 @@ if (instance_exists(target))
 		//vsp = lengthdir_y(_distanceToGo, dir); //better for flying enemies
 	}
 	if (hsp != 0) image_xscale = sign(-hsp);
-
 }
 
 //Check if close enough to launch an attack

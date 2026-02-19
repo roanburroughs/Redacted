@@ -31,7 +31,7 @@ if(image_index>2 && image_index<4)
 	}
 	
 	//attack type, damage, stun damage, hitstun, hspknock, vspknock, hspairtime, vspairtime, sprite, mask
-	ProcessAttack(_attackTypeTemp, 2, 1, 3, 2, 12, 0.01, 0, sPlayerAttackL3, sPlayerAttackL3_HB);
+	ProcessAttack(_attackTypeTemp, 2, 1, 6, 2, 12, 0.01, 0, sPlayerAttackL3, sPlayerAttackL3_HB);
 	
 	if (keyPressed_lightAttack && image_index > 3)
 	{
