@@ -357,6 +357,7 @@
     {"id":{"name":"sTempRangedEnemyIdle","path":"sprites/sTempRangedEnemyIdle/sTempRangedEnemyIdle.yy",},},
     {"id":{"name":"sTempRangedEnemyProjectile","path":"sprites/sTempRangedEnemyProjectile/sTempRangedEnemyProjectile.yy",},},
     {"id":{"name":"sTempRangedEnemyShoot","path":"sprites/sTempRangedEnemyShoot/sTempRangedEnemyShoot.yy",},},
+    {"id":{"name":"sTempShieldEnemyIdle","path":"sprites/sTempShieldEnemyIdle/sTempShieldEnemyIdle.yy",},},
     {"id":{"name":"sTextBox","path":"sprites/sTextBox/sTextBox.yy",},},
     {"id":{"name":"sTextUI","path":"sprites/sTextUI/sTextUI.yy",},},
     {"id":{"name":"sTileset","path":"sprites/sTileset/sTileset.yy",},},

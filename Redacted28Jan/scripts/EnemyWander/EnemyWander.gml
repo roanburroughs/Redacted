@@ -1,7 +1,7 @@
 function EnemyWander(){
 if(object_index = oEnemy)
 {
-	sprite_index = dog_moving;
+	sprite_index = sprMove;
 }
 
 if(object_index = oEnemyTemp)
@@ -48,11 +48,13 @@ else //Move towards new destination
 	{
 		if(hsp>0)
 		{
-			image_xscale = -1
+			//image_xscale = -1;
+			image_xscale = -abs(image_xscale)
 		}
 		else
 		{
-			image_xscale = 1
+			//image_xscale = 1;
+			image_xscale = abs(image_xscale)
 		}
 	}
 	if (hsp != 0)

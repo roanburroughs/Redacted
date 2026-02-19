@@ -25,6 +25,7 @@ function setOnGround(_val = true)
 	{
 		onGround = false;
 		coyoteHangTimer = 0;
+		myFloorPlat = noone;
 	}
 }
 
@@ -121,6 +122,7 @@ coyoteHangTimer = 0;
 //Jump buffer time
 coyoteJumpFrames = 4;
 coyoteJumpTimer = 0;
+myFloorPlat = noone;
 
 freeReady = true;
 

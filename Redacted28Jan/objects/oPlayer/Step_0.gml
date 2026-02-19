@@ -211,12 +211,76 @@ else    if (inst != noone and inst.image_angle != 0 and inst.image_angle != 180 
 					var _pixelCheck = _subPixelY * sign(vsp);
 					while !place_meeting( x, y + _pixelCheck, oConveyor )
 					{
-						//y+= _pixelCheck;
+						y+= _pixelCheck;
 					}
 					vsp = 0;
 					setOnGround(true);
-					
 				}
+				
+				//Check for solid and semisolid platforms under me
+		var _clampvsp = max( 0, vsp );
+		var _list = ds_list_create(); //Create a DS list to store all of the objects we run into
+		var _array = array_create(0);
+		array_push( _array, oWall, oElevator );
+		
+		//Do the actual check and add objects to list
+		var _listSize = instance_place_list( x, y+1 + _clampvsp + 8, _array, _list, false );
+		
+		//Loop through the colliding instances and only return one if its top is below the player
+		for( var i = 0; i < _listSize; i++ )
+		{
+			//Get an instance of oWall or oSemiSolidWall from the list
+			var _listInst = _list[| i];
+			
+			//Avoid magnetism
+			if ( _listInst.vsp <= vsp || instance_exists(myFloorPlat) )
+			&& ( _listInst.vsp < 0 || place_meeting( x, y+1 + _clampvsp, _listInst ) )
+			{
+				//Return a solid wall or any semi solid walls that are below the player
+				if _listInst.object_index == oWall
+				|| object_is_ancestor( _listInst.object_index, oWall )
+				|| floor(bbox_bottom) <= ceil( _listInst.bbox_top - _listInst.vsp )
+				{
+					//Return the "highest" wall object
+					if !instance_exists(myFloorPlat)
+					|| _listInst.bbox_top + _listInst.vsp <= myFloorPlat.bbox_top + myFloorPlat.vsp
+					|| _listInst.bbox_top + _listInst.vsp <= bbox_bottom
+					{
+						myFloorPlat = _listInst;
+					}
+				}
+			}
+		}
+		
+		//Destroy the DS list to avoid memory leak
+		ds_list_destroy(_list);
+		
+		//One last check to make sure the floor platform is actually below us
+		if instance_exists(myFloorPlat) && !place_meeting( x, y + 8, myFloorPlat )
+		{
+			myFloorPlat = noone;
+		}
+		
+		//Land on the ground platform if there is one
+		if instance_exists(myFloorPlat)
+		{
+			//Scoot up to our wall precisely
+			var _subPixel = .5;
+			while !place_meeting( x, y + _subPixel, myFloorPlat ) && !place_meeting( x, y, oWall ) { y += _subPixel; };
+			//Make sure we don't end up below the top of a semi solid
+			if myFloorPlat.object_index == oElevator || object_is_ancestor(myFloorPlat.object_index, oElevator)
+			{
+				while place_meeting( x, y, myFloorPlat ) { y -= _subPixel; };
+			}
+			//Floor the y variable
+			y = floor(y);
+			
+			//Collide with the ground
+			vsp = 0;
+			setOnGround(true);
+		}
+				
+				
 			
 				//Set if I'm on the ground
 				if place_meeting( x, y+1, oWall )
