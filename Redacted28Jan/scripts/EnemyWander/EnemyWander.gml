@@ -59,7 +59,7 @@ else //Move towards new destination
 	}
 	if (hsp != 0)
 	{
-		image_xscale = sign(-hsp);
+		//image_xscale = sign(-hsp);
 	}
 }
 

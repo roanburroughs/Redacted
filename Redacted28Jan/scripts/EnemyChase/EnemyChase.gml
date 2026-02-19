@@ -22,7 +22,7 @@ if (instance_exists(target))
 		hsp = lengthdir_x(_distanceToGo, dir);
 		//vsp = lengthdir_y(_distanceToGo, dir); //better for flying enemies
 	}
-	if (hsp != 0) image_xscale = sign(-hsp);
+	//if (hsp != 0) image_xscale = sign(-hsp);
 
 }
 
