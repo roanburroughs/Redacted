@@ -39,7 +39,7 @@ if (instance_exists(target)) && (point_distance(x, y, target.x, target.y) <= ene
 		stateEnemyAttack = DogAttack;
 	}
 	state = ENEMYSTATE.ATTACK;
-	sprite_index = sprAttack;
+	//sprite_index = sprAttack; //if you don't comment this out, it breaks the entire attack system for enemies???
 	image_index = 0;
 	image_speed = 1.0;
 	//target 8px past the player

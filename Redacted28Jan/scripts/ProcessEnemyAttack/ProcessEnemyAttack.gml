@@ -42,5 +42,10 @@ if(object_index = oEnemyTemp)
 {
 mask_index = sEnemyTemp;
 }
+
+if(object_index = oEnemy)
+{
+	mask_index = sDogIdle;
+}
 	
 }
