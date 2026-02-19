@@ -11,6 +11,7 @@ function onFloorCheck(_val = true)
 	else
 	{
 		onGround = false;
+		myFloorPlat = noone;
 	}
 }
 
@@ -43,6 +44,7 @@ weight = 0;
 hitstun = 0;
 
 onGround = true;
+myFloorPlat = noone;
 
 //Combat Variables
 hitByEnemyAttack = ds_list_create();

@@ -28,7 +28,8 @@ if(object_index = oDrone)
 			vsp = lerp(vspKnock, 0, vspAirtime); //vertical knockback
 		}
 		
-	//	if (hsp != 0) image_xscale = sign(hsp);
+		//if (hsp != 0) image_xscale = sign(hsp); //commenting this out fixes the dog, but breaks the direction every other enemy moves in
+		if (hsp != 0) image_xscale = sign(hsp)*abs(image_xscale);
 
 	if((weight > 2) && (onGround) && (!staggered))
 	{

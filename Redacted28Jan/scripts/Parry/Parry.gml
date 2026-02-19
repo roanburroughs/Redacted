@@ -3,6 +3,7 @@ function Parry(){
 	var _parryTime = time_source_create(time_source_game, 6, time_source_units_frames, function()
 	{
 		sprite_index = idleSpr;
+		parryCooldown = 30;
 		state = PlayerStateFree;
 	}, []);
 	

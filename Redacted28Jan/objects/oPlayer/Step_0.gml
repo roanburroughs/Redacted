@@ -28,7 +28,6 @@ exit
 	script_execute(state);
 
 	invulnerable = max(invulnerable-1, 0);
-          
 		/*      
 	if (place_meeting(x + hsp, y, oWall))
 	{
@@ -286,7 +285,6 @@ else    if (inst != noone and inst.image_angle != 0 and inst.image_angle != 180 
 				{
 					setOnGround(true);
 				}
-				show_debug_message(maxSpeed)
 				if place_meeting( x, y+1, oConveyor)
 				{
 					var _chungus = instance_place(x, y+1, oConveyor)
@@ -319,6 +317,15 @@ else    if (inst != noone and inst.image_angle != 0 and inst.image_angle != 180 
 			{
 				speedBoostTimer--;
 				break
+			}
+		}
+		
+		if(parryCooldown > 0)
+		{
+			while (parryCooldown > 0)
+			{
+				parryCooldown--;
+				break;
 			}
 		}
 		

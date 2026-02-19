@@ -288,9 +288,12 @@ else	if(vsp>0)
 	}
 	
 	
-	if (keyPressed_Poise)
+	if (keyPressed_Poise) && (parryCooldown <= 0)
 	{	
-		state = PlayerStatePoise;
+		flash = 1;
+		parrying = true;
+		state = PlayerStateAttack;
+		stateAttack = Parry;
 	}
 	
 	

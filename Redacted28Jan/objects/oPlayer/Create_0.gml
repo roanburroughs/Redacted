@@ -158,6 +158,7 @@ executeReady = false;
 executing = false;
 executeTarget = 0;
 parried = false;
+parryCooldown = 0;
 speedBoostTimer = 0;
 
 hp = 100;

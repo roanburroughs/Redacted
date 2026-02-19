@@ -8,7 +8,7 @@ if (instance_exists(target))
 	yTo = target.y;
 	
 	
-	
+	var _distFrom = ( (target.x) - (x));
 	var _distanceToGo = point_distance(x, y, xTo, yTo);
 	image_speed = 1.0;
 	dir = point_direction(x, y, xTo, yTo);
@@ -23,6 +23,7 @@ if (instance_exists(target))
 		//vsp = lengthdir_y(_distanceToGo, dir); //better for flying enemies
 	}
 	//if (hsp != 0) image_xscale = sign(-hsp);
+	if (hsp != 0) image_xscale = -sign(hsp)*abs(image_xscale);
 
 }
 
