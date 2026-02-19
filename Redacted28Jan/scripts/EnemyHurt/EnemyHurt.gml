@@ -28,7 +28,7 @@ if(object_index = oDrone)
 			vsp = lerp(vspKnock, 0, vspAirtime); //vertical knockback
 		}
 		
-		if (hsp != 0) image_xscale = sign(hsp);
+	//	if (hsp != 0) image_xscale = sign(hsp);
 
 	if((weight > 2) && (onGround) && (!staggered))
 	{
