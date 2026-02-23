@@ -113,6 +113,7 @@
     {"id":{"name":"oSpray5","path":"objects/oSpray5/oSpray5.yy",},},
     {"id":{"name":"oSpray6","path":"objects/oSpray6/oSpray6.yy",},},
     {"id":{"name":"oSpray7","path":"objects/oSpray7/oSpray7.yy",},},
+    {"id":{"name":"oStoryTrigger","path":"objects/oStoryTrigger/oStoryTrigger.yy",},},
     {"id":{"name":"oTextBoxController","path":"objects/oTextBoxController/oTextBoxController.yy",},},
     {"id":{"name":"oTime","path":"objects/oTime/oTime.yy",},},
     {"id":{"name":"oTimedfloor","path":"objects/oTimedfloor/oTimedfloor.yy",},},

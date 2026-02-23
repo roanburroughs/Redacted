@@ -17,10 +17,10 @@ if(instance_exists(oTextBoxController))
         if (alarm[i] > -1) alarm[i] += 1;
     }
 	
-exit
+//exit
 	
 }	
-	//Inputs
+else {	//Inputs
 	getControls();
 	framecounter++
 	//image_speed=1 //putting this here since things like rise and fall set it to 0
@@ -43,6 +43,7 @@ exit
 	}
 	x += hsp;
 	*/
+}
 	var collider = oWall or oEnemyTemp
 	
 	
@@ -204,16 +205,16 @@ else    if (inst != noone and inst.image_angle != 0 and inst.image_angle != 180 
 					}
 				}
 				
-				if place_meeting( x, y + vsp, oConveyor )
-				{
-					var _pixelCheck = _subPixelY * sign(vsp);
-					while !place_meeting( x, y + _pixelCheck, oConveyor )
-					{
-						y+= _pixelCheck;
-					}
-					vsp = 0;
-					setOnGround(true);
-				}
+				//if place_meeting( x, y + vsp, oConveyor )
+				//{
+				//	var _pixelCheck = _subPixelY * sign(vsp);
+				//	while !place_meeting( x, y + _pixelCheck, oConveyor )
+				//	{
+			//			y+= _pixelCheck;
+				//	}
+			//		vsp = 0;
+			//		setOnGround(true);
+			//	}
 				
 				//Check for solid and semisolid platforms under me
 		var _clampvsp = max( 0, vsp );
@@ -285,7 +286,7 @@ else    if (inst != noone and inst.image_angle != 0 and inst.image_angle != 180 
 				{
 					setOnGround(true);
 				}
-				if place_meeting( x, y+1, oConveyor)
+				if (place_meeting( x, y+1, oConveyor) and !instance_exists(oTextBoxController))
 				{
 					var _chungus = instance_place(x, y+1, oConveyor)
 					if(moveDir == sign(_chungus.image_xscale))

@@ -1,4 +1,5 @@
-
+x=96
+y=736
 instance_create_depth(x,y,-1000,oNameTag)
 instance_create_depth(x,y,depth+1,oCharacter_Slot_1)
 

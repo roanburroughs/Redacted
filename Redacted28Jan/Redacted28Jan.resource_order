@@ -82,6 +82,7 @@
     {"name":"oSpray5","order":5,"path":"objects/oSpray5/oSpray5.yy",},
     {"name":"oSpray6","order":6,"path":"objects/oSpray6/oSpray6.yy",},
     {"name":"oSpray7","order":7,"path":"objects/oSpray7/oSpray7.yy",},
+    {"name":"oStoryTrigger","order":50,"path":"objects/oStoryTrigger/oStoryTrigger.yy",},
     {"name":"oTextBoxController","order":1,"path":"objects/oTextBoxController/oTextBoxController.yy",},
     {"name":"oTime","order":22,"path":"objects/oTime/oTime.yy",},
     {"name":"oTimedfloor","order":10,"path":"objects/oTimedfloor/oTimedfloor.yy",},
