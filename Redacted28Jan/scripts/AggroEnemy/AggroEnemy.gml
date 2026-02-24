@@ -30,7 +30,7 @@ function AggroEnemy(){
 								
 								with (oDrone)
 								{
-									if(state = ENEMYSTATE.DRONE_WANDER)
+									if(state = ENEMYSTATE.DRONE_WANDER	)
 									{
 										state = ENEMYSTATE.DRONE_CHASE;
 										target = oPlayer;
@@ -38,14 +38,11 @@ function AggroEnemy(){
 								}
 								
 								
-									with (oDrone)
+								with(oDartTrap)
 								{
-								 	if(state =  ENEMYSTATE.DRONE_WANDER )
-									{state = ENEMYSTATE.DRONE_CHASE // this aint doing anything
-										target = oPlayer;
-									}
-										
+								if(aggro=false and alarm[0]=-1)aggro=true	
 								}
+								 
 
 
 }

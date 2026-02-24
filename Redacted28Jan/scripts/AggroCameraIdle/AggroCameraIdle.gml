@@ -2,7 +2,7 @@
 
 function AggroCameraIdle(draw=false){
 		 //
-		 
+		
 		 
 	//	 aim=choose("bottomleft","straightleft","topleft","down","bottomright","straightright","topright")
 	//	 show_debug_message(fps)
@@ -105,7 +105,7 @@ function AggroCameraIdle(draw=false){
 									if(collision_line(x,y,x+lengthdir_x(currentdistance,i),y+lengthdir_y(currentdistance,i),oPlayer,false,false))
 									{
 									//	show_message("aggro") //I mean it works
-								
+								// show_message("aggro")
 									AggroEnemy()
 									oAggroCamera.active=false
 									alarm[10]=100

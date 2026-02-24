@@ -7,7 +7,7 @@ function ShieldEnemyAttack(){
 		hsp = 6*-image_xscale;
 	}
 	
-	ProcessEnemyAttack(id, 5, 10, 2, 0.01, 0, sTempShieldEnemyAttack, sTempShieldEnemyAttack_HB);
+if( instance_exists(oPlayer) and !oPlayer.hurt)	ProcessEnemyAttack(id, 5, 10, 2, 0.01, 0, sTempShieldEnemyAttack, sTempShieldEnemyAttack_HB);
 	
 	if (floor(image_index) == 6)
 	{

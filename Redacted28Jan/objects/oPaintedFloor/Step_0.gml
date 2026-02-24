@@ -1,5 +1,5 @@
 
-if(point_distance(x,y,oPlayer.x,oPlayer.y)<100 and image_blend=c_white){
+if(instance_exists(oPlayer) and point_distance(x,y,oPlayer.x,oPlayer.y)<100 and image_blend=c_white){
 if(oPlayer.state = PlayerStateAttack
 or oPlayer.state = LAttack 
 or oPlayer.state = LAttack2 

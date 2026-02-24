@@ -1,2 +1,2 @@
-progress+=0.1
+progress+=0.025
 if(progress>1.1) room_restart()

@@ -1,6 +1,7 @@
  // Inherit the parent event
-event_inherited();
+ event_inherited();
 grv=0
+ 
 //visiondistance=900
 state = ENEMYSTATE.IDLE;
 active=true

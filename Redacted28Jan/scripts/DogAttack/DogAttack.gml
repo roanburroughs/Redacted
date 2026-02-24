@@ -34,6 +34,6 @@ function DogAttack(){
 	}
 
 	
-	ProcessEnemyAttack(id, 5, 8, 12, 0, -0.33, sDogAttack, sDogAttack_HB);
+	if(instance_exists(oPlayer) and !oPlayer.hurt)ProcessEnemyAttack(id, 5, 8, 12, 0, -0.33, sDogAttack, sDogAttack_HB);
 
 }

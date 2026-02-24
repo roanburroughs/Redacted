@@ -3,7 +3,7 @@ if(hurt)image_blend=c_red //temp
 else image_blend=c_white
 if(dead)
 {
-	if(!instance_exists(oDeathScreen))instance_create_layer(0,0,"UI",oDeathScreen)
+	//if(!instance_exists(oDeathScreen))instance_create_layer(0,0,"UI",oDeathScreen)
 }
 
 	if(face>0){

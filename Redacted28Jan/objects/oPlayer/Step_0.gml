@@ -5,8 +5,11 @@
 if(hp<=0) dead=true
 if(dead)
 {
+	if(!instance_exists(oDeathScreen))instance_create_layer(0,0,"UI",oDeathScreen)
+	sprite_index=sdead_amara
+//	instance_change(oDeadPlayer,true) //this is deprecated , i got it from a sara spaulding platformer tutorial, idk which specific one
 //room_restart()//we should have an actual thing happen when you die, but for now just having the a statement for it is fine, so its jus room restart rn
-exit	
+//exit	
 }
 if(instance_exists(oTextBoxController))
 {
@@ -21,7 +24,7 @@ if(instance_exists(oTextBoxController))
 	
 }	
 else {	//Inputs
-	getControls();
+	if(!dead)getControls();
 	framecounter++
 	//image_speed=1 //putting this here since things like rise and fall set it to 0
 	//commenting out for now while working with the parry, doesn't seem to break anything (yet)

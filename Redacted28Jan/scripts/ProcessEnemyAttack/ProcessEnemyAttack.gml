@@ -10,6 +10,7 @@ function ProcessEnemyAttack(_enemyID, _damage, _knockbackX, _knockbackY, _airtim
 	
 	//Use attack hitbox & check for hits
 	mask_index = _sprMask;
+	
 	var hitByEnemyAttackNow = ds_list_create();
 	var hits = instance_place_list(x, y, oPlayer, hitByEnemyAttackNow, false);
 	if hits > 0
