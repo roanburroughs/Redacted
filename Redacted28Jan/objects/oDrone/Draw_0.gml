@@ -11,7 +11,7 @@ if(state = ENEMYSTATE.DRONE_CHASE)
 {
 with(oPlayer) 
 {
-other.image_angle = point_direction(other.x,other.y,x,y)
+//other.image_angle = point_direction(other.x,other.y,x,y)
 
 }
 

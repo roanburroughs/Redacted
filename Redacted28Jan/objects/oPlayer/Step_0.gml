@@ -1,5 +1,26 @@
 
 	//if(!audio_is_playing(_854821_A_Little_Tired)) audio_play_sound(_854821_A_Little_Tired,1,false,0.1) 
+/*
+with(pEntity)
+{
+if(point_distance(x,y,other.x,other.y)>1000 and  ACTIVATED)
+{
+	
+	instance_deactivate_object(id)
+}
+else if(NOTACTIVATED)
+{
+	instance_activate_object(id)
+	
+	
+}
+	
+	
+	
+	
+}
+*/
+
 
 
 if(hp<=0) dead=true
