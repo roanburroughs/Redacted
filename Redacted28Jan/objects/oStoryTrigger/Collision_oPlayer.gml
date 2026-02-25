@@ -6,4 +6,8 @@ text_file_path=other.text_file_path
 
 	
 }
+other.hsp=0
+
+if(startingplayersprite!=noone) other.sprite_index=startingplayersprite
+
 instance_destroy()

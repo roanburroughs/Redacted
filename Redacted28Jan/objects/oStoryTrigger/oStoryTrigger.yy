@@ -30,6 +30,7 @@
   "physicsStartAwake":true,
   "properties":[
     {"$GMObjectProperty":"v2","%Name":"text_file_path","filters":[],"listItems":[],"multiselect":false,"name":"text_file_path","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"dialogue.txt","varType":2,},
+    {"$GMObjectProperty":"v2","%Name":"startingplayersprite","filters":[],"listItems":[],"multiselect":false,"name":"startingplayersprite","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"sPlayerIdle","path":"sprites/sPlayerIdle/sPlayerIdle.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"sPlayerIdle","varType":5,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
