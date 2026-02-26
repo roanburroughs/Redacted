@@ -168,6 +168,7 @@
     {"name":"ProcessMultiAttack","order":17,"path":"scripts/ProcessMultiAttack/ProcessMultiAttack.yy",},
     {"name":"ProcessPaintAttack","order":14,"path":"scripts/ProcessPaintAttack/ProcessPaintAttack.yy",},
     {"name":"RangedAttack","order":13,"path":"scripts/RangedAttack/RangedAttack.yy",},
+    {"name":"ReflectProjectile","order":29,"path":"scripts/ReflectProjectile/ReflectProjectile.yy",},
     {"name":"Riposte","order":1,"path":"scripts/Riposte/Riposte.yy",},
     {"name":"SaveGame","order":17,"path":"scripts/SaveGame/SaveGame.yy",},
     {"name":"ScreenShake","order":27,"path":"scripts/ScreenShake/ScreenShake.yy",},

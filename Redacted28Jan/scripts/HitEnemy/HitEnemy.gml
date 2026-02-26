@@ -1,7 +1,20 @@
 function HitEnemy(_enemy, _attackType, _playerDamage, _stunDamage, _hitstun, _playerKnockbackX, _playerKnockbackY,
 				_airtimeH, _airtimeV, _source){
+					
+	if(_enemy.object_index = oRangedEnemyTempProjectile)
+			{
+				//instance_destroy(_enemyID);
+				with(_enemy)
+				{
+					reflected = true;
+					hsp = -hsp*2;
+				}
+			}
+	
 	with (_enemy)
 	{
+		
+		
 		if (state != ENEMYSTATE.DIE)
 		{
 			enemyHP -= _playerDamage;

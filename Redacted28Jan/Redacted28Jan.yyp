@@ -206,6 +206,7 @@
     {"id":{"name":"ProcessPaintAttack","path":"scripts/ProcessPaintAttack/ProcessPaintAttack.yy",},},
     {"id":{"name":"RangedAttack","path":"scripts/RangedAttack/RangedAttack.yy",},},
     {"id":{"name":"RangedEnemyAttack","path":"scripts/RangedEnemyAttack/RangedEnemyAttack.yy",},},
+    {"id":{"name":"ReflectProjectile","path":"scripts/ReflectProjectile/ReflectProjectile.yy",},},
     {"id":{"name":"Riposte","path":"scripts/Riposte/Riposte.yy",},},
     {"id":{"name":"SaveGame","path":"scripts/SaveGame/SaveGame.yy",},},
     {"id":{"name":"ScreenShake","path":"scripts/ScreenShake/ScreenShake.yy",},},

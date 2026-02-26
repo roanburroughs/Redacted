@@ -288,15 +288,6 @@ else	if(vsp>0)
 	}
 	
 	
-	if (keyPressed_Poise) && (parryCooldown <= 0)
-	{	
-		flash = 1;
-		parrying = true;
-		state = PlayerStateAttack;
-		stateAttack = Parry;
-	}
-	
-	
 	if(keySpray) 
 	{
 	PlayerAttack_Spray()	

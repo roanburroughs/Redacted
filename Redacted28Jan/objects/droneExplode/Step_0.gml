@@ -29,7 +29,7 @@ if sprite_index != sEnemyDroneBoom
 					}
 					if(entityHitScript != -1)
 					{
-						script_execute(entityHitScript);
+						//script_execute(entityHitScript);
 					}
 				}
 			}

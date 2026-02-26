@@ -7,29 +7,8 @@ function HitPlayer(_player, _enemyID, _damage, _knockbackX, _knockbackY, _airtim
 		{
 			_distFrom = -_distFrom;
 		}
-		if(flash > 0)
-		{
-			riposteReady = true;
-			if(_enemyID.object_index = oEnemyTemp)
-			{
-				_enemyID.hsp = 50*sign(_distFrom);
-				_enemyID.parryDuration = 60;
-				_enemyID.stateTarget = ENEMYSTATE.CHASE;
-				_enemyID.state = ENEMYSTATE.PARRIED;
-			}
-			if(_enemyID.object_index = oRangedEnemyTempProjectile)
-			{
-				//instance_destroy(_enemyID);
-				with(_enemyID)
-				{
-					reflected = true;
-					hsp = -hsp*2;
-				}
-			}
-		}
 		
-		
-		else if(state != PlayerStateDead)
+		if(state != PlayerStateDead)
 		{
 			hp -= _damage;
 			weight = 0;
