@@ -131,12 +131,12 @@ function EnemyCollision(){
 			//Make sure we don't end up below the top of a semi solid
 			if myFloorPlat.object_index == oElevator || object_is_ancestor(myFloorPlat.object_index, oElevator)
 			{
-				while place_meeting( x, y, myFloorPlat ) 
+				while (place_meeting( x, y, myFloorPlat ) and state!=EnemyHurt)
 				{ 
-					if(state!=EnemyHurt)
-					{
+				//	if (state!=EnemyHurt)
+				//	{
 						y -= _subPixelP;
-					}
+				//	}
 				};
 			}
 			//Floor the y variable
