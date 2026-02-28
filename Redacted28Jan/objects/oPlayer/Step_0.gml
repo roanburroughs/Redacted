@@ -1,25 +1,21 @@
 
 	//if(!audio_is_playing(_854821_A_Little_Tired)) audio_play_sound(_854821_A_Little_Tired,1,false,0.1) 
-/*
-with(pEntity)
-{
-if(point_distance(x,y,other.x,other.y)>1000 and  ACTIVATED)
-{
-	
-	instance_deactivate_object(id)
-}
-else if(NOTACTIVATED)
-{
-	instance_activate_object(id)
 	
 	
-}
-	
-	
-	
-	
-}
-*/
+
+var _range = 2000
+ 
+
+//1 Turn everything ON
+instance_activate_region(x - (_range ), y - (_range ), (_range ) * 2, (_range ) * 2, true)
+
+ //2 turn everything off. you need to turn it on first on line 10 or it wont listen to this or the following activation, weird ik
+instance_deactivate_object(pEntity);
+
+//3 turn everything near the player on
+instance_activate_region(x - _range, y - _range, _range * 2, _range * 2, true);
+
+
 
 
 
