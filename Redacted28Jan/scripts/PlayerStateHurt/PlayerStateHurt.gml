@@ -23,6 +23,8 @@ function PlayerStateHurt(){
 	
 	if(weight > 2)
 	{
+		canDash=false
+		alarm[0]=dashcooldown
 		state = PlayerStateFree;
 		weight = 0;
 	}

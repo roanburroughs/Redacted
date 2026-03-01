@@ -100,7 +100,6 @@ if(framecounter %3=0)
 		
 		if(keyJump) && (!onGround) && (atWall)
 		{
-			alarm[0] = dashcooldown;
 			face = -face;
 			wallJumping = true;
 			wallJumpLock = 0;

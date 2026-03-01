@@ -396,8 +396,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"Level","path":"rooms/Level/Level.yy",},},
     {"roomId":{"name":"LevelTest2","path":"rooms/LevelTest2/LevelTest2.yy",},},
+    {"roomId":{"name":"Level","path":"rooms/Level/Level.yy",},},
     {"roomId":{"name":"LevelTest1","path":"rooms/LevelTest1/LevelTest1.yy",},},
     {"roomId":{"name":"TestRoom","path":"rooms/TestRoom/TestRoom.yy",},},
     {"roomId":{"name":"LevelTemplate","path":"rooms/LevelTemplate/LevelTemplate.yy",},},

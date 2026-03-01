@@ -80,6 +80,7 @@
     {"name":"inst_9849B39","path":"rooms/LevelTest2/LevelTest2.yy",},
     {"name":"inst_54D6C475","path":"rooms/LevelTest2/LevelTest2.yy",},
     {"name":"inst_74F0B51E","path":"rooms/LevelTest2/LevelTest2.yy",},
+    {"name":"inst_5E007D21","path":"rooms/LevelTest2/LevelTest2.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -131,6 +132,7 @@
         {"$GMRInstance":"v4","%Name":"inst_7BE47E16","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7BE47E16","objectId":{"name":"oAggroCamera","path":"objects/oAggroCamera/oAggroCamera.yy",},"properties":[
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oAggroCamera","path":"objects/oAggroCamera/oAggroCamera.yy",},"propertyId":{"name":"aim","path":"objects/oAggroCamera/oAggroCamera.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"down",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":3936.0,"y":2016.0,},
+        {"$GMRInstance":"v4","%Name":"inst_5E007D21","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5E007D21","objectId":{"name":"oRangedEnemyTemp","path":"objects/oRangedEnemyTemp/oRangedEnemyTemp.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":3072.0,"y":672.0,},
       ],"layers":[],"name":"enemies","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"walls","depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v4","%Name":"inst_992CC11","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_992CC11","objectId":{"name":"oWall","path":"objects/oWall/oWall.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":15.0,"scaleY":14.0,"x":0.0,"y":640.0,},
