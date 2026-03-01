@@ -14,7 +14,6 @@ if(framecounter %3=0)
 		}
 }
 	vsp += grv;
-	acceleration = 0.9;
 	//X Movement
 	hsp = face * dashSp;
 	var _oneDirection = false;

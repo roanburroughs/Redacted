@@ -41,13 +41,13 @@ function setAtWall(_val = true)
 		{
 			//vsp = 4;
 		}
-		wallJumpForgive = 5;
+		//wallJumpForgive = 5;
 	}
 	else
 	{
-		//atWall = false;
+		atWall = false;
 		//jumpMax = 2;
-		while (wallJumpForgive > 0)
+		/*while (wallJumpForgive > 0)
 		{
 			wallJumpForgive--;
 			break;
@@ -55,7 +55,7 @@ function setAtWall(_val = true)
 		if(wallJumpForgive <= 0)
 		{
 			atWall = false;
-		}
+		}*/
 		
 	}
 }
