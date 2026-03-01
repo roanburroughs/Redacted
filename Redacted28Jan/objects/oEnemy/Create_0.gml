@@ -5,6 +5,9 @@ state = ENEMYSTATE.WANDER;
 vulnerable = false;
 paintedcolour=c_red///placeholder
 
+fall = 0;
+leap = 0;
+
 //Enemy Sprites
 sprMove = sDogIdle
 sprAttack = sDogAttack;

@@ -34,6 +34,7 @@
     {"$GMObjectProperty":"v2","%Name":"timeToMove","filters":[],"listItems":[],"multiselect":false,"name":"timeToMove","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"6","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"finalXPos","filters":[],"listItems":[],"multiselect":false,"name":"finalXPos","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"finalYPos","filters":[],"listItems":[],"multiselect":false,"name":"finalYPos","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"150","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"waitTime","filters":[],"listItems":[],"multiselect":false,"name":"waitTime","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

@@ -6,19 +6,28 @@ function DogAttack(){
 		
 		vsp = lerp(6, -6, _grav);
 	}, []);
+	var _fall = 0;
+	var _chungus = 0;
 	
 	if(image_index < 1)
 	{
 		hsp = 0;
 	}
 	
-	if(image_index >= 1)
+	if(image_index >= 1 && image_index < 5)
 	{
-		hsp = lengthdir_x(12, dir);
+		leap +=0.1;
+		show_debug_message(_chungus)
+		hsp = lengthdir_x(10, dir);
+		if(leap <= 1)
+		{
+			fall += 0.07;
+			vsp = lerp(-7, 0, fall);
+		}
 		//vsp = lerp(-6, 0, 0);
 		//time_source_start(_timer);
 	}
-	
+
 	if(image_index >= 5)
 	{
 		hsp = 0;
@@ -27,6 +36,8 @@ function DogAttack(){
 	if(floor(image_index) == 6)
 	{
 		hsp = 0;
+		leap = 0;
+		fall = 0;
 		//enemySpeed = 2.75;
 		stateTarget = ENEMYSTATE.CHASE;
 		stateWaitDuration = 15;

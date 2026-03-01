@@ -8,13 +8,13 @@ finalY = ystart + finalYPos;
 moveStart = true;
 moveEnd = false;
 
-timerEnd = time_source_create(time_source_game, 120, time_source_units_frames,
+timerEnd = time_source_create(time_source_game, waitTime, time_source_units_frames,
 								function()
 								{
 									moveEnd = true;
 								}, []);
 								
-timerStart = time_source_create(time_source_game, 120, time_source_units_frames,
+timerStart = time_source_create(time_source_game, waitTime, time_source_units_frames,
 								function()
 								{
 									moveStart = true;

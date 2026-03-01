@@ -354,7 +354,6 @@ else    if (inst != noone and inst.image_angle != 0 and inst.image_angle != 180 
 			{
 				parried = false;
 			}
-			show_debug_message(maxSpeed)
 /*
 	    if (vsp > 0 and place_meeting(x, y + vsp, oPlatform) and !keyDown) {
 			if (vsp > 0) 
