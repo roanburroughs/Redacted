@@ -14,17 +14,25 @@ if(framecounter %3=0)
 		}
 }
 	vsp += grv;
+	acceleration = 0.9;
 	//X Movement
 	hsp = face * dashSp;
 	var _oneDirection = false;
 	
 	//vsp = -0.01;
 	//Get face
-	// moveDir = keyRight - keyLeft;
+	 moveDir = keyRight - keyLeft;
 	
 	if (moveDir != 0)
 	{
 		//face = moveDir;
+	}
+	
+	if (moveDir = -moveDir)
+	{
+		canDash=false
+		alarm[0]=dashcooldown
+		state = PlayerStateFree;
 	}
 	
 	/* uncomment to soar like knuckles the unchuckles

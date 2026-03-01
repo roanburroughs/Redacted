@@ -203,6 +203,7 @@ if(onGround) candoublejump=true
 			freeReady = false;
 		}
 		state = PlayerStateDash;
+		//PlayerDash();
 	}
 	
 	

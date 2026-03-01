@@ -1,7 +1,7 @@
 function HAttack4(){
 	moveDir = keyRight - keyLeft;
 	var _attackTypeTemp0 = 1;
-	var _attackTypeTemp1 = 1;
+	var _attackTypeTemp1 = 2;
 	
 // REPLACE "	image_xscale = face; "
 	//WITH THIS://
@@ -27,7 +27,8 @@ if(face>0){
     }
 	if(image_index>4 && image_index<13)
 	{
-		hsp = (6*image_speed)*face;
+		//hsp = (6*image_speed)*face;
+		hsp = 8*face;
 	}
 
 	else
@@ -41,7 +42,7 @@ if(face>0){
 	}
 	
 	//attack type, damage, stun damage, hitstun, hspknock, vspknock, hspairtime, vspairtime, juggletime, sprite, mask
-	ProcessMultiAttack(_attackTypeTemp0, 1, 2, 2, 6, 6, 0.01, -0.1, 1, sPlayerAttackH4, sPlayerAttackH4_HB2);
+	ProcessMultiAttack(_attackTypeTemp0, 1, 2, 2, 8, 6, 0.01, -0.1, 1, sPlayerAttackH4, sPlayerAttackH4_HB2);
 	//attack type, damage, stun damage, hitstun, hspknock, vspknock, hspairtime, vspairtime, sprite, mask
 	ProcessAttack(_attackTypeTemp1, 4, 5, 9, 16, 24, 0.2, -0.2, sPlayerAttackH4, sPlayerAttackH4_HB);
 

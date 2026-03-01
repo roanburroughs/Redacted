@@ -17,7 +17,7 @@ function LAttack2(){
 
 	if(image_index<3)
 	{
-	hsp= (2*image_speed)*face;
+	hsp= 2*face;
 	}
 	else
 	{
@@ -34,7 +34,7 @@ function LAttack2(){
 	
 	if (keyPressed_heavyAttack && image_index > 2)
 	{
-		state = HAttack2;
+		state = HAttack2Up;
 	}
 	
 	

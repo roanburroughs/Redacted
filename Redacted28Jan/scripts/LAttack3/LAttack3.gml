@@ -23,7 +23,7 @@ function LAttack3(){
 	
 if(image_index>2 && image_index<4)
 	{
-	hsp= (4*image_speed)*face;
+	hsp= 4*face;
 	}
 	else
 	{
@@ -35,12 +35,12 @@ if(image_index>2 && image_index<4)
 	
 	if (keyPressed_lightAttack && image_index > 3)
 	{
-		state = LAttack4;
+		//state = LAttack4;
 	}
 	
 	if (keyPressed_heavyAttack && image_index > 3)
 	{
-		state = HAttack3;
+		state = HAttack4;
 	}
 
 	

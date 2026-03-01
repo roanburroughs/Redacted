@@ -12,7 +12,7 @@ if(face>0){
 
 	if(image_index<3)
 	{
-	hsp = (2*image_speed)*face;
+	hsp = 2*face;
 	}
 	else
 	{
@@ -28,12 +28,12 @@ if(face>0){
 	
 	if (keyPressed_heavyAttack && image_index > 1)
 	{
-		state = HAttack1;
+		state = HAttack1Up;
 	}
 	
 	if (keyPressed_heavyAttack && image_index > 1 && keyUp)
 	{
-		state = HAttack1Up;
+		//state = HAttack1Up;
 	}
 	
 	if (image_index >= 5)

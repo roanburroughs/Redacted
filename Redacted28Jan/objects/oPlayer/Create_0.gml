@@ -20,6 +20,8 @@ function setOnGround(_val = true)
 		onGround = true;
 		wallJumping = false;
 		freeReady = true;
+		maxSpeed = 10;
+		acceleration = 0.1;
 		coyoteHangTimer = coyoteHangFrames;
 	}
 	else
