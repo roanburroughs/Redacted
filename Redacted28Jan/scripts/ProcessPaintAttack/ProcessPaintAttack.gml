@@ -1,4 +1,4 @@
-function ProcessPaintAttack(_attackType, _damage, _stunDamage, _hitstun, _knockbackX, _knockbackY, _airtimeH, _airtimeV, _sprIndex, _sprMask){
+function ProcessPaintAttack(_attackType, _damage, _stunDamage, _hitstun, _knockbackSpeed, _knockbackX, _knockbackY, _airtimeH, _airtimeV, _sprIndex, _sprMask){
 //Start of attack
 	if sprite_index != _sprIndex
 	{
@@ -26,7 +26,7 @@ function ProcessPaintAttack(_attackType, _damage, _stunDamage, _hitstun, _knockb
 				{
 					if (object_is_ancestor(object_index, pEnemy)) && (hitID.state != ENEMYSTATE.DIE)
 					{
-						HitEnemy(id, _attackType, _damage, _stunDamage, _hitstun, _knockbackX, _knockbackY,
+						HitEnemy(id, _attackType, _damage, _stunDamage, _hitstun, _knockbackSpeed, _knockbackX, _knockbackY,
 								_airtimeH, _airtimeV, other.id);
 					}
 					if(entityHitScript != -1)

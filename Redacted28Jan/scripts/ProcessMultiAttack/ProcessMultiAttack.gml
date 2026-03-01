@@ -1,4 +1,4 @@
-function ProcessMultiAttack(_attackType, _damage, _stunDamage, _hitstun, _knockbackX, _knockbackY, _airtimeH, _airtimeV, _juggleTime, _sprIndex, _sprMask){ //Attack script for attacks with multiple hits e.g. spin attacks
+function ProcessMultiAttack(_attackType, _damage, _stunDamage, _hitstun, _knockbackSpeed, _knockbackX, _knockbackY, _airtimeH, _airtimeV, _juggleTime, _sprIndex, _sprMask){ //Attack script for attacks with multiple hits e.g. spin attacks
 //Start of attack
 	if sprite_index != _sprIndex
 	{
@@ -30,8 +30,8 @@ function ProcessMultiAttack(_attackType, _damage, _stunDamage, _hitstun, _knockb
 				{				
 					if (object_is_ancestor(object_index, pEnemy))
 					{
-						HitEnemy(id, _attackType, _damage, _stunDamage, _hitstun, _knockbackX, _knockbackY,
-								_airtimeH, _airtimeV, other.id);
+						HitEnemy(id, _attackType, _damage, _stunDamage, _hitstun, _knockbackSpeed,
+								_knockbackX, _knockbackY, _airtimeH, _airtimeV, other.id);
 					}
 					if(entityHitScript != -1)
 					{

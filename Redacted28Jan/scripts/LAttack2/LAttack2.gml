@@ -17,7 +17,7 @@ function LAttack2(){
 
 	if(image_index<3)
 	{
-	hsp= 2*face;
+	hsp= 5*face;
 	}
 	else
 	{
@@ -25,7 +25,7 @@ function LAttack2(){
 	}
 	
 	//attack type, damage, stun damage, hitstun, hspknock, vspknock, hspairtime, vspairtime, sprite, mask
-	ProcessAttack(_attackTypeTemp, 2, 1, 6, 2, 12, 0.01, 0, sPlayerAttackL2, sPlayerAttackL2_HB);
+	ProcessAttack(_attackTypeTemp, 2, 1, 20, 0.5, 18, 12, 0.01, 0, sPlayerAttackL2, sPlayerAttackL2_HB);
 	
 	if (keyPressed_lightAttack && image_index > 2)
 	{
@@ -35,6 +35,24 @@ function LAttack2(){
 	if (keyPressed_heavyAttack && image_index > 2)
 	{
 		state = HAttack2Up;
+	}
+	
+	if (image_index >= 2) && (canDash) && (keyDash)
+	{
+		canDash = false;
+		canJump = 0;
+		//dashDirection = point_direction(0, 0, keyRight-keyRight, keyRight-keyRight);
+		//dashDirection = moveDir;
+		dashSp = dashDistance/dashTime;
+		dashEnergy = dashDistance;
+		if(!onGround)
+		{
+			freeReady = false;
+		}
+		sprite_index = dashSpr;
+		moveDir = keyRight - keyLeft;
+		face = moveDir;
+		state = PlayerStateDash;
 	}
 	
 	

@@ -42,6 +42,8 @@ stateWaitDuration = 0;
 
 weight = 0;
 hitstun = 0;
+hitstunTimer = 0;
+knockbackSpeed = 0;
 
 onGround = true;
 myFloorPlat = noone;

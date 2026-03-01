@@ -311,13 +311,17 @@ else    if (inst != noone and inst.image_angle != 0 and inst.image_angle != 180 
 					var _chungus = instance_place(x, y+1, oConveyor)
 					if(moveDir == sign(_chungus.image_xscale))
 					{
-						maxSpeed = 5;
+						maxSpeed = 10-_chungus.conveyorspeed;
 					}
 					else
 					{
-						maxSpeed = 10;
+						maxSpeed = 10+_chungus.conveyorspeed;
 					}
 					x += _chungus.conveyorspeed*-sign(_chungus.image_xscale);
+				}
+				else
+				{
+					maxSpeed = 10;
 				}
 			}
 			

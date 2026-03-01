@@ -35,7 +35,7 @@ if(face>0){
 		vsp = 0;
 	}*/
 	//attack type, damage, stun damage, hitstun, hspknock, vspknock, hspairtime, vspairtime, sprite, mask
-	ProcessAttack(_attackTypeTemp, 2, 2, 4, 2, 12, 0.01, -0.33, sPlayerAttackJ2, sPlayerAttackJ2_HB);
+	ProcessAttack(_attackTypeTemp, 2, 2, 4, 0.1, 2, 12, 0.01, -0.33, sPlayerAttackJ2, sPlayerAttackJ2_HB);
 	
 	if (keyPressed_lightAttack && image_index > 2)
 	{
@@ -54,7 +54,7 @@ if(face>0){
 		state = PlayerStateFree;
 	}
 	
-	if (image_index = 5)
+	if (floor(image_index) == 5)
 	{
 		sprite_index = sPlayerFall;
 		state = PlayerStateFree;

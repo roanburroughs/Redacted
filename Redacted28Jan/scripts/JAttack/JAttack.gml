@@ -21,7 +21,7 @@ if(face>0){
 	vsp = -1;
 	}
 	
-	ProcessAttack(_attackTypeTemp, 2, 2, 3, 2, 12, 0.01, -0.33, sPlayerAttackJ1, sPlayerAttackJ1_HB);
+	ProcessAttack(_attackTypeTemp, 2, 2, 3, 0.1, 2, 12, 0.01, -0.33, sPlayerAttackJ1, sPlayerAttackJ1_HB);
 	
 	if (keyPressed_lightAttack && image_index > 2)
 	{
@@ -40,7 +40,7 @@ if(face>0){
 		state = PlayerStateFree;
 	}
 	
-	if (image_index = 5)
+	if (floor(image_index) == 5)
 	{
 		sprite_index = sPlayerFall;
 		state = PlayerStateFree;

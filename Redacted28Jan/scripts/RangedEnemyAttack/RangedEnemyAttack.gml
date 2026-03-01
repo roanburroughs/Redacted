@@ -3,7 +3,7 @@ function RangedEnemyAttack(){
 	image_index = 1;
 	var _holdup = false;
 	var _distFrom = sign( (target.x) - (x) );
-	var _telegraph = time_source_create(time_source_game, 90, time_source_units_frames, function()
+	var _telegraph = time_source_create(time_source_game, 30, time_source_units_frames, function()
 	{
 		chungus = true;
 	}, []);

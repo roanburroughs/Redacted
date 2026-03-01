@@ -2,6 +2,7 @@ hsp = 0;
 vsp = 0;
 target = oPlayer;
 reflected = false;
+weight = 0;
 z = 0;
 flash = 0;
 flashShader = shWhiteFlash;

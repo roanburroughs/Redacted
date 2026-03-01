@@ -35,19 +35,31 @@ function HeavyDownAir(){
 		hsp = 0;
 	}
 	
+	if (image_index >= 10) && (canDash) && (keyDash)
+	{
+		canDash = false;
+		canJump = 0;
+		//dashDirection = point_direction(0, 0, keyRight-keyRight, keyRight-keyRight);
+		//dashDirection = moveDir;
+		dashSp = dashDistance/dashTime;
+		dashEnergy = dashDistance;
+		if(!onGround)
+		{
+			freeReady = false;
+		}
+		sprite_index = dashSpr;
+		moveDir = keyRight - keyLeft;
+		face = moveDir;
+		state = PlayerStateDash;
+	}
+	
 	if(image_index >= 14 && (keyLeft || keyRight))
 	{
 		sprite_index = idleSpr;
 		state = PlayerStateFree;
 	}
 	
-	if(image_index >= 14 && keyPressed_heavyAttack && executeReady)
-	{
-
-		state = PlayerStateAttack;
-		stateAttack = Execute;
-		executing = true;
-	}
+	
 	
 	if(image_index >= 18)
 	{
@@ -59,8 +71,8 @@ function HeavyDownAir(){
 	
 	//attack type, damage, stun damage, hitstun, hspknock, vspknock, hspairtime, vspairtime, sprite, mask
 
-		ProcessAttack(_attackTypeTemp, 12, 14, 14, 12, 23, 0, -0.33, sPlayerHeavyDownAir, sPlayerHeavyDownAir_HB1);
-		ProcessAttack(_attackTypeTemp, 2, 1, 7, 8, 17, 0, 0, sPlayerHeavyDownAir, sPlayerHeavyDownAir_HB2);
+		ProcessAttack(_attackTypeTemp, 12, 14, 14, 0.1, 12, 23, 0, -0.33, sPlayerHeavyDownAir, sPlayerHeavyDownAir_HB1);
+		ProcessAttack(_attackTypeTemp, 2, 1, 7, 0.1, 8, 17, 0, 0, sPlayerHeavyDownAir, sPlayerHeavyDownAir_HB2);
 
 	
 	

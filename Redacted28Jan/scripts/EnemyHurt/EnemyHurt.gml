@@ -19,7 +19,7 @@ if(object_index = oDrone)
 }
 
 		image_speed = 1.0;
-		weight+=0.1;
+		weight+=knockbackSpeed;
 		if(weight <= 1)
 		{
 			//hspAirtime += 0.1;
@@ -33,18 +33,21 @@ if(object_index = oDrone)
 
 	if((weight > 2) && (onGround) && (!staggered))
 	{
+		hitstunTimer++;
+		show_debug_message(hitstunTimer)
 		hsp = 0;
 		if(target != oPlayer)
 		{
 			target = oPlayer;
 		}
-		if(weight > hitstun)
+		if(hitstunTimer > hitstun)
 		{
 			if (statePrevious != ENEMYSTATE.ATTACK) state = statePrevious;
 			else if (object_index = oEnemyTemp ) state = ENEMYSTATE.CHASE;
 			else if (object_index = oEnemy) state = ENEMYSTATE.CHASE;
 			else if (object_index = oShieldEnemyTemp) state = ENEMYSTATE.CHASE;
 			else if (object_index = oRangedEnemyTemp) state = ENEMYSTATE.IDLE;
+			_blah = 0;
 			weight = 0;
 			hitstun = 0;
 		}

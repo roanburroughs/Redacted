@@ -14,6 +14,7 @@ function EnemyIdle(){
 			else
 			{
 				inRange = false;
+				fireCount = 0;
 				chungus = false;
 			}
 		}

@@ -48,6 +48,10 @@ function EnemyCollision(){
 				vsp = 0;
 				EnemyGroundCheck(true);
 			}
+			else
+			{
+				EnemyGroundCheck(false)
+			}
 			
 			if place_meeting( x, y + vsp, oPlatform)
 				{
@@ -67,6 +71,10 @@ function EnemyCollision(){
 					onGround = true;
 					}
 				}
+			else
+			{
+				EnemyGroundCheck(false);
+			}
 				
 				if place_meeting( x, y + vsp, oConveyor )
 				{
@@ -77,6 +85,10 @@ function EnemyCollision(){
 					}
 					vsp = 0;
 					EnemyGroundCheck(true);
+				}
+				else
+				{
+					EnemyGroundCheck(false);
 				}
 				
 		var _clampvsp = max( 0, vsp );
@@ -146,6 +158,10 @@ function EnemyCollision(){
 			vsp = 0;
 			EnemyGroundCheck(true);
 		}
+		else
+		{
+			EnemyGroundCheck(false);
+		}
 		
 		if place_meeting( x, y+1, oWall )
 			{
@@ -157,11 +173,12 @@ function EnemyCollision(){
 					var _chungus = instance_place(x, y+1, oConveyor)
 					if(image_xscale == sign(_chungus.image_xscale))
 					{
-						enemySpeed = 5;
+						//enemySpeed = 5;
+						enemySpeed = enemySpeed/2;
 					}
 					else
 					{
-						enemySpeed = 10;
+						enemySpeed = enemySpeed;
 					}
 					x += _chungus.conveyorspeed*-sign(_chungus.image_xscale);
 				}

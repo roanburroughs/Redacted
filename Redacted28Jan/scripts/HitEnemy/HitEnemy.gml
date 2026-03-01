@@ -1,4 +1,4 @@
-function HitEnemy(_enemy, _attackType, _playerDamage, _stunDamage, _hitstun, _playerKnockbackX, _playerKnockbackY,
+function HitEnemy(_enemy, _attackType, _playerDamage, _stunDamage, _hitstun, _knockbackSpeed, _playerKnockbackX, _playerKnockbackY,
 				_airtimeH, _airtimeV, _source){
 					
 	if(_enemy.object_index = oRangedEnemyTempProjectile)
@@ -22,9 +22,11 @@ function HitEnemy(_enemy, _attackType, _playerDamage, _stunDamage, _hitstun, _pl
 			hitstun = _hitstun;
 			flash = 1;
 			weight = 0;
+			knockbackSpeed = _knockbackSpeed;
 			hspAirtime = 0;
 			vspAirtime = 0;
 			parryDuration = 0;
+			hitstunTimer = 0;
 			
 			if(staggered)
 			{
@@ -70,6 +72,11 @@ function HitEnemy(_enemy, _attackType, _playerDamage, _stunDamage, _hitstun, _pl
 			if ((onGround) && (_attackType = 0))
 			{
 				_playerKnockbackY = 0;
+			}
+			
+			else if ((!onGround) && (_attackType = 0))
+			{
+				_playerKnockbackX = 2;
 			}
 			
 			image_index = 0;

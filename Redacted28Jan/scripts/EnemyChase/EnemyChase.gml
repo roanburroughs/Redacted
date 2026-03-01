@@ -29,7 +29,7 @@ if (instance_exists(target))
 
 //Check if close enough to launch an attack
  //commented out because there's no current enemy attack animation
-if (instance_exists(target)) && (point_distance(x, y, target.x, target.y) <= enemyAttackRadius)
+if (instance_exists(target)) && (onGround) && (point_distance(x, y, target.x, target.y) <= enemyAttackRadius)
 {
 	if(object_index = oEnemyTemp)
 	{

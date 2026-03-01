@@ -33,7 +33,7 @@ if(face>0){
 	}
 
 	//attack type, damage, stun damage, hitstun, hspknock, vspknock, hspairtime, vspairtime, sprite, mask
-	ProcessAttack(_attackTypeTemp, 2, 1, 6, 5, 27, 0, -0.75, sPlayerAttackH2_Up2, sPlayerAttackH2_Up2_HB);
+	ProcessAttack(_attackTypeTemp, 4, 1, 90, 0.1, 5, 27, 0, -0.75, sPlayerAttackH2_Up2, sPlayerAttackH2_Up2_HB);
 	if (image_index >= 14)
 	{
 		//sprite_index = idleSpr;
