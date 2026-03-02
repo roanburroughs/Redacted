@@ -71,12 +71,12 @@ function HitEnemy(_enemy, _attackType, _playerDamage, _stunDamage, _hitstun, _kn
 			
 			if ((onGround) && (_attackType = 0))
 			{
-				_playerKnockbackY = 0;
+				//_playerKnockbackY = 0;
 			}
 			
 			else if ((!onGround) && (_attackType = 0))
 			{
-				_playerKnockbackX = 2;
+				//_playerKnockbackX = 2;
 			}
 			
 			image_index = 0;

@@ -31,29 +31,45 @@ if(object_index = oDrone)
 		//if (hsp != 0) image_xscale = sign(hsp); //commenting this out fixes the dog, but breaks the direction every other enemy moves in
 		if (hsp != 0) image_xscale = sign(hsp)*abs(image_xscale);
 
-	if((weight > 2) && (onGround) && (!staggered))
+	if((weight > 2) && (!staggered))
 	{
-		hitstunTimer++;
 		show_debug_message(hitstunTimer)
-		hsp = 0;
+		if(knockbackSpeed == 0.5)
+		{
+			hsp = 0;
+		}
+		
+		if(knockbackSpeed == 0.1)
+		{
+			if(onGround)
+			{
+				hsp = 0;
+			}
+		}
+		
 		if(target != oPlayer)
 		{
 			target = oPlayer;
 		}
-		if(hitstunTimer > hitstun)
+		if(onGround)
 		{
-			if (statePrevious != ENEMYSTATE.ATTACK) state = statePrevious;
-			else if (object_index = oEnemyTemp ) state = ENEMYSTATE.CHASE;
-			else if (object_index = oEnemy) state = ENEMYSTATE.CHASE;
-			else if (object_index = oShieldEnemyTemp) state = ENEMYSTATE.CHASE;
-			else if (object_index = oRangedEnemyTemp) state = ENEMYSTATE.IDLE;
-			_blah = 0;
-			weight = 0;
-			hitstun = 0;
-		}
-		else
-		{
-			sprite_index = sprIdle;
+			hitstunTimer++;
+			
+			if(hitstunTimer > hitstun)
+			{
+				if (statePrevious != ENEMYSTATE.ATTACK) state = statePrevious;
+				else if (object_index = oEnemyTemp ) state = ENEMYSTATE.CHASE;
+				else if (object_index = oEnemy) state = ENEMYSTATE.CHASE;
+				else if (object_index = oShieldEnemyTemp) state = ENEMYSTATE.CHASE;
+				else if (object_index = oRangedEnemyTemp) state = ENEMYSTATE.IDLE;
+				_blah = 0;
+				weight = 0;
+				hitstun = 0;
+			}
+			else
+			{
+				sprite_index = sprIdle;
+			}
 		}
 	}
 	

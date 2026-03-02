@@ -1,4 +1,4 @@
-function ReflectProjectile(){
+function ReflectProjectile(_distFrom){
 reflected = true;
-hsp = -hsp*2;
+hsp = (-hsp*2);
 }
