@@ -290,6 +290,13 @@ else    if (inst != noone and inst.image_angle != 0 and inst.image_angle != 180 
 			if myFloorPlat.object_index == oElevator || object_is_ancestor(myFloorPlat.object_index, oElevator)
 			{
 				while place_meeting( x, y, myFloorPlat ) { y -= _subPixel; };
+				with(myFloorPlat)
+				{
+					if(standActivate)
+					{
+						standActivate = false;
+					}
+				}
 			}
 			//Floor the y variable
 			y = floor(y);

@@ -101,6 +101,7 @@
     {"name":"LevelTemplate","order":11,"path":"rooms/LevelTemplate/LevelTemplate.yy",},
     {"name":"LevelTest1","order":12,"path":"rooms/LevelTest1/LevelTest1.yy",},
     {"name":"LevelTest2","order":13,"path":"rooms/LevelTest2/LevelTest2.yy",},
+    {"name":"LevelTest3","order":16,"path":"rooms/LevelTest3/LevelTest3.yy",},
     {"name":"PLAT","order":4,"path":"rooms/PLAT/PLAT.yy",},
     {"name":"Platfo","order":2,"path":"rooms/Platfo/Platfo.yy",},
     {"name":"Platforming","order":3,"path":"rooms/Platforming/Platforming.yy",},

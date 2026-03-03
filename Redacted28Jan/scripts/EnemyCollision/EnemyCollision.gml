@@ -145,10 +145,7 @@ function EnemyCollision(){
 			{
 				while (place_meeting( x, y, myFloorPlat ) and state!=EnemyHurt)
 				{ 
-				//	if (state!=EnemyHurt)
-				//	{
 						y -= _subPixelP;
-				//	}
 				};
 			}
 			//Floor the y variable
