@@ -1,2 +1,2 @@
-other.candoublejump=true
+//other.candoublejump=true
 instance_destroy()

@@ -98,9 +98,9 @@ hsp_wallJump = 12; //Horizontal distance for wall jump
 
 canJump = 0; //are we touching the ground
 //candoublejump=true//made false when you dublejump,made true when vsp=0
-candoublejump = false
-doublejumpmultiplier=1
-doublejumping=false
+//candoublejump = false
+//doublejumpmultiplier=1
+//doublejumping=false
 canDash = true// false; //resets on touching ground
 dashDistance = 351;
 dashTime = 24;

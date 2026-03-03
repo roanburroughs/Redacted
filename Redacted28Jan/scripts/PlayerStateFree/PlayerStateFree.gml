@@ -170,7 +170,7 @@ doublejumping=true
  
  }*/
  
-
+/*
 if(jumpCount==2) && (keyJump) && (candoublejump) && (!doublejumping)
 {
 	alarm[1] = 30
@@ -188,7 +188,7 @@ if(doublejumping)
 //if(vsp=0) candoublejump=true
 if(onGround) candoublejump=true
 
-	
+	*/
 	//Can we dash?
 	if (canDash) && (keyDash)
 	{
@@ -212,14 +212,14 @@ if(onGround) candoublejump=true
 	
 	//Change sprite when moving
 
-if(doublejumping)
-{
-	sprite_index=doublejumpchargeSpr
-}
-else if(!candoublejump)
-{
-sprite_index=doublejumpSpr	
-}
+//if(doublejumping)
+//{
+//	sprite_index=doublejumpchargeSpr
+//}
+//else if(!candoublejump)
+//{
+//sprite_index=doublejumpSpr	
+//}
 else	if(vsp>0)
 	{
 		sprite_index = fallSpr;

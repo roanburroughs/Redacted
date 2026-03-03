@@ -13,6 +13,8 @@ function AggroEnemy(){
 										y<oPlayer.y+100
 										
 										
+										and point_distance(x,y,other.x,other.y)<other.aggrorange
+										
 										) 
 										{
 											state= ENEMYSTATE.ATTACK
@@ -22,7 +24,7 @@ function AggroEnemy(){
 								}
 								with (oEnemyTemp)
 								{
-								 	if(state =  ENEMYSTATE.WANDER )
+								 	if(state =  ENEMYSTATE.WANDER and point_distance(x,y,other.x,other.y)<other.aggrorange)
 									{state = ENEMYSTATE.CHASE // this aint doing anything
 										target = oPlayer;
 									}										
@@ -30,7 +32,7 @@ function AggroEnemy(){
 								
 								with (oDrone)
 								{
-									if(state = ENEMYSTATE.DRONE_WANDER	)
+									if(state = ENEMYSTATE.DRONE_WANDER and point_distance(x,y,other.x,other.y)<other.aggrorange	)
 									{
 										state = ENEMYSTATE.DRONE_CHASE;
 										target = oPlayer;
