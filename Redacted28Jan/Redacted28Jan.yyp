@@ -133,6 +133,7 @@
     {"id":{"name":"LevelTest1","path":"rooms/LevelTest1/LevelTest1.yy",},},
     {"id":{"name":"LevelTest2","path":"rooms/LevelTest2/LevelTest2.yy",},},
     {"id":{"name":"LevelTest3","path":"rooms/LevelTest3/LevelTest3.yy",},},
+    {"id":{"name":"LevelTest4","path":"rooms/LevelTest4/LevelTest4.yy",},},
     {"id":{"name":"PLAT","path":"rooms/PLAT/PLAT.yy",},},
     {"id":{"name":"Platfo","path":"rooms/Platfo/Platfo.yy",},},
     {"id":{"name":"Platforming","path":"rooms/Platforming/Platforming.yy",},},
@@ -413,6 +414,7 @@
     {"roomId":{"name":"DarkRoom","path":"rooms/DarkRoom/DarkRoom.yy",},},
     {"roomId":{"name":"Platfo","path":"rooms/Platfo/Platfo.yy",},},
     {"roomId":{"name":"EnemyTestRoom","path":"rooms/EnemyTestRoom/EnemyTestRoom.yy",},},
+    {"roomId":{"name":"LevelTest4","path":"rooms/LevelTest4/LevelTest4.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

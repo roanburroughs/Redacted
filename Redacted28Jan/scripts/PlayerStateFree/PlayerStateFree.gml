@@ -79,7 +79,7 @@ if(   hsp<0 ) moveDir= -1
 			hsp = lerp((-onwall * hsp_wallJump), 0, 0);
 			vsp = vspJump;
 		}
-		
+		show_debug_message(vspJump)
 		
 		
 	
