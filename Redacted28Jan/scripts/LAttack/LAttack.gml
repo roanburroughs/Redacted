@@ -30,6 +30,7 @@ if(face>0){
 	//attack type, damage, stun damage, hitstun, hspknock, vspknock, hspairtime, vspairtime, sprite, mask
 	//ProcessAttack(_attackTypeTemp, 2, 1, 20, 0.5, 24, 12, 0.01, 0, sPlayerAttackL1, sPlayerAttackL1_HB);
 	ProcessAttack(_attackTypeTemp, 2, 1, 20, 0.5, 18, 12, 0.01, 0, sPlayerAttackL1, sPlayerAttackL1_HB);
+	if(!audio_is_playing(LightAttack)) audio_play_sound(LightAttack, 1, false, 1, 0, random_range(0.9, 1));
 	
 	if (keyPressed_lightAttack && image_index > 1)
 	{
@@ -38,7 +39,7 @@ if(face>0){
 	
 	if (keyPressed_heavyAttack && image_index > 1)
 	{
-		state = HAttack1Up;
+		state = HAttack1;
 	}
 	
 	if (keyPressed_heavyAttack && image_index > 1 && keyUp)

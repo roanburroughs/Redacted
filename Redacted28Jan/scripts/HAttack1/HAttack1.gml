@@ -25,7 +25,8 @@ if(face>0){
 	}
 
 	//attack type, damage, stun damage, hitstun, hspknock, vspknock, hspairtime, vspairtime, sprite, mask
-	ProcessAttack(_attackTypeTemp, 3, 3, 3, 8, 9, 0, 0, sPlayerAttackH1, sPlayerAttackH1_HB);
+	ProcessAttack(_attackTypeTemp, 3, 3, 3, 0.5, 8, 9, 0, 0, sPlayerAttackH1, sPlayerAttackH1_HB);
+	if(!audio_is_playing(HeavyAttack)) audio_play_sound(HeavyAttack, 1, false, 1, 0, random_range(0.9, 1));
 	
 	if(keyPressed_lightAttack && image_index > 3)
 	{

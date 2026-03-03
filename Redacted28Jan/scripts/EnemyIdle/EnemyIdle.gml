@@ -22,8 +22,8 @@ function EnemyIdle(){
 		
 		if (instance_exists(oPlayer)) && (point_distance(x, y, oPlayer.x, oPlayer.y) > enemyAggroRadius)
 		{
-			inRange = false;
-			target = 0;
+			//inRange = false;
+			//target = 0;
 		}
 	}
 	

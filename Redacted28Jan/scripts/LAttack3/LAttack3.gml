@@ -32,6 +32,7 @@ if(image_index>2 && image_index<4)
 	
 	//attack type, damage, stun damage, hitstun, hspknock, vspknock, hspairtime, vspairtime, sprite, mask
 	ProcessAttack(_attackTypeTemp, 2, 1, 30, 0.5, 20, 12, 0.01, 0, sPlayerAttackL3, sPlayerAttackL3_HB);
+	if(!audio_is_playing(LightAttack)) audio_play_sound(LightAttack, 1, false, 1, 0, random_range(0.9, 1));
 	
 	if (keyPressed_lightAttack && image_index > 3)
 	{

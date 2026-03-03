@@ -64,6 +64,11 @@ if(!standActivate)
 			}
 		}
 	}
+	var _distFrom = ((oPlayer.x) - (x))
+	if(audio_is_playing(ElevatorMove) && _distFrom > 600)
+	{
+		audio_stop_sound(ElevatorMove);
+	}
 }
 
 x += hsp;

@@ -41,14 +41,14 @@ function HitEnemy(_enemy, _attackType, _playerDamage, _stunDamage, _hitstun, _kn
 			
 			if(_attackType = 0)
 			{
-				audio_play_sound(LightAttack, 1, false, 1, 0, random_range(0.9, 1));
+				//audio_play_sound(LightAttack, 1, false, 1, 0, random_range(0.9, 1));
 			}
 			
 			if(_attackType = 1)
 			{
 				//instance_create_layer(x, y-50, "Effects", oHeavyBlow);
 				ScreenShake(4, 30);
-				audio_play_sound(HeavyAttack, 1, false, 1, 0, random_range(0.9, 1));
+				
 			}
 			
 			if(_attackType = 2)

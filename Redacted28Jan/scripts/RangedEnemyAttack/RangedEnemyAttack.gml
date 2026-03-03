@@ -9,35 +9,37 @@ function RangedEnemyAttack(){
 	}, []);
 	
 	//var _distFrom = sign( (target.x) - (x) );
+	var _direction = -image_xscale
 	
 	if (_distFrom > 0)
 	{
-		image_xscale = -1;
+		//image_xscale = -1;
 	}
 	
 	if (_distFrom < 0)
 	{
-		image_xscale = 1;
+		//image_xscale = 1;
 	}
 	
 	time_source_start(_telegraph);
 		
 	if (chungus)
 	{
+		//var _shoot = instance_create_layer(x-(30*image_xscale), y-65, "enemies", oRangedEnemyTempProjectile)
 		var _shoot = instance_create_layer(x-(30*image_xscale), y-65, "enemies", oRangedEnemyTempProjectile)
 		fireCount++;
 	
 			with (_shoot)
 		{
-			hsp = 8*_distFrom;
-			//hsp = 8*image_xscale;
+			//hsp = 8*_distFrom;
+			hsp = 8*_direction;
 		}
 
 
 		stateTarget = ENEMYSTATE.IDLE;
 		if(fireCount>=3)
 		{
-			stateWaitDuration = 180;
+			stateWaitDuration = 120;
 			chungus = false;
 		}
 		else

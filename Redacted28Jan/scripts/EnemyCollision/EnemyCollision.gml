@@ -52,7 +52,9 @@ function EnemyCollision(){
 			{
 				EnemyGroundCheck(false)
 			}
-			
+		
+		if(object_index!=oDrone)
+		{
 			if place_meeting( x, y + vsp, oPlatform)
 				{
 					
@@ -75,6 +77,7 @@ function EnemyCollision(){
 			{
 				EnemyGroundCheck(false);
 			}
+		}
 				
 				if place_meeting( x, y + vsp, oConveyor )
 				{
@@ -94,7 +97,8 @@ function EnemyCollision(){
 		var _clampvsp = max( 0, vsp );
 		var _list = ds_list_create(); //Create a DS list to store all of the objects we run into
 		var _array = array_create(0);
-		array_push( _array, oWall, oElevator, oPlatform );
+		//array_push( _array, oWall, oElevator, oDrone ); //temporary comment while testing
+		array_push( _array, oWall, oElevator );
 		
 		//Do the actual check and add objects to list
 		var _listSize = instance_place_list( x, y+1 + _clampvsp + 8, _array, _list, false );
@@ -165,6 +169,8 @@ function EnemyCollision(){
 				EnemyGroundCheck(true);
 			}
 			
+		if(object_index!=oDrone)
+		{
 			if place_meeting( x, y+1, oConveyor)
 				{
 					var _chungus = instance_place(x, y+1, oConveyor)
@@ -179,6 +185,7 @@ function EnemyCollision(){
 					}
 					x += _chungus.conveyorspeed*-sign(_chungus.image_xscale);
 				}
+		}
 		}
 		
 	//Move
