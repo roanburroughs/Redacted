@@ -1,5 +1,7 @@
 function WolfAttack(){
 	//var _toPlayer = ((oPlayer.x) - (x))
+	
+	
 	if (image_index < 2)
 	{
 		hsp = 0;

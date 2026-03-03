@@ -33,6 +33,7 @@ if (instance_exists(target)) && (onGround) && (point_distance(x, y, target.x, ta
 {
 	if(object_index = oEnemyTemp)
 	{
+		audio_play_sound(EnemySlash, 10, false, 1, 0, 1); //ugly spot for this but it constantly loops in WolfAttack so have to figure that out
 		stateEnemyAttack = WolfAttack;
 	}
 	if(object_index = oEnemy)

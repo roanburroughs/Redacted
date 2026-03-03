@@ -1,6 +1,6 @@
 function JAttack2(){
 	
-	var _attackTypeTemp = 1;
+	var _attackTypeTemp = 0;
 	image_speed = 1;
 	
 if(face>0){

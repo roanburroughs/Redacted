@@ -23,6 +23,8 @@ if (instance_exists(target))
 		vsp = lengthdir_y(_distanceToGo, dir); //better for flying enemies
 	}
 	if (hsp != 0) image_xscale = sign(-hsp);
+	
+	if(!audio_is_playing(DroneChasesound))	audio_play_sound(DroneChasesound,0,false,1, 0, 1)
 
 }
 
