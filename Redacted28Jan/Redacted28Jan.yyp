@@ -356,6 +356,7 @@
     {"id":{"name":"sPlayerHeavyDownAir_HB1","path":"sprites/sPlayerHeavyDownAir_HB1/sPlayerHeavyDownAir_HB1.yy",},},
     {"id":{"name":"sPlayerHeavyDownAir_HB2","path":"sprites/sPlayerHeavyDownAir_HB2/sPlayerHeavyDownAir_HB2.yy",},},
     {"id":{"name":"sPlayerHeavyDownAir","path":"sprites/sPlayerHeavyDownAir/sPlayerHeavyDownAir.yy",},},
+    {"id":{"name":"sPlayerHurt","path":"sprites/sPlayerHurt/sPlayerHurt.yy",},},
     {"id":{"name":"sPlayerIdle","path":"sprites/sPlayerIdle/sPlayerIdle.yy",},},
     {"id":{"name":"sPlayerIdle1","path":"sprites/sPlayerIdle1/sPlayerIdle1.yy",},},
     {"id":{"name":"sPlayerParry","path":"sprites/sPlayerParry/sPlayerParry.yy",},},

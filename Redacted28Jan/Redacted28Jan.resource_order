@@ -304,6 +304,7 @@
     {"name":"sPlayerHeavyDownAir_HB1","order":8,"path":"sprites/sPlayerHeavyDownAir_HB1/sPlayerHeavyDownAir_HB1.yy",},
     {"name":"sPlayerHeavyDownAir_HB2","order":9,"path":"sprites/sPlayerHeavyDownAir_HB2/sPlayerHeavyDownAir_HB2.yy",},
     {"name":"sPlayerHeavyDownAir","order":7,"path":"sprites/sPlayerHeavyDownAir/sPlayerHeavyDownAir.yy",},
+    {"name":"sPlayerHurt","order":78,"path":"sprites/sPlayerHurt/sPlayerHurt.yy",},
     {"name":"sPlayerIdle1","order":66,"path":"sprites/sPlayerIdle1/sPlayerIdle1.yy",},
     {"name":"sPlayerPoise","order":3,"path":"sprites/sPlayerPoise/sPlayerPoise.yy",},
     {"name":"sPlayerRiposte_HB","order":2,"path":"sprites/sPlayerRiposte_HB/sPlayerRiposte_HB.yy",},
