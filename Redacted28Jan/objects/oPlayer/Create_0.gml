@@ -108,7 +108,7 @@ dashcooldown=20 // time between dashes
 
 termVel = 8;
 termVel_wall = 3;
-jumpMax = 2;
+jumpMax = 1;
 jumpCount = 0;
 jumpHoldTimer = 0;
 //Jump values for each successive jump
@@ -116,8 +116,7 @@ jumpHoldTimer = 0;
 //jspd[0] = -7.15;
 jumpHoldFrames = 12;
 jspd = -7;
-//jumpHoldFrames[1] = 10;
-//jspd[1] = -2.85;
+
 //Coyote Time
 //Hang Time
 coyoteHangFrames = 2;

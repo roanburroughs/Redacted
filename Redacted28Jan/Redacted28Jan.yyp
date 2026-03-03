@@ -399,6 +399,7 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"LevelTest3","path":"rooms/LevelTest3/LevelTest3.yy",},},
+    {"roomId":{"name":"LevelTest4","path":"rooms/LevelTest4/LevelTest4.yy",},},
     {"roomId":{"name":"LevelTest2","path":"rooms/LevelTest2/LevelTest2.yy",},},
     {"roomId":{"name":"testdialogue","path":"rooms/testdialogue/testdialogue.yy",},},
     {"roomId":{"name":"Level","path":"rooms/Level/Level.yy",},},
@@ -414,7 +415,6 @@
     {"roomId":{"name":"DarkRoom","path":"rooms/DarkRoom/DarkRoom.yy",},},
     {"roomId":{"name":"Platfo","path":"rooms/Platfo/Platfo.yy",},},
     {"roomId":{"name":"EnemyTestRoom","path":"rooms/EnemyTestRoom/EnemyTestRoom.yy",},},
-    {"roomId":{"name":"LevelTest4","path":"rooms/LevelTest4/LevelTest4.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

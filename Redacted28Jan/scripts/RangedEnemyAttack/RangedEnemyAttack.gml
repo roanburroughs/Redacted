@@ -30,13 +30,14 @@ function RangedEnemyAttack(){
 			with (_shoot)
 		{
 			hsp = 8*_distFrom;
+			//hsp = 8*image_xscale;
 		}
 
 
 		stateTarget = ENEMYSTATE.IDLE;
 		if(fireCount>=3)
 		{
-			stateWaitDuration = 120;
+			stateWaitDuration = 180;
 			chungus = false;
 		}
 		else
