@@ -80,9 +80,7 @@ if(   hsp<0 ) moveDir= -1
 			vsp = -11;
 			//vsp = vspJump;
 		}
-		show_debug_message(vspJump)
-		
-		
+			
 	
 var inst = instance_nearest(x + hsp, y, oPaintedFloor) //interact with only this painted floor
 

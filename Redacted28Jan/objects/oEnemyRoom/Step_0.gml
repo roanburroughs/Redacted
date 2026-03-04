@@ -1,0 +1,36 @@
+Enemies = instance_place_list(x, y, pEnemy, EnemyList, false); //places number of enemies into EnemyList
+if(Enemies>0)
+{
+	enemiesActive = true; //there are enemies inside the room
+}
+else
+{
+	enemiesActive = false; //all enemies inside the room are dead
+}
+
+if(instance_place(x, y, oPlayer) && enemiesActive)
+{
+	/*if(!instance_exists(gate)) //creates enemy gate
+	{
+		gate = instance_create_layer(gateX, gateY, "Instances", oEnemyGate);
+		gate.image_xscale = gateXStretch;
+		gate.image_yscale = gateYStretch;
+		with(gate)
+		{
+			fadein=true;
+		}
+	}*/
+	with(gate)
+	{
+		fadein = true;
+	}
+}
+
+if(instance_exists(gate) && Enemies = 0) //gate fades once enemies are dead
+{
+	with(gate)
+	{
+		//fadein = false;
+		fadeout = true;
+	}; 
+}
