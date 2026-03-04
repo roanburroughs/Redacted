@@ -30,12 +30,13 @@ function LAttack2(){
 	
 	if (keyPressed_lightAttack && image_index > 2)
 	{
+		if(audio_is_playing(LightAttack)) audio_stop_sound(LightAttack);
 		state = LAttack3;
 	}
 	
 	if (keyPressed_heavyAttack && image_index > 2)
 	{
-		state = HAttack2Up;
+		state = HAttack2;
 	}
 	
 	if (image_index >= 2) && (canDash) && (keyDash)

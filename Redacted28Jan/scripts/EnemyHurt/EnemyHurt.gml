@@ -78,7 +78,7 @@ if(object_index = oDrone)
 		state = ENEMYSTATE.DRONE_DIE;
 	}
 	
-	if( ( (object_index = oEnemyTemp) || (object_index = oEnemy) || (object_index = oShieldEnemyTemp) )&& (weight>2) && (onGround) && (staggered) )
+	if( ( (object_index = oEnemyTemp) || (object_index = oEnemy) || (object_index = oShieldEnemyTemp) )&& (weight>2) && (staggered) )
 	{
 		hsp = 0;
 		

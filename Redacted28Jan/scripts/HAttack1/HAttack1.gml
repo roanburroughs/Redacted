@@ -15,27 +15,33 @@ if(face>0){
 		face = -face;
 	}
 	
-	if(image_index<3)
+	if(image_index>0 && image_index<3)
 	{
-	hsp = (4*image_speed)*face;
+		hsp = 3*face;
 	}
-	else
+	
+	if(image_index>3 && image_index<5)
+	{
+		hsp = 12*face;
+	}
+	
+	if(floor(image_index == 5))
 	{
 		hsp = 0;
 	}
 
 	//attack type, damage, stun damage, hitstun, hspknock, vspknock, hspairtime, vspairtime, sprite, mask
-	ProcessAttack(_attackTypeTemp, 3, 3, 3, 0.5, 8, 9, 0, 0, sPlayerAttackH1, sPlayerAttackH1_HB);
-	if(!audio_is_playing(HeavyAttack)) audio_play_sound(HeavyAttack, 1, false, 1, 0, random_range(0.9, 1));
+	ProcessAttack(_attackTypeTemp, 3, 3, 3, 0.5, 26, 9, 0, 0, sPlayerAttackH1, sPlayerAttackH1_HB);
+	if(!audio_is_playing(HeavyAttack)) audio_play_sound(HeavyAttack, 0, false, 1, 0, random_range(0.9, 1));
 	
 	if(keyPressed_lightAttack && image_index > 3)
 	{
-		state = LAttack2;
+		//state = LAttack2;
 	}
 	
 	if(keyPressed_heavyAttack && image_index > 3)
 	{
-		state = HAttack2;
+		//state = HAttack2;
 	}
 	
 	if (image_index >= 5)

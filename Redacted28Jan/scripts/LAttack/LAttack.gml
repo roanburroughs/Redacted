@@ -34,6 +34,7 @@ if(face>0){
 	
 	if (keyPressed_lightAttack && image_index > 1)
 	{
+		if(audio_is_playing(LightAttack)) audio_stop_sound(LightAttack);
 		state = LAttack2;
 	}
 	

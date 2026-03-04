@@ -5,14 +5,14 @@ if(!standActivate)
 	{
 	
 		vsp = (moveSpeed/timeToMove)*sign(finalYPos);
-		if(!audio_is_playing(ElevatorMove))	audio_play_sound(ElevatorMove,0,true,1)
+		//if(!audio_is_playing(ElevatorMove))	audio_play_sound(ElevatorMove,0,true,1) playing even when offscreen rn
 		
 		if(sign(finalYPos) == 1)
 		{
 			
 			if(y >= finalY)
 			{
-				audio_stop_sound(ElevatorMove);
+				//audio_stop_sound(ElevatorMove);
 				moveStart = false;
 				standActivate = false;
 				vsp = 0;
@@ -24,7 +24,7 @@ if(!standActivate)
 		{
 			if(y <= finalY)
 			{
-				audio_stop_sound(ElevatorMove);
+				//audio_stop_sound(ElevatorMove);
 				moveStart = false;
 				vsp = 0;
 				time_source_start(timerEnd);
@@ -35,7 +35,7 @@ if(!standActivate)
 	if(moveEnd)
 	{
 		vsp = -((moveSpeed/timeToMove)*sign(finalYPos));
-		if(!audio_is_playing(ElevatorMove))	audio_play_sound(ElevatorMove,0,true,1)
+		//if(!audio_is_playing(ElevatorMove))	audio_play_sound(ElevatorMove,0,true,1)
 		/*if(y <= finalY-(finalYPos*2))
 		{
 			moveEnd = false;
@@ -46,7 +46,7 @@ if(!standActivate)
 		{
 			if(y <= ystart)
 			{
-				audio_stop_sound(ElevatorMove);
+				//audio_stop_sound(ElevatorMove);
 				moveEnd = false;
 				vsp = 0;
 				time_source_start(timerStart);
@@ -57,7 +57,7 @@ if(!standActivate)
 		{
 			if(y >= ystart)
 			{
-				audio_stop_sound(ElevatorMove);
+				//audio_stop_sound(ElevatorMove);
 				moveEnd = false;
 				vsp = 0;
 				time_source_start(timerStart);
@@ -65,10 +65,10 @@ if(!standActivate)
 		}
 	}
 	var _distFrom = ((oPlayer.x) - (x))
-	if(audio_is_playing(ElevatorMove) && _distFrom > 600)
-	{
-		audio_stop_sound(ElevatorMove);
-	}
+	//if(audio_is_playing(ElevatorMove) && _distFrom > 600)
+	//{
+		//audio_stop_sound(ElevatorMove);
+	//}
 }
 
 x += hsp;
