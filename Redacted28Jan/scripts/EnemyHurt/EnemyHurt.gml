@@ -33,7 +33,6 @@ if(object_index = oDrone)
 
 	if((weight > 2) && (!staggered))
 	{
-		show_debug_message(hitstunTimer)
 		if(knockbackSpeed == 0.5)
 		{
 			hsp = 0;
