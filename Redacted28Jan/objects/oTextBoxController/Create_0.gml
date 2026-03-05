@@ -1,3 +1,9 @@
+with(oStoryTrigger)
+{
+	
+other.text_file_path=	text_file_path 
+instance_destroy()
+}
 x=96
 y=736
 instance_create_depth(x,y,-1000,oNameTag)
@@ -40,7 +46,7 @@ if (file_exists(text_file_path)) {
      
     parse_text_file() 
 } else {
-    show_debug_message("Text file not found: " + text_file_path) 
+ //   show_debug_message("Text file not found: " + text_file_path) 
     out_of_text = true 
 }
  
