@@ -1,3 +1,6 @@
+camX = 0;
+camY = 0;
+
 finalCamX = 0;
 finalCamY = 0;
 camTrailSpd = .25;

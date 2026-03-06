@@ -128,6 +128,8 @@ myFloorPlat = noone;
 
 freeReady = true;
 
+changeRoom = false;
+
 //Sprites
 maskSpr = sPlayerIdle;
 idleSpr = sPlayerIdle;
