@@ -2,6 +2,8 @@ function PlayerStateFree(){
 
 //X Movement
 		//Direction
+	if(changeRoom = false)
+	{
 		if(!wallJumping)
 		{
 			moveDir = keyRight - keyLeft;
@@ -15,6 +17,8 @@ function PlayerStateFree(){
     //var move = keyRight - keyLeft;
 	
 	hsp = lerp(hsp,(maxSpeed*moveDir),acceleration);
+	
+	
   /* if(keyRight)
    {
 	 //hsp=lerp(hsp,maxwalkspeed,acceleration)
@@ -80,6 +84,7 @@ if(   hsp<0 ) moveDir= -1
 			vsp = -11;
 			//vsp = vspJump;
 		}
+	}
 			
 	
 var inst = instance_nearest(x + hsp, y, oPaintedFloor) //interact with only this painted floor

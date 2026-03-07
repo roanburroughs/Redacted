@@ -1,0 +1,1 @@
+draw_self() //comment out when not testing

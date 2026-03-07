@@ -13,10 +13,6 @@ instance_deactivate_object(pEntity);
 //3 turn everything near the player on
 instance_activate_region(x - _range, y - _range, _range * 2, _range * 2, true);
 
-
-
-
-
 if(hp<=0) dead=true
 if(dead)
 {
