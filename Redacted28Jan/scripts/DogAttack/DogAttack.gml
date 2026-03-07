@@ -17,7 +17,6 @@ function DogAttack(){
 	if(image_index >= 1 && image_index < 5)
 	{
 		leap +=0.1;
-		show_debug_message(_chungus)
 		hsp = lengthdir_x(10, dir);
 		if(leap <= 1)
 		{

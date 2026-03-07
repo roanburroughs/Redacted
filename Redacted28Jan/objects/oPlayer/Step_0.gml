@@ -1,7 +1,5 @@
 
 	//if(!audio_is_playing(_854821_A_Little_Tired)) audio_play_sound(_854821_A_Little_Tired,1,false,0.1) 
-	
-	
 
 var _range = 2000
  

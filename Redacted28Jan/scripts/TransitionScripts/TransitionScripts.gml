@@ -8,7 +8,8 @@ function RoomTransition(_type){
 	}
 	
 	var _lay = layer_create(-9999, "transition");
-	layer_sequence_create(_lay, oCamera.camX, oCamera.camY, _type);
+	layer_sequence_create(_lay, oCamera.finalCamX, oCamera.finalCamY, _type);
+	//layer_sequence_create(_lay, 0, 0, _type);
 }
 
 function TransitionStart(_roomTarget, _typeOut, _typeIn)
