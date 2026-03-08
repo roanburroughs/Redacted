@@ -71,7 +71,6 @@
     {"name":"oExecuteArea","order":4,"path":"objects/oExecuteArea/oExecuteArea.yy",},
     {"name":"oHeavyBlow","order":25,"path":"objects/oHeavyBlow/oHeavyBlow.yy",},
     {"name":"oLoadZone","order":28,"path":"objects/oLoadZone/oLoadZone.yy",},
-    {"name":"oMenu","order":41,"path":"objects/oMenu/oMenu.yy",},
     {"name":"oMovingfloor","order":7,"path":"objects/oMovingfloor/oMovingfloor.yy",},
     {"name":"oNameTag","order":27,"path":"objects/oNameTag/oNameTag.yy",},
     {"name":"oPaint","order":22,"path":"objects/oPaint/oPaint.yy",},
