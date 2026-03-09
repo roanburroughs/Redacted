@@ -5,3 +5,4 @@ xposZero = xstart-400;
 percentage = 0;
 
 held = 0;
+heldLimit = 0;

@@ -47,6 +47,7 @@
   "ResourceOrderSettings":[
     {"name":"FnMarker","order":1,"path":"fonts/FnMarker/FnMarker.yy",},
     {"name":"oAggroCamera","order":7,"path":"objects/oAggroCamera/oAggroCamera.yy",},
+    {"name":"oAudioGroupLoad","order":41,"path":"objects/oAudioGroupLoad/oAudioGroupLoad.yy",},
     {"name":"oAudioMenu","order":2,"path":"objects/oAudioMenu/oAudioMenu.yy",},
     {"name":"oAudioSlider","order":1,"path":"objects/oAudioSlider/oAudioSlider.yy",},
     {"name":"oBackground","order":13,"path":"objects/oBackground/oBackground.yy",},
