@@ -358,6 +358,7 @@
     {"name":"sTextUI","order":6,"path":"sprites/sTextUI/sTextUI.yy",},
     {"name":"sTileset","order":23,"path":"sprites/sTileset/sTileset.yy",},
     {"name":"sTileset1","order":67,"path":"sprites/sTileset1/sTileset1.yy",},
+    {"name":"sTilesetCity","order":83,"path":"sprites/sTilesetCity/sTilesetCity.yy",},
     {"name":"sTutorial","order":55,"path":"sprites/sTutorial/sTutorial.yy",},
     {"name":"sWall","order":2,"path":"sprites/sWall/sWall.yy",},
     {"name":"sWall1","order":63,"path":"sprites/sWall1/sWall1.yy",},

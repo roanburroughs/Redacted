@@ -23,8 +23,8 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"sTileset",
-    "path":"sprites/sTileset/sTileset.yy",
+    "name":"sTilesetCity",
+    "path":"sprites/sTilesetCity/sTilesetCity.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{

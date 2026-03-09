@@ -423,6 +423,7 @@
     {"id":{"name":"sTextUI","path":"sprites/sTextUI/sTextUI.yy",},},
     {"id":{"name":"sTileset","path":"sprites/sTileset/sTileset.yy",},},
     {"id":{"name":"sTileset1","path":"sprites/sTileset1/sTileset1.yy",},},
+    {"id":{"name":"sTilesetCity","path":"sprites/sTilesetCity/sTilesetCity.yy",},},
     {"id":{"name":"sTutorial","path":"sprites/sTutorial/sTutorial.yy",},},
     {"id":{"name":"sWall","path":"sprites/sWall/sWall.yy",},},
     {"id":{"name":"sWall1","path":"sprites/sWall1/sWall1.yy",},},
