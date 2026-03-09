@@ -78,6 +78,7 @@
     {"id":{"name":"To do for ProtoType","path":"notes/To do for ProtoType/To do for ProtoType.yy",},},
     {"id":{"name":"droneExplode","path":"objects/droneExplode/droneExplode.yy",},},
     {"id":{"name":"oAggroCamera","path":"objects/oAggroCamera/oAggroCamera.yy",},},
+    {"id":{"name":"oAudioGroupLoad","path":"objects/oAudioGroupLoad/oAudioGroupLoad.yy",},},
     {"id":{"name":"oAudioMenu","path":"objects/oAudioMenu/oAudioMenu.yy",},},
     {"id":{"name":"oAudioSlider","path":"objects/oAudioSlider/oAudioSlider.yy",},},
     {"id":{"name":"oBackground","path":"objects/oBackground/oBackground.yy",},},

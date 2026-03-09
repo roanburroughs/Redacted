@@ -8,6 +8,7 @@ halfwidth = room_width / 2;
 
 pos = 0;
 percentage = 0;
+heldLimit = 0;
 
 mastervol = 1;
 musicvol = 1;
@@ -24,6 +25,8 @@ instance_create_layer(halfwidth-200, 440, "GUI", oBar);
 
 sfx = instance_create_layer(halfwidth+200, 560, "GUI", oAudioSlider);
 instance_create_layer(halfwidth-200, 560, "GUI", oBar);
+
+sliderarray = [master, music, sfx];
 
 audio_group_load(ag_music);
 audio_group_load(ag_sfx);

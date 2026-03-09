@@ -2,8 +2,8 @@
   "$GMSound":"v2",
   "%Name":"Hit_Paintcan_B_5",
   "audioGroupId":{
-    "name":"audiogroup_default",
-    "path":"audiogroups/audiogroup_default",
+    "name":"ag_sfx",
+    "path":"audiogroups/ag_sfx",
   },
   "bitDepth":1,
   "channelFormat":0,
