@@ -3,7 +3,8 @@ keyDown = false;
 keyLeft = false;
 keyRight = false;
 
-halfwidth = room_width / 2;
+//halfwidth = room_width / 2;
+halfwidth = view_wport/2;
 //halfwidth = oCamera.finalCamX / 2;
 
 pos = 0;

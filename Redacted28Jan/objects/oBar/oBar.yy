@@ -7,7 +7,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"SettingSliderObjects",
-    "path":"folders/Objects/SettingSliderObjects.yy",
+    "path":"folders/PauseMenuStuff/SettingSliderObjects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

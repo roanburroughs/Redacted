@@ -24,4 +24,6 @@ draw_text(view_wport/2,view_hport/2,"PAUSED")
 
 draw_set_halign(fa_left) //reset text alignment for other objects
 
+
+
 }

@@ -10,8 +10,8 @@
   "name":"oPause2",
   "overriddenProperties":[],
   "parent":{
-    "name":"Redacted28Jan",
-    "path":"Redacted28Jan.yyp",
+    "name":"PauseMenuStuff",
+    "path":"folders/PauseMenuStuff.yy",
   },
   "parentObjectId":null,
   "persistent":false,

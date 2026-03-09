@@ -26,7 +26,7 @@
   "origin":3,
   "parent":{
     "name":"AudioSliderSprites",
-    "path":"folders/Sprites/AudioSliderSprites.yy",
+    "path":"folders/PauseMenuStuff/PauseMenuSprites/AudioSliderSprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

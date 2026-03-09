@@ -1268,7 +1268,7 @@
     {"name":"inst_4CBFC057","path":"rooms/LevelTest3/LevelTest3.yy",},
     {"name":"inst_37990CC5","path":"rooms/LevelTest3/LevelTest3.yy",},
     {"name":"inst_B39CE75","path":"rooms/LevelTest3/LevelTest3.yy",},
-    {"name":"inst_63161DE4","path":"rooms/LevelTest3/LevelTest3.yy",},
+    {"name":"inst_5758A458","path":"rooms/LevelTest3/LevelTest3.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -2852,7 +2852,7 @@
         {"$GMRInstance":"v4","%Name":"inst_B39CE75","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_B39CE75","objectId":{"name":"oRoomTransitionTrigger","path":"objects/oRoomTransitionTrigger/oRoomTransitionTrigger.yy",},"properties":[
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oRoomTransitionTrigger","path":"objects/oRoomTransitionTrigger/oRoomTransitionTrigger.yy",},"propertyId":{"name":"fadeInY","path":"objects/oRoomTransitionTrigger/oRoomTransitionTrigger.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"890",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":5312.0,"y":5696.0,},
-        {"$GMRInstance":"v4","%Name":"inst_63161DE4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_63161DE4","objectId":{"name":"oRoomFade","path":"objects/oRoomFade/oRoomFade.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2944.0,"y":3424.0,},
+        {"$GMRInstance":"v4","%Name":"inst_5758A458","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5758A458","objectId":{"name":"oAudioGroupLoad","path":"objects/oAudioGroupLoad/oAudioGroupLoad.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":128.0,"y":5696.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"Assets_1","assets":[
         {"$GMRSpriteGraphic":"v1","%Name":"graphic_17A9046A","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_17A9046A","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":0.936,"scaleY":0.8933333,"spriteId":{"name":"Sprite165","path":"sprites/Sprite165/Sprite165.yy",},"x":224.0,"y":5632.0,},

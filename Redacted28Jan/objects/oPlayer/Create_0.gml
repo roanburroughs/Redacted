@@ -6,7 +6,7 @@ LoadGame()
 SaveGame()
 if(!instance_exists(oPlayerHealth)) instance_create_layer(64,64,"player",oPlayerHealth)
 
-if(!instance_exists(oPause2)) instance_create_depth(0,0,-1000,oPause2)
+if(!instance_exists(oPause2)) instance_create_depth(0,0,-1000,oPause2);
 
 
 

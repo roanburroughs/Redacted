@@ -1,16 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"oRoomFade",
+  "%Name":"oAudioButton",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oRoomFade",
+  "name":"oAudioButton",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"PauseMenuStuff",
+    "path":"folders/PauseMenuStuff.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite173",
-    "path":"sprites/Sprite173/Sprite173.yy",
+    "name":"sAudioButton",
+    "path":"sprites/sAudioButton/sAudioButton.yy",
   },
   "spriteMaskId":null,
   "visible":true,
