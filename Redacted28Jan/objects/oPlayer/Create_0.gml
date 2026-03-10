@@ -8,8 +8,6 @@ if(!instance_exists(oPlayerHealth)) instance_create_layer(64,64,"player",oPlayer
 
 if(!instance_exists(oPause2)) instance_create_depth(0,0,-1000,oPause2);
 
-
-
 iframes=60
 hurt=false
 hp=100
