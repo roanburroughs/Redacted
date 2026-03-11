@@ -1,75 +1,77 @@
-
-if(!standActivate)
+if(!global.gamePaused)
 {
-	if(moveStart)
+	if(!standActivate)
 	{
+		if(moveStart)
+		{
 	
-		vsp = (moveSpeed/timeToMove)*sign(finalYPos);
-		//if(!audio_is_playing(ElevatorMove))	audio_play_sound(ElevatorMove,0,true,1) playing even when offscreen rn
+			vsp = (moveSpeed/timeToMove)*sign(finalYPos);
+			//if(!audio_is_playing(ElevatorMove))	audio_play_sound(ElevatorMove,0,true,1) playing even when offscreen rn
 		
-		if(sign(finalYPos) == 1)
-		{
+			if(sign(finalYPos) == 1)
+			{
 			
-			if(y >= finalY)
-			{
-				//audio_stop_sound(ElevatorMove);
-				moveStart = false;
-				standActivate = false;
-				vsp = 0;
-				time_source_start(timerEnd);
+				if(y >= finalY)
+				{
+					//audio_stop_sound(ElevatorMove);
+					moveStart = false;
+					standActivate = false;
+					vsp = 0;
+					time_source_start(timerEnd);
+				}
 			}
-		}
 	
-		if(sign(finalYPos) == -1)
-		{
-			if(y <= finalY)
+			if(sign(finalYPos) == -1)
 			{
-				//audio_stop_sound(ElevatorMove);
-				moveStart = false;
-				vsp = 0;
-				time_source_start(timerEnd);
+				if(y <= finalY)
+				{
+					//audio_stop_sound(ElevatorMove);
+					moveStart = false;
+					vsp = 0;
+					time_source_start(timerEnd);
+				}
 			}
 		}
+
+		if(moveEnd)
+		{
+			vsp = -((moveSpeed/timeToMove)*sign(finalYPos));
+			//if(!audio_is_playing(ElevatorMove))	audio_play_sound(ElevatorMove,0,true,1)
+			/*if(y <= finalY-(finalYPos*2))
+			{
+				moveEnd = false;
+				vsp = 0;
+			}*/
+	
+			if(sign(finalYPos) == 1)
+			{
+				if(y <= ystart)
+				{
+					//audio_stop_sound(ElevatorMove);
+					moveEnd = false;
+					vsp = 0;
+					time_source_start(timerStart);
+				}
+			}
+	
+			if(sign(finalYPos) == -1)
+			{
+				if(y >= ystart)
+				{
+					//audio_stop_sound(ElevatorMove);
+					moveEnd = false;
+					vsp = 0;
+					time_source_start(timerStart);
+				}
+			}
+		}
+		var _distFrom = ((oPlayer.x) - (x))
+		//if(audio_is_playing(ElevatorMove) && _distFrom > 600)
+		//{
+			//audio_stop_sound(ElevatorMove);
+		//}
 	}
 
-	if(moveEnd)
-	{
-		vsp = -((moveSpeed/timeToMove)*sign(finalYPos));
-		//if(!audio_is_playing(ElevatorMove))	audio_play_sound(ElevatorMove,0,true,1)
-		/*if(y <= finalY-(finalYPos*2))
-		{
-			moveEnd = false;
-			vsp = 0;
-		}*/
-	
-		if(sign(finalYPos) == 1)
-		{
-			if(y <= ystart)
-			{
-				//audio_stop_sound(ElevatorMove);
-				moveEnd = false;
-				vsp = 0;
-				time_source_start(timerStart);
-			}
-		}
-	
-		if(sign(finalYPos) == -1)
-		{
-			if(y >= ystart)
-			{
-				//audio_stop_sound(ElevatorMove);
-				moveEnd = false;
-				vsp = 0;
-				time_source_start(timerStart);
-			}
-		}
-	}
-	var _distFrom = ((oPlayer.x) - (x))
-	//if(audio_is_playing(ElevatorMove) && _distFrom > 600)
-	//{
-		//audio_stop_sound(ElevatorMove);
-	//}
+	x += hsp;
+	y += vsp;
 }
-
-x += hsp;
-y += vsp;

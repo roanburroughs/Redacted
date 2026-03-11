@@ -38,7 +38,20 @@ else {	//Inputs
 	if(!dead)getControls();
 	framecounter++
 	image_speed=1 //putting this here since things like rise and fall set it to 0
-	script_execute(state);
+	
+	if(!global.gamePaused)
+	{
+		script_execute(state);
+		grv = .475;
+	}
+	
+	else
+	{
+		hsp = 0;
+		vsp = 0;
+		grv = 0;
+		image_speed = 0;
+	}
 
 	invulnerable = max(invulnerable-1, 0);
 		/*      

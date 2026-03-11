@@ -32,8 +32,8 @@ for(var i = 0; i<3; i++)
 			held = false;
 		}
 	}
-	
 }
+
 if(master.held = true || music.held = true || sfx.held = true)
 {
 	heldLimit = 1;
@@ -57,7 +57,6 @@ if(sfx.held)
 {
 	pos = 2;
 }
-show_debug_message(heldLimit)
 
 global.musicvol = musicvol * mastervol;
 global.sfxvol = sfxvol * mastervol;
