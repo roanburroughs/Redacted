@@ -3,7 +3,7 @@ if keyboard_check_pressed( vk_f8 )
 {
     window_set_fullscreen( !window_get_fullscreen() );
 }
-show_debug_message(finalCamY);
+
 //Exit if there is no player
 if !instance_exists(oPlayer) exit;
 

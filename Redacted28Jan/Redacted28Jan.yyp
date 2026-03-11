@@ -129,6 +129,7 @@
     {"id":{"name":"oRoomTransitionTrigger","path":"objects/oRoomTransitionTrigger/oRoomTransitionTrigger.yy",},},
     {"id":{"name":"oShieldEnemyTemp","path":"objects/oShieldEnemyTemp/oShieldEnemyTemp.yy",},},
     {"id":{"name":"oSpeechBubble","path":"objects/oSpeechBubble/oSpeechBubble.yy",},},
+    {"id":{"name":"oSpeechTrigger","path":"objects/oSpeechTrigger/oSpeechTrigger.yy",},},
     {"id":{"name":"oSpray_Parent","path":"objects/oSpray_Parent/oSpray_Parent.yy",},},
     {"id":{"name":"oSpray1","path":"objects/oSpray1/oSpray1.yy",},},
     {"id":{"name":"oSpray2","path":"objects/oSpray2/oSpray2.yy",},},
@@ -447,8 +448,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"VolumeSliderTest","path":"rooms/VolumeSliderTest/VolumeSliderTest.yy",},},
     {"roomId":{"name":"LevelTest3","path":"rooms/LevelTest3/LevelTest3.yy",},},
+    {"roomId":{"name":"VolumeSliderTest","path":"rooms/VolumeSliderTest/VolumeSliderTest.yy",},},
     {"roomId":{"name":"LevelTest4","path":"rooms/LevelTest4/LevelTest4.yy",},},
     {"roomId":{"name":"EnemyGateTest","path":"rooms/EnemyGateTest/EnemyGateTest.yy",},},
     {"roomId":{"name":"LevelTest2","path":"rooms/LevelTest2/LevelTest2.yy",},},

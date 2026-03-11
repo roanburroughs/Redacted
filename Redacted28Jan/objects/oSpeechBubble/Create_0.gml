@@ -1,3 +1,6 @@
 box = 0;
+boxXStart = 50;
 point = 0;
-text = "";
+timer = 0;
+
+hidden = true;

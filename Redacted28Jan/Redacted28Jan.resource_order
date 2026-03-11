@@ -93,6 +93,7 @@
     {"name":"oRoomTransitionTrigger","order":37,"path":"objects/oRoomTransitionTrigger/oRoomTransitionTrigger.yy",},
     {"name":"oShieldEnemyTemp","order":10,"path":"objects/oShieldEnemyTemp/oShieldEnemyTemp.yy",},
     {"name":"oSpeechBubble","order":40,"path":"objects/oSpeechBubble/oSpeechBubble.yy",},
+    {"name":"oSpeechTrigger","order":41,"path":"objects/oSpeechTrigger/oSpeechTrigger.yy",},
     {"name":"oSpray1","order":1,"path":"objects/oSpray1/oSpray1.yy",},
     {"name":"oSpray2","order":2,"path":"objects/oSpray2/oSpray2.yy",},
     {"name":"oSpray3","order":3,"path":"objects/oSpray3/oSpray3.yy",},
