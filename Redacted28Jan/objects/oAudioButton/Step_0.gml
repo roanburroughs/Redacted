@@ -5,7 +5,7 @@ if(global.gamePaused)
 	{
 
 	}
-
+var _bleh = 0;
 }
 if(point_in_rectangle(mouse_x, mouse_y, oAudioButton.bbox_left, oAudioButton.bbox_top, oAudioButton.bbox_right, oAudioButton.bbox_bottom))
 {
