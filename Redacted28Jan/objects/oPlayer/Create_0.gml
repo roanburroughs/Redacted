@@ -77,7 +77,8 @@ hsp = 0;
 maxSpeed = 10;
 
 vsp = 0;
-vspJump = -8;
+//vspJump = -8;
+vspJump = -10;
 vspDoubleJump=-1;
 
 hspKnock = 0;

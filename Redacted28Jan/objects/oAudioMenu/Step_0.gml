@@ -53,6 +53,7 @@ if(keyboard_check_released(vk_escape))
 	instance_destroy(musicBar);
 	instance_destroy(sfx);
 	instance_destroy(sfxBar);
+	global.audioSettings = false;
 	global.mainMenu = true;
 	instance_destroy();
 }

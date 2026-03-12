@@ -1,5 +1,5 @@
 draw_set_color(c_white);
-
+draw_set_font(-1);
 draw_set_halign(fa_left);
 /*
 draw_text_transformed(halfwidth + 250, 320, string(round(mastervol * 100)), 2, 2, 0);
@@ -50,3 +50,4 @@ switch(pos)
 				if (keyLeft) && (sfxvol > 0) sfx.x -= 1;
 			break;
 }
+

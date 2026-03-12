@@ -5,7 +5,7 @@ if(global.gamePaused)
 		if(mouse_check_button_pressed(mb_left))
 		{
 			global.mainMenu = false;
-			instance_create_depth(0, 0, -1000, oAudioMenu);
+			instance_create_depth(0, 0, -1000, oAudioMenu);	
 			//room_goto(VolumeSliderTest);
 		}
 	}
