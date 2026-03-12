@@ -45,14 +45,14 @@ global.sfxvol = sfxvol * mastervol;
 audio_group_set_gain(ag_music, global.musicvol, 0);
 audio_group_set_gain(ag_sfx, global.sfxvol, 0);
 
-if(keyboard_check_pressed(vk_escape))
+if(keyboard_check_released(vk_escape))
 {
-	global.mainMenu = true;
 	instance_destroy(master);
 	instance_destroy(masterBar);
 	instance_destroy(music);
 	instance_destroy(musicBar);
 	instance_destroy(sfx);
 	instance_destroy(sfxBar);
+	global.mainMenu = true;
 	instance_destroy();
 }

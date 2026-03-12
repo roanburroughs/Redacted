@@ -1,9 +1,14 @@
 draw_set_color(c_white);
 
 draw_set_halign(fa_left);
+/*
 draw_text_transformed(halfwidth + 250, 320, string(round(mastervol * 100)), 2, 2, 0);
 draw_text_transformed(halfwidth + 250, 440, string(round(musicvol * 100)), 2, 2, 0);
 draw_text_transformed(halfwidth + 250, 560, string(round(sfxvol * 100)), 2, 2, 0);
+*/
+draw_text_transformed(halfwidth + 250, height+320, string(round(mastervol * 100)), 2, 2, 0);
+draw_text_transformed(halfwidth + 250, height+440, string(round(musicvol * 100)), 2, 2, 0);
+draw_text_transformed(halfwidth + 250, height+560, string(round(sfxvol * 100)), 2, 2, 0);
 
 draw_set_halign(fa_center);
 /*

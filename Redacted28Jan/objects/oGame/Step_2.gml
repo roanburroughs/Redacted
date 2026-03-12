@@ -1,5 +1,5 @@
 /// @desc pausing the game
-if (keyboard_check_released(vk_escape))
+if (keyboard_check_pressed(vk_escape))
 {
 	if(global.mainMenu)
 	{
