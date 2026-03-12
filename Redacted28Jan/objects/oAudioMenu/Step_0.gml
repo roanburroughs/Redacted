@@ -13,26 +13,7 @@ mastervol = master.percentage;
 musicvol = music.percentage;
 sfxvol = sfx.percentage;
 
-for(var i = 0; i<3; i++)
-{
-	with(sliderarray[i])
-	{
-		if(mouse_check_button(mb_left))
-		{
-			if((mouse_x < x+sprite_width/2) && (mouse_x > x-sprite_width/2) && (mouse_y < y+sprite_height/2) && (mouse_y > y-sprite_height/2))
-			{
-				if(oAudioMenu.heldLimit == 0)
-				{
-					held = true;
-				}
-			}
-		}
-		else
-		{
-			held = false;
-		}
-	}
-}
+
 
 if(master.held = true || music.held = true || sfx.held = true)
 {
@@ -63,3 +44,15 @@ global.sfxvol = sfxvol * mastervol;
 
 audio_group_set_gain(ag_music, global.musicvol, 0);
 audio_group_set_gain(ag_sfx, global.sfxvol, 0);
+
+if(keyboard_check_pressed(vk_escape))
+{
+	global.mainMenu = true;
+	instance_destroy(master);
+	instance_destroy(masterBar);
+	instance_destroy(music);
+	instance_destroy(musicBar);
+	instance_destroy(sfx);
+	instance_destroy(sfxBar);
+	instance_destroy();
+}

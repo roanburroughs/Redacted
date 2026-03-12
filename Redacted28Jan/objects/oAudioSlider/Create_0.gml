@@ -1,3 +1,5 @@
+gamePausedImageSpeed = 0;
+
 xpos = 0;
 
 xposFull = xstart;

@@ -1,14 +1,13 @@
 if(global.gamePaused)
 {
-
-	if((mouse_x < x+sprite_width/2) && (mouse_x > x-sprite_width/2) && (mouse_y < y+sprite_height/2) && (mouse_y > y-sprite_height/2))
+	if(point_in_rectangle(mouse_x, mouse_y, oAudioButton.bbox_left, oAudioButton.bbox_top, oAudioButton.bbox_right, oAudioButton.bbox_bottom))
 	{
-
+		if(mouse_check_button_pressed(mb_left))
+		{
+			global.mainMenu = false;
+			instance_create_depth(0, 0, -1000, oAudioMenu);
+			//room_goto(VolumeSliderTest);
+		}
 	}
-var _bleh = 0;
-}
-if(point_in_rectangle(mouse_x, mouse_y, oAudioButton.bbox_left, oAudioButton.bbox_top, oAudioButton.bbox_right, oAudioButton.bbox_bottom))
-{
-	var chuck = true;
-	show_debug_message(chuck);
+
 }

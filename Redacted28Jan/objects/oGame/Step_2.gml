@@ -1,7 +1,11 @@
 /// @desc pausing the game
-if (keyboard_check_pressed(vk_escape))
+if (keyboard_check_released(vk_escape))
 {
-	global.gamePaused = !global.gamePaused;
+	if(global.mainMenu)
+	{
+		global.gamePaused = !global.gamePaused;
+	}
+	
 	
 	if(global.gamePaused)
 	{
@@ -12,12 +16,20 @@ if (keyboard_check_pressed(vk_escape))
 		}
 		
 	}
-	else
+	/*else
 	{
 		with(all)
 		{
 			image_speed = gamePausedImageSpeed;
 		}
-	}		
+	}*/
+	
+	if(!global.gamePaused && !global.mainMenu)
+	{
+		with(all)
+		{
+			image_speed = gamePausedImageSpeed;
+		}
+	}
 }
 

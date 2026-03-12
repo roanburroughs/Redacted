@@ -1268,11 +1268,11 @@
     {"name":"inst_4CBFC057","path":"rooms/LevelTest3/LevelTest3.yy",},
     {"name":"inst_37990CC5","path":"rooms/LevelTest3/LevelTest3.yy",},
     {"name":"inst_B39CE75","path":"rooms/LevelTest3/LevelTest3.yy",},
-    {"name":"inst_5758A458","path":"rooms/LevelTest3/LevelTest3.yy",},
     {"name":"inst_169E2476","path":"rooms/LevelTest3/LevelTest3.yy",},
     {"name":"inst_5DD8A80C","path":"rooms/LevelTest3/LevelTest3.yy",},
     {"name":"inst_40F3CB6","path":"rooms/LevelTest3/LevelTest3.yy",},
     {"name":"inst_6C26D09C","path":"rooms/LevelTest3/LevelTest3.yy",},
+    {"name":"inst_5758A458","path":"rooms/LevelTest3/LevelTest3.yy",},
   ],
   "isDnd":false,
   "layers":[
