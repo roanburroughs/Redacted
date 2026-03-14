@@ -334,7 +334,7 @@ else    if (inst != noone and inst.image_angle != 0 and inst.image_angle != 180 
 				}
 				else
 				{
-					maxSpeed = 10;
+					//maxSpeed = 10;
 				}
 			}
 			

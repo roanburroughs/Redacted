@@ -1,0 +1,7 @@
+[character slot2 = sAmara_Neutral]
+[speaker Amara slot2]
+When did the gallery close down? And Coreign was mentioned in the graffiti on the gallery walls.
+[break]
+[character slot2 = sAmara_Neutral]
+[speaker Amara slot2]
+DIALOGUE 2

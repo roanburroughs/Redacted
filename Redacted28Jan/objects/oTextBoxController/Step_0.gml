@@ -4,7 +4,7 @@ if (keyboard_check_pressed(vk_space)) {
         
         if (current_chunk_index >= array_length(text_chunks)) {
             out_of_text = true
-			if(gotoroom!=noone) room_goto(gotoroom)
+			//if(gotoroom!=noone) room_goto(gotoroom)
 			instance_destroy()
 			instance_destroy(oNameTag)
 			instance_destroy(oCharacter_Slot_Parent)

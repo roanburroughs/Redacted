@@ -11,8 +11,8 @@
   "name":"oEnemyGate",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"EnemyRoomObjects",
+    "path":"folders/Objects/EnemyRoomObjects.yy",
   },
   "parentObjectId":{
     "name":"oWall",

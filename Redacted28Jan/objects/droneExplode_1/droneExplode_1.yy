@@ -1,23 +1,22 @@
 {
   "$GMObject":"",
-  "%Name":"oBackGate",
+  "%Name":"droneExplode_1",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":7,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"oPaintedFloor","path":"objects/oPaintedFloor/oPaintedFloor.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oBackGate",
+  "name":"droneExplode_1",
   "overriddenProperties":[],
   "parent":{
-    "name":"EnemyRoomObjects",
-    "path":"folders/Objects/EnemyRoomObjects.yy",
+    "name":"EnemyObjects",
+    "path":"folders/Objects/EnemyObjects.yy",
   },
-  "parentObjectId":{
-    "name":"oWall",
-    "path":"objects/oWall/oWall.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -36,9 +35,12 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sBackGate",
-    "path":"sprites/sBackGate/sBackGate.yy",
+    "name":"sEnemyDroneBoom",
+    "path":"sprites/sEnemyDroneBoom/sEnemyDroneBoom.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"sEnemyDroneBoom",
+    "path":"sprites/sEnemyDroneBoom/sEnemyDroneBoom.yy",
+  },
   "visible":true,
 }
