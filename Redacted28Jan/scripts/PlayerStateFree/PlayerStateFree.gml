@@ -84,7 +84,7 @@ if(   hsp<0 ) moveDir= -1
 			vsp = -12;
 			//vsp = vspJump;
 		}
-	}
+	
 			
 	
 var inst = instance_nearest(x + hsp, y, oPaintedFloor) //interact with only this painted floor
@@ -161,6 +161,7 @@ if (inst != noone)
 		jumpHoldTimer--;
 	}
 	
+	}
 
 /*
 else if(vsp!=0 and keyJump and candoublejump and !doublejumping)

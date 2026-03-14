@@ -1,7 +1,9 @@
 EnemyList = ds_list_create();
 //gate = 0;
 gate = instance_nearest(x, y, oEnemyGate);
+backGate = instance_nearest(x, y, oBackGate);
 
+roomActive = false;
 enemiesActive = false;
 enemiesDead = false;
 

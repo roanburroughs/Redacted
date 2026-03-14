@@ -8,21 +8,28 @@ else
 	enemiesActive = false; //all enemies inside the room are dead
 }
 
-if(instance_place(x, y, oPlayer) && enemiesActive)
+if(roomActive)
 {
-	/*if(!instance_exists(gate)) //creates enemy gate
+	if(instance_place(x, y, oPlayer) && enemiesActive)
 	{
-		gate = instance_create_layer(gateX, gateY, "Instances", oEnemyGate);
-		gate.image_xscale = gateXStretch;
-		gate.image_yscale = gateYStretch;
+		/*if(!instance_exists(gate)) //creates enemy gate
+		{
+			gate = instance_create_layer(gateX, gateY, "Instances", oEnemyGate);
+			gate.image_xscale = gateXStretch;
+			gate.image_yscale = gateYStretch;
+			with(gate)
+			{
+				fadein=true;
+			}
+		}*/
 		with(gate)
 		{
-			fadein=true;
+			fadein = true;
 		}
-	}*/
-	with(gate)
-	{
-		fadein = true;
+		with(backGate)
+		{
+			fadein = true;
+		}
 	}
 }
 
@@ -32,5 +39,6 @@ if(instance_exists(gate) && Enemies = 0) //gate fades once enemies are dead
 	{
 		//fadein = false;
 		fadeout = true;
-	}; 
+	};
+	instance_destroy();
 }

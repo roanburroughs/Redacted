@@ -1,4 +1,4 @@
 if(image_index = 6)
 {
-	instance_destroy();
+	//instance_destroy();
 }

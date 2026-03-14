@@ -16,4 +16,4 @@ if(!global.gamePaused || instance_exists(oAudioMenu))
 	instance_destroy(audioButton);
 	instance_destroy(audioButtonGUI);
 }
-show_debug_message(global.mainMenu)
+//show_debug_message(global.mainMenu)
