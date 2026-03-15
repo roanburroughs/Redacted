@@ -1,9 +1,9 @@
 {
   "$GMTileSet":"v1",
-  "%Name":"TileSet1_1",
+  "%Name":"TileSetCampus",
   "autoTileSets":[
     {"$GMAutoTileSet":"","%Name":"autotile_1","closed_edge":false,"name":"autotile_1","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[
-        47,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,
+        47,1,2,3,4,5,6,7,8,9,10,11,12,13,14,14,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,
         37,38,39,40,41,42,43,44,45,46,
       ],},
   ],
@@ -12,7 +12,7 @@
     "SerialiseWidth":0,
     "TileSerialiseData":[],
   },
-  "name":"TileSet1_1",
+  "name":"TileSetCampus",
   "out_columns":7,
   "out_tilehborder":2,
   "out_tilevborder":2,
@@ -23,8 +23,8 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"sTileset1",
-    "path":"sprites/sTileset1/sTileset1.yy",
+    "name":"sTilesetCampus",
+    "path":"sprites/sTilesetCampus/sTilesetCampus.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{
