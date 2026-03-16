@@ -5,7 +5,7 @@ EnemyCollision();
 if (instance_exists(target))
 {
 	xTo = target.x;
-	yTo = target.y;
+	yTo = target.y-100;
 	
 	
 	

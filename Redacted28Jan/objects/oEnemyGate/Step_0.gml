@@ -11,4 +11,3 @@ if(fadeout = true)
 {
 	alpha=max(alpha-0.04, 0);
 }
-show_debug_message(fadeout)

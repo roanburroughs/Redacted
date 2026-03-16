@@ -12,14 +12,20 @@ function AggroCameraIdle(draw=false){
 		 var angle2=0
 		if(aim="bottomleft")
 		{
-			angle1 =175
-			angle2 =275
+			//angle1 =175
+			//angle2 =275
+			
+			angle1 = 210
+			angle2 = 240
 			anglesprite = sCamera_bottomleft
 		}
  		if(aim="straightleft")
 		{
-			angle1 =130
-			angle2 =230
+			//angle1 =130
+			//angle2 =230
+			
+			angle1 = 160
+			angle2 = 190
 			anglesprite = sCamera_straightleft
 		}
  		if(aim="topleft")
@@ -30,16 +36,24 @@ function AggroCameraIdle(draw=false){
 		}
 		 		if(aim="down")
 		{
-			angle1 =220
-			angle2 =320
+			//angle1 =220
+			//angle2 =320
+			
+			angle1 = 255
+			angle2 = 285
 			anglesprite = sCamera_down
 		}
 		
  		if(aim="bottomright")
 		{
-			angle1 =255
-			angle2 =355
-			anglesprite = sCamera_bottomright
+			//angle1 =255
+			//angle2 =355
+			
+			angle1 = 310;
+			angle2 = 340;
+			//anglesprite = sCamera_bottomright
+			anglesprite = sCamera_bottomleft
+			image_xscale = -1
 		}
  
  if(aim="straightright")
@@ -107,9 +121,10 @@ function AggroCameraIdle(draw=false){
 									//	show_message("aggro") //I mean it works
 								// show_message("aggro")
 									AggroEnemy()
-									oAggroCamera.active=false
+									DartTrapTrigger()
+									//oAggroCamera.active=false
+									active = false;
 									alarm[10]=100
-
 									}
 							}
 	
@@ -120,7 +135,7 @@ function AggroCameraIdle(draw=false){
 				    draw_primitive_end()
 				    draw_set_alpha(1)
 				}
-	
+				
 		
 
  

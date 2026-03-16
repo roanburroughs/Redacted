@@ -1,6 +1,10 @@
 function EnemyChase(){
 sprite_index = sprMove;
 //audio_play_sound(DogAlert,10,false,1)
+if(object_index = oEnemy)
+{
+	if(!audio_is_playing(DogMove))	audio_play_sound(DogMove,0,false,1)
+}
 
 if (instance_exists(target))
 {

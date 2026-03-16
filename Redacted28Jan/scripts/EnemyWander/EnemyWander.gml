@@ -122,7 +122,7 @@ if(hsp = 0 && ((object_index = oEnemyTemp) || (object_index = oEnemy) || (object
 		aggroCheck = 0;
 		if (instance_exists(oPlayer)) && (point_distance(x, y, oPlayer.x, oPlayer.y) <= enemyAggroRadius)
 		{
-		if(!audio_is_playing(DogMove))	audio_play_sound(DogMove,0,false,1)
+		//if(!audio_is_playing(DogMove))	audio_play_sound(DogMove,0,false,1)
 			state = ENEMYSTATE.CHASE;
 			target = oPlayer;
 		}

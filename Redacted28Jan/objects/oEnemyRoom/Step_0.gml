@@ -1,4 +1,5 @@
 Enemies = instance_place_list(x, y, pEnemy, EnemyList, false); //places number of enemies into EnemyList
+Elevators = instance_place_list(x, y, oElevator, ElevatorList, false); //same for elevators
 if(Enemies>0)
 {
 	enemiesActive = true; //there are enemies inside the room
@@ -31,14 +32,43 @@ if(roomActive)
 			fadein = true;
 		}
 	}
+	
+	if(Elevators>0)
+	{
+		for(var i=0; i<ElevatorList; i++)
+		{
+			with(ElevatorList[| i])
+			{
+				show_debug_message(roomReady)
+				if(!roomReady)
+				{
+					roomReady = true;
+				}
+			}
+		}
+	}
 }
 
-if(instance_exists(gate) && Enemies = 0) //gate fades once enemies are dead
+if(instance_exists(gate) && Enemies = 0)
 {
 	with(gate)
 	{
 		//fadein = false;
-		fadeout = true;
+		fadeout = true; //gate fades once enemies are dead
 	};
+	
+	if(Elevators>0)
+	{
+		for(var i=0; i<Elevators; i++)
+		{
+			with(Elevators[| i])
+			{			
+				if(!roomFinished)
+				{
+					roomFinished = true;
+				}
+			}
+		}
+	}
 	instance_destroy();
 }

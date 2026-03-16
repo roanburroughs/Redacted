@@ -8,7 +8,7 @@ var _range = 2000
 instance_activate_region(x - (_range ), y - (_range ), (_range ) * 2, (_range ) * 2, true)
 
  //2 turn everything off. you need to turn it on first on line 10 or it wont listen to this or the following activation, weird ik
-instance_deactivate_object(pEntity);
+//instance_deactivate_object(pEntity);
 
 //3 turn everything near the player on
 instance_activate_region(x - _range, y - _range, _range * 2, _range * 2, true);
@@ -118,9 +118,9 @@ else {	//Inputs
 	
 	//Moving vertically
 
- if(keyDown) && (state=PlayerStateFree) vsp += grv * 5;
-
-else    if (inst != noone and inst.image_angle != 0 and inst.image_angle != 180 and inst.image_blend!=c_white)
+ //if(keyDown) && (state=PlayerStateFree) vsp += grv * 5;
+//else
+if (inst != noone and inst.image_angle != 0 and inst.image_angle != 180 and inst.image_blend!=c_white)
     {
 		vsp+=grv*0.5
 	}

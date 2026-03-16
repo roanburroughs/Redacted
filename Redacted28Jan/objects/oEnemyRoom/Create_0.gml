@@ -1,4 +1,5 @@
 EnemyList = ds_list_create();
+ElevatorList = ds_list_create();
 //gate = 0;
 gate = instance_nearest(x, y, oEnemyGate);
 backGate = instance_nearest(x, y, oBackGate);

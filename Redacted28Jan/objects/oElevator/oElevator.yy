@@ -36,6 +36,8 @@
     {"$GMObjectProperty":"v2","%Name":"finalYPos","filters":[],"listItems":[],"multiselect":false,"name":"finalYPos","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"150","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"waitTime","filters":[],"listItems":[],"multiselect":false,"name":"waitTime","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"standActivate","filters":[],"listItems":[],"multiselect":false,"name":"standActivate","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
+    {"$GMObjectProperty":"v2","%Name":"roomReady","filters":[],"listItems":[],"multiselect":false,"name":"roomReady","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"true","varType":3,},
+    {"$GMObjectProperty":"v2","%Name":"roomFinished","filters":[],"listItems":[],"multiselect":false,"name":"roomFinished","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"true","varType":3,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
