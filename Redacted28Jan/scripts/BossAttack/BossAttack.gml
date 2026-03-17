@@ -95,7 +95,7 @@ function BossAttack(){
 			{
 				sprite_index = sprIdle;
 				hsp = 0;
-				//vsp = 0;
+				vsp = 0;
 				//grav = 0;
 				chargeStart = false;
 				time_source_start(_reset); //resets boss loop
@@ -107,7 +107,7 @@ function BossAttack(){
 			{
 				sprite_index = sprIdle;
 				hsp = 0;
-				//vsp = 0;
+				vsp = 0;
 				//grav = 0;
 				chargeStart = false;
 				time_source_start(_reset); //resets boss loop
