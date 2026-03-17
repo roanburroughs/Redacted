@@ -58,9 +58,14 @@ function AggroCameraIdle(draw=false){
  
  if(aim="straightright")
 		{
-			angle1 =310
-			angle2 =410
-			anglesprite = sCamera_straightright
+			//angle1 =310
+			//angle2 =410
+			
+			angle1 = 345
+			angle2 = 375
+			//anglesprite = sCamera_straightright
+			anglesprite = sCamera_straightleft
+			image_xscale = -1
 		}
 		if(aim = "topright") 
 		{

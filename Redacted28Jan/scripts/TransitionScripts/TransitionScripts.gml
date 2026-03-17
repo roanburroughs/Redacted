@@ -55,3 +55,19 @@ function DialogueTransitionStart(_roomTarget, _typeOut, _typeIn)
 	}
 	else return false;
 }
+
+function HubTransitionStart(_roomTarget, _typeOut, _typeIn)
+{
+	if (!global.midTransition)
+	{
+		var _lay = layer_create(-9999, "transition")
+		global.midTransition = true;
+		global.roomTarget = _roomTarget;
+		RoomTransition(_typeOut, oCamera.finalCamX, oCamera.finalCamY);
+		layer_set_target_room(_roomTarget);
+		RoomTransition(_typeIn, oHubTransitionTrigger.fadeInX, oHubTransitionTrigger.fadeInY);
+		layer_set_target_room(_roomTarget);
+		return true;
+	}
+	else return false;
+}

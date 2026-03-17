@@ -17,7 +17,8 @@ var _camY = oPlayer.y - _camHeight/2;
 
 //Constrain cam to room borders
 _camX = clamp( _camX, 0, room_width - _camWidth );
-_camY = clamp ( _camY, 0, room_height - _camHeight )-200;
+if(room != Hub1) _camY = clamp ( _camY, 0, room_height - _camHeight )-200;
+else _camY = clamp ( _camY, 0, room_height - _camHeight );
 
 //Set cam coordinate variables
 finalCamX += (_camX - finalCamX) * camTrailSpd;

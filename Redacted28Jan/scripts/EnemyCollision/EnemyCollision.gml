@@ -52,29 +52,31 @@ function EnemyCollision(){
 			{
 				EnemyGroundCheck(false)
 			}
-		
-
-			if place_meeting( x, y + vsp, oPlatform)
-				{
-					
-					var _pixelCheck = _subPixelY * sign(vsp);
-					while !place_meeting(x, y + _pixelCheck, oPlatform)
-					{
-						y += _pixelCheck;
-					}
-					if (!place_meeting(x, y, oPlatform)) 
-					{
-						while (!place_meeting(x, y + sign(vsp), oPlatform)) //Insures you can cleanly touch the wall, remove to see what I mean
-						{
-							y += sign(vsp);
-						}
-					vsp = 0;
-					onGround = true;
-					}
-				}
-			else
+			
+			if(object_index != oDrone)
 			{
-				EnemyGroundCheck(false);
+				if place_meeting( x, y + vsp, oPlatform)
+					{
+					
+						var _pixelCheck = _subPixelY * sign(vsp);
+						while !place_meeting(x, y + _pixelCheck, oPlatform)
+						{
+							y += _pixelCheck;
+						}
+						if (!place_meeting(x, y, oPlatform)) 
+						{
+							while (!place_meeting(x, y + sign(vsp), oPlatform)) //Insures you can cleanly touch the wall, remove to see what I mean
+							{
+								y += sign(vsp);
+							}
+						vsp = 0;
+						onGround = true;
+						}
+					}
+				else
+				{
+					EnemyGroundCheck(false);
+				}
 			}
 		
 				
@@ -97,7 +99,7 @@ function EnemyCollision(){
 		var _list = ds_list_create(); //Create a DS list to store all of the objects we run into
 		var _array = array_create(0);
 		//array_push( _array, oWall, oElevator, oPlatform ); //temporary comment while testing
-		array_push( _array, oWall, oElevator, oPlatform );
+		array_push( _array, oWall, oElevator );
 		
 		//Do the actual check and add objects to list
 		var _listSize = instance_place_list( x, y+1 + _clampvsp + 8, _array, _list, false );
