@@ -16,6 +16,6 @@ if(other.keyUp)
 	other.hsp=0
 
 	if(startingplayersprite!=noone) other.sprite_index=startingplayersprite
-
+	other.keyUp=false
 	//instance_destroy()
 }
