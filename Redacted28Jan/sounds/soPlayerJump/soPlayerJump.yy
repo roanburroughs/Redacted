@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"soPlayerJump",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":0.5368027,
+  "exportDir":"",
+  "name":"soPlayerJump",
+  "parent":{
+    "name":"Player Sounds",
+    "path":"folders/Sounds/Player Sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"soPlayerJump.ogg",
+  "volume":1.0,
+}

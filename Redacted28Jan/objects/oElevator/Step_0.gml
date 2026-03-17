@@ -8,7 +8,13 @@ if(!global.gamePaused)
 			{
 	
 				vsp = (moveSpeed/timeToMove)*sign(finalYPos);
-				//if(!audio_is_playing(ElevatorMove))	audio_play_sound(ElevatorMove,0,true,1) playing even when offscreen rn
+				if(oPlayer.x < x+960 && oPlayer.x > x-960) && (oPlayer.y < y+540 && oPlayer.y > y-540)
+				{
+					if(!audio_is_playing(soundMove))
+					{
+						audio_play_sound(soundMove, 1, false, 0.3, 0, random_range(0.9, 1));
+					}
+				}
 		
 				if(sign(finalYPos) == 1)
 				{

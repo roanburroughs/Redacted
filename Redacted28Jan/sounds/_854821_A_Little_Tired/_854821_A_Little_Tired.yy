@@ -14,8 +14,8 @@
   "exportDir":"",
   "name":"_854821_A_Little_Tired",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"Player Sounds",
+    "path":"folders/Sounds/Player Sounds.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

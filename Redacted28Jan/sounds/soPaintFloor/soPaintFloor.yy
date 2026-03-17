@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"soPaintFloor",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":0.9769161,
+  "exportDir":"",
+  "name":"soPaintFloor",
+  "parent":{
+    "name":"OtherSFX",
+    "path":"folders/Sounds/OtherSFX.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"soPaintFloor.wav",
+  "volume":1.0,
+}

@@ -99,7 +99,7 @@ function EnemyCollision(){
 		var _list = ds_list_create(); //Create a DS list to store all of the objects we run into
 		var _array = array_create(0);
 		//array_push( _array, oWall, oElevator, oPlatform ); //temporary comment while testing
-		array_push( _array, oWall, oElevator );
+		array_push( _array, oWall, oElevator, oPlatform );
 		
 		//Do the actual check and add objects to list
 		var _listSize = instance_place_list( x, y+1 + _clampvsp + 8, _array, _list, false );

@@ -14,8 +14,8 @@
   "exportDir":"",
   "name":"Hit_Paintcan_A_2",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"OtherSFX",
+    "path":"folders/Sounds/OtherSFX.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

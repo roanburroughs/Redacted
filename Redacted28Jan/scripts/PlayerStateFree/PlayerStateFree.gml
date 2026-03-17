@@ -77,6 +77,7 @@ if(   hsp<0 ) moveDir= -1
 		//Walljump
 		if(keyJump) && (!onGround) && (atWall)
 		{
+			audio_play_sound(soPlayerJump, 10, false, 0.5, 0, 0.9);
 			face = -face; //Turns player away from the wall
 			wallJumping = true;
 			wallJumpLock = 0;
@@ -131,6 +132,7 @@ if (inst != noone)
 		//Initiate the jump
 	if jumpKeyBuffered && jumpCount < jumpMax
 	{
+		if(!audio_is_playing(soPlayerJump)) audio_play_sound(soPlayerJump, 10, false, 0.4);
 		//Reset the buffer
 		jumpKeyBuffered = false;
 		jumpKeyBufferTimer = 0;

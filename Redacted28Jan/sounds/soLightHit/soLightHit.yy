@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"soLightHit",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":1.0195918,
+  "exportDir":"",
+  "name":"soLightHit",
+  "parent":{
+    "name":"Player Sounds",
+    "path":"folders/Sounds/Player Sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"soLightHit.ogg",
+  "volume":1.0,
+}

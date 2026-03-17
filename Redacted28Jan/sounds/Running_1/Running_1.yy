@@ -14,8 +14,8 @@
   "exportDir":"",
   "name":"Running_1",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"Player Sounds",
+    "path":"folders/Sounds/Player Sounds.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

@@ -48,6 +48,10 @@ knockbackSpeed = 0;
 onGround = true;
 myFloorPlat = noone;
 
+//Sound variables
+soundMove = 0;
+soundChase = 0;
+
 //Combat Variables
 hitByEnemyAttack = ds_list_create();
 parried = false;

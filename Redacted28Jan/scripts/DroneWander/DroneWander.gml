@@ -37,6 +37,14 @@ if ((x == xTo) && (y == yTo)) || (timePassed > enemyWanderDistance / enemySpeed)
 }
 else //Move towards new destination
 {
+	if(oPlayer.x < x+960 && oPlayer.x > x-960) && (oPlayer.y < y+540 && oPlayer.y > y-540)
+	{
+		if(!audio_is_playing(soundMove))
+		{
+			audio_play_sound(soundMove, 1, false, 0.3, 0, random_range(0.9, 1));
+		}
+	}
+	
 	timePassed++;
 	searching = false;
 	image_speed = 1.0;

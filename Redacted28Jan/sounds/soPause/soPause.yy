@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"soPause",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":0.37061223,
+  "exportDir":"",
+  "name":"soPause",
+  "parent":{
+    "name":"UI Sounds",
+    "path":"folders/Sounds/UI Sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"soPause.ogg",
+  "volume":1.0,
+}

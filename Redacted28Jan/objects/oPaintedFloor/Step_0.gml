@@ -16,6 +16,11 @@ or oPlayer.state = JAttack2
 
 )
 {
+	if(!paintSound)
+	{
+		audio_play_sound(soPaintFloor, 5, false, 0.5)
+		paintSound = true;
+	}
 paintedcolour = choose(c_red,c_aqua,c_green,c_purple,c_orange,c_yellow)
 image_index=choose(1,2,3)
 //instance_destroy()	

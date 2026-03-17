@@ -10,6 +10,9 @@ hoverlength = 0;
 searching = false;
 frames = 0;
 
+soundMove = soDroneAmbient;
+soundChase = DroneChasesound;
+
 //EnemySprites
 sprIdle = sEnemyDrone;
 sprMove = sEnemyDrone;

@@ -10,3 +10,5 @@ uFlash = shader_get_uniform(flashShader, "flash");
 
 hitByAttack = ds_list_create();
 hitByEnemyAttack = ds_list_create();
+
+audio_play_sound(soRangedFire, 1, false, 0.5);

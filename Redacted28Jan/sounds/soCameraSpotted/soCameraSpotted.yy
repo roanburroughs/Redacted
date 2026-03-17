@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"soCameraSpotted",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":0.52582765,
+  "exportDir":"",
+  "name":"soCameraSpotted",
+  "parent":{
+    "name":"Enemy Sounds",
+    "path":"folders/Sounds/Enemy Sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"soCameraSpotted.ogg",
+  "volume":1.0,
+}

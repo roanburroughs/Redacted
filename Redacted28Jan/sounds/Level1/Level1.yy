@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":163.81387,
+  "duration":110.91592,
   "exportDir":"",
   "name":"Level1",
   "parent":{
@@ -22,5 +22,5 @@
   "resourceVersion":"2.0",
   "sampleRate":44100,
   "soundFile":"Level1.ogg",
-  "volume":0.05,
+  "volume":1.0,
 }

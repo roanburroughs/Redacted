@@ -4,3 +4,5 @@ if(paintedcolour=c_white)
 {
 image_alpha=0	
 }
+
+paintSound = false;

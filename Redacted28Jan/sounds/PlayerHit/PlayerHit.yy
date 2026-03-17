@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":1.5994331,
+  "duration":0.5876644,
   "exportDir":"",
   "name":"PlayerHit",
   "parent":{

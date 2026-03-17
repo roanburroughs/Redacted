@@ -14,8 +14,8 @@
   "exportDir":"",
   "name":"Splash_2",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"OtherSFX",
+    "path":"folders/Sounds/OtherSFX.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

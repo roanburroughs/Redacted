@@ -9,8 +9,8 @@ if(trigger)
 			{
 				if(state = ENEMYSTATE.WANDER)
 				{
-				//state = ENEMYSTATE.CHASE;
-				//target = oPlayer;
+				state = ENEMYSTATE.CHASE;
+				target = oPlayer;
 				}
 				if(state = ENEMYSTATE.IDLE)
 				{
@@ -19,7 +19,7 @@ if(trigger)
 				
 				if(state = ENEMYSTATE.DRONE_WANDER)
 				{
-					//enemyAggroRadius = 425;
+					enemyAggroRadius = 425;
 				}
 				
 			}

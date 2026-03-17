@@ -1,4 +1,5 @@
 function EnemyWander(){
+
 if(object_index = oEnemy) || (object_index = oEnemyTemp) || (object_index = oShieldEnemyTemp)
 {
 	sprite_index = sprMove;
@@ -28,6 +29,14 @@ if ((x == xTo) && (y == yTo)) || (timePassed > enemyWanderDistance / enemySpeed)
 }
 else //Move towards new destination
 {
+	if(oPlayer.x < x+960 && oPlayer.x > x-960) && (oPlayer.y < y+540 && oPlayer.y > y-540)
+	{
+		if(!audio_is_playing(soundMove))
+		{
+			audio_play_sound(soundMove, 1, false, 0.3, 0, random_range(0.9, 1));
+		}
+	}
+	
 	timePassed++;
 	image_speed = 1.0;
 	var _distanceToGo = point_distance(x, y, xTo, yTo);

@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"Hub",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":58.282154,
+  "exportDir":"",
+  "name":"Hub",
+  "parent":{
+    "name":"Level Music",
+    "path":"folders/Sounds/Level Music.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"Hub.ogg",
+  "volume":1.0,
+}

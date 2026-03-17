@@ -8,6 +8,8 @@ paintedcolour=c_red///placeholder
 fall = 0;
 leap = 0;
 
+soundMove = soDogMove;
+
 //Enemy Sprites
 sprMove = sDogIdle
 sprAttack = sDogAttack;

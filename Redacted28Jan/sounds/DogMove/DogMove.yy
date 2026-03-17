@@ -14,8 +14,8 @@
   "exportDir":"",
   "name":"DogMove",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"DogSounds",
+    "path":"folders/Sounds/Enemy Sounds/DogSounds.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

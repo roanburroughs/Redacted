@@ -1,5 +1,10 @@
 if(global.gamePaused)
 {
+	if(!pauseSound)
+	{
+		audio_play_sound(soPause, 20, false, 1);
+		pauseSound = true;
+	}
 	if(!instance_exists(oAudioButton))
 	{
 		var _bluh = camera_get_view_x(view_camera[0])+view_wport/2;
@@ -9,6 +14,11 @@ if(global.gamePaused)
 		//audioButton = instance_create_depth(oPlayer.x, oPlayer.y, -1000, oAudioButton);
 		//audioButton = instance_create_depth(oCamera.finalCamX, oCamera.finalCamY, -1000, oAudioButton);
 	}
+}
+
+if(!global.gamePaused)
+{
+	pauseSound = false;
 }
 
 if(!global.gamePaused || instance_exists(oAudioMenu))

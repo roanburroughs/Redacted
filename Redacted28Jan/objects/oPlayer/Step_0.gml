@@ -209,6 +209,7 @@ if (inst != noone and inst.image_angle != 0 and inst.image_angle != 180 and inst
 						y += _pixelCheck;
 					}
 					//Set vsp to 0 to collide
+					audio_play_sound(choose(soPlayerLand1, soPlayerLand2, soPlayerLand3), 5, false, 0.4);
 					vsp = 0;
 				}
 				
@@ -218,12 +219,14 @@ if (inst != noone and inst.image_angle != 0 and inst.image_angle != 180 and inst
 					var _pixelCheck = _subPixelY * sign(vsp);
 					while !place_meeting(x, y + _pixelCheck, oPlatform)
 					{
+						audio_play_sound(choose(soPlayerLand1, soPlayerLand2, soPlayerLand3), 5, false, 0.02);
 						y += _pixelCheck;
 					}
 					if (!place_meeting(x, y, oPlatform)) 
 					{
 						while (!place_meeting(x, y + sign(vsp), oPlatform)) //Insures you can cleanly touch the wall, remove to see what I mean
 						{
+							
 							y += sign(vsp);
 						}
 					vsp = 0;

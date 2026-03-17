@@ -14,8 +14,17 @@ function DogAttack(){
 		hsp = 0;
 	}
 	
+	if(image_index>1 && image_index<3)
+	{
+		if(!audio_is_playing(soDogAttack))
+		{
+			audio_play_sound(soDogAttack, 1, false, 0.2);
+		}
+	}
+	
 	if(image_index >= 1 && image_index < 5)
 	{
+		
 		leap +=0.1;
 		hsp = lengthdir_x(10, dir);
 		if(leap <= 1)

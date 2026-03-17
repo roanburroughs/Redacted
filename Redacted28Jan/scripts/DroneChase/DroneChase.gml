@@ -24,7 +24,7 @@ if (instance_exists(target))
 	}
 	if (hsp != 0) image_xscale = sign(-hsp);
 	
-	if(!audio_is_playing(DroneChasesound))	audio_play_sound(DroneChasesound,0,false,1, 0, 1)
+	if(!audio_is_playing(soundChase))	audio_play_sound(soundChase,0,false,1, 0, 1)
 
 }
 
