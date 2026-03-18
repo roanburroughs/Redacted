@@ -4,6 +4,11 @@ with(oStoryTrigger)
 other.text_file_path=	text_file_path 
 instance_destroy()
 }
+with(oStoryTrigger2)
+{
+	other.text_file_path = text_file_path
+	instance_destroy()
+}
 x=96
 y=736
 instance_create_depth(x,y,-1000,oNameTag)

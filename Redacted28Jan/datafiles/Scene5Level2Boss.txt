@@ -1,7 +1,7 @@
 
 [character slot2 = sAmara_Neutral]
 [speaker Amara slot2]
-Are you ok?
+Are you okay?
 [break]
 [character slot1 = sUnknown]
 [speaker ??? slot1]
@@ -9,7 +9,7 @@ You shouldn’t be out past curfew.
 [break]
 [character slot2 = sAmara_Neutral]
 [speaker Amara slot2]
-Don’t worry I’m being cautious. The guards won’t catch me.
+Don’t worry, I’m being cautious. The guards won’t catch me.
 [break]
 [character slot1 = sUnknown]
 [speaker ??? slot1]

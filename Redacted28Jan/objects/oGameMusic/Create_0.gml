@@ -1,4 +1,4 @@
-if(room = Hub1) || (room = Hub2) || (room = Hub3) || (room = Hub4) || (room = Hub5)
+if(room = Hub1) || (room = Hub2) || (room = Hub3) || (room = Hub5)
 {
 	audio_play_sound(Hub, 100, true, 0.7);
 }
