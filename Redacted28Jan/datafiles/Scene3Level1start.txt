@@ -1,0 +1,7 @@
+[character slot2 = sAmara_Neutral]
+[speaker Amara slot2]
+DIALOGUE 1 
+[break]
+[character slot2 = sAmara_Neutral]
+[speaker Amara slot2]
+DIALOGUE 2
