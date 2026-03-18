@@ -1016,7 +1016,7 @@
         {"name":"g_GradientPosition2","type":0,"value":"0.5",},
         {"name":"g_GradientPosition2","type":0,"value":"0.9",},
         {"name":"g_GradientMode","type":0,"value":"0",},
-      ],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":{"name":"Sprite160","path":"sprites/Sprite160/Sprite160.yy",},"stretch":true,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
+      ],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":{"name":"sBGCityscape","path":"sprites/sBGCityscape/sBGCityscape.yy",},"stretch":true,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
   "name":"Level",
   "parent":{
