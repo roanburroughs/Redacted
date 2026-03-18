@@ -12,7 +12,7 @@ if(aggro){
 	}
 	
 	if(left)
-	with instance_create_depth(x,y,100,oWaterProjectile)
+	with instance_create_depth(x-20,y,100,oWaterProjectile)
 	{
 		
 	grv=0

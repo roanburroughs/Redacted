@@ -569,6 +569,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"FinalLevel4","path":"rooms/FinalLevel4/FinalLevel4.yy",},},
     {"roomId":{"name":"Hub1","path":"rooms/Hub1/Hub1.yy",},},
     {"roomId":{"name":"IntroRoom","path":"rooms/IntroRoom/IntroRoom.yy",},},
     {"roomId":{"name":"Hub2","path":"rooms/Hub2/Hub2.yy",},},
@@ -577,7 +578,6 @@
     {"roomId":{"name":"Hub3","path":"rooms/Hub3/Hub3.yy",},},
     {"roomId":{"name":"FinalLevel3","path":"rooms/FinalLevel3/FinalLevel3.yy",},},
     {"roomId":{"name":"FinalLevel3_2","path":"rooms/FinalLevel3_2/FinalLevel3_2.yy",},},
-    {"roomId":{"name":"FinalLevel4","path":"rooms/FinalLevel4/FinalLevel4.yy",},},
     {"roomId":{"name":"FinalLevel1","path":"rooms/FinalLevel1/FinalLevel1.yy",},},
     {"roomId":{"name":"FinalLevel1_2","path":"rooms/FinalLevel1_2/FinalLevel1_2.yy",},},
     {"roomId":{"name":"testdialogue","path":"rooms/testdialogue/testdialogue.yy",},},
