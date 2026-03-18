@@ -12,4 +12,3 @@ else
 		appear = false;
 	}
 }
-show_debug_message(appear)
