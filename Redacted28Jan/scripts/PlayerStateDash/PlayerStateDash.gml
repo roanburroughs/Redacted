@@ -112,6 +112,10 @@ if(framecounter %3=0)
 	
 	//Dash sprite
 	sprite_index = dashSpr;
+	if(floor(image_index)=4)
+	{
+		image_speed = 0;
+	}
 	
 	//Ending
 	dashEnergy -= dashSp;
@@ -122,5 +126,6 @@ if(framecounter %3=0)
 		canDash=false
 		alarm[0]=dashcooldown
 		state = PlayerStateFree;
+		sprite_index = sPlayerFree;
 	}
 }
