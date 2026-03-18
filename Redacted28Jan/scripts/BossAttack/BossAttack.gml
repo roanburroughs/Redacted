@@ -28,7 +28,9 @@ function BossAttack(){
 	
 	if(findPlayer && !prepCharge && !chargeStart) //moves above player
 	{	
-		sprite_index = sprSlam
+		//sprite_index = sprSlam
+		//image_index = 0;
+		
 		image_index = 0;
 		hsp = lengthdir_x(20, dir)
 		vsp = -6
@@ -68,14 +70,16 @@ function BossAttack(){
 		vsp = 0;
 		//grav = 0.275;
 		slamStart = false;
-		image_index = 2;
+		image_index = 1;
 		time_source_start(_prepCharge);
 	}
 	
 	if(prepCharge && !chargeStart) //finds coordinates for charge
 	{
-		sprite_index = sprCharge;
-		image_index = 0;
+		//sprite_index = sprCharge;
+		//image_index = 0;
+		
+		image_index = 2;
 		_startX = x;
 		_startY = y;
 		dir = point_direction(_startX, _startY, targetX, y);
@@ -85,15 +89,18 @@ function BossAttack(){
 	
 	if(!prepCharge && chargeStart) //charges at player
 	{
-		image_index = 1;
+		//image_index = 1;
+		image_index = 3;
 		hsp = lengthdir_x(15, dir);
+		//ProcessEnemyAttack(id, 7, 10, 2, 0.01, 0, sBossCharge, sBossCharge_HB);
 		//hsp = 15*-sign(dir)
 		
 		if(sign(hsp) = -1)
 		{
 			if(x<=targetX)
 			{
-				sprite_index = sprIdle;
+				//sprite_index = sprIdle;
+				image_index = 4;
 				hsp = 0;
 				vsp = 0;
 				//grav = 0;
@@ -105,7 +112,8 @@ function BossAttack(){
 		{
 			if(x>=targetX)
 			{
-				sprite_index = sprIdle;
+				//sprite_index = sprIdle;
+				image_index = 4;
 				hsp = 0;
 				vsp = 0;
 				//grav = 0;
@@ -115,7 +123,17 @@ function BossAttack(){
 		}
 	}
 	
-	show_debug_message(slamStart)
+	ProcessEnemyAttack(id, 7, 10, 2, 0.01, 0, sBossAttack2, sBossAttack2_HB);
+	ProcessEnemyAttack(id, 7, 10, 2, 0.01, 0, sBossAttack2, sBossAttack2_HB2);
+	
+	if (floor(image_index) == 4)
+		{
+			hsp = 0;
+			//enemySpeed = 2.75;
+			stateTarget = ENEMYSTATE.ATTACK;
+			stateWaitDuration = 60;
+			state = ENEMYSTATE.WAIT;
+		}
 
 	x += hsp;
 	y += vsp;
