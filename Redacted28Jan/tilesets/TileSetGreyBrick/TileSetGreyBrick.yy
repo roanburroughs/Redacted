@@ -1,6 +1,6 @@
 {
   "$GMTileSet":"v1",
-  "%Name":"TileSetCampus",
+  "%Name":"TileSetGreyBrick",
   "autoTileSets":[
     {"$GMAutoTileSet":"","%Name":"autotile_1","closed_edge":false,"name":"autotile_1","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[
         47,1,2,3,4,5,6,7,8,9,10,11,12,13,14,14,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,
@@ -12,7 +12,7 @@
     "SerialiseWidth":0,
     "TileSerialiseData":[],
   },
-  "name":"TileSetCampus",
+  "name":"TileSetGreyBrick",
   "out_columns":7,
   "out_tilehborder":2,
   "out_tilevborder":2,

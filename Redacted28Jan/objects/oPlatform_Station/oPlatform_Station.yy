@@ -1,17 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"oPlatform",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"oPlatform_Station",
+  "eventList":[],
   "managed":true,
-  "name":"oPlatform",
+  "name":"oPlatform_Station",
   "overriddenProperties":[],
   "parent":{
     "name":"Platforms",
     "path":"folders/Objects/Platforms.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"oPlatform",
+    "path":"objects/oPlatform/oPlatform.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -30,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sPlatform",
-    "path":"sprites/sPlatform/sPlatform.yy",
+    "name":"citytrain_platformspng",
+    "path":"sprites/citytrain_platformspng/citytrain_platformspng.yy",
   },
   "spriteMaskId":null,
   "visible":true,
