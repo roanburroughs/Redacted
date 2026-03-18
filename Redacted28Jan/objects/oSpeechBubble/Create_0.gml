@@ -5,7 +5,7 @@ timer = 0;
 
 hidden = true;
 
-goAway = time_source_create(time_source_game, timer, time_source_units_frames, function()
+goAway = time_source_create(time_source_game, 120, time_source_units_frames, function()
 	{
 		hidden = true;
 	}, []);

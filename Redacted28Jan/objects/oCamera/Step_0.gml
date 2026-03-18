@@ -20,7 +20,7 @@ show_debug_message(bossScene)
 
 //Constrain cam to room borders
 _camX = clamp( _camX, 0, room_width - _camWidth );
-if(room = Hub1 || room = Hub2 || room = Hub3 || room = Hub4) _camY = clamp ( _camY, 0, room_height - _camHeight );
+if(room = Hub1 || room = Hub2 || room = Hub3 || room = Hub4 || room = IntroRoom) _camY = clamp ( _camY, 0, room_height - _camHeight );
 else _camY = clamp ( _camY, 0, room_height - _camHeight )-200;
 
 //Set cam coordinate variables

@@ -10,9 +10,9 @@ if(!global.gamePaused)
 				vsp = (moveSpeed/timeToMove)*sign(finalYPos);
 				if(oPlayer.x < x+960 && oPlayer.x > x-960) && (oPlayer.y < y+540 && oPlayer.y > y-540)
 				{
-					if(!audio_is_playing(soundMove))
+					if(!audio_is_playing(ElevatorMove))
 					{
-						audio_play_sound(soundMove, 1, false, 0.3, 0, random_range(0.9, 1));
+						audio_play_sound(ElevatorMove, 1, false, 0.3, 0, 1);
 					}
 				}
 		
@@ -21,7 +21,7 @@ if(!global.gamePaused)
 			
 					if(y >= finalY)
 					{
-						//audio_stop_sound(ElevatorMove);
+						audio_stop_sound(ElevatorMove);
 						moveStart = false;
 						standActivate = false;
 						vsp = 0;
@@ -33,7 +33,7 @@ if(!global.gamePaused)
 				{
 					if(y <= finalY)
 					{
-						//audio_stop_sound(ElevatorMove);
+						audio_stop_sound(ElevatorMove);
 						moveStart = false;
 						vsp = 0;
 						time_source_start(timerEnd);
@@ -44,6 +44,13 @@ if(!global.gamePaused)
 			if(moveEnd)
 			{
 				vsp = -((moveSpeed/timeToMove)*sign(finalYPos));
+				if(oPlayer.x < x+960 && oPlayer.x > x-960) && (oPlayer.y < y+540 && oPlayer.y > y-540)
+				{
+					if(!audio_is_playing(ElevatorMove))
+					{
+						audio_play_sound(ElevatorMove, 1, false, 0.3, 0, random_range(0.9, 1));
+					}
+				}
 				//if(!audio_is_playing(ElevatorMove))	audio_play_sound(ElevatorMove,0,true,1)
 				/*if(y <= finalY-(finalYPos*2))
 				{
@@ -55,7 +62,7 @@ if(!global.gamePaused)
 				{
 					if(y <= ystart)
 					{
-						//audio_stop_sound(ElevatorMove);
+						audio_stop_sound(ElevatorMove);
 						moveEnd = false;
 						vsp = 0;
 						time_source_start(timerStart);
@@ -66,7 +73,7 @@ if(!global.gamePaused)
 				{
 					if(y >= ystart)
 					{
-						//audio_stop_sound(ElevatorMove);
+						audio_stop_sound(ElevatorMove);
 						moveEnd = false;
 						vsp = 0;
 						time_source_start(timerStart);

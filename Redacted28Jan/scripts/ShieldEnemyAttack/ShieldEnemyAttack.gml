@@ -4,7 +4,7 @@ function ShieldEnemyAttack(){
 	if (image_index < 5)
 	{
 		enemySpeed = 3.5;
-		hsp = 6*-image_xscale;
+		hsp = 12*-image_xscale;
 	}
 	
 if( instance_exists(oPlayer) and !oPlayer.hurt)	ProcessEnemyAttack(id, 5, 10, 2, 0.01, 0, sTempShieldEnemyAttack, sTempShieldEnemyAttack_HB);

@@ -192,7 +192,7 @@ if (inst != noone and inst.image_angle != 0 and inst.image_angle != 180 and inst
 		{
 			jumpHoldTimer = 0;
 		}
-	
+	show_debug_message(room)
 		//Set vsp to 0 to collide
 		vsp = 0;
 	}
@@ -209,7 +209,10 @@ if (inst != noone and inst.image_angle != 0 and inst.image_angle != 180 and inst
 						y += _pixelCheck;
 					}
 					//Set vsp to 0 to collide
-					audio_play_sound(choose(soPlayerLand1, soPlayerLand2, soPlayerLand3), 5, false, 0.4);
+					if(!place_meeting(x, y+vsp, oElevator))
+					{
+						audio_play_sound(choose(soPlayerLand1, soPlayerLand2, soPlayerLand3), 5, false, 0.4);
+					}
 					vsp = 0;
 				}
 				

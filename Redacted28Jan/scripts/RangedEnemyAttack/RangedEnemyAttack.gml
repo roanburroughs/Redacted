@@ -26,13 +26,13 @@ function RangedEnemyAttack(){
 	if (chungus)
 	{
 		//var _shoot = instance_create_layer(x-(30*image_xscale), y-65, "enemies", oRangedEnemyTempProjectile)
-		var _shoot = instance_create_layer(x-(30*image_xscale), y-65, "enemies", oRangedEnemyTempProjectile)
+		var _shoot = instance_create_layer(x-(30*image_xscale), y, "enemies", oRangedEnemyTempProjectile)
 		fireCount++;
 	
 			with (_shoot)
 		{
 			//hsp = 8*_distFrom;
-			hsp = 8*_direction;
+			hsp = 12*_direction;
 		}
 
 

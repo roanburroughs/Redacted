@@ -36,7 +36,7 @@ else
 
 if(room = FinalLevel2)
 {
-	audio_play_sound(Level2, 100, true, 0.7);
+	audio_play_sound(Level2, 100, true, 0.5);
 }
 else
 {
@@ -48,7 +48,7 @@ else
 
 if(room = FinalLevel3)
 {
-	audio_play_sound(Level3, 100, true, 0.7);
+	audio_play_sound(Level3, 100, true, 0.3);
 }
 else
 {
@@ -60,7 +60,7 @@ else
 
 if(room = FinalLevel3_2)
 {
-	audio_play_sound(Level3_2, 100, true, 0.7);
+	audio_play_sound(Level3_2, 100, true, 0.3);
 }
 else
 {
