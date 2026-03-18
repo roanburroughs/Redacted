@@ -52,7 +52,7 @@ else {	//Inputs
 		grv = 0;
 		image_speed = 0;
 	}
-
+show_debug_message(global.midTransition)
 	invulnerable = max(invulnerable-1, 0);
 		/*      
 	if (place_meeting(x + hsp, y, oWall))

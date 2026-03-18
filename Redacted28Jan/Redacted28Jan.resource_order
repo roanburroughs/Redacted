@@ -291,6 +291,7 @@
     {"name":"sBlock1","order":58,"path":"sprites/sBlock1/sBlock1.yy",},
     {"name":"sBlock2","order":61,"path":"sprites/sBlock2/sBlock2.yy",},
     {"name":"sBlock3","order":68,"path":"sprites/sBlock3/sBlock3.yy",},
+    {"name":"sBlockBlur","order":92,"path":"sprites/sBlockBlur/sBlockBlur.yy",},
     {"name":"sBossCharge","order":1,"path":"sprites/sBossCharge/sBossCharge.yy",},
     {"name":"sBossSlam","order":2,"path":"sprites/sBossSlam/sBossSlam.yy",},
     {"name":"sBuilding1_2","order":1,"path":"sprites/sBuilding1_2/sBuilding1_2.yy",},

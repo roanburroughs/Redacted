@@ -37,7 +37,7 @@ function TransitionFinished()
 {
 	layer_sequence_destroy(self.elementID);
 	global.midTransition = false;
-	//oPlayer.changeRoom = false;
+	oPlayer.changeRoom = false;
 }
 
 function DialogueTransitionStart(_roomTarget, _typeOut, _typeIn)
@@ -50,7 +50,7 @@ function DialogueTransitionStart(_roomTarget, _typeOut, _typeIn)
 		RoomTransition(_typeOut, oCamera.finalCamX, oCamera.finalCamY);
 		layer_set_target_room(_roomTarget);
 		RoomTransition(_typeIn, textFadeInX, textFadeInY);
-		layer_set_target_room(_roomTarget);
+		layer_reset_target_room();
 		return true;
 	}
 	else return false;
@@ -66,7 +66,7 @@ function HubTransitionStart(_roomTarget, _typeOut, _typeIn)
 		RoomTransition(_typeOut, oCamera.finalCamX, oCamera.finalCamY);
 		layer_set_target_room(_roomTarget);
 		RoomTransition(_typeIn, oHubTransitionTrigger.fadeInX, oHubTransitionTrigger.fadeInY);
-		layer_set_target_room(_roomTarget);
+		layer_reset_target_room();
 		return true;
 	}
 	else return false;

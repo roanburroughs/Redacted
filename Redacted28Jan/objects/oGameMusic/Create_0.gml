@@ -24,7 +24,7 @@ else
 
 if(room = FinalLevel1_2)
 {
-	audio_play_sound(Level1_2, 100, true, 0.7);
+	audio_play_sound(Level1_2, 100, true, 0.4);
 }
 else
 {
