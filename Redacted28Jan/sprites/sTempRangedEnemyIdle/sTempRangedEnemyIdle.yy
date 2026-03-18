@@ -1,8 +1,8 @@
 {
   "$GMSprite":"v2",
   "%Name":"sTempRangedEnemyIdle",
-  "bboxMode":0,
-  "bbox_bottom":279,
+  "bboxMode":2,
+  "bbox_bottom":277,
   "bbox_left":46,
   "bbox_right":262,
   "bbox_top":34,
