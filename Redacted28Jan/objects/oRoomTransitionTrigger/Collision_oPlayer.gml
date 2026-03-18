@@ -15,5 +15,5 @@ if(other.keyUp)
 		changeRoom = true;
 		hsp = 0;
 	}
-	HubTransitionStart(target, sqFadeOut, sqFadeIn)
+	TransitionStart(target, sqFadeOut, sqFadeIn)
 }
