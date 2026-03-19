@@ -1,4 +1,4 @@
-if(room = Hub1) || (room = Hub2) || (room = Hub3) || (room = Hub5)
+if(room = Hub1) || (room = Hub2) || (room = Hub3) || (room = Hub5) || (room = EndDemoRoom)
 {
 	audio_play_sound(Hub, 100, true, 0.7);
 }
@@ -36,7 +36,7 @@ else
 
 if(room = FinalLevel2)
 {
-	audio_play_sound(Level2, 100, true, 0.5);
+	audio_play_sound(Level2, 100, true, 0.4);
 }
 else
 {
@@ -72,7 +72,7 @@ else
 
 if(room = FinalLevel4)
 {
-	audio_play_sound(Level4, 100, true, 0.7);
+	audio_play_sound(Level4, 100, true, 0.4);
 }
 else
 {

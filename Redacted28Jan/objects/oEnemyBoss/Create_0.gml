@@ -52,12 +52,6 @@ chargeStart = false;
 		chargeStart = false;
 	}, []);
 
-
-if(!fight)
-{
-instance_deactivate_object(oEnemyBoss);
-}
-
 //Enemy Sprites
 sprIdle = sBossIdle;
 sprSlam = sBossSlam;

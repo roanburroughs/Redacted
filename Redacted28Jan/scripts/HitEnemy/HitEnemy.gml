@@ -73,7 +73,7 @@ function HitEnemy(_enemy, _attackType, _playerDamage, _stunDamage, _hitstun, _kn
 			else
 			{
 				if (state != ENEMYSTATE.HURT) statePrevious = state;
-				state = ENEMYSTATE.HURT;
+				if (object_index != oEnemyBoss) state = ENEMYSTATE.HURT;
 			}
 			
 			if ((onGround) && (_attackType = 0))

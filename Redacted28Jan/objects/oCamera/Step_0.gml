@@ -16,8 +16,6 @@ if(!bossScene) var _camX = oPlayer.x - _camWidth/2;
 else _camX = oPlayer.x-_camWidth/3;
 var _camY = oPlayer.y - _camHeight/2;
 
-show_debug_message(bossScene)
-
 //Constrain cam to room borders
 _camX = clamp( _camX, 0, room_width - _camWidth );
 if(room = Hub1 || room = Hub2 || room = Hub3 || room = Hub4 || room = IntroRoom || room = EndDemoRoom) _camY = clamp ( _camY, 0, room_height - _camHeight );

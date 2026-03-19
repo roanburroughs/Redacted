@@ -3,6 +3,7 @@ Elevators = instance_place_list(x, y, oElevator, ElevatorList, false); //same fo
 if(Enemies>0)
 {
 	enemiesActive = true; //there are enemies inside the room
+	show_debug_message(enemiesActive);
 }
 else
 {
@@ -56,7 +57,11 @@ if(instance_exists(gate) && Enemies = 0)
 		//fadein = false;
 		fadeout = true; //gate fades once enemies are dead
 	};
-	
+	//instance_destroy();
+}
+
+if(!enemiesActive)
+{
 	if(Elevators>0)
 	{
 		for(var i=0; i<Elevators; i++)
@@ -70,5 +75,4 @@ if(instance_exists(gate) && Enemies = 0)
 			}
 		}
 	}
-	instance_destroy();
 }

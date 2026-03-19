@@ -1,7 +1,7 @@
 if(aggro){
 	
 	if(right)
-	with instance_create_depth(x,y,100,oWaterProjectile)
+	with instance_create_depth(x+20,y,100,oWaterProjectile)
 	{
 		
 	grv=0
@@ -23,7 +23,7 @@ if(aggro){
 	}
 	
 	if(down)
-	with instance_create_depth(x,y,100,oWaterProjectile)
+	with instance_create_depth(x,y+15,100,oWaterProjectile)
 	{
 		
 	grv=0
@@ -34,7 +34,7 @@ if(aggro){
 	}
 	
 	if(up)
-	with instance_create_depth(x,y,100,oWaterProjectile)
+	with instance_create_depth(x,y-20,100,oWaterProjectile)
 	{
 		
 	grv=0
