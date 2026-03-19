@@ -182,6 +182,7 @@
     {"id":{"name":"oTimedfloor","path":"objects/oTimedfloor/oTimedfloor.yy",},},
     {"id":{"name":"oUpInput","path":"objects/oUpInput/oUpInput.yy",},},
     {"id":{"name":"oWall","path":"objects/oWall/oWall.yy",},},
+    {"id":{"name":"oWallBlur","path":"objects/oWallBlur/oWallBlur.yy",},},
     {"id":{"name":"oWater","path":"objects/oWater/oWater.yy",},},
     {"id":{"name":"oWaterProjectile","path":"objects/oWaterProjectile/oWaterProjectile.yy",},},
     {"id":{"name":"oWaterTurret","path":"objects/oWaterTurret/oWaterTurret.yy",},},

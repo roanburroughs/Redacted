@@ -1,7 +1,7 @@
-keyRight = keyboard_check(vk_right);
-keyLeft = keyboard_check(vk_left);
-keyDown = keyboard_check_pressed(vk_down);
-keyUp = keyboard_check_pressed(vk_up);
+keyRight = keyboard_check(vk_right) + gamepad_button_check_pressed(4, gp_padr);
+keyLeft = keyboard_check(vk_left) + gamepad_button_check_pressed(4, gp_padl);
+keyDown = keyboard_check(vk_down) + gamepad_button_check_pressed( 4, gp_padd )
+keyUp = keyboard_check(vk_up) + gamepad_button_check_pressed( 4, gp_padu );
 
 if (keyUp) pos --;
 if (keyDown) pos ++;

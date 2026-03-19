@@ -130,6 +130,7 @@
     {"name":"oTimedfloor","order":9,"path":"objects/oTimedfloor/oTimedfloor.yy",},
     {"name":"oUpInput","order":1,"path":"objects/oUpInput/oUpInput.yy",},
     {"name":"oWall","order":1,"path":"objects/oWall/oWall.yy",},
+    {"name":"oWallBlur","order":52,"path":"objects/oWallBlur/oWallBlur.yy",},
     {"name":"oWater","order":8,"path":"objects/oWater/oWater.yy",},
     {"name":"oWaterProjectile","order":6,"path":"objects/oWaterProjectile/oWaterProjectile.yy",},
     {"name":"oWaterTurret","order":5,"path":"objects/oWaterTurret/oWaterTurret.yy",},

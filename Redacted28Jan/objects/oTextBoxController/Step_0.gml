@@ -1,4 +1,4 @@
-if (keyboard_check_pressed(vk_space)) {
+if (keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(4, gp_face1)) {
     if (!out_of_text) {
         current_chunk_index++
         
