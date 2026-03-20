@@ -80,6 +80,7 @@
     {"name":"oDeath","order":12,"path":"objects/oDeath/oDeath.yy",},
     {"name":"oDeathBlow","order":26,"path":"objects/oDeathBlow/oDeathBlow.yy",},
     {"name":"oDeathScreen","order":21,"path":"objects/oDeathScreen/oDeathScreen.yy",},
+    {"name":"oDirectionArrow","order":53,"path":"objects/oDirectionArrow/oDirectionArrow.yy",},
     {"name":"oDrone","order":1,"path":"objects/oDrone/oDrone.yy",},
     {"name":"oElevator","order":30,"path":"objects/oElevator/oElevator.yy",},
     {"name":"oEnemy","order":3,"path":"objects/oEnemy/oEnemy.yy",},

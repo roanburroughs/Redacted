@@ -7,7 +7,6 @@ instance_destroy()
 with(oStoryTrigger2)
 {
 	other.text_file_path = text_file_path
-	instance_destroy()
 }
 x=96
 y=736
