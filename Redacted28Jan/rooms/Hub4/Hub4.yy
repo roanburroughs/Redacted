@@ -16,7 +16,6 @@
     {"name":"inst_28D4D9F6","path":"rooms/Hub4/Hub4.yy",},
     {"name":"inst_5789DFF","path":"rooms/Hub4/Hub4.yy",},
     {"name":"inst_49DD4E26","path":"rooms/Hub4/Hub4.yy",},
-    {"name":"inst_42766B7D","path":"rooms/Hub4/Hub4.yy",},
     {"name":"inst_26A9C88","path":"rooms/Hub4/Hub4.yy",},
     {"name":"inst_EEF0FEA","path":"rooms/Hub4/Hub4.yy",},
     {"name":"inst_5B9D7887","path":"rooms/Hub4/Hub4.yy",},
@@ -56,6 +55,8 @@
     {"name":"inst_6C798803","path":"rooms/Hub4/Hub4.yy",},
     {"name":"inst_10BEC16B","path":"rooms/Hub4/Hub4.yy",},
     {"name":"inst_12626972_1_1_1","path":"rooms/Hub4/Hub4.yy",},
+    {"name":"inst_94F6A86","path":"rooms/Hub4/Hub4.yy",},
+    {"name":"inst_42766B7D","path":"rooms/Hub4/Hub4.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -107,10 +108,20 @@
         {"$GMRInstance":"v4","%Name":"inst_28D4D9F6","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_28D4D9F6","objectId":{"name":"oGameMusic","path":"objects/oGameMusic/oGameMusic.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":576.0,},
         {"$GMRInstance":"v4","%Name":"inst_49DD4E26","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_49DD4E26","objectId":{"name":"oSpeechTrigger","path":"objects/oSpeechTrigger/oSpeechTrigger.yy",},"properties":[
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oSpeechTrigger","path":"objects/oSpeechTrigger/oSpeechTrigger.yy",},"propertyId":{"name":"words","path":"objects/oSpeechTrigger/oSpeechTrigger.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"Alex?\"",},
-          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":288.0,"y":96.0,},
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oSpeechTrigger","path":"objects/oSpeechTrigger/oSpeechTrigger.yy",},"propertyId":{"name":"_xScale","path":"objects/oSpeechTrigger/oSpeechTrigger.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"250",},
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oSpeechTrigger","path":"objects/oSpeechTrigger/oSpeechTrigger.yy",},"propertyId":{"name":"_yScale","path":"objects/oSpeechTrigger/oSpeechTrigger.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"150",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":416.0,"y":768.0,},
         {"$GMRInstance":"v4","%Name":"inst_42766B7D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_42766B7D","objectId":{"name":"oSpeechTrigger","path":"objects/oSpeechTrigger/oSpeechTrigger.yy",},"properties":[
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oSpeechTrigger","path":"objects/oSpeechTrigger/oSpeechTrigger.yy",},"propertyId":{"name":"words","path":"objects/oSpeechTrigger/oSpeechTrigger.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"...\"",},
-          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":352.0,"y":96.0,},
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oSpeechTrigger","path":"objects/oSpeechTrigger/oSpeechTrigger.yy",},"propertyId":{"name":"_xScale","path":"objects/oSpeechTrigger/oSpeechTrigger.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"250",},
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oSpeechTrigger","path":"objects/oSpeechTrigger/oSpeechTrigger.yy",},"propertyId":{"name":"_yScale","path":"objects/oSpeechTrigger/oSpeechTrigger.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"150",},
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oSpeechTrigger","path":"objects/oSpeechTrigger/oSpeechTrigger.yy",},"propertyId":{"name":"speechTime","path":"objects/oSpeechTrigger/oSpeechTrigger.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1184.0,"y":768.0,},
+        {"$GMRInstance":"v4","%Name":"inst_94F6A86","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_94F6A86","objectId":{"name":"oSpeechTrigger","path":"objects/oSpeechTrigger/oSpeechTrigger.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oSpeechTrigger","path":"objects/oSpeechTrigger/oSpeechTrigger.yy",},"propertyId":{"name":"words","path":"objects/oSpeechTrigger/oSpeechTrigger.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"Alex, are you there?\"",},
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oSpeechTrigger","path":"objects/oSpeechTrigger/oSpeechTrigger.yy",},"propertyId":{"name":"_xScale","path":"objects/oSpeechTrigger/oSpeechTrigger.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"250",},
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oSpeechTrigger","path":"objects/oSpeechTrigger/oSpeechTrigger.yy",},"propertyId":{"name":"_yScale","path":"objects/oSpeechTrigger/oSpeechTrigger.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"150",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":800.0,"y":768.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"spray","depth":600,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"spray","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"walls","depth":700,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[

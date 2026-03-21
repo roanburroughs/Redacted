@@ -12,10 +12,7 @@ instance_activate_region(x - (_range ), y - (_range ), (_range ) * 2, (_range ) 
 
 //3 turn everything near the player on
 instance_activate_region(x - _range, y - _range, _range * 2, _range * 2, true);
-if(gamepad_is_connected(4))
-{
-	show_debug_message("boop")
-}
+
 if(hp<=0) dead=true
 if(dead)
 {

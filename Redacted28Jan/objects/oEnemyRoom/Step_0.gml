@@ -3,7 +3,6 @@ Elevators = instance_place_list(x, y, oElevator, ElevatorList, false); //same fo
 if(Enemies>0)
 {
 	enemiesActive = true; //there are enemies inside the room
-	show_debug_message(enemiesActive);
 }
 else
 {
@@ -40,7 +39,6 @@ if(roomActive)
 		{
 			with(ElevatorList[| i])
 			{
-				show_debug_message(roomReady)
 				if(!roomReady)
 				{
 					roomReady = true;

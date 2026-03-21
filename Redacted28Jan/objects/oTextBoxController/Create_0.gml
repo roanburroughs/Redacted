@@ -14,6 +14,11 @@ instance_create_depth(x,y,-1000,oNameTag)
 instance_create_depth(x,y,depth+1,oCharacter_Slot_1)
 
 instance_create_depth(x,y,depth+1,oCharacter_Slot_2)
+
+buttonprompt = 0; //for prompt telling how to cycle through dialogue
+timer = 0;
+fadespeed = 0.03;
+fadelength = 0.06;
  
 text_box_width = 1200  //idk how much these are even used in this game
 text_box_height = 300 

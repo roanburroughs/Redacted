@@ -96,12 +96,9 @@ wallJumpForgive = 0; //How long are we allowed to move away from the wall while 
 hsp_wallJump = 12; //Horizontal distance for wall jump
 
 canJump = 0; //are we touching the ground
-//candoublejump=true//made false when you dublejump,made true when vsp=0
-//candoublejump = false
-//doublejumpmultiplier=1
-//doublejumping=false
 canDash = true// false; //resets on touching ground
-dashDistance = 351;
+//dashDistance = 351;
+dashDistance = 451;
 dashTime = 24;
 dashcooldown=20 // time between dashes
 
@@ -165,6 +162,7 @@ parryCooldown = 0;
 speedBoostTimer = 0;
 
 hp = 100;
+hpFull = 100;
 invulnerable = 0;
 maxinvulnerableframes = 40 //changes iframe duration
 flash = 0;

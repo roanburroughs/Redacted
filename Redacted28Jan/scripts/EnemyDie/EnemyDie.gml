@@ -7,6 +7,9 @@ function EnemyDie(){
 	{
 		audio_stop_sound(Level2Boss);
 	}
+	//instance_create_layer(x, y-120, "Instances", oPlayerHealthPickup);
+	instance_create_layer(x, y-sprite_height/2, "Instances", oPlayerHealthPickup);
+	
 	///Death Animation
 instance_destroy();
 }

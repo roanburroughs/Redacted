@@ -1,4 +1,7 @@
-
+if(instance_exists(oSpeechBubble))
+{
+	instance_destroy(oSpeechBubble);
+}
 bubble = instance_create_depth(0, 0, -1000, oSpeechBubble);
 with(bubble)
 {

@@ -15,3 +15,5 @@ if (keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(4, gp_face1
         }
     }
 }
+timer++;
+buttonprompt += sin(timer * fadespeed)*fadelength;
