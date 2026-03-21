@@ -5,12 +5,12 @@ if(instance_exists(oSpeechBubble))
 bubble = instance_create_depth(0, 0, -1000, oSpeechBubble);
 with(bubble)
 {
-	dialogue = oSpeechTrigger.words;
-	timer = oSpeechTrigger.speechTime;
+	dialogue = other.words;
+	timer = other.speechTime;
 	hidden = false;
 	
-	boxXScale = oSpeechTrigger._xScale;
-	boxYScale = oSpeechTrigger._yScale;
+	boxXScale = other._xScale;
+	boxYScale = other._yScale;
 	/*
 	goAway = time_source_create(time_source_game, timer, time_source_units_frames, function()
 	{

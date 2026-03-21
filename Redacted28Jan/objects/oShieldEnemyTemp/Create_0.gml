@@ -9,6 +9,8 @@ sprMove = sTempShieldEnemyWalk;
 sprAttack = sTempShieldEnemyAttack;
 sprHurt = sTempShieldEnemyWalk;
 
+soundMove = soDogMove;
+
 //EnemyScripts
 enemyScript[ENEMYSTATE.WANDER] = EnemyWander;
 enemyScript[ENEMYSTATE.CHASE] = EnemyChase;

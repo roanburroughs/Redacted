@@ -13,6 +13,8 @@ sprHurt = sEnemyTemp;
 sprParried = sEnemyTempParried;
 sprStagger = sEnemyTempStagger;
 
+soundMove = soDogMove;
+
 //Enemy Scripts
 enemyScript[ENEMYSTATE.WANDER] = EnemyWander;
 enemyScript[ENEMYSTATE.CHASE] = EnemyChase;
