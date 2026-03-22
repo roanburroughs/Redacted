@@ -44,6 +44,8 @@ function PlayerCollision(){
 					vsp = 0;
 					}
 				}
+				
+				
 			if (place_meeting( x, y+1, oConveyor) and !instance_exists(oTextBoxController))
 				{
 					var _chungus = instance_place(x, y+1, oConveyor)

@@ -1,5 +1,21 @@
-Enemies = instance_place_list(x, y, pEnemy, EnemyList, false); //places number of enemies into EnemyList
+ds_list_clear(EnemyList) //Clear Initial list so it loops nicely
+Enemies = instance_place_list(x, y, pEnemy, EnemyList, false); //places number of enemies into EnemyList THIS INCLUDES CAMS
 Elevators = instance_place_list(x, y, oElevator, ElevatorList, false); //same for elevators
+
+
+
+for (var i = Enemies - 1; i >= 0; i--) {
+    var _inst = EnemyList[| i] // the | here tells game "this is a DS List, not a regular array"
+    
+    if (_inst.object_index == oAggroCamera) {
+        ds_list_delete(EnemyList, i)
+    }
+}
+
+
+Enemies = ds_list_size(EnemyList);
+
+
 if(Enemies>0)
 {
 	enemiesActive = true; //there are enemies inside the room

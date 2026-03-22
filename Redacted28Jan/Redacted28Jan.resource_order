@@ -151,6 +151,7 @@
     {"name":"FinalLevel3_2","order":25,"path":"rooms/FinalLevel3_2/FinalLevel3_2.yy",},
     {"name":"FinalLevel3","order":24,"path":"rooms/FinalLevel3/FinalLevel3.yy",},
     {"name":"FinalLevel4","order":26,"path":"rooms/FinalLevel4/FinalLevel4.yy",},
+    {"name":"Gatetest","order":32,"path":"rooms/Gatetest/Gatetest.yy",},
     {"name":"Hub2","order":1,"path":"rooms/Hub2/Hub2.yy",},
     {"name":"Hub3","order":2,"path":"rooms/Hub3/Hub3.yy",},
     {"name":"Hub4","order":3,"path":"rooms/Hub4/Hub4.yy",},
