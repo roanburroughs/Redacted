@@ -6,3 +6,7 @@ with(showInput)
 		instance_destroy();
 	}
 }
+with(graffiti)
+{
+	graffitiReady = true;
+}

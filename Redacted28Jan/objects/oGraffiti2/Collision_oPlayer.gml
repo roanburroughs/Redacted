@@ -1,4 +1,4 @@
-if(other.keyUp && !graffitiDone)
+if(other.keyUp && !graffitiDone && graffitiReady)
 {
 	graffitiDone = true;
 	

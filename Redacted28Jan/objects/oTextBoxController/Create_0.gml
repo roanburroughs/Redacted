@@ -8,6 +8,10 @@ with(oStoryTrigger2)
 {
 	other.text_file_path = text_file_path
 }
+with(oStoryTrigger3)
+{
+	other.text_file_path = text_file_path
+}
 x=96
 y=736
 instance_create_depth(x,y,-1000,oNameTag)

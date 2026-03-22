@@ -94,6 +94,7 @@
     {"name":"oExecuteArea","order":4,"path":"objects/oExecuteArea/oExecuteArea.yy",},
     {"name":"oGame","order":42,"path":"objects/oGame/oGame.yy",},
     {"name":"oGameMusic","order":50,"path":"objects/oGameMusic/oGameMusic.yy",},
+    {"name":"oGraffiti2","order":2,"path":"objects/oGraffiti2/oGraffiti2.yy",},
     {"name":"oGraffitiSpray","order":1,"path":"objects/oGraffitiSpray/oGraffitiSpray.yy",},
     {"name":"oHeavyBlow","order":25,"path":"objects/oHeavyBlow/oHeavyBlow.yy",},
     {"name":"oHubTransitionTrigger","order":2,"path":"objects/oHubTransitionTrigger/oHubTransitionTrigger.yy",},
