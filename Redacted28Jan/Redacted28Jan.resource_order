@@ -145,6 +145,7 @@
     {"name":"EnemyGateTest","order":18,"path":"rooms/EnemyGateTest/EnemyGateTest.yy",},
     {"name":"FinalLevel1_2","order":21,"path":"rooms/FinalLevel1_2/FinalLevel1_2.yy",},
     {"name":"FinalLevel1_2Dialogue","order":22,"path":"rooms/FinalLevel1_2Dialogue/FinalLevel1_2Dialogue.yy",},
+    {"name":"FinalLevel1_3","order":31,"path":"rooms/FinalLevel1_3/FinalLevel1_3.yy",},
     {"name":"FinalLevel1","order":20,"path":"rooms/FinalLevel1/FinalLevel1.yy",},
     {"name":"FinalLevel2","order":23,"path":"rooms/FinalLevel2/FinalLevel2.yy",},
     {"name":"FinalLevel3_2","order":25,"path":"rooms/FinalLevel3_2/FinalLevel3_2.yy",},

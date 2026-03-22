@@ -38,12 +38,12 @@ function HAttack2(){
 	
 	if(keyPressed_lightAttack && image_index > 9)
 	{
-		//state = LAttack3;
+		state = LAttack3;
 	}
 	
 	if(keyPressed_heavyAttack && image_index > 9)
 	{
-		//state = HAttack4;
+		state = HAttack4;
 	}
 	
 	if (image_index >= 6) && (canDash) && (keyDash)

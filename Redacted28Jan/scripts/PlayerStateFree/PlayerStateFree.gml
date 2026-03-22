@@ -260,11 +260,13 @@ else	if(vsp>0)
 		}
 	}
 	
-	if (keyPressed_heavyAttack && keyDown && !onGround)
+	if(keyPressed_heavyAttack && onGround)
 	{
 		state = PlayerStateAttack;
-		stateAttack = HeavyDownAir;
+		stateAttack=HAttack1;
 	}
+		
+
 	//
 	if(keyPressed_heavyAttack && executeReady)
 	{

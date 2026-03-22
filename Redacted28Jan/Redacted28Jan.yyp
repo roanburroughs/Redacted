@@ -198,6 +198,7 @@
     {"id":{"name":"EnemyGateTest","path":"rooms/EnemyGateTest/EnemyGateTest.yy",},},
     {"id":{"name":"FinalLevel1_2","path":"rooms/FinalLevel1_2/FinalLevel1_2.yy",},},
     {"id":{"name":"FinalLevel1_2Dialogue","path":"rooms/FinalLevel1_2Dialogue/FinalLevel1_2Dialogue.yy",},},
+    {"id":{"name":"FinalLevel1_3","path":"rooms/FinalLevel1_3/FinalLevel1_3.yy",},},
     {"id":{"name":"FinalLevel1","path":"rooms/FinalLevel1/FinalLevel1.yy",},},
     {"id":{"name":"FinalLevel2","path":"rooms/FinalLevel2/FinalLevel2.yy",},},
     {"id":{"name":"FinalLevel3_2","path":"rooms/FinalLevel3_2/FinalLevel3_2.yy",},},
@@ -615,6 +616,7 @@
     {"roomId":{"name":"Platfo","path":"rooms/Platfo/Platfo.yy",},},
     {"roomId":{"name":"FinalLevel1_2Dialogue","path":"rooms/FinalLevel1_2Dialogue/FinalLevel1_2Dialogue.yy",},},
     {"roomId":{"name":"Hub5","path":"rooms/Hub5/Hub5.yy",},},
+    {"roomId":{"name":"FinalLevel1_3","path":"rooms/FinalLevel1_3/FinalLevel1_3.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
