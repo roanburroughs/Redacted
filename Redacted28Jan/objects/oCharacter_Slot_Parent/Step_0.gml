@@ -1,5 +1,5 @@
  
-if(charactersprite!=noone){
+//if(charactersprite!=noone){
 //	sprite_index = charactersprite
 //	image_alpha=1
 
@@ -7,7 +7,7 @@ if(charactersprite!=noone){
 
 
 
-}
+//}
 //else image_alpha=0
 
  

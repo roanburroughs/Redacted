@@ -10,7 +10,7 @@ function process_speaker_command(command_line) {
     // First part is character name
     CharacterSpeaking = string_trim(parts[0]);
     
-    // Second part is 
+    // Second part is slot identifier
     var slot_str = string_trim(parts[1]);
     slot_str = string_replace(slot_str, "slot", "");
     SlotSpeaker = real(slot_str);

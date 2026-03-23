@@ -10,4 +10,4 @@ if (instance_exists(oTextBoxController)) {
 }
 // Draw the sprite at the object's position
 //draw_self();
-if(charactersprite!=noone)draw_sprite(charactersprite, 0, x, y);
+draw_sprite(charactersprite, 0, x, y);

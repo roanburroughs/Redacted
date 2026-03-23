@@ -1,4 +1,4 @@
-[character slot1 = sLeah]
+[character slot1 = sLeah233]
 [speaker Leah slot1]
 Seriously Amara this again? It’s weird, and creepy. 
 [break]
