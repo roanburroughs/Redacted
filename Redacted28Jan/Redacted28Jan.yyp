@@ -342,6 +342,7 @@
     {"id":{"name":"soDogMove","path":"sounds/soDogMove/soDogMove.yy",},},
     {"id":{"name":"soDroneAmbient","path":"sounds/soDroneAmbient/soDroneAmbient.yy",},},
     {"id":{"name":"soDroneExplode","path":"sounds/soDroneExplode/soDroneExplode.yy",},},
+    {"id":{"name":"soHealthPickup","path":"sounds/soHealthPickup/soHealthPickup.yy",},},
     {"id":{"name":"soHeavyHit","path":"sounds/soHeavyHit/soHeavyHit.yy",},},
     {"id":{"name":"soLightHit","path":"sounds/soLightHit/soLightHit.yy",},},
     {"id":{"name":"soPaintFloor","path":"sounds/soPaintFloor/soPaintFloor.yy",},},

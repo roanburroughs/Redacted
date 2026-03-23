@@ -270,6 +270,7 @@
     {"name":"soDogMove","order":3,"path":"sounds/soDogMove/soDogMove.yy",},
     {"name":"soDroneAmbient","order":1,"path":"sounds/soDroneAmbient/soDroneAmbient.yy",},
     {"name":"soDroneExplode","order":5,"path":"sounds/soDroneExplode/soDroneExplode.yy",},
+    {"name":"soHealthPickup","order":7,"path":"sounds/soHealthPickup/soHealthPickup.yy",},
     {"name":"soHeavyHit","order":6,"path":"sounds/soHeavyHit/soHeavyHit.yy",},
     {"name":"soLightHit","order":7,"path":"sounds/soLightHit/soLightHit.yy",},
     {"name":"soPaintFloor","order":6,"path":"sounds/soPaintFloor/soPaintFloor.yy",},
