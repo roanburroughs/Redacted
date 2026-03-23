@@ -611,11 +611,11 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"IntroRoom","path":"rooms/IntroRoom/IntroRoom.yy",},},
+    {"roomId":{"name":"Hub1","path":"rooms/Hub1/Hub1.yy",},},
     {"roomId":{"name":"FinalLevel1_2","path":"rooms/FinalLevel1_2/FinalLevel1_2.yy",},},
     {"roomId":{"name":"level1_2cutsceneRoom","path":"rooms/level1_2cutsceneRoom/level1_2cutsceneRoom.yy",},},
     {"roomId":{"name":"Level1_2Cutscene","path":"rooms/Level1_2Cutscene/Level1_2Cutscene.yy",},},
-    {"roomId":{"name":"IntroRoom","path":"rooms/IntroRoom/IntroRoom.yy",},},
-    {"roomId":{"name":"Hub1","path":"rooms/Hub1/Hub1.yy",},},
     {"roomId":{"name":"FinalLevel3_2","path":"rooms/FinalLevel3_2/FinalLevel3_2.yy",},},
     {"roomId":{"name":"Gatetest","path":"rooms/Gatetest/Gatetest.yy",},},
     {"roomId":{"name":"FinalLevel1","path":"rooms/FinalLevel1/FinalLevel1.yy",},},

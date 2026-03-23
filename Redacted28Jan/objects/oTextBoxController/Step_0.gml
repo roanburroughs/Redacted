@@ -1,5 +1,8 @@
 if (keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(4, gp_face1)) {
     if (!out_of_text) {
+		
+		
+		
      current_chunk_index++
         
         // search lines
@@ -15,7 +18,18 @@ if (keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(4, gp_face1
                 break; 
             }
         }
+		   if (current_chunk_index >= array_length(text_lines)) {
+            out_of_text = true
+			//if(gotoroom!=noone) room_goto(gotoroom)
+			instance_destroy()
+			instance_destroy(oNameTag)
+			instance_destroy(oCharacter_Slot_Parent)
+ 
+        } 
+		
+		
     }
+	else instance_destroy()
 }
 timer++;
 buttonprompt += sin(timer * fadespeed)*fadelength;
