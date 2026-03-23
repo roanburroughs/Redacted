@@ -1,5 +1,6 @@
 if(!hidden)
 {
+	draw_set_colour(c_white)
 	box = draw_rectangle(oPlayer.x+boxXStart, oPlayer.y-200, oPlayer.x+boxXScale, oPlayer.y-boxYScale, false);
 	point = draw_sprite(sSpeechBubblePoint, 0, oPlayer.x+100, oPlayer.y-boxYScale);
 	draw_set_colour(c_black);

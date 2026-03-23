@@ -24,4 +24,4 @@ enemyScript[ENEMYSTATE.DIE] = EnemyDie;
 enemyScript[ENEMYSTATE.PARRIED] = EnemyParried;
 enemyScript[ENEMYSTATE.WAIT] = EnemyWait;
 //enemyScript[ENEMYSTATE.STAGGER] = EnemyStagger;
-
+//enemyScript[ENEMYSTATE.BOSS_IDLE] = BossIdle;
