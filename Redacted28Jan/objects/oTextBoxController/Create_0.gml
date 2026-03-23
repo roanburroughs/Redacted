@@ -65,6 +65,6 @@ if (file_exists(text_file_path)) {
  
 
 if (array_length(text_chunks) > 0) {
-    execute_chunk_commands(0) 
+ //   execute_chunk_commands(0) 
     current_display_text = text_chunks[current_chunk_index].text 
 }
