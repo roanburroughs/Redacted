@@ -9,6 +9,7 @@ Do you want to graduate or not? This is an art college, and whatever that is, it
 What does it matter? 
 [break]
 You know this isn’t something I’m submitting for an assignment.
+[break]
 [character slot1 = sLeah]
 [speaker Leah slot1]
 Look, I'm trying to help you. Others have noticed you sketching in a notebook that you never show the class. 
