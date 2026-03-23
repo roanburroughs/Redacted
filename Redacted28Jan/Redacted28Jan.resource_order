@@ -199,6 +199,7 @@
     {"name":"EntityCanHit","order":31,"path":"scripts/EntityCanHit/EntityCanHit.yy",},
     {"name":"EntityHitDestroy","order":9,"path":"scripts/EntityHitDestroy/EntityHitDestroy.yy",},
     {"name":"execute_chunk_commands","order":2,"path":"scripts/execute_chunk_commands/execute_chunk_commands.yy",},
+    {"name":"execute_line_command","order":5,"path":"scripts/execute_line_command/execute_line_command.yy",},
     {"name":"Execute","order":2,"path":"scripts/Execute/Execute.yy",},
     {"name":"FormatTime","order":13,"path":"scripts/FormatTime/FormatTime.yy",},
     {"name":"general","order":1,"path":"scripts/general/general.yy",},

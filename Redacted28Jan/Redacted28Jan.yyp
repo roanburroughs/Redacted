@@ -258,6 +258,7 @@
     {"id":{"name":"EntityCanHit","path":"scripts/EntityCanHit/EntityCanHit.yy",},},
     {"id":{"name":"EntityHitDestroy","path":"scripts/EntityHitDestroy/EntityHitDestroy.yy",},},
     {"id":{"name":"execute_chunk_commands","path":"scripts/execute_chunk_commands/execute_chunk_commands.yy",},},
+    {"id":{"name":"execute_line_command","path":"scripts/execute_line_command/execute_line_command.yy",},},
     {"id":{"name":"Execute","path":"scripts/Execute/Execute.yy",},},
     {"id":{"name":"FormatTime","path":"scripts/FormatTime/FormatTime.yy",},},
     {"id":{"name":"general","path":"scripts/general/general.yy",},},

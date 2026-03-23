@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"execute_line_command",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"execute_line_command",
+  "parent":{
+    "name":"Text",
+    "path":"folders/TextBoxStuff/Text.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
