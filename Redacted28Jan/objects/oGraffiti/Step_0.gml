@@ -1,4 +1,4 @@
-/*if(instance_place(x, y, oPlayer) && !graffitiDone)
+if(instance_place(x, y, oPlayer) && !graffitiDone)
 {
 	with (showInput)
 	{
@@ -11,7 +11,7 @@ else
 	{
 		appear = false;
 	}
-}*/
+}
 
 if(graffitiDone)
 {

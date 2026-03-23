@@ -37,7 +37,10 @@ function TransitionFinished()
 {
 	layer_sequence_destroy(self.elementID);
 	global.midTransition = false;
-	oPlayer.changeRoom = false;
+	if(room!=level1_2cutsceneRoom)
+	{
+		oPlayer.changeRoom = false;
+	}
 }
 
 function DialogueTransitionStart(_roomTarget, _typeOut, _typeIn)
@@ -66,6 +69,22 @@ function HubTransitionStart(_roomTarget, _typeOut, _typeIn)
 		RoomTransition(_typeOut, oCamera.finalCamX, oCamera.finalCamY);
 		layer_set_target_room(_roomTarget);
 		RoomTransition(_typeIn, oHubTransitionTrigger.fadeInX, oHubTransitionTrigger.fadeInY);
+		layer_reset_target_room();
+		return true;
+	}
+	else return false;
+}
+
+function VideoTransitionStart(_roomTarget, _typeOut, _typeIn)
+{
+	if (!global.midTransition)
+	{
+		var _lay = layer_create(-9999, "transition")
+		global.midTransition = true;
+		global.roomTarget = _roomTarget;
+		RoomTransition(_typeOut, 0, 0);
+		layer_set_target_room(_roomTarget);
+		RoomTransition(_typeIn, 0, 0);
 		layer_reset_target_room();
 		return true;
 	}

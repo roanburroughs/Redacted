@@ -1,7 +1,7 @@
 if(other.keyUp && !graffitiDone)
 {
 	graffitiDone = true;
-	
+	audio_play_sound(soSpray, 100, false, 1);
 	//instance_create_layer(x-20, y-20, "interactibles", oGraffitiSpray)
 	//instance_create_layer(x+20, y+20, "interactibles", oGraffitiSpray)
 	//instance_create_layer(x-20, y+80, "interactibles", oGraffitiSpray)
