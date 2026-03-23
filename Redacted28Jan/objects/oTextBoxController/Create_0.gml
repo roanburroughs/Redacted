@@ -70,5 +70,14 @@ if (file_exists(text_file_path)) {
 if (array_length(text_lines) > 0) {
     current_display_text = text_lines[current_chunk_index];
 }
+//  run first commands if the file starts with them,which they usually do
+while (current_chunk_index < array_length(text_lines) && execute_line_command(text_lines[current_chunk_index])) {
+    current_chunk_index++;
+}
+
+// Set the first actual piece of text
+if (current_chunk_index < array_length(text_lines)) {
+    current_display_text = text_lines[current_chunk_index]
+}
 
  instance_create_depth(x,y,-1000,oNameTag)

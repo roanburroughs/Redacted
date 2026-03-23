@@ -21,27 +21,29 @@ function parse_text_file() {
             continue;
         }
 		
-		 // ADDED: Check for speaker command
+	 // Check for speaker command
         if (string_pos("[speaker", line) > 0 && string_pos("]", line) > 0) {
-            process_speaker_command(line);
+           // process_speaker_command(line);
+		   array_push(text_lines, line)
             continue;
         }
         
         
         // Check for character sprite commands
         if (string_char_at(line, 1) == "[" && string_pos("]", line) > 0) {
-            process_sprite_command(line);
+          //  process_sprite_command(line);
+		  array_push(text_lines, line)
             continue;
         }
         
-        // Split line into sentences (by periods)
+        // Split line into sentences 
         var sentences = string_split(line, ".");
         
         for (var j = 0; j < array_length(sentences); j++) {
             var sentence = string_trim(sentences[j]);
             if (sentence == "") continue;
             
-            sentence += "."; // Add period back
+            sentence += "."; 
             
             // Word wrap the sentence
             var words = string_split(sentence, " ");
@@ -53,7 +55,7 @@ function parse_text_file() {
                 if (string_length(test_line) <= max_chars_per_line) {
                     temp_line = test_line;
                 } else {
-                    // Current word would exceed line, check if we can fit it
+                    // Current word would go over line, check if we can fit it
                     if (current_chunk_lines >= max_lines) {
                         // Chunk is full, save it and start new chunk
                         array_push(text_lines, string_trim(current_chunk));
