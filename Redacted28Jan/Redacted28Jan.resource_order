@@ -170,6 +170,7 @@
     {"name":"PLAT","order":4,"path":"rooms/PLAT/PLAT.yy",},
     {"name":"Platfo","order":2,"path":"rooms/Platfo/Platfo.yy",},
     {"name":"Platforming","order":3,"path":"rooms/Platforming/Platforming.yy",},
+    {"name":"Room32","order":33,"path":"rooms/Room32/Room32.yy",},
     {"name":"testdialogue","order":9,"path":"rooms/testdialogue/testdialogue.yy",},
     {"name":"TestRoomCamera","order":10,"path":"rooms/TestRoomCamera/TestRoomCamera.yy",},
     {"name":"VolumeSliderTest","order":19,"path":"rooms/VolumeSliderTest/VolumeSliderTest.yy",},

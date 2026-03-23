@@ -227,6 +227,7 @@
     {"id":{"name":"Platfo","path":"rooms/Platfo/Platfo.yy",},},
     {"id":{"name":"Platforming","path":"rooms/Platforming/Platforming.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"Room32","path":"rooms/Room32/Room32.yy",},},
     {"id":{"name":"testdialogue","path":"rooms/testdialogue/testdialogue.yy",},},
     {"id":{"name":"TestRoomCamera","path":"rooms/TestRoomCamera/TestRoomCamera.yy",},},
     {"id":{"name":"VolumeSliderTest","path":"rooms/VolumeSliderTest/VolumeSliderTest.yy",},},
@@ -633,6 +634,7 @@
     {"roomId":{"name":"FinalLevel1_2Dialogue","path":"rooms/FinalLevel1_2Dialogue/FinalLevel1_2Dialogue.yy",},},
     {"roomId":{"name":"Hub5","path":"rooms/Hub5/Hub5.yy",},},
     {"roomId":{"name":"FinalLevel1_3","path":"rooms/FinalLevel1_3/FinalLevel1_3.yy",},},
+    {"roomId":{"name":"Room32","path":"rooms/Room32/Room32.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
