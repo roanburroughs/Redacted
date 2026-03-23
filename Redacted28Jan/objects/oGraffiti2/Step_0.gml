@@ -25,7 +25,7 @@ if(graffitiDone && !sprayGone)
 		if(bongus[i].alpha = 1)
 		{
 			sprayGone = true;
-			sprite_index = sGraffiti;
+			sprite_index = sGraffitiTag5;
 		}
 	}
 }

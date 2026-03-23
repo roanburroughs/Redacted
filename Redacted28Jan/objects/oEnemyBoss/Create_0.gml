@@ -27,7 +27,7 @@ chargeStart = false;
 		var _sideFrom = ((oPlayer.x) - (x));
 		image_xscale = sign(_sideFrom);
 		grav = 0.275
-		vsp = 10;
+		vsp = 6;
 	}, []);
 	
 	 _prepCharge = time_source_create(time_source_game, 15, time_source_units_frames, function()

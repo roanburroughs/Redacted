@@ -6,6 +6,7 @@ if(!hidden)
 	draw_set_colour(c_black);
 	draw_set_valign(fa_top);
 	draw_set_halign(fa_left);
+	draw_set_font(FnBubble)
 	text = draw_text_ext(oPlayer.x+60, oPlayer.y-boxYScale-50, dialogue, 20, 200);
 	//text = draw_text_transformed(250, 425, dialogue, 1.5, 1.5, 0);
 }
