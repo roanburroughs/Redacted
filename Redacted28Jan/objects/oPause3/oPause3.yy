@@ -11,7 +11,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"PauseMenuStuff",
-    "path":"folders/PauseMenuStuff.yy",
+    "path":"folders/Menu Stuff/PauseMenuStuff.yy",
   },
   "parentObjectId":null,
   "persistent":false,

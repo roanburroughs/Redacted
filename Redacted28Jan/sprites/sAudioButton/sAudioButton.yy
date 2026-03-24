@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"PauseMenuSprites",
-    "path":"folders/PauseMenuStuff/PauseMenuSprites.yy",
+    "path":"folders/Menu Stuff/PauseMenuStuff/PauseMenuSprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
