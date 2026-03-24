@@ -1,6 +1,6 @@
 event_inherited()
 
-if(enraged) enemySpeed=vdenemyspeed*2
+if(enraged) enemySpeed=vdenemyspeed*1.75
 else enemySpeed=vdenemyspeed
 
 EnemyCollision();

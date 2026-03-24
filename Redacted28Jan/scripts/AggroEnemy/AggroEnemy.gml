@@ -3,7 +3,7 @@ function AggroEnemy(){
 		 {
 				if(!enraged) 
 				{
-	show_message("enraged")
+//	show_message("enraged")
 					enraged=true
 					alarm[7]=300
 				}
