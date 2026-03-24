@@ -121,7 +121,7 @@ function AggroCameraIdle(draw=false){
 	 
 							else if(instance_exists(oPlayer) and oPlayer.framecounter %10=0 and active=true)
 							{
-								if(blup)
+								//if(blup)
 								{
 									if(collision_line(x,y,x+lengthdir_x(currentdistance,i),y+lengthdir_y(currentdistance,i),oPlayer,false,false))
 									{

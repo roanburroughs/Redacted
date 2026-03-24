@@ -36,6 +36,8 @@
     {"$GMObjectProperty":"v2","%Name":"precision","filters":[],"listItems":[],"multiselect":false,"name":"precision","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"10","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"visiondistance","filters":[],"listItems":[],"multiselect":false,"name":"visiondistance","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"600","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"aggrorange","filters":[],"listItems":[],"multiselect":false,"name":"aggrorange","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"2000","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"flicker","filters":[],"listItems":[],"multiselect":false,"name":"flicker","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"true","varType":3,},
+    {"$GMObjectProperty":"v2","%Name":"onofftime","filters":[],"listItems":[],"multiselect":false,"name":"onofftime","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"5","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

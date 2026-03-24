@@ -1,5 +1,13 @@
 function AggroEnemy(){
-
+		 with(pEnemy)
+		 {
+				if(!enraged) 
+				{
+	show_message("enraged")
+					enraged=true
+					alarm[7]=300
+				}
+		 }
 
 	//SET TO AGGRO STATE
 								with(oRangedEnemyTemp)
@@ -29,7 +37,13 @@ function AggroEnemy(){
 										target = oPlayer;
 									}										
 								}
-								
+								with (oShieldEnemyTemp)
+								{
+								 	if(state =  ENEMYSTATE.WANDER and point_distance(x,y,other.x,other.y)<other.aggrorange)
+									{state = ENEMYSTATE.CHASE // this aint doing anything
+										target = oPlayer;
+									}										
+								}
 								with (oDrone)
 								{
 									if(state = ENEMYSTATE.DRONE_WANDER and point_distance(x,y,other.x,other.y)<other.aggrorange	)

@@ -1,7 +1,8 @@
+framecounter=0
  // Inherit the parent event
  event_inherited();
 grv=0
- 
+ //onofftime = 5 //time the camera is on and off
 //visiondistance=900
 state = ENEMYSTATE.IDLE;
 active=true

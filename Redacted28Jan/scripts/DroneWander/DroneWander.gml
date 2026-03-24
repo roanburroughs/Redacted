@@ -3,7 +3,8 @@ sprite_index = sprMove;
 EnemyCollision();
 var _hover = sin(timer * hoverspeed)*hoverlength;
 
-enemySpeed = 0.75;
+if(enraged) enemySpeed = 1.5 //enrage bonus
+	else enemySpeed = 0.75;
 grav = 0;
 vsp = 0;
 hoverspeed = 0.03;

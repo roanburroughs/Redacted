@@ -15,6 +15,9 @@ function onFloorCheck(_val = true)
 	}
 }
 
+
+enraged=false
+
 //Intrinsic variables
 state = ENEMYSTATE.IDLE;
 stateEnemyAttack = 0;
@@ -74,3 +77,6 @@ enemyScript[ENEMYSTATE.WAIT] = EnemyWait;
 
 //enemyScript[ENEMYSTATE.DRONE_WANDER] = -1;
 //enemyScript[ENEMYSTATE.DRONE_DIE] = DroneDie;
+
+
+vdenemyspeed=enemySpeed

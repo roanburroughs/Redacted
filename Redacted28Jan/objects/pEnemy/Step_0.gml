@@ -1,5 +1,10 @@
 event_inherited()
+
+if(enraged) enemySpeed=vdenemyspeed*2
+else enemySpeed=vdenemyspeed
+
 EnemyCollision();
+
 //Execute State Machine
 if (!global.gamePaused)
 {

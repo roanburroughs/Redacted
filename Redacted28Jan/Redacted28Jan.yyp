@@ -611,8 +611,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"IntroRoom","path":"rooms/IntroRoom/IntroRoom.yy",},},
     {"roomId":{"name":"Hub1","path":"rooms/Hub1/Hub1.yy",},},
+    {"roomId":{"name":"IntroRoom","path":"rooms/IntroRoom/IntroRoom.yy",},},
     {"roomId":{"name":"FinalLevel1_2","path":"rooms/FinalLevel1_2/FinalLevel1_2.yy",},},
     {"roomId":{"name":"FinalLevel2","path":"rooms/FinalLevel2/FinalLevel2.yy",},},
     {"roomId":{"name":"level1_2cutsceneRoom","path":"rooms/level1_2cutsceneRoom/level1_2cutsceneRoom.yy",},},
