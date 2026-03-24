@@ -17,7 +17,7 @@ function getControls(){
 	keyDash = keyboard_check_pressed(vk_shift) + gamepad_button_check_pressed(4, gp_face2) +gamepad_button_check_pressed(4,gp_shoulderlb)+gamepad_button_check_pressed(4,gp_shoulderrb)
 	
 	keyPressed_lightAttack = keyboard_check_pressed( ord( "X" ) )+ gamepad_button_check_pressed(4, gp_face3) + gamepad_button_check_pressed(4, gp_shoulderl);
-	keyPressed_heavyAttack = keyboard_check_pressed( ord( "C" ) ) + gamepad_button_check_pressed(4, gp_face4) + gamepad_button_check_pressed(4, gp_shoulderr);
+	keyPressed_heavyAttack =0//  keyboard_check_pressed( ord( "C" ) ) + gamepad_button_check_pressed(4, gp_face4) + gamepad_button_check_pressed(4, gp_shoulderr);
 	keyPressed_Poise = keyboard_check( ord( "Z" ) )
 	keySpray = 0//keyboard_check(ord("P"));
 	

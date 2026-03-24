@@ -36,9 +36,10 @@ function HAttack2(){
 	ProcessAttack(_attackTypeTemp, 6, 6, 5, 0.5, 4, 18, 0, -0.5, sPlayerAttackH3, sPlayerAttackH3_HB);
 	if(!audio_is_playing(HeavyAttack)) audio_play_sound(HeavyAttack, 0, false, 1, 0, random_range(0.9, 1));
 	
-	if(keyPressed_lightAttack && image_index > 9)
+	if(keyPressed_lightAttack && image_index > 6) //this 6 used to be 9
 	{
-		state = LAttack3;
+		//state = LAttack3;
+		state = HAttack4;
 	}
 	
 	if(keyPressed_heavyAttack && image_index > 9)

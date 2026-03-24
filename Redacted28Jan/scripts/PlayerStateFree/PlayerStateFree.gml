@@ -18,7 +18,7 @@ function PlayerStateFree(){
 	
 	hsp = lerp(hsp,(maxSpeed*moveDir),acceleration);
 	
-	
+{
   /* if(keyRight)
    {
 	 //hsp=lerp(hsp,maxwalkspeed,acceleration)
@@ -34,31 +34,13 @@ function PlayerStateFree(){
    {
 	hsp= lerp(hsp,0,deceleration)   
 	if(hsp<1 and hsp>-1) hsp=0
-   }*/
+   }*/}
    if(moveDir = 0)
    {
 	   hsp= lerp(hsp,0,deceleration)   
 	if(hsp<1 and hsp>-1) hsp=0
    }
-   
-   
-   /*
-if(   hsp>0 ) moveDir= 1
-   
-if(   hsp<0 ) moveDir= -1
-   
-			
-			
-	*/		
-			
-			
-			
-			
-			
-			
-			
-			
-			
+   	
 		}
 		else
 		{
@@ -105,12 +87,7 @@ if (inst != noone)
 		}
     }
 }
-	//Can we jump?
-	/*if (onGround) && (keyJump)
-	{
-		vsp = vspJump;
-		canJump = 0;
-	}*/
+
 	onwall = place_meeting(x+1, y, oWall) - place_meeting(x-1, y, oWall);
 	
 	//Jump key buffering
@@ -165,37 +142,8 @@ if (inst != noone)
 	
 	}
 
-/*
-else if(vsp!=0 and keyJump and candoublejump and !doublejumping)
-{
-alarm[1]=30
-doublejumping=true
-}
- if(doublejumping)
- {
-	 PlayerDoubleJump()
- 
- }*/
- 
-/*
-if(jumpCount==2) && (keyJump) && (candoublejump) && (!doublejumping)
-{
-	alarm[1] = 30
-	doublejumping = true
-}
-if(doublejumping)
-{
-	PlayerDoubleJump()
-}
 
-
-
-
-
-//if(vsp=0) candoublejump=true
-if(onGround) candoublejump=true
-
-	*/
+	
 	//Can we dash?
 	if (canDash) && (keyDash)
 	{
@@ -212,21 +160,7 @@ if(onGround) candoublejump=true
 		state = PlayerStateDash;
 		//PlayerDash();
 	}
-	
-	
 
-//collision was here
-	
-	//Change sprite when moving
-
-//if(doublejumping)
-//{
-//	sprite_index=doublejumpchargeSpr
-//}
-//else if(!candoublejump)
-//{
-//sprite_index=doublejumpSpr	
-//}
 else	if(vsp>0)
 	{
 		sprite_index = fallSpr;
@@ -252,7 +186,12 @@ else	if(vsp>0)
 		state = PlayerStateAttack;
 		if(onGround)
 		{
-		stateAttack = LAttack;
+			
+				if((keyRight ^^ keyLeft) and (hsp>7.5 or hsp<-7.5)) //^^ just mean x or y but not both
+				{
+						stateAttack = HAttack1;	
+				}			
+					else 		stateAttack = LAttack;
 		}
 		else
 		{
@@ -260,48 +199,15 @@ else	if(vsp>0)
 		}
 	}
 	
+	
+	//Heavy on demand
 	if(keyPressed_heavyAttack && onGround)
 	{
 		state = PlayerStateAttack;
 		stateAttack=HAttack1;
 	}
-		
 
-	//
-	if(keyPressed_heavyAttack && executeReady)
-	{
-		//state = PlayerStateAttack;
-		//stateAttack = Execute;
-		//executing = true;
-	}
- 
-	//Ranged
-	if(keyPressed_heavyAttack && !executeReady)
-	{
-		//state = PlayerStateRangedAttack;
-		
-		
-		 if(vsp>1 or vsp<-1)
-		{
-			//stateAttack=AirRangedAttack
-		}
-		else if(hsp>1 or hsp<-1)
-		{
-			//stateAttack=MovingRangedAttack
-		}
-		else
-		{
-			//show_message("RANGED")
-			//stateAttack=RangedAttack
-		}
-	 
-	}
 	
-	
-	if(keySpray) 
-	{
-	PlayerAttack_Spray()	
-	}
-	else instance_destroy(oSpray1)
+
 	
 }
