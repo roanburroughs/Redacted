@@ -2,7 +2,7 @@
   "$GMSprite":"v2",
   "%Name":"sPlatformsCampus",
   "bboxMode":0,
-  "bbox_bottom":8,
+  "bbox_bottom":15,
   "bbox_left":0,
   "bbox_right":32,
   "bbox_top":0,
@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":9,
+  "height":16,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"e2b19871-513c-4701-8e46-e1fabace8892","blendMode":0,"displayName":"default","isLocked":false,"name":"e2b19871-513c-4701-8e46-e1fabace8892","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},

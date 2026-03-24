@@ -2,7 +2,7 @@
   "$GMSprite":"v2",
   "%Name":"citytrain_platformspng",
   "bboxMode":0,
-  "bbox_bottom":8,
+  "bbox_bottom":15,
   "bbox_left":0,
   "bbox_right":32,
   "bbox_top":0,
@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":9,
+  "height":16,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"dd43a806-a51f-48bb-b03c-621ac7961860","blendMode":0,"displayName":"default","isLocked":false,"name":"dd43a806-a51f-48bb-b03c-621ac7961860","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
