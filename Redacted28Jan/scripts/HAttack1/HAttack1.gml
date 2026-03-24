@@ -36,7 +36,8 @@ if(face>0){
 	
 	if(keyPressed_lightAttack && image_index > 3)
 	{
-		state = LAttack2;
+		//state = LAttack2;
+		state = HAttack2;
 	}
 	
 	if(keyPressed_heavyAttack && image_index > 3)

@@ -13,6 +13,16 @@ function LAttack3(){
 		face = -face;
 	}
 	
+	
+	if(image_index>4 and image_index<4.5)
+	{
+	with(instance_create_depth(x+50*face,y,depth+1,oPaintProjectile))
+		{
+			paintcolour=c_green
+			hsp=15*other.face
+			vsp=-5
+		}	
+	}
 	var _attackTypeTemp = 0;
 	
 	if(image_index<1 && moveDir == -face)

@@ -7,7 +7,38 @@ function LAttack2(){
 	else{
 		image_xscale = -abs(image_xscale)
 	}
+	/*
+	{
+	if(image_index>1 and image_index<1.25) 
+	{
+		with(instance_create_depth(x,y-90,depth+1,oPaintProjectile))
+		{
+			paintcolour=c_blue
+			hsp=10*other.face
+			vsp=0
+		}
+	}
+	else if(image_index>2 and image_index<2.25) 
+	{
+		with(instance_create_depth(x,y,depth+1,oPaintProjectile))
+		{
+			paintcolour=c_blue
+			hsp=5*other.face
+			vsp=-5
+		}
+	}
+	else if(image_index>4 and image_index<4.5) 
+	{
+		with(instance_create_depth(x,y-90,depth+1,oPaintProjectile))
+		{
+		paintcolour=c_red
+			hsp=5*-other.face
+			vsp=-5
+		}
+	}
+}
 	
+	*/
 	var _attackTypeTemp = 0;
 	
 	if(image_index<1 && moveDir == -face)

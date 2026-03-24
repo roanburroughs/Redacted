@@ -5,17 +5,36 @@ if(face>0){
 	else{
 		image_xscale = -abs(image_xscale)
 	}
-	/*
-	moveDir = keyRight - keyLeft;
-	if moveDir!=0 {face = moveDir}
-
-	hsp = lerp(hsp,(maxSpeed*moveDir),acceleration);
-
-   if(moveDir = 0)
-   {
-	   hsp= lerp(hsp,0,deceleration)   
-	if(hsp<1 and hsp>-1) hsp=0
-   }
+/*
+{
+	if(image_index>1 and image_index<1.25) 
+	{
+		with(instance_create_depth(x,y-90,depth+1,oPaintProjectile))
+		{
+			paintcolour=c_red
+			hsp=15*other.face
+			vsp=-5
+		}
+	}
+	else if(image_index>2 and image_index<2.25) 
+	{
+		with(instance_create_depth(x,y-90,depth+1,oPaintProjectile))
+		{
+			paintcolour=c_red
+			hsp=5*other.face
+			vsp=-10
+		}
+	}
+	else if(image_index>3 and image_index<3.5) 
+	{
+		with(instance_create_depth(x,y-90,depth+1,oPaintProjectile))
+		{
+		paintcolour=c_red
+			hsp=5*-other.face
+			vsp=-5
+		}
+	}
+}
 */
 	var _attackTypeTemp = 0;
 
