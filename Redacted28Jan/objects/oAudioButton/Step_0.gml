@@ -15,7 +15,9 @@ if(global.gamePaused)
 				clickSound = true;
 			}
 			global.mainMenu = false;
-			instance_create_depth(0, 0, -1000, oAudioMenu);	
+			global.audioSettings = true;
+			instance_create_depth(0, 0, -1000, oAudioMenu);
+			instance_create_depth(camera_get_view_x(view_camera[0])+view_wport/2, camera_get_view_y(view_camera[0])+view_hport/1.5, -1000, oButtonBack);
 			//room_goto(VolumeSliderTest);
 		}
 	}

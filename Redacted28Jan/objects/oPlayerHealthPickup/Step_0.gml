@@ -1,3 +1,6 @@
 PlayerCollision();
-y+=vsp;
-vsp += grv;
+if(!global.gamePaused)
+{
+	y+=vsp;
+	vsp += grv;
+}

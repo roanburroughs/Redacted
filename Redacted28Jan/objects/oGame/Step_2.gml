@@ -1,35 +1,37 @@
 /// @desc pausing the game
-if (keyboard_check_pressed(vk_escape))
+if(room!=IntroRoom)
 {
-	if(global.mainMenu)
+	if (keyboard_check_pressed(vk_escape))
 	{
-		global.gamePaused = !global.gamePaused;
-	}
-	
-	
-	if(global.gamePaused)
-	{
-		with(all)
+		if(global.mainMenu)
 		{
-			gamePausedImageSpeed = image_speed
-			image_speed = 0;
+			global.gamePaused = !global.gamePaused;
 		}
+	
+	
+		if(global.gamePaused)
+		{
+			with(all)
+			{
+				gamePausedImageSpeed = image_speed
+				image_speed = 0;
+			}
 		
-	}
-	/*else
-	{
-		with(all)
-		{
-			image_speed = gamePausedImageSpeed;
 		}
-	}*/
-	
-	if(!global.gamePaused && !global.mainMenu)
-	{
-		with(all)
+		/*else
 		{
-			image_speed = gamePausedImageSpeed;
+			with(all)
+			{
+				image_speed = gamePausedImageSpeed;
+			}
+		}*/
+	
+		if(!global.gamePaused && !global.mainMenu)
+		{
+			with(all)
+			{
+				image_speed = gamePausedImageSpeed;
+			}
 		}
 	}
 }
-

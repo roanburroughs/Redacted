@@ -7,7 +7,6 @@
   "inheritLayers":false,
   "instanceCreationOrder":[
     {"name":"inst_1ECD3A4F","path":"rooms/IntroRoom/IntroRoom.yy",},
-    {"name":"inst_7949F50F","path":"rooms/IntroRoom/IntroRoom.yy",},
     {"name":"inst_74A21999","path":"rooms/IntroRoom/IntroRoom.yy",},
   ],
   "isDnd":false,
@@ -24,7 +23,6 @@
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oTextBoxController","path":"objects/oTextBoxController/oTextBoxController.yy",},"propertyId":{"name":"target","path":"objects/oTextBoxController/oTextBoxController.yy",},"resource":{"name":"Hub1","path":"rooms/Hub1/Hub1.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Hub1",},
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oTextBoxController","path":"objects/oTextBoxController/oTextBoxController.yy",},"propertyId":{"name":"text_file_path","path":"objects/oTextBoxController/oTextBoxController.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Scene1CollegeArtRoomDay.txt",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":96.0,"y":736.0,},
-        {"$GMRInstance":"v4","%Name":"inst_7949F50F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7949F50F","objectId":{"name":"oGame","path":"objects/oGame/oGame.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":-128.0,"y":672.0,},
         {"$GMRInstance":"v4","%Name":"inst_74A21999","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_74A21999","objectId":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":-128.0,"y":704.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":{"name":"sBGCollege","path":"sprites/sBGCollege/sBGCollege.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
