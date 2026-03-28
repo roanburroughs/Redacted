@@ -55,7 +55,6 @@
     {"name":"inst_1CF9530E","path":"rooms/Hub1/Hub1.yy",},
     {"name":"inst_12626972","path":"rooms/Hub1/Hub1.yy",},
     {"name":"inst_6E8FE96","path":"rooms/Hub1/Hub1.yy",},
-    {"name":"inst_33315511","path":"rooms/Hub1/Hub1.yy",},
     {"name":"inst_763A1A7B","path":"rooms/Hub1/Hub1.yy",},
     {"name":"inst_4E07945A","path":"rooms/Hub1/Hub1.yy",},
     {"name":"inst_6A5B9A82","path":"rooms/Hub1/Hub1.yy",},
@@ -95,8 +94,6 @@
     {"name":"inst_6159D633","path":"rooms/Hub1/Hub1.yy",},
     {"name":"inst_2A71EC20","path":"rooms/Hub1/Hub1.yy",},
     {"name":"inst_5967CA59","path":"rooms/Hub1/Hub1.yy",},
-    {"name":"inst_299B916A","path":"rooms/Hub1/Hub1.yy",},
-    {"name":"inst_4F30FB4A","path":"rooms/Hub1/Hub1.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -150,13 +147,6 @@
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oStoryTrigger2","path":"objects/oStoryTrigger2/oStoryTrigger2.yy",},"propertyId":{"name":"text_file_path","path":"objects/oStoryTrigger2/oStoryTrigger2.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Scene2GraffitiWall.txt",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":6.0,"scaleY":1.0,"x":1120.0,"y":768.0,},
         {"$GMRInstance":"v4","%Name":"inst_1DC8B7C9","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1DC8B7C9","objectId":{"name":"oGameMusic","path":"objects/oGameMusic/oGameMusic.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":576.0,},
-        {"$GMRInstance":"v4","%Name":"inst_299B916A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_299B916A","objectId":{"name":"oTutorialTrigger","path":"objects/oTutorialTrigger/oTutorialTrigger.yy",},"properties":[
-            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oTutorialTrigger","path":"objects/oTutorialTrigger/oTutorialTrigger.yy",},"propertyId":{"name":"tutorialText","path":"objects/oTutorialTrigger/oTutorialTrigger.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"Bulletin boards hold notes detailing information about the world around you. Press up while close to them to read notes left on the board.\"",},
-            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oTutorialTrigger","path":"objects/oTutorialTrigger/oTutorialTrigger.yy",},"propertyId":{"name":"tutorialSprite","path":"objects/oTutorialTrigger/oTutorialTrigger.yy",},"resource":{"name":"builetten_board","path":"sprites/builetten_board/builetten_board.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"builetten_board",},
-          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":4.0,"x":544.0,"y":704.0,},
-        {"$GMRInstance":"v4","%Name":"inst_4F30FB4A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4F30FB4A","objectId":{"name":"oStoryTrigger3","path":"objects/oStoryTrigger3/oStoryTrigger3.yy",},"properties":[
-            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oStoryTrigger3","path":"objects/oStoryTrigger3/oStoryTrigger3.yy",},"propertyId":{"name":"text_file_path","path":"objects/oStoryTrigger3/oStoryTrigger3.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Level1_2Dialogue.txt",},
-          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":9.0,"scaleY":2.0,"x":704.0,"y":768.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"walls","depth":700,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v4","%Name":"inst_668E2353","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_668E2353","objectId":{"name":"oWall","path":"objects/oWall/oWall.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":60.0,"scaleY":7.0,"x":0.0,"y":864.0,},
@@ -221,7 +211,6 @@
         {"$GMRInstance":"v4","%Name":"inst_1CF9530E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1CF9530E","objectId":{"name":"oDirectionArrow","path":"objects/oDirectionArrow/oDirectionArrow.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":270.0,"scaleX":1.0,"scaleY":1.0,"x":1389.0,"y":769.0,},
         {"$GMRInstance":"v4","%Name":"inst_12626972","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_12626972","objectId":{"name":"oUpInput","path":"objects/oUpInput/oUpInput.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1632.0,"y":672.0,},
         {"$GMRInstance":"v4","%Name":"inst_6E8FE96","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6E8FE96","objectId":{"name":"oUpInput","path":"objects/oUpInput/oUpInput.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1216.0,"y":672.0,},
-        {"$GMRInstance":"v4","%Name":"inst_33315511","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_33315511","objectId":{"name":"oGraffiti","path":"objects/oGraffiti/oGraffiti.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":672.0,"y":320.0,},
       ],"layers":[],"name":"interactibles","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"Assets_1","assets":[
         {"$GMRSpriteGraphic":"v1","%Name":"graphic_423224D5","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_423224D5","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"campuswall","path":"sprites/campuswall/campuswall.yy",},"x":1216.0,"y":416.0,},

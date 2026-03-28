@@ -94,6 +94,8 @@
     {"name":"inst_29B6BB9F","path":"rooms/Hub4/Hub4.yy",},
     {"name":"inst_73CC6367","path":"rooms/Hub4/Hub4.yy",},
     {"name":"inst_4EF62A95","path":"rooms/Hub4/Hub4.yy",},
+    {"name":"inst_737181CF","path":"rooms/Hub4/Hub4.yy",},
+    {"name":"inst_75BB9EB6","path":"rooms/Hub4/Hub4.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -220,6 +222,8 @@
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1632.0,"y":864.0,},
         {"$GMRInstance":"v4","%Name":"inst_10BEC16B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_10BEC16B","objectId":{"name":"oDirectionArrow","path":"objects/oDirectionArrow/oDirectionArrow.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":270.0,"scaleX":1.0,"scaleY":1.0,"x":1389.0,"y":769.0,},
         {"$GMRInstance":"v4","%Name":"inst_12626972_1_1_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_12626972_1_1_1","objectId":{"name":"oUpInput","path":"objects/oUpInput/oUpInput.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1632.0,"y":672.0,},
+        {"$GMRInstance":"v4","%Name":"inst_737181CF","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_737181CF","objectId":{"name":"oHubGraffiti2","path":"objects/oHubGraffiti2/oHubGraffiti2.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":15.0,"scaleX":1.0,"scaleY":1.0,"x":352.0,"y":480.0,},
+        {"$GMRInstance":"v4","%Name":"inst_75BB9EB6","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_75BB9EB6","objectId":{"name":"oHubGraffiti1","path":"objects/oHubGraffiti1/oHubGraffiti1.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":-15.0,"scaleX":1.0,"scaleY":1.0,"x":256.0,"y":384.0,},
       ],"layers":[],"name":"interactibles","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"Assets_1","assets":[
         {"$GMRSpriteGraphic":"v1","%Name":"graphic_60FFF2F0","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_60FFF2F0","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"campuswall","path":"sprites/campuswall/campuswall.yy",},"x":1216.0,"y":416.0,},
