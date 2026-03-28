@@ -1,1 +1,1 @@
-show_debug_message(global.mainMenu)
+//show_debug_message(global.mainMenu)

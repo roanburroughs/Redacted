@@ -9,7 +9,7 @@ exit;
 }
 
 
-
+grav = .275;
 if (vulnerable == true)
 {
 sprite_index=sDogStagger;

@@ -1,8 +1,8 @@
 if(inTutorial)
 {
-	if(instance_exists(oTutorialTrigger))
+	if(instance_exists(tutorialTrigger))
 	{
-		instance_destroy(oTutorialTrigger);
+		instance_destroy(tutorialTrigger);
 	}
 	global.tutorial = false;
 	global.gamePaused = false;
