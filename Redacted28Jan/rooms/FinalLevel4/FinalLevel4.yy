@@ -622,6 +622,7 @@
     {"name":"inst_1F91BDDB","path":"rooms/FinalLevel4/FinalLevel4.yy",},
     {"name":"inst_6A75B140","path":"rooms/FinalLevel4/FinalLevel4.yy",},
     {"name":"inst_34488A27","path":"rooms/FinalLevel4/FinalLevel4.yy",},
+    {"name":"inst_1FE9412F","path":"rooms/FinalLevel4/FinalLevel4.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -1502,6 +1503,9 @@
         {"$GMRInstance":"v4","%Name":"inst_1F91BDDB","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1F91BDDB","objectId":{"name":"oGraffiti","path":"objects/oGraffiti/oGraffiti.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":7776.0,"y":640.0,},
         {"$GMRInstance":"v4","%Name":"inst_6A75B140","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6A75B140","objectId":{"name":"oGraffiti","path":"objects/oGraffiti/oGraffiti.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":11424.0,"y":2144.0,},
         {"$GMRInstance":"v4","%Name":"inst_34488A27","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_34488A27","objectId":{"name":"oGraffiti","path":"objects/oGraffiti/oGraffiti.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":6752.0,"y":1984.0,},
+        {"$GMRInstance":"v4","%Name":"inst_1FE9412F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1FE9412F","objectId":{"name":"oStoryTrigger3","path":"objects/oStoryTrigger3/oStoryTrigger3.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oStoryTrigger3","path":"objects/oStoryTrigger3/oStoryTrigger3.yy",},"propertyId":{"name":"text_file_path","path":"objects/oStoryTrigger3/oStoryTrigger3.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Level3BulletinNote.txt",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":11.0,"scaleY":3.0,"x":10176.0,"y":2400.0,},
       ],"layers":[],"name":"interactibles","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"door","depth":1300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v4","%Name":"inst_36C914F6","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_36C914F6","objectId":{"name":"oRoomTransitionTrigger","path":"objects/oRoomTransitionTrigger/oRoomTransitionTrigger.yy",},"properties":[
