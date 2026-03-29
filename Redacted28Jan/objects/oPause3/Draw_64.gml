@@ -52,6 +52,10 @@ if(global.gamePaused)
 			{
 				draw_sprite(tutorialTrigger.tutorialSprite, 0, view_wport/2-40, view_hport/6);
 			}
+			if(tutorialTrigger.tutorialSprite = sPaintcan)
+			{
+				draw_sprite(tutorialTrigger.tutorialSprite, 0, view_wport/2, view_hport/3);
+			}
 		}
 		
 		if(global.info)
