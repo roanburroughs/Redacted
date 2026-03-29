@@ -11,7 +11,8 @@ buttonY = 0;
 
 pauseSound = false;
 tutorialTrigger = 0;
-inTutorial = false;
+inTutorial = false; //reading tutorial
+inInfo = false; //reading article on bulletin
 alpha = 0;
 timer = 0;
 fadespeed = 0.03;
@@ -29,3 +30,4 @@ mainMenu = true;
 global.mainMenu = true;
 global.audioSettings = false;
 global.tutorial = false;
+global.info = false;

@@ -49,6 +49,15 @@ else
 	inTutorial = false;
 }
 
+if(global.info)
+{
+	inInfo = true;
+}
+else
+{
+	inInfo = false;
+}
+
 if(!global.gamePaused)
 {
 	pauseSound = false;

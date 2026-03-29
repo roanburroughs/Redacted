@@ -53,6 +53,28 @@ if(global.gamePaused)
 				draw_sprite(tutorialTrigger.tutorialSprite, 0, view_wport/2-40, view_hport/6);
 			}
 		}
+		
+		if(global.info)
+		{
+			draw_set_alpha(1);
+			draw_rectangle(view_wport/5, 100, view_wport/1.25, 860, false);
+			draw_set_colour(c_white);
+			draw_rectangle(view_wport/5, 100, view_wport/1.25, 860, true);
+			draw_set_colour(c_black);
+			draw_set_halign(fa_center);
+			draw_set_font(FnButtonText);
+			draw_set_colour(c_white);
+			//draw_text(view_wport/2, view_hport/1.75, tutorialTrigger.tutorialText);
+			//draw_text_ext(view_wport/2, view_hport/2, tutorialTrigger.tutorialText, 50, 900)
+			draw_set_alpha(alpha);
+			draw_set_font(FnDialogue);
+			draw_set_colour(c_blue);
+			draw_text(view_wport/2, view_hport/1.35, "Press Space to continue");
+			draw_line_width_colour(view_wport-1160, view_hport/1.3, view_wport-760, view_hport/1.3, 2, c_blue, c_blue)
+			draw_set_colour(c_white);
+			draw_set_alpha(1);
+			draw_sprite(sNewspaperArticle_2_2, 0, view_wport/2-450, view_hport/7);
+		}
 
 		draw_set_halign(fa_left) //reset text alignment for other objects
 	

@@ -37,7 +37,7 @@ function TransitionFinished()
 {
 	layer_sequence_destroy(self.elementID);
 	global.midTransition = false;
-	if(room!=level1_2cutsceneRoom && room!=IntroRoom)
+	if(room!=level1_2Cutscene_Video && room!=IntroRoom)
 	{
 		oPlayer.changeRoom = false;
 	}
