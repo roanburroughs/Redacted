@@ -658,8 +658,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"FinalLevel4Cutscene1","path":"rooms/FinalLevel4Cutscene1/FinalLevel4Cutscene1.yy",},},
     {"roomId":{"name":"FinalLevel4Cutscene2","path":"rooms/FinalLevel4Cutscene2/FinalLevel4Cutscene2.yy",},},
+    {"roomId":{"name":"FinalLevel4Cutscene1","path":"rooms/FinalLevel4Cutscene1/FinalLevel4Cutscene1.yy",},},
     {"roomId":{"name":"Level1_2Cutscene","path":"rooms/Level1_2Cutscene/Level1_2Cutscene.yy",},},
     {"roomId":{"name":"FinalLevel4","path":"rooms/FinalLevel4/FinalLevel4.yy",},},
     {"roomId":{"name":"FinalLevel4BadEnding","path":"rooms/FinalLevel4BadEnding/FinalLevel4BadEnding.yy",},},

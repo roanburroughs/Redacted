@@ -1,1 +1,4 @@
-draw_self();
+if(cutsceneShow)
+{
+	draw_self();
+}
