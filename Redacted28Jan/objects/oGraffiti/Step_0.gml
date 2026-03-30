@@ -1,3 +1,4 @@
+/*
 if(instance_place(x, y, oPlayer) && !graffitiDone)
 {
 	with (showInput)
@@ -12,7 +13,7 @@ else
 		appear = false;
 	}
 }
-
+*/
 if(graffitiDone)
 {
 	//sprite_index = sGraffiti;
@@ -25,7 +26,8 @@ if(graffitiDone && !sprayGone)
 		if(bongus[i].alpha = 1)
 		{
 			sprayGone = true;
-			sprite_index = sGraffitiTag5;
+			sprite_index = graffitiSprite;
+			cutsceneShow = true;
 		}
 	}
 }

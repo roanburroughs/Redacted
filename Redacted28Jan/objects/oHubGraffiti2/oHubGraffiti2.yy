@@ -31,10 +31,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"sGraffitiTag5",
-    "path":"sprites/sGraffitiTag5/sGraffitiTag5.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

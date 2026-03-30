@@ -10,6 +10,7 @@ createExecuteArea = instance_create_layer(x, y, "Enemies", oExecuteArea);
 vsp=0
 
 playerSpotted = false;
+blup = false;
 
 //Enemy Scripts
 enemyScript[ENEMYSTATE.IDLE] = AggroCameraIdle

@@ -5,4 +5,4 @@ draw_set_color(c_white);
 var _x = display_get_gui_width() - 100;
 var _y = 20;
 
-draw_text(_x, _y, "FPS: " + string(fps));
+//draw_text(_x, _y, "FPS: " + string(fps));

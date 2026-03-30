@@ -12,7 +12,7 @@ if (!global.gamePaused)
 	{
 		script_execute(enemyScript[state]);
 	}
-	depth = -bbox_bottom;
+	//depth = -bbox_bottom;
 	grav = .275;
 }
 else
