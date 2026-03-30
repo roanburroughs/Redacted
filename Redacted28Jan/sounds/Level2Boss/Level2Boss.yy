@@ -2,8 +2,8 @@
   "$GMSound":"v2",
   "%Name":"Level2Boss",
   "audioGroupId":{
-    "name":"audiogroup_default",
-    "path":"audiogroups/audiogroup_default",
+    "name":"ag_music",
+    "path":"audiogroups/ag_music",
   },
   "bitDepth":1,
   "channelFormat":0,
