@@ -76,15 +76,12 @@ function AggroCameraIdle(draw=false){
  
 		
 				if (draw) {
-					if(blup)
-					{
 					sprite_index=anglesprite
 					    draw_set_colour(c_red)
 					    draw_set_alpha(0.5)
     
-					    draw_primitive_begin(pr_trianglefan)
-					    draw_vertex(x,y)
-					}
+					    //draw_primitive_begin(pr_trianglefan)
+					    //draw_vertex(x,y)
 	
 							 }
 					//function VisionCone
@@ -123,8 +120,6 @@ function AggroCameraIdle(draw=false){
 	 
 							else if(instance_exists(oPlayer) and oPlayer.framecounter %10=0 and active=true)
 							{
-								if(blup)
-								{
 								{
 									if(collision_line(x,y,x+lengthdir_x(currentdistance,i),y+lengthdir_y(currentdistance,i),oPlayer,false,false))
 									{
@@ -141,7 +136,6 @@ function AggroCameraIdle(draw=false){
 									active = false;
 									alarm[10]=100
 									}
-								}
 								}
 							}
 	

@@ -1,4 +1,3 @@
-/*
 if(instance_place(x, y, oPlayer) && !graffitiDone)
 {
 	with (showInput)
@@ -13,7 +12,7 @@ else
 		appear = false;
 	}
 }
-*/
+
 if(graffitiDone)
 {
 	//sprite_index = sGraffiti;
@@ -27,7 +26,6 @@ if(graffitiDone && !sprayGone)
 		{
 			sprayGone = true;
 			sprite_index = graffitiSprite;
-			cutsceneShow = true;
 		}
 	}
 }

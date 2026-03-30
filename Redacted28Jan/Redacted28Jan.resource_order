@@ -114,6 +114,7 @@
     {"name":"oHubGraffiti2","order":1,"path":"objects/oHubGraffiti2/oHubGraffiti2.yy",},
     {"name":"oHubGraffiti3","order":2,"path":"objects/oHubGraffiti3/oHubGraffiti3.yy",},
     {"name":"oHubGraffiti4","order":3,"path":"objects/oHubGraffiti4/oHubGraffiti4.yy",},
+    {"name":"oHubGraffiti5","order":4,"path":"objects/oHubGraffiti5/oHubGraffiti5.yy",},
     {"name":"oHubTransitionTrigger","order":2,"path":"objects/oHubTransitionTrigger/oHubTransitionTrigger.yy",},
     {"name":"oLoadZone","order":26,"path":"objects/oLoadZone/oLoadZone.yy",},
     {"name":"oMainMenu","order":48,"path":"objects/oMainMenu/oMainMenu.yy",},

@@ -31,7 +31,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"sGraffiti5",
+    "path":"sprites/sGraffiti5/sGraffiti5.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

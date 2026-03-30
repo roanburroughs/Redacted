@@ -31,7 +31,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"sGraffiti4",
+    "path":"sprites/sGraffiti4/sGraffiti4.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

@@ -83,6 +83,7 @@
   "ForcedPrefabProjectReferences":[
     {"link":"io.gamemaker.gm_filter_gradient-1.0.0","name":"io.gamemaker.gm_filter_gradient-1.0.0","path":"io.gamemaker.gm_filter_gradient-1.0.0.yyp",},
     {"link":"io.gamemaker.gm_filter_tintfilter-1.0.0","name":"io.gamemaker.gm_filter_tintfilter-1.0.0","path":"io.gamemaker.gm_filter_tintfilter-1.0.0.yyp",},
+    {"link":"io.gamemaker.sdfshaders-1.0.0","name":"io.gamemaker.sdfshaders-1.0.0","path":"io.gamemaker.sdfshaders-1.0.0.yyp",},
   ],
   "IncludedFiles":[
     {"$GMIncludedFile":"","%Name":"citytrain platforms.kra","CopyToMask":-1,"filePath":"datafiles","name":"citytrain platforms.kra","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
@@ -169,6 +170,7 @@
     {"id":{"name":"oHubGraffiti2","path":"objects/oHubGraffiti2/oHubGraffiti2.yy",},},
     {"id":{"name":"oHubGraffiti3","path":"objects/oHubGraffiti3/oHubGraffiti3.yy",},},
     {"id":{"name":"oHubGraffiti4","path":"objects/oHubGraffiti4/oHubGraffiti4.yy",},},
+    {"id":{"name":"oHubGraffiti5","path":"objects/oHubGraffiti5/oHubGraffiti5.yy",},},
     {"id":{"name":"oHubTransitionTrigger","path":"objects/oHubTransitionTrigger/oHubTransitionTrigger.yy",},},
     {"id":{"name":"oLoadZone","path":"objects/oLoadZone/oLoadZone.yy",},},
     {"id":{"name":"oMainMenu","path":"objects/oMainMenu/oMainMenu.yy",},},
@@ -656,11 +658,11 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"FinalLevel4Cutscene2","path":"rooms/FinalLevel4Cutscene2/FinalLevel4Cutscene2.yy",},},
-    {"roomId":{"name":"FinalLevel4","path":"rooms/FinalLevel4/FinalLevel4.yy",},},
-    {"roomId":{"name":"Level1_2Cutscene","path":"rooms/Level1_2Cutscene/Level1_2Cutscene.yy",},},
-    {"roomId":{"name":"FinalLevel4BadEnding","path":"rooms/FinalLevel4BadEnding/FinalLevel4BadEnding.yy",},},
     {"roomId":{"name":"FinalLevel4Cutscene1","path":"rooms/FinalLevel4Cutscene1/FinalLevel4Cutscene1.yy",},},
+    {"roomId":{"name":"FinalLevel4Cutscene2","path":"rooms/FinalLevel4Cutscene2/FinalLevel4Cutscene2.yy",},},
+    {"roomId":{"name":"Level1_2Cutscene","path":"rooms/Level1_2Cutscene/Level1_2Cutscene.yy",},},
+    {"roomId":{"name":"FinalLevel4","path":"rooms/FinalLevel4/FinalLevel4.yy",},},
+    {"roomId":{"name":"FinalLevel4BadEnding","path":"rooms/FinalLevel4BadEnding/FinalLevel4BadEnding.yy",},},
     {"roomId":{"name":"FinalLevel3Cutscene","path":"rooms/FinalLevel3Cutscene/FinalLevel3Cutscene.yy",},},
     {"roomId":{"name":"FinalLevel3","path":"rooms/FinalLevel3/FinalLevel3.yy",},},
     {"roomId":{"name":"FinalLevel1","path":"rooms/FinalLevel1/FinalLevel1.yy",},},
