@@ -1,4 +1,4 @@
-[character slot2 = sAmara_Neutral]
+[character slot2 = sAmara_Confused]
 [speaker Amara slot2]
 When did the gallery close down? And Coreign was mentioned in the graffiti on the gallery walls. 
 [break]
@@ -19,7 +19,7 @@ I’m sure some mention of ‘risking their employees’ lives’, or ‘accepti
 How terrible it would be for Coreign to lose money, right? 
 [break]
 I was almost worried the government wouldn’t be able to watch me visit an art gallery.
-[character slot2 = sAmara_Neutral]
+[character slot2 = sAmara_Angry]
 [speaker Amara slot2]
 That’s horrible! They shouldn’t be able to close a place just because they won’t buy their products
 [break]

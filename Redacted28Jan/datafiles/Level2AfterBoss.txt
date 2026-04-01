@@ -1,4 +1,4 @@
-[character slot2 = sAmara_Neutral]
+[character slot2 = sAmara_Confused]
 [speaker Amara slot2]
 What the hell was that all about? Was he really just a civilian like me?
 [break]

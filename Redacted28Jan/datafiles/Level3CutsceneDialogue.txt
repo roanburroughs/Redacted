@@ -1,14 +1,14 @@
-[character slot2 = sAmara_Neutral]
+[character slot2 = sAmara_Confused]
 [speaker Amara slot2]
 Huh? My phone is going off.
 [break]
 Alex?
 [break]
-[character slot1 = sAlex]
+[character slot1 = sAlex_Neutral]
 [speaker Alex slot1]
 Amara! Stay away from the graffiti wall, it's not safe anymore!
 [break]
-[character slot2 = sAmara_Neutral]
+[character slot2 = sAmara_Angry]
 [speaker Amara slot2]
 Alex?! What do you mean? What's going on?
 [break]

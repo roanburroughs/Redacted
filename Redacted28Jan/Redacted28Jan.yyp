@@ -108,7 +108,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.4.221",
+    "IDEVersion":"2024.14.4.222",
   },
   "name":"Redacted28Jan",
   "resources":[
@@ -431,7 +431,12 @@
     {"id":{"name":"s_TimedFloor2","path":"sprites/s_TimedFloor2/s_TimedFloor2.yy",},},
     {"id":{"name":"s_TimedFloor3","path":"sprites/s_TimedFloor3/s_TimedFloor3.yy",},},
     {"id":{"name":"s_TimedFloorBreak","path":"sprites/s_TimedFloorBreak/s_TimedFloorBreak.yy",},},
+    {"id":{"name":"sAlex_Confused","path":"sprites/sAlex_Confused/sAlex_Confused.yy",},},
+    {"id":{"name":"sAlex_Happy","path":"sprites/sAlex_Happy/sAlex_Happy.yy",},},
     {"id":{"name":"sAlex_Neutral","path":"sprites/sAlex_Neutral/sAlex_Neutral.yy",},},
+    {"id":{"name":"sAmara_Angry","path":"sprites/sAmara_Angry/sAmara_Angry.yy",},},
+    {"id":{"name":"sAmara_Confused","path":"sprites/sAmara_Confused/sAmara_Confused.yy",},},
+    {"id":{"name":"sAmara_Happy","path":"sprites/sAmara_Happy/sAmara_Happy.yy",},},
     {"id":{"name":"sAmara_Neutral","path":"sprites/sAmara_Neutral/sAmara_Neutral.yy",},},
     {"id":{"name":"sAudioButton","path":"sprites/sAudioButton/sAudioButton.yy",},},
     {"id":{"name":"sBackdrop1","path":"sprites/sBackdrop1/sBackdrop1.yy",},},
@@ -658,6 +663,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"MainMenuRoom","path":"rooms/MainMenuRoom/MainMenuRoom.yy",},},
     {"roomId":{"name":"FinalLevel4Cutscene1","path":"rooms/FinalLevel4Cutscene1/FinalLevel4Cutscene1.yy",},},
     {"roomId":{"name":"FinalLevel4","path":"rooms/FinalLevel4/FinalLevel4.yy",},},
     {"roomId":{"name":"FinalLevel4Cutscene2","path":"rooms/FinalLevel4Cutscene2/FinalLevel4Cutscene2.yy",},},
@@ -670,7 +676,6 @@
     {"roomId":{"name":"FinalLevel2","path":"rooms/FinalLevel2/FinalLevel2.yy",},},
     {"roomId":{"name":"Hub2","path":"rooms/Hub2/Hub2.yy",},},
     {"roomId":{"name":"Hub1","path":"rooms/Hub1/Hub1.yy",},},
-    {"roomId":{"name":"MainMenuRoom","path":"rooms/MainMenuRoom/MainMenuRoom.yy",},},
     {"roomId":{"name":"IntroRoom","path":"rooms/IntroRoom/IntroRoom.yy",},},
     {"roomId":{"name":"level1_2Cutscene_Video","path":"rooms/level1_2Cutscene_Video/level1_2Cutscene_Video.yy",},},
     {"roomId":{"name":"FinalLevel3_2","path":"rooms/FinalLevel3_2/FinalLevel3_2.yy",},},

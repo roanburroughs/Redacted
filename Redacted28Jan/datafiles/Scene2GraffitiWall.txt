@@ -2,7 +2,7 @@
 [speaker Alex slot1]
 Amara! It’s been awhile. Is everything alright?
 [break]
-[character slot2 = sAmara_Neutral]
+[character slot2 = sAmara_Angry]
 [speaker Amara slot2]
 Alex. I got expelled over some sketch I drew! Can you believe it? 
 [break]
@@ -10,7 +10,7 @@ The Dean acted like I stomped all over the college Donors!
 [break]
 He made me leave all of my art supplies on campus, that’s got to be theft!
 [break]
-[character slot1 = sAlex_Neutral]
+[character slot1 = sAlex_Confused]
 [speaker Alex slot1]
 That’s stupid. Who’s the super important sponsor that got you expelled? 
 [break]
@@ -39,7 +39,7 @@ Yeah, you shouldn’t have been expelled for it.
 [break]
 I’m gonna graffiti here tonight, past curfew, I’ll lend you a spray can then if you want to take out your frustration. 
 [break]
-[character slot2 = sAmara_Neutral]
+[character slot2 = sAmara_Happy]
 [speaker Amara slot2]
 That would be awesome! I’ve always wanted to know what the city looks like after curfew.
 [break]

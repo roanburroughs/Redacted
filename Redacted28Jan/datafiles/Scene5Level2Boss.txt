@@ -1,5 +1,5 @@
 
-[character slot2 = sAmara_Neutral]
+[character slot2 = sAmara_Confused]
 [speaker Amara slot2]
 Are you okay?
 [break]
@@ -15,7 +15,7 @@ Don’t worry, I’m being cautious. The guards won’t catch me.
 [speaker ??? slot1]
 You should be in jail.
 [break]
-[character slot2 = sAmara_Neutral]
+[character slot2 = sAmara_Confused]
 [speaker Amara slot2]
 What? You’re out past curfew too. 
 [break]
@@ -27,7 +27,7 @@ They were doing their job.
 [break]
 Keeping the streets safe, they didn’t know, I’m not like you.
 [break]
-[character slot2 = sAmara_Neutral]
+[character slot2 = sAmara_Confused]
 [speaker Amara slot2]
 What do you mean?
 
