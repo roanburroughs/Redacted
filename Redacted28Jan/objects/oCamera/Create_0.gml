@@ -11,5 +11,4 @@ shake_remain = 0;
 buff = 32;
 bossScene = false;
 cutsceneTrigger = false;
-bongus = 0;
 

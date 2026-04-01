@@ -2,7 +2,6 @@
 event_inherited();
 state = ENEMYSTATE.WANDER;
 enraged=false
-createExecuteArea = instance_create_layer(x, y, "Enemies", oExecuteArea);
 
 //Enemy Sprites
 sprMove = sEnemyTempWalk;
