@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"BadEnding",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":68.62367,
+  "exportDir":"",
+  "name":"BadEnding",
+  "parent":{
+    "name":"Level Music",
+    "path":"folders/Sounds/Level Music.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"BadEnding.ogg",
+  "volume":1.0,
+}

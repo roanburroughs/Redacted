@@ -84,3 +84,39 @@ else
 		audio_stop_sound(Level4);
 	}
 }
+
+if(room = FinalLevel4BadEnding)
+{
+	audio_play_sound(BadEnding, 100, true, 0.7);
+}
+else
+{
+	if(audio_is_playing(BadEnding))
+	{
+		audio_stop_sound(BadEnding);
+	}
+}
+
+if(room = FinalLevel4Cutscene1_Video)
+{
+	audio_play_sound(GoodEnding, 100, true, 0.7);
+}
+else
+{
+	if(audio_is_playing(GoodEnding))
+	{
+		audio_stop_sound(GoodEnding);
+	}
+}
+
+if(room = IntroRoom)
+{
+	audio_play_sound(Intro, 100, true, 0.7);
+}
+else
+{
+	if(audio_is_playing(Intro))
+	{
+		audio_stop_sound(Intro);
+	}
+}

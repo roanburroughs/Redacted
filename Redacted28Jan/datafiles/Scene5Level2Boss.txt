@@ -1,4 +1,3 @@
-
 [character slot2 = sAmara_Confused]
 [speaker Amara slot2]
 Are you okay?
