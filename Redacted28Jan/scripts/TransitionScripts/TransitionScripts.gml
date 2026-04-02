@@ -21,7 +21,14 @@ function TransitionStart(_roomTarget, _typeOut, _typeIn)
 		global.roomTarget = _roomTarget;
 		RoomTransition(_typeOut, oCamera.finalCamX, oCamera.finalCamY);
 		layer_set_target_room(_roomTarget);
-		RoomTransition(_typeIn, oRoomTransitionTrigger.fadeInX, oRoomTransitionTrigger.fadeInY);
+		if(object_index = oRoomTransitionTrigger)
+		{
+			RoomTransition(_typeIn, oRoomTransitionTrigger.fadeInX, oRoomTransitionTrigger.fadeInY);
+		}
+		if(object_index = oFinalLevelTransitionTrigger)
+		{
+			RoomTransition(_typeIn, oFinalLevelTransitionTrigger.fadeInX, oFinalLevelTransitionTrigger.fadeInY);
+		}
 		layer_reset_target_room();
 		return true;
 	}
@@ -37,7 +44,7 @@ function TransitionFinished()
 {
 	layer_sequence_destroy(self.elementID);
 	global.midTransition = false;
-	if(room!=level1_2Cutscene_Video && room!=IntroRoom)
+	if(room!=level1_2Cutscene_Video && room!=FinalLevel4Cutscene1_Video && room!=FinalLevel4Cutscene2_Video && room!= FinalLevel4BadEnding && room!=IntroRoom && room!=MainMenuRoom)
 	{
 		oPlayer.changeRoom = false;
 	}
@@ -89,4 +96,9 @@ function VideoTransitionStart(_roomTarget, _typeOut, _typeIn)
 		return true;
 	}
 	else return false;
+}
+
+function FinalTransitionStart(_roomTarget, _typeOut, _typeIn)
+{
+	
 }

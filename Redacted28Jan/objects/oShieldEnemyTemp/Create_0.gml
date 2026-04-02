@@ -1,6 +1,7 @@
 // Inherit the parent event
 event_inherited();
 
+grav = .275;
 state = ENEMYSTATE.WANDER;
 
 //EnemySprites

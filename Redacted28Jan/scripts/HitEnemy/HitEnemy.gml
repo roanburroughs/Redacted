@@ -30,11 +30,6 @@ function HitEnemy(_enemy, _attackType, _playerDamage, _stunDamage, _hitstun, _kn
 			
 			if(staggered)
 			{
-				//instance_create_layer(x, y, "Instances", oExecuteArea);
-				with(createExecuteArea)
-				{
-					//alpha = 1;
-				}
 				//stateWaitDuration = 0;
 				//stateWait = 120;
 			}

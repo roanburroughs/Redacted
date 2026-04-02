@@ -13,7 +13,10 @@ if (!global.gamePaused)
 		script_execute(enemyScript[state]);
 	}
 	//depth = -bbox_bottom;
-	grav = .275;
+	if(object_index != oDrone)
+	{
+		grav = .275;
+	}
 }
 else
 {

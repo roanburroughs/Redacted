@@ -1,3 +1,6 @@
+audio_group_load(ag_music);
+audio_group_load(ag_sfx);
+
 if(room = Hub1) || (room = Hub2) || (room = Hub3) || (room = Hub5) || (room = EndDemoRoom)
 {
 	audio_play_sound(Hub, 100, true, 0.7);

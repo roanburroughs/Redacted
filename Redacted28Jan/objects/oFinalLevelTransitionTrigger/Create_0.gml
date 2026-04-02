@@ -1,1 +1,1 @@
-showInput = instance_nearest(x,y,oUpInput);
+showInput = instance_create_layer(x, y-160, "interactibles", oUpInput);

@@ -10,6 +10,7 @@ targetX = oPlayer.x;
 targetY = -20;
 startX = 0;
 startY = 0;
+grav = .275;
 
 boing = false;
 slamStart = false;

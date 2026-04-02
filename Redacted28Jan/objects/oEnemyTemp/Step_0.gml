@@ -19,19 +19,3 @@ else
 {
 	staggered = false;
 }
-
-with(createExecuteArea)
-{
-	x = other.x;
-	y = other.y;
-	if(other.staggered)
-	{
-		alpha = 1;
-		executable = true;
-	}
-	else if (other.staggered = false)
-	{
-		alpha = 0;
-		executable = false;
-	}
-}
