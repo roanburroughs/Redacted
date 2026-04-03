@@ -4,11 +4,11 @@ Are you okay?
 [break]
 [character slot1 = sUnknown]
 [speaker ??? slot1]
-You shouldn’t be out past curfew. 
+You shouldn't be out past curfew. 
 [break]
 [character slot2 = sAmara_Neutral]
 [speaker Amara slot2]
-Don’t worry, I’m being cautious. The guards won’t catch me.
+Don't worry, I'm being cautious. The guards won't catch me.
 [break]
 [character slot1 = sUnknown]
 [speaker ??? slot1]
@@ -16,7 +16,7 @@ You should be in jail.
 [break]
 [character slot2 = sAmara_Confused]
 [speaker Amara slot2]
-What? You’re out past curfew too. 
+What? You're out past curfew too. 
 [break]
 How did you end up injured, was it not by the guards? 
 [break]
@@ -24,7 +24,7 @@ How did you end up injured, was it not by the guards?
 [speaker ??? slot1]
 They were doing their job. 
 [break]
-Keeping the streets safe, they didn’t know, I’m not like you.
+Keeping the streets safe, they didn't know, I'm not like you.
 [break]
 [character slot2 = sAmara_Confused]
 [speaker Amara slot2]

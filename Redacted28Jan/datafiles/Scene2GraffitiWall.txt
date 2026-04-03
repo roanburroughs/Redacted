@@ -1,6 +1,6 @@
 [character slot1 = sAlex_Neutral]
 [speaker Alex slot1]
-Amara! It’s been awhile. Is everything alright?
+Amara! It's been awhile. Is everything alright?
 [break]
 [character slot2 = sAmara_Angry]
 [speaker Amara slot2]
@@ -8,39 +8,39 @@ Alex. I got expelled over some sketch I drew! Can you believe it?
 [break]
 The Dean acted like I stomped all over the college Donors!
 [break]
-He made me leave all of my art supplies on campus, that’s got to be theft!
+He made me leave all of my art supplies on campus, that's got to be theft!
 [break]
 [character slot1 = sAlex_Confused]
 [speaker Alex slot1]
-That’s stupid. Who’s the super important sponsor that got you expelled? 
+That's stupid. Who's the super important sponsor that got you expelled? 
 [break]
-Wouldn’t happen to be Coreign would it?
+Wouldn't happen to be Coreign would it?
 [character slot2 = sAmara_Neutral]
 [speaker Amara slot2]
-Yeah, I think it’s Coreign, do you think they’re directly responsible? 
+Yeah, I think it's Coreign, do you think they're directly responsible? 
 [break]
 All because of a piece I was working on about scopophobia.
 [break]
-I don’t know how the Dean even knows about it. 
+I don't know how the Dean even knows about it. 
 [break]
 [character slot1 = sAlex_Neutral]
 [speaker Alex slot1]
-I mean, it’s possible. I’ve heard Coreign tends to be… particular about what people can say about them.
+I mean, it's possible. I've heard Coreign tends to be… particular about what people can say about them.
 [break]
- As one of your college’s biggest sponsors, the Dean is probably very aware of what people say about them, even indirectly. 
+ As one of your college's biggest sponsors, the Dean is probably very aware of what people say about them, even indirectly. 
 [break]
 [character slot2 = sAmara_Neutral]
 [speaker Amara slot2]
-I guess that makes sense? It’s still an extreme response for something that isn’t actually talking about them.
+I guess that makes sense? It's still an extreme response for something that isn't actually talking about them.
 [break]
 [character slot1 = sAlex_Neutral]
 [speaker Alex slot1]
-Yeah, you shouldn’t have been expelled for it.
+Yeah, you shouldn't have been expelled for it.
 [break]
-I’m gonna graffiti here tonight, past curfew, I’ll lend you a spray can then if you want to take out your frustration. 
+I'm gonna graffiti here tonight, past curfew, I'll lend you a spray can then if you want to take out your frustration. 
 [break]
 [character slot2 = sAmara_Happy]
 [speaker Amara slot2]
-That would be awesome! I’ve always wanted to know what the city looks like after curfew.
+That would be awesome! I've always wanted to know what the city looks like after curfew.
 [break]
-Maybe I’ll go further into the city, somewhere people will see it. 
+Maybe I'll go further into the city, somewhere people will see it. 

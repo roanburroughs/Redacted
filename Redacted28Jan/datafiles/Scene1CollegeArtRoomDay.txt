@@ -1,20 +1,20 @@
 [character slot1 = sLeah]
 [speaker Leah slot1]
-Seriously Amara this again? It’s weird, and creepy. 
+Seriously Amara this again? It's weird, and creepy. 
 [break]
-Do you want to graduate or not? This is an art college, and whatever that is, it’s not art.
+Do you want to graduate or not? This is an art college, and whatever that is, it's not art.
 [break]
 [character slot2 = sAmara_Neutral]
 [speaker Amara slot2]
 What does it matter? 
 [break]
-You know this isn’t something I’m submitting for an assignment.
+You know this isn't something I'm submitting for an assignment.
 [break]
 [character slot1 = sLeah]
 [speaker Leah slot1]
 Look, I'm trying to help you. Others have noticed you sketching in a notebook that you never show the class. 
 [break]
-They talk about that weird girl who’s probably drawing something vile, why else would she not share her work. 
+They talk about that weird girl who's probably drawing something vile, why else would she not share her work. 
 [break]
-Advice from a friend, you need to stop. It’s not a good look. I don’t want to tattle, but I will if I have to. 
+Advice from a friend, you need to stop. It's not a good look. I don't want to tattle, but I will if I have to. 
 

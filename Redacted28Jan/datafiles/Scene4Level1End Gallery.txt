@@ -4,25 +4,25 @@ When did the gallery close down? And Coreign was mentioned in the graffiti on th
 [break]
 [character slot1 = sAlex_Neutral]
 [speaker Alex slot1]
-Coreign probably had something to do with it shutting down then. That gallery wasn’t exactly known for accepting typical art.
+Coreign probably had something to do with it shutting down then. That gallery wasn't exactly known for accepting typical art.
 [break]
 [character slot2 = sAmara_Neutral]
 [speaker Amara slot2]
-Sure, but I don’t think a tech company has much to gain from closing down an art gallery.  
+Sure, but I don't think a tech company has much to gain from closing down an art gallery.  
 [break]
 [character slot1 = sAlex_Neutral]
 [speaker Alex slot1]
-I mean, the gallery didn’t buy cameras, they had employees keep watch. It's not illegal, but Coreign does work closely with the government.
+I mean, the gallery didn't buy cameras, they had employees keep watch. It's not illegal, but Coreign does work closely with the government.
 [break]
-I’m sure some mention of ‘risking their employees’ lives’, or ‘accepting unorthodox artwork’ let the government find a way to issue a mandatory shutdown order.
+I'm sure some mention of ‘risking their employees' lives', or ‘accepting unorthodox artwork' let the government find a way to issue a mandatory shutdown order.
 [break]
 How terrible it would be for Coreign to lose money, right? 
 [break]
-I was almost worried the government wouldn’t be able to watch me visit an art gallery.
+I was almost worried the government wouldn't be able to watch me visit an art gallery.
 [character slot2 = sAmara_Angry]
 [speaker Amara slot2]
-That’s horrible! They shouldn’t be able to close a place just because they won’t buy their products
+That's horrible! They shouldn't be able to close a place just because they won't buy their products
 [break]
-The government’s meant to protect people, not destroy businesses! Working with a company for profit too!
+The government's meant to protect people, not destroy businesses! Working with a company for profit too!
 [break]
- I’m gonna go out again tomorrow night, somewhere more people will see the graffiti. More people should know about this. 
+ I'm gonna go out again tomorrow night, somewhere more people will see the graffiti. More people should know about this. 
