@@ -1,4 +1,4 @@
-/*
+
 // ocharacter_slot - Draw Event
  
 if (instance_exists(oTextBoxController)) {

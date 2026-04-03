@@ -9,3 +9,4 @@ slot_identifier = 1
 
 y=0
 x=room_width/3*2 -margin
+
