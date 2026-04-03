@@ -7,10 +7,15 @@ if(instance_exists(oControls))
 	instance_destroy();
 }
 
-if(room!=MainMenuRoom)
+if(room!=MainMenuRoom && room!=CreditsRoom)
 {
 	if(global.audioSettings = true)
 	{
 		global.audioSettings = false;
 	}
+}
+
+if(room=CreditsRoom)
+{
+	room_goto(MainMenuRoom);
 }
