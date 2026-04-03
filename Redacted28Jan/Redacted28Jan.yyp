@@ -84,6 +84,7 @@
     {"link":"io.gamemaker.gm_filter_gradient-1.0.0","name":"io.gamemaker.gm_filter_gradient-1.0.0","path":"io.gamemaker.gm_filter_gradient-1.0.0.yyp",},
     {"link":"io.gamemaker.gm_filter_tintfilter-1.0.0","name":"io.gamemaker.gm_filter_tintfilter-1.0.0","path":"io.gamemaker.gm_filter_tintfilter-1.0.0.yyp",},
     {"link":"io.gamemaker.sdfshaders-1.0.0","name":"io.gamemaker.sdfshaders-1.0.0","path":"io.gamemaker.sdfshaders-1.0.0.yyp",},
+    {"link":"io.gamemaker.gm_filter_linear_blur-1.0.0","name":"io.gamemaker.gm_filter_linear_blur-1.0.0","path":"io.gamemaker.gm_filter_linear_blur-1.0.0.yyp",},
   ],
   "IncludedFiles":[
     {"$GMIncludedFile":"","%Name":"citytrain platforms.kra","CopyToMask":-1,"filePath":"datafiles","name":"citytrain platforms.kra","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
@@ -416,6 +417,7 @@
     {"id":{"name":"Splash_2","path":"sounds/Splash_2/Splash_2.yy",},},
     {"id":{"name":"altwall","path":"sprites/altwall/altwall.yy",},},
     {"id":{"name":"Bin","path":"sprites/Bin/Bin.yy",},},
+    {"id":{"name":"Blue_font_2","path":"sprites/Blue_font_2/Blue_font_2.yy",},},
     {"id":{"name":"builetten_board","path":"sprites/builetten_board/builetten_board.yy",},},
     {"id":{"name":"campuswall","path":"sprites/campuswall/campuswall.yy",},},
     {"id":{"name":"citytrain_platformspng","path":"sprites/citytrain_platformspng/citytrain_platformspng.yy",},},
@@ -497,6 +499,7 @@
     {"id":{"name":"sControlsButton","path":"sprites/sControlsButton/sControlsButton.yy",},},
     {"id":{"name":"sCredits","path":"sprites/sCredits/sCredits.yy",},},
     {"id":{"name":"sCreditsAudio","path":"sprites/sCreditsAudio/sCreditsAudio.yy",},},
+    {"id":{"name":"sCreditsButton","path":"sprites/sCreditsButton/sCreditsButton.yy",},},
     {"id":{"name":"sDark","path":"sprites/sDark/sDark.yy",},},
     {"id":{"name":"sDartTrap","path":"sprites/sDartTrap/sDartTrap.yy",},},
     {"id":{"name":"sdead_amara","path":"sprites/sdead_amara/sdead_amara.yy",},},

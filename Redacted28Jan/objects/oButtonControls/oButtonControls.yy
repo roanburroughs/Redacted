@@ -3,6 +3,7 @@
   "%Name":"oButtonControls",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"oButtonControls",
@@ -35,8 +36,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sButton",
-    "path":"sprites/sButton/sButton.yy",
+    "name":"sControlsButton",
+    "path":"sprites/sControlsButton/sControlsButton.yy",
   },
   "spriteMaskId":null,
   "visible":true,
