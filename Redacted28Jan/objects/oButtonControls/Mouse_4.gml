@@ -12,8 +12,9 @@ else
 		x=room_width+300;
 		oButtonPlay.x=room_width+300;
 		oButtonQuit.x=room_width+300;
+		oButtonCredits.x=room_width+300;
 		instance_create_layer(room_width/2, room_height/3, "Instances", oControls);
-		instance_create_layer(room_width/2, room_height/1.25, "Instances", oButtonBack);
+		instance_create_layer(room_width/2, room_height/1.8, "Instances", oButtonBack);
 	}
 	else
 	{
