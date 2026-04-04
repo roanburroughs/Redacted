@@ -410,7 +410,7 @@
     {"name":"sCamera_topleft","order":5,"path":"sprites/sCamera_topleft/sCamera_topleft.yy",},
     {"name":"sCamera_topright","order":6,"path":"sprites/sCamera_topright/sCamera_topright.yy",},
     {"name":"sControlsButton","order":1,"path":"sprites/sControlsButton/sControlsButton.yy",},
-    {"name":"sCredits","order":70,"path":"sprites/sCredits/sCredits.yy",},
+    {"name":"sCredits","order":75,"path":"sprites/sCredits/sCredits.yy",},
     {"name":"sCreditsAudio","order":71,"path":"sprites/sCreditsAudio/sCreditsAudio.yy",},
     {"name":"sCreditsButton","order":5,"path":"sprites/sCreditsButton/sCreditsButton.yy",},
     {"name":"sCreditsMusic","order":72,"path":"sprites/sCreditsMusic/sCreditsMusic.yy",},

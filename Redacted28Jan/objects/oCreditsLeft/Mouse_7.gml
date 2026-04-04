@@ -1,3 +1,6 @@
-clicked = false;
-letGo = true;
-oCredits.screenPos--;
+if(clicked)
+{
+	clicked = false;
+	letGo = true;
+	oCredits.screenPos--;
+}

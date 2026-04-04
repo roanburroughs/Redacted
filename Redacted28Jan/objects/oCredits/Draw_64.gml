@@ -1,5 +1,5 @@
 draw_set_font(FnDialogue);
-draw_text(100, 50, string(screenPos+1) + "/" + "3");
+draw_text(70, 950, string(screenPos+1) + "/" + "3");
 
 if(screenPos == 0)
 {
