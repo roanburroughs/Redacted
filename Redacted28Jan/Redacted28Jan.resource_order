@@ -320,7 +320,6 @@
     {"name":"soHeavyHit","order":6,"path":"sounds/soHeavyHit/soHeavyHit.yy",},
     {"name":"soLightHit","order":7,"path":"sounds/soLightHit/soLightHit.yy",},
     {"name":"soPaintFloor","order":6,"path":"sounds/soPaintFloor/soPaintFloor.yy",},
-    {"name":"soPlayerHit","order":13,"path":"sounds/soPlayerHit/soPlayerHit.yy",},
     {"name":"soPlayerJump","order":8,"path":"sounds/soPlayerJump/soPlayerJump.yy",},
     {"name":"soPlayerLand1","order":9,"path":"sounds/soPlayerLand1/soPlayerLand1.yy",},
     {"name":"soPlayerLand2","order":10,"path":"sounds/soPlayerLand2/soPlayerLand2.yy",},

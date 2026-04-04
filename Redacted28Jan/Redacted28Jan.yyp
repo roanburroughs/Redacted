@@ -404,7 +404,6 @@
     {"id":{"name":"soLightHit","path":"sounds/soLightHit/soLightHit.yy",},},
     {"id":{"name":"soPaintFloor","path":"sounds/soPaintFloor/soPaintFloor.yy",},},
     {"id":{"name":"soPause","path":"sounds/soPause/soPause.yy",},},
-    {"id":{"name":"soPlayerHit","path":"sounds/soPlayerHit/soPlayerHit.yy",},},
     {"id":{"name":"soPlayerJump","path":"sounds/soPlayerJump/soPlayerJump.yy",},},
     {"id":{"name":"soPlayerLand1","path":"sounds/soPlayerLand1/soPlayerLand1.yy",},},
     {"id":{"name":"soPlayerLand2","path":"sounds/soPlayerLand2/soPlayerLand2.yy",},},
