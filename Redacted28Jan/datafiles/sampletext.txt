@@ -1,4 +1,0 @@
-[character slot2 = sAmara_Neutral]
-[speaker Amara slot2]
-All in a day's work.
-[break]

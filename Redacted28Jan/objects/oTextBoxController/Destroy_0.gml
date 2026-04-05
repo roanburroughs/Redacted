@@ -1,7 +1,12 @@
+room_goto(target)
+
 if(transition)
 {
-	DialogueTransitionStart(target, sqFadeOut, sqFadeIn);
+//DialogueTransitionStart(target, sqFadeOut, sqFadeIn);
+//room_goto(target)
+	
 }
+
 
 with(oStoryTrigger2)
 {
