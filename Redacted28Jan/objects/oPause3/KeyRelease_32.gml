@@ -1,3 +1,4 @@
+
 if(inTutorial)
 {
 	if(instance_exists(tutorialTrigger))

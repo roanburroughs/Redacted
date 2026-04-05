@@ -1,4 +1,5 @@
 /// @desc pausing the game
+/*
 if(room!=IntroRoom)
 {
 	if (keyboard_check_pressed(vk_escape))
@@ -25,7 +26,7 @@ if(room!=IntroRoom)
 				image_speed = gamePausedImageSpeed;
 			}
 		}*/
-	
+	/*
 		if(!global.gamePaused && !global.mainMenu)
 		{
 			with(all)
