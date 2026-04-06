@@ -8,11 +8,11 @@ if(other.keyUp)
 	if(global.graffitiCounter >= 20)
 	{
 		if(os_windows)	TransitionStart(FinalLevel4Cutscene1_Video, sqFadeOut, sqFadeIn)
-		else room_goto(target)
+		else room_goto(FinalLevel4Cutscene1_Video)
 	}
 	else
 	{
 		if(os_windows)	TransitionStart(FinalLevel4Cutscene2_Video, sqFadeOut, sqFadeIn)
-		else room_goto(target)
+		else room_goto(FinalLevel4Cutscene2_Video)
 	}
 }

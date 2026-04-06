@@ -129,14 +129,13 @@ function AggroCameraIdle(draw=false){
 									//	show_message("aggro") //I mean it works
 								// show_message("aggro")
 									AggroEnemy()
-									DartTrapTrigger()
 									//oAggroCamera.active=false
 									active = false;
 									alarm[10]=100
 									}
 								}
 							}
-	
+							
 						}
 
 				if(draw)
