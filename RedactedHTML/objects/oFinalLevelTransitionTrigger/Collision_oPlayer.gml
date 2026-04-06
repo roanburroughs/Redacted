@@ -7,10 +7,12 @@ if(other.keyUp)
 	}
 	if(global.graffitiCounter >= 20)
 	{
-		TransitionStart(FinalLevel4Cutscene1_Video, sqFadeOut, sqFadeIn);
+		if(os_windows)	TransitionStart(FinalLevel4Cutscene1_Video, sqFadeOut, sqFadeIn)
+		else room_goto(target)
 	}
 	else
 	{
-		TransitionStart(FinalLevel4Cutscene2_Video, sqFadeOut, sqFadeIn);
+		if(os_windows)	TransitionStart(FinalLevel4Cutscene2_Video, sqFadeOut, sqFadeIn)
+		else room_goto(target)
 	}
 }
