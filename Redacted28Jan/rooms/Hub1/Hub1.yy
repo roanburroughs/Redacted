@@ -93,6 +93,7 @@
     {"name":"inst_39B63852_1","path":"rooms/Hub1/Hub1.yy",},
     {"name":"inst_7B8501E6_2","path":"rooms/Hub1/Hub1.yy",},
     {"name":"inst_1DC8B7C9_1","path":"rooms/Hub1/Hub1.yy",},
+    {"name":"inst_3BBDA388","path":"rooms/Hub1/Hub1.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -209,6 +210,7 @@
         {"$GMRInstance":"v4","%Name":"inst_1CF9530E1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1CF9530E1","objectId":{"name":"oDirectionArrow","path":"objects/oDirectionArrow/oDirectionArrow.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":270.0,"scaleX":1.0,"scaleY":1.0,"x":1389.0,"y":769.0,},
         {"$GMRInstance":"v4","%Name":"inst_12626972_2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_12626972_2","objectId":{"name":"oUpInput","path":"objects/oUpInput/oUpInput.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1632.0,"y":672.0,},
         {"$GMRInstance":"v4","%Name":"inst_6E8FE96_2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6E8FE96_2","objectId":{"name":"oUpInput","path":"objects/oUpInput/oUpInput.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1216.0,"y":672.0,},
+        {"$GMRInstance":"v4","%Name":"inst_3BBDA388","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3BBDA388","objectId":{"name":"oPause3","path":"objects/oPause3/oPause3.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":832.0,},
       ],"layers":[],"name":"interactibles","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"Assets_1","assets":[
         {"$GMRSpriteGraphic":"v1","%Name":"graphic_423224D5_1","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_423224D5_1","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"campuswall","path":"sprites/campuswall/campuswall.yy",},"x":1216.0,"y":416.0,},

@@ -26,4 +26,5 @@ function DartTrapTrigger(){
 			}
 		}
 	}
+//  ds_list_destroy(_dartTrap)
 }

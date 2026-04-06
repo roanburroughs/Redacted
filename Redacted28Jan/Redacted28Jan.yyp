@@ -683,6 +683,7 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"MainMenuRoom","path":"rooms/MainMenuRoom/MainMenuRoom.yy",},},
+    {"roomId":{"name":"Hub1","path":"rooms/Hub1/Hub1.yy",},},
     {"roomId":{"name":"FinalLevel1","path":"rooms/FinalLevel1/FinalLevel1.yy",},},
     {"roomId":{"name":"FinalLevel1_2","path":"rooms/FinalLevel1_2/FinalLevel1_2.yy",},},
     {"roomId":{"name":"Hub2","path":"rooms/Hub2/Hub2.yy",},},
@@ -724,7 +725,6 @@
     {"roomId":{"name":"FinalLevel4Cutscene2_Video","path":"rooms/FinalLevel4Cutscene2_Video/FinalLevel4Cutscene2_Video.yy",},},
     {"roomId":{"name":"CreditsRoom","path":"rooms/CreditsRoom/CreditsRoom.yy",},},
     {"roomId":{"name":"SpriteSaverRoom","path":"rooms/SpriteSaverRoom/SpriteSaverRoom.yy",},},
-    {"roomId":{"name":"Hub1","path":"rooms/Hub1/Hub1.yy",},},
     {"roomId":{"name":"HubTest","path":"rooms/HubTest/HubTest.yy",},},
     {"roomId":{"name":"Hub1_1","path":"rooms/Hub1_1/Hub1_1.yy",},},
   ],

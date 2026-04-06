@@ -36,7 +36,7 @@ if(global.gamePaused)
 			draw_set_font(FnButtonText);
 			draw_set_colour(c_white);
 			//draw_text(view_wport/2, view_hport/1.75, tutorialTrigger.tutorialText);
-			draw_text_ext(view_wport/2, view_hport/2, tutorialTrigger.tutorialText, 50, 900)
+			draw_text_ext(view_wport/2, view_hport/2, oTutorialTrigger.tutorialText, 50, 900)
 			draw_set_alpha(alpha);
 			draw_set_font(FnDialogue);
 			draw_set_colour(c_blue);
@@ -44,17 +44,17 @@ if(global.gamePaused)
 			draw_line_width_colour(view_wport-1160, view_hport/1.3, view_wport-760, view_hport/1.3, 2, c_blue, c_blue)
 			draw_set_colour(c_white);
 			draw_set_alpha(1);
-			if(tutorialTrigger.tutorialSprite = builetten_board)
+			if(oTutorialTrigger.tutorialSprite = builetten_board)
 			{
-				draw_sprite(tutorialTrigger.tutorialSprite, 0, view_wport/2-200, view_hport/6);
+				draw_sprite(oTutorialTrigger.tutorialSprite, 0, view_wport/2-200, view_hport/6);
 			}
-			if(tutorialTrigger.tutorialSprite = sGraffitiFrame2)
+			if(oTutorialTrigger.tutorialSprite = sGraffitiFrame2)
 			{
-				draw_sprite(tutorialTrigger.tutorialSprite, 0, view_wport/2-40, view_hport/6);
+				draw_sprite(oTutorialTrigger.tutorialSprite, 0, view_wport/2-40, view_hport/6);
 			}
-			if(tutorialTrigger.tutorialSprite = sPaintcan)
+			if(oTutorialTrigger.tutorialSprite = sPaintcan)
 			{
-				draw_sprite(tutorialTrigger.tutorialSprite, 0, view_wport/2, view_hport/3);
+				draw_sprite(oTutorialTrigger.tutorialSprite, 0, view_wport/2, view_hport/3);
 			}
 		}
 		
