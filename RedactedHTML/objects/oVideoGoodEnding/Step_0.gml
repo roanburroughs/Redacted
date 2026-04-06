@@ -2,5 +2,6 @@
 var _bing = video_get_status();
 if(_bing == 0)
 {
-	VideoTransitionStart(target, sqFadeOut, sqFadeIn);
+	if(os_windows)	VideoTransitionStart(target, sqFadeOut, sqFadeIn)
+	else room_goto(target)
 }

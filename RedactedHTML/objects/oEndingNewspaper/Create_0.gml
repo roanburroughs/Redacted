@@ -8,9 +8,9 @@ textTimer = 0;
 textFadeSpeed = 0.03;
 textHoverSpeed = 0.06;
 
-alpha = 0;
+alpha = 1;
 textAlpha = 0;
-textAppear = false;
+textAppear = true;
 
 fade = time_source_create(time_source_game, 300, time_source_units_frames, function()
 {

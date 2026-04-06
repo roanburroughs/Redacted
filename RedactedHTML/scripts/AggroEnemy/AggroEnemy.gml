@@ -54,16 +54,16 @@ function AggroEnemy(){
 								}
 								
 								
-							/*	with(oDartTrap)
+							with(oDartTrap)
 								{
 									if(point_distance(x,y, other.x, other.y)<other.aggrorange)
 									{
-									//if(aggro=false and alarm[0]=-1)aggro=true
+									if(aggro=false and alarm[0]=-1)aggro=true
 									}
 									
 								}
 								
-								*/
+								
 								 
 
 

@@ -15,5 +15,6 @@ if(other.keyUp)
 		changeRoom = true;
 		hsp = 0;
 	}
-	TransitionStart(target, sqFadeOut, sqFadeIn)
+	if(os_windows)	TransitionStart(target, sqFadeOut, sqFadeIn)
+	else room_goto(target)
 }

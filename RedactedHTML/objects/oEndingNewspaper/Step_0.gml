@@ -9,7 +9,7 @@ if(textAppear)
 }
 else
 {
-	time_source_start(fade);
+	//time_source_start(fade);
 }
 
-alpha = min(alpha+0.04, 1);
+//alpha = min(alpha+0.04, 1);
