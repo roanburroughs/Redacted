@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"soDroneAmbient",
+  "audioGroupId":{
+    "name":"ag_sfx",
+    "path":"audiogroups/ag_sfx",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":1.1482993,
+  "exportDir":"",
+  "name":"soDroneAmbient",
+  "parent":{
+    "name":"DroneSounds",
+    "path":"folders/Sounds/Enemy Sounds/DroneSounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"soDroneAmbient.ogg",
+  "volume":1.0,
+}

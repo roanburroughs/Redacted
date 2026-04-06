@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"AirRangedAttack",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"AirRangedAttack",
+  "parent":{
+    "name":"PlayerAttackScripts",
+    "path":"folders/Scripts/PlayerAttackScripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

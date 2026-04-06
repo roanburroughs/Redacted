@@ -1,0 +1,2 @@
+active=true
+playerSpotted = false;

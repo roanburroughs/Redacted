@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"DartTrapTrigger",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"DartTrapTrigger",
+  "parent":{
+    "name":"EnemyScripts",
+    "path":"folders/Scripts/EnemyScripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

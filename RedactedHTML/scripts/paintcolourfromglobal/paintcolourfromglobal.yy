@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"paintcolourfromglobal",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"paintcolourfromglobal",
+  "parent":{
+    "name":"RedactedHTML",
+    "path":"RedactedHTML.yyp",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

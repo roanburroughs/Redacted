@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"AggroEnemy",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"AggroEnemy",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

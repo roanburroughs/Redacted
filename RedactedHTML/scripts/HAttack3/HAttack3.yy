@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"HAttack3",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"HAttack3",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

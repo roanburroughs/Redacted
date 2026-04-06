@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"process_sprite_command",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"process_sprite_command",
+  "parent":{
+    "name":"Text",
+    "path":"folders/TextBoxStuff/Text.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

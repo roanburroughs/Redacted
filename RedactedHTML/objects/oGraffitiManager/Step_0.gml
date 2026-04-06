@@ -1,0 +1,1 @@
+activeGraffiti = instance_number(oGraffiti) + instance_number(oGraffiti2);

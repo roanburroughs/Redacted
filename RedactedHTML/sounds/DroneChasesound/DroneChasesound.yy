@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"DroneChasesound",
+  "audioGroupId":{
+    "name":"ag_sfx",
+    "path":"audiogroups/ag_sfx",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":13.649479,
+  "exportDir":"",
+  "name":"DroneChasesound",
+  "parent":{
+    "name":"DroneSounds",
+    "path":"folders/Sounds/Enemy Sounds/DroneSounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"DroneChasesound.ogg",
+  "volume":1.0,
+}

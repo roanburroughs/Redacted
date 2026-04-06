@@ -1,0 +1,34 @@
+//Fullscreen toggle
+if keyboard_check_pressed( vk_f8 )
+{
+    window_set_fullscreen( !window_get_fullscreen() );
+}
+
+//Exit if there is no player
+if !instance_exists(oPlayer) exit;
+
+//Get camera size
+var _camWidth = camera_get_view_width(view_camera[0]);
+var _camHeight = camera_get_view_height(view_camera[0]);
+
+//Get camera target coordinates
+if(!bossScene) var _camX = oPlayer.x - _camWidth/2;
+else _camX = oPlayer.x-_camWidth/3;
+var _camY = oPlayer.y - _camHeight/2;
+
+
+//Constrain cam to room borders
+_camX = clamp( _camX, 0, room_width - _camWidth );
+if(room = Hub1 || room = Hub2 || room = Hub3 || room = Hub4 || room = IntroRoom) _camY = clamp ( _camY, 0, room_height - _camHeight );
+else _camY = clamp ( _camY, 0, room_height - _camHeight )-200;
+
+//Set cam coordinate variables
+finalCamX += (_camX - finalCamX) * camTrailSpd;
+finalCamY += (_camY - finalCamY) * camTrailSpd;
+
+_camX += random_range(-shake_remain, shake_remain)
+_camY += random_range(-shake_remain, shake_remain);
+shake_remain = max(0, shake_remain-((1/shake_length)*shake_magnitude));
+
+//Set camera coordinates
+camera_set_view_pos(view_camera[0], _camX, _camY);

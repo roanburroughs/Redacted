@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"ElevatorMove",
+  "audioGroupId":{
+    "name":"ag_sfx",
+    "path":"audiogroups/ag_sfx",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":3.3689797,
+  "exportDir":"",
+  "name":"ElevatorMove",
+  "parent":{
+    "name":"OtherSFX",
+    "path":"folders/Sounds/OtherSFX.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"ElevatorMove.ogg",
+  "volume":1.0,
+}

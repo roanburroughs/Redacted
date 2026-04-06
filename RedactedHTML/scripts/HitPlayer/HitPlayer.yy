@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"HitPlayer",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"HitPlayer",
+  "parent":{
+    "name":"EnemyScripts",
+    "path":"folders/Scripts/EnemyScripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

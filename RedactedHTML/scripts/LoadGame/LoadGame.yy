@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"LoadGame",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"LoadGame",
+  "parent":{
+    "name":"RedactedHTML",
+    "path":"RedactedHTML.yyp",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

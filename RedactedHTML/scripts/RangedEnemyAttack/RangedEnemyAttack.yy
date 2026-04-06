@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"RangedEnemyAttack",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"RangedEnemyAttack",
+  "parent":{
+    "name":"RangedEnemyScripts",
+    "path":"folders/Scripts/EnemyScripts/RangedEnemyScripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

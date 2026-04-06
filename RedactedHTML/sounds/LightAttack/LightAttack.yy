@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"LightAttack",
+  "audioGroupId":{
+    "name":"ag_sfx",
+    "path":"audiogroups/ag_sfx",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":0.57750565,
+  "exportDir":"",
+  "name":"LightAttack",
+  "parent":{
+    "name":"Player Sounds",
+    "path":"folders/Sounds/Player Sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"LightAttack.ogg",
+  "volume":1.0,
+}

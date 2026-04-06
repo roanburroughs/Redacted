@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"process_speaker_command",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"process_speaker_command",
+  "parent":{
+    "name":"Text",
+    "path":"folders/TextBoxStuff/Text.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

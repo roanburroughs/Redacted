@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"SaveGame",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"SaveGame",
+  "parent":{
+    "name":"RedactedHTML",
+    "path":"RedactedHTML.yyp",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

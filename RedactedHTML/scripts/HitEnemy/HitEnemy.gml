@@ -1,0 +1,95 @@
+function HitEnemy(_enemy, _attackType, _playerDamage, _stunDamage, _hitstun, _knockbackSpeed, _playerKnockbackX, _playerKnockbackY,
+				_airtimeH, _airtimeV, _source){
+					
+	if(_enemy.object_index = oRangedEnemyTempProjectile)
+			{
+				//instance_destroy(_enemyID);
+				with(_enemy)
+				{
+					reflected = true;
+					hsp = -hsp*2;
+				}
+			}
+	
+	with (_enemy)
+	{
+		
+		
+		if (state != ENEMYSTATE.DIE)
+		{
+			enemyHP -= _playerDamage;
+			enemyPaint += _stunDamage;
+			hitstun = _hitstun;
+			flash = 1;
+			weight = 0;
+			knockbackSpeed = _knockbackSpeed;
+			hspAirtime = 0;
+			vspAirtime = 0;
+			parryDuration = 0;
+			hitstunTimer = 0;
+			
+			if(staggered)
+			{
+				//stateWaitDuration = 0;
+				//stateWait = 120;
+			}
+			
+			if(_attackType = 0)
+			{
+				audio_play_sound(soLightHit, 1, false, 1, 0, random_range(0.9, 1));
+			}
+			
+			if(_attackType = 1)
+			{
+				//instance_create_layer(x, y-50, "Effects", oHeavyBlow);
+				if(!audio_is_playing(soHeavyHit)) audio_play_sound(soHeavyHit, 0, false, 1, 0, random_range(0.9, 1));
+				ScreenShake(4, 30);
+				
+			}
+			
+			if(_attackType = 2)
+			{
+				//instance_create_layer(x, y-50, "Effects", oDeathBlow);
+				ScreenShake(6, 30);
+			}
+		
+			//Hurt or dead?
+			if (enemyHP <= 0)
+			{
+				if(object_index = oDrone)
+				{
+					state = ENEMYSTATE.DRONE_DIE;
+				}
+				else
+				{
+					state = ENEMYSTATE.DIE;
+				}
+			}
+			else
+			{
+				if (state != ENEMYSTATE.HURT) statePrevious = state;
+				if (object_index != oEnemyBoss) state = ENEMYSTATE.HURT;
+			}
+			
+			if ((onGround) && (_attackType = 0))
+			{
+				//_playerKnockbackY = 0;
+			}
+			
+			else if ((!onGround) && (_attackType = 0))
+			{
+				//_playerKnockbackX = 2;
+			}
+			
+			image_index = 0;
+			if (_playerKnockbackX || _playerKnockbackY != 0)
+			{
+				var _distFrom = ((_source.x) - (x));
+				hspKnock = (lengthdir_x(_playerKnockbackX, _playerKnockbackX))*-sign(_distFrom);
+				vspKnock = lengthdir_y(_playerKnockbackY, _playerKnockbackY);
+				hspAirtime = _airtimeH;
+				vspAirtime = _airtimeV;
+			}
+		}
+	}
+}

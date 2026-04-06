@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"JAttack2",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"JAttack2",
+  "parent":{
+    "name":"PlayerAttackScripts",
+    "path":"folders/Scripts/PlayerAttackScripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

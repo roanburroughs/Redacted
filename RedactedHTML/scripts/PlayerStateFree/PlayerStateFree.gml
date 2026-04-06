@@ -1,0 +1,213 @@
+function PlayerStateFree(){
+
+//X Movement
+		//Direction
+	if(changeRoom = false)
+	{
+		if(!wallJumping)
+		{
+			moveDir = keyRight - keyLeft;
+			
+			
+		
+	//Accel and Decel	use lerps so 0 does nothing, 1 is instant max speed 
+   var _deceleration=0.1 //how fast do we stop
+   var _acceleration =0.1//0.025 //how fast do we speed up
+   var _maxwalkspeed=10
+    //var move = keyRight - keyLeft;
+	
+	hsp = lerp(hsp,(maxSpeed*moveDir),acceleration);
+	
+{
+  /* if(keyRight)
+   {
+	 //hsp=lerp(hsp,maxwalkspeed,acceleration)
+	 hsp=lerp(hsp,maxSpeed,acceleration)
+   }
+   
+   if(keyLeft)
+   {
+	//hsp=lerp(hsp,-maxwalkspeed,acceleration)
+	hsp=lerp(hsp,-maxSpeed,acceleration)
+   }
+   if(	(!keyLeft and !keyRight) or (keyRight and keyLeft)	)
+   {
+	hsp= lerp(hsp,0,deceleration)   
+	if(hsp<1 and hsp>-1) hsp=0
+   }*/}
+   if(moveDir = 0)
+   {
+	   hsp= lerp(hsp,0,deceleration)   
+	if(hsp<1 and hsp>-1) hsp=0
+   }
+   	
+		}
+		else
+		{
+			moveDir = 0;
+		}
+		//Get my face
+		if moveDir != 0 { face = moveDir; };
+		
+		//Get hsp
+		if(!wallJumping)
+		{
+	//	hsp = moveDir * moveSpd;
+		}
+		
+		
+		//Walljump
+		if(keyJump) && (!onGround) && (atWall)
+		{
+			audio_play_sound(soPlayerJump, 10, false, 0.5, 0, 0.9);
+			face = -face; //Turns player away from the wall
+			wallJumping = true;
+			wallJumpLock = 0;
+			hsp = lerp((-onwall * hsp_wallJump), 0, 0);
+			vsp = -12;
+			//vsp = vspJump;
+		}
+	
+			
+	
+var inst = instance_nearest(x + hsp, y, oPaintedFloor) //interact with only this painted floor
+
+if (inst != noone)
+{
+    if (inst.image_angle != 0 and inst.image_angle != 180 and inst.image_blend!=c_white and place_meeting(x+hsp,y,inst))
+    {
+        if (vsp > 0)
+        {
+            canJump = 10;
+            // canDash = true;
+        }
+		if(keyJump)
+		{
+		//hsp+=50*face*-1	 
+		}
+    }
+}
+
+	onwall = place_meeting(x+1, y, oWall) - place_meeting(x-1, y, oWall);
+	
+	//Jump key buffering
+	
+	if keyJump
+	{
+		jumpKeyBufferTimer = bufferTime;
+	}
+	if jumpKeyBufferTimer > 0
+	{
+		jumpKeyBuffered = 1;
+		jumpKeyBufferTimer--;
+	}
+	else
+	{
+		jumpKeyBuffered = 0;
+	}
+	
+		//Initiate the jump
+	if jumpKeyBuffered && jumpCount < jumpMax
+	{
+		if(!audio_is_playing(soPlayerJump)) audio_play_sound(soPlayerJump, 10, false, 0.4);
+		//Reset the buffer
+		jumpKeyBuffered = false;
+		jumpKeyBufferTimer = 0;
+		//Increase the number of performed jumps
+		if(!atWall)
+		{
+		jumpCount++;
+		}
+		//Set the jump hold timer
+		//jumpHoldTimer = jumpHoldFrames[jumpCount-1];
+		jumpHoldTimer = jumpHoldFrames;
+		//Tell ourself we're no longer on the ground
+		setOnGround(false);
+	}
+	
+		//Cut off the jump by releasing the jump button
+	if !key_jump_held
+	{
+		jumpHoldTimer = 0;
+	}
+	//Jump based on the timer/holding the button
+	if jumpHoldTimer > 0
+	{
+		//Constantly set the vsp to be jumping speed
+		//vsp = jspd[jumpCount-1];
+		vsp = vspJump;
+		//Count down the timer
+		jumpHoldTimer--;
+	}
+	
+	}
+
+
+	
+	//Can we dash?
+	if (canDash) && (keyDash)
+	{
+		canDash = false;
+		canJump = 0;
+		//dashDirection = point_direction(0, 0, keyRight-keyRight, keyRight-keyRight);
+		//dashDirection = moveDir;
+		dashSp = dashDistance/dashTime;
+		dashEnergy = dashDistance;
+		if(!onGround)
+		{
+			freeReady = false;
+		}
+		state = PlayerStateDash;
+		//PlayerDash();
+	}
+
+else	if(vsp>0)
+	{
+		sprite_index = fallSpr;
+	}
+	
+	else if(vsp<0)
+	{
+		sprite_index = riseSpr;
+	}
+	
+	else if abs(hsp) > 0
+	{
+		sprite_index = freeSpr;
+	}
+	else if hsp == 0
+	{
+		sprite_index = idleSpr;
+	}
+	
+	//Change to dash state
+	if (keyPressed_lightAttack && !keyPressed_Poise)
+	{
+		state = PlayerStateAttack;
+		if(onGround)
+		{
+			
+				if((keyRight ^^ keyLeft) and (hsp>7.5 or hsp<-7.5)) //^^ just mean x or y but not both
+				{
+						stateAttack = HAttack1;	
+				}			
+					else 		stateAttack = LAttack;
+		}
+		else
+		{
+		stateAttack = JAttack;
+		}
+	}
+	
+	
+	//Heavy on demand
+	if(keyPressed_heavyAttack && onGround)
+	{
+		state = PlayerStateAttack;
+		stateAttack=HAttack1;
+	}
+
+	
+
+	
+}

@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"Splash_1",
+  "audioGroupId":{
+    "name":"ag_sfx",
+    "path":"audiogroups/ag_sfx",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":0.6684354,
+  "exportDir":"",
+  "name":"Splash_1",
+  "parent":{
+    "name":"OtherSFX",
+    "path":"folders/Sounds/OtherSFX.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"Splash_1.wav",
+  "volume":1.0,
+}

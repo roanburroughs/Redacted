@@ -1,0 +1,33 @@
+[character slot1 = sAlex_Neutral]
+[speaker Alex slot1]
+How did it go?
+[break]
+[character slot2 = sAmara_Neutral]
+[speaker Amara slot2]
+It went fine, but at the station someone attacked me. They said I should be in jail. They were injured, beaten by a guard.
+[break]
+[character slot1 = sAlex_Neutral]
+[speaker Alex slot1]
+Oh, that's awful. Why do they still trust the law enough to attack you when they know the bad the guards have done?
+[break]
+[character slot2 = sAmara_Neutral]
+[speaker Amara slot2]
+Hard to say. They seemed to think the guards hadn't meant to attack them, as if they weren't also out past curfew.
+[break]
+Also, I meant to ask you if you've seen the posters that have been put up!
+[break]
+[character slot1 = sAlex_Neutral]
+[speaker Alex slot1]
+I have, but unfortunately most people who see them just take it as an attack on their safety.
+[break]
+[character slot2 = sAmara_Neutral]
+[speaker Amara slot2]
+Oh, I didn't think of it like that. I suppose I might have taken it that way too. There were always guards on campus, we were told that they were there to make sure no one stole our supplies or artwork.
+[break]
+[character slot1 = sAlex_Neutral]
+[speaker Alex slot1]
+Do you know if there were any cameras around the campus?
+[break]
+[character slot2 = sAmara_Neutral]
+[speaker Amara slot2]
+I wish I knew. When I was there, I never noticed cameras. They weren't something I was aware of until recently. I didn't realise they're everywhere.

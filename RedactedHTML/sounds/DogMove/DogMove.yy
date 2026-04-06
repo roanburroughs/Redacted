@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"DogMove",
+  "audioGroupId":{
+    "name":"ag_sfx",
+    "path":"audiogroups/ag_sfx",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":5.554762,
+  "exportDir":"",
+  "name":"DogMove",
+  "parent":{
+    "name":"DogSounds",
+    "path":"folders/Sounds/Enemy Sounds/DogSounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"DogMove.wav",
+  "volume":1.0,
+}

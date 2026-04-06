@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"Level2Boss",
+  "audioGroupId":{
+    "name":"ag_music",
+    "path":"audiogroups/ag_music",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":229.77306,
+  "exportDir":"",
+  "name":"Level2Boss",
+  "parent":{
+    "name":"Level Music",
+    "path":"folders/Sounds/Level Music.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"Level2Boss.ogg",
+  "volume":1.0,
+}

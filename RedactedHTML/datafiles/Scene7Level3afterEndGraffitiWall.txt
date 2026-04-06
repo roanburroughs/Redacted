@@ -1,0 +1,11 @@
+[character slot2 = sAmara_Neutral]
+[speaker Amara slot2]
+Alex, are you there?
+[break]
+Alex?
+[break]
+…
+[break]
+… 
+[break]
+Time to go.

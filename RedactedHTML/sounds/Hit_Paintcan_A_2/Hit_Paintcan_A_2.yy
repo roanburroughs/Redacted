@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"Hit_Paintcan_A_2",
+  "audioGroupId":{
+    "name":"ag_sfx",
+    "path":"audiogroups/ag_sfx",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":0.7012245,
+  "exportDir":"",
+  "name":"Hit_Paintcan_A_2",
+  "parent":{
+    "name":"OtherSFX",
+    "path":"folders/Sounds/OtherSFX.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"Hit_Paintcan_A_2.wav",
+  "volume":1.0,
+}

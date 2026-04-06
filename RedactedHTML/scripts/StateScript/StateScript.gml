@@ -1,0 +1,24 @@
+function StateScript(){
+enum ENEMYSTATE
+	{
+		IDLE,
+		WANDER,
+		CHASE,
+		ATTACK,
+		HURT,
+		DIE,
+		PARRIED,	
+		STAGGER,
+		WAIT,
+		
+		DRONE_IDLE,
+		DRONE_WANDER,
+		DRONE_CHASE,
+		DRONE_HURT,
+		DRONE_WAIT,
+		DRONE_DIE,
+		
+		BOSS_IDLE,
+		BOSS_HURT
+	}
+}

@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"Level3_2",
+  "audioGroupId":{
+    "name":"ag_music",
+    "path":"audiogroups/ag_music",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":125.75347,
+  "exportDir":"",
+  "name":"Level3_2",
+  "parent":{
+    "name":"Level Music",
+    "path":"folders/Sounds/Level Music.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"Level3_2.ogg",
+  "volume":1.0,
+}

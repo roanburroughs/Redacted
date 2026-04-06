@@ -1,0 +1,7 @@
+[character slot2 = sAmara_Confused]
+[speaker Amara slot2]
+What the hell was that all about? Was he really just a civilian like me?
+[break]
+What would make someone fall in line like that?
+[break]
+...I should get back to the wall.

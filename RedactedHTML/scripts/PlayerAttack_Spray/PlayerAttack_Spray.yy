@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"PlayerAttack_Spray",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"PlayerAttack_Spray",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

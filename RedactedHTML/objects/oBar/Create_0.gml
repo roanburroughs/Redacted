@@ -1,0 +1,1 @@
+gamePausedImageSpeed = 0;
