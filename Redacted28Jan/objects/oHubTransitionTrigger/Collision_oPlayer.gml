@@ -9,6 +9,5 @@ if(ready && other.keyUp)
 		changeRoom = true;
 		hsp = 0;
 	}
-if(os_windows)	HubTransitionStart(target, sqFadeOut, sqFadeIn)
-else room_goto(target)
+HubTransitionStart(target, sqFadeOut, sqFadeIn)
 }
