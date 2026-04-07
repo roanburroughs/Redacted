@@ -135,7 +135,7 @@
     {"name":"oPaintedFloorLong","order":10,"path":"objects/oPaintedFloorLong/oPaintedFloorLong.yy",},
     {"name":"oPaintProjectile","order":9,"path":"objects/oPaintProjectile/oPaintProjectile.yy",},
     {"name":"oPause","order":13,"path":"objects/oPause/oPause.yy",},
-    {"name":"oPause3","order":56,"path":"objects/oPause3/oPause3.yy",},
+    {"name":"oPause3","order":4,"path":"objects/oPause3/oPause3.yy",},
     {"name":"oPlatform_Campus","order":2,"path":"objects/oPlatform_Campus/oPlatform_Campus.yy",},
     {"name":"oPlatform_Coreign","order":1,"path":"objects/oPlatform_Coreign/oPlatform_Coreign.yy",},
     {"name":"oPlatform_Station","order":3,"path":"objects/oPlatform_Station/oPlatform_Station.yy",},

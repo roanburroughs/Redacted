@@ -4,7 +4,7 @@ if(soundPlay==0)
 }
 soundPlay = max(0, 1)
 global.mainMenu = false;
-if(os_windows)oPause3.tutorialTrigger = id;
+oPause3.tutorialTrigger = id;
 global.tutorial = true;
 global.gamePaused = true;
 //instance_destroy();
